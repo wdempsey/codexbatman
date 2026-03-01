@@ -44,7 +44,7 @@ The Data Science Layer is:
 - Audit-driven
 - Reproducibility-centered
 - Documentation-enforced
-- Human-supervised
+- Human-in-the-loop
 
 It is not:
 
@@ -69,6 +69,8 @@ The system enforces the following order:
 5. Experiment Logging  
 6. Model Card Documentation  
 
+For the full phase architecture and state-machine structure, see [Data Science Layer Blueprint](blueprint.md).
+
 No modeling should occur before framing and audit are complete.
 
 No model should be shared without experiment logs and documentation.
@@ -88,6 +90,8 @@ Each phase produces a tangible artifact:
 - Audit report
 - Experiment log
 - Model card
+
+For how these artifacts map to workflow phases, see [Data Science Layer Blueprint](blueprint.md).
 
 These artifacts:
 
