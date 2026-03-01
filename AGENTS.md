@@ -1,0 +1,112 @@
+# AGENTS.md
+
+## Mission And Scope
+
+This repository exists to maintain and improve the Claude Blattman documentation site, downloadable skills, agents, and templates with high editorial quality and stable site behavior.
+
+Scope for Codex collaborators:
+- Make focused, reversible changes that improve correctness, clarity, and maintainability.
+- Preserve existing information architecture and editorial voice.
+- Prefer additive updates over rewrites.
+- Work in a single PR per task unless explicitly instructed otherwise.
+
+Out of scope unless explicitly requested:
+- Large-scale reorganizations of docs, nav, or folder structure.
+- Broad rewrites of established pages.
+- Changes that alter project direction without maintainer approval.
+
+## Decision Priorities
+
+When tradeoffs appear, choose in this order:
+1. Correctness and factual integrity.
+2. User safety and risk reduction.
+3. Navigation and link integrity.
+4. Voice and style consistency.
+5. Minimal, reversible diffs.
+6. Speed.
+
+## Working Style (Balanced, Leaning Strict)
+
+Default mode:
+- Be pragmatic and concise.
+- Make progress autonomously on clear tasks.
+- Keep diffs small and intentional.
+
+Leaning strict means:
+- Do not infer major intent beyond the request.
+- Do not silently broaden scope.
+- Do not “clean up” unrelated files.
+- Flag assumptions when confidence is low.
+
+Execution norms:
+- Read relevant local context before edits.
+- Prefer adding new files over rewriting existing ones.
+- Keep naming explicit and predictable.
+- Preserve backwards compatibility for links and docs references.
+
+## Data Science Policy
+
+### DS workflow gates
+
+- No modeling or EDA before Problem Framing approval.
+- No modeling before Data Audit yields `PROCEED`, or `PROCEED WITH CONDITIONS` with all conditions satisfied.
+- Every modeling run requires an Experiment Log entry.
+- Any final or shared model must have a Model Card.
+
+### Explicit stop conditions
+
+- If asked to train without these artifacts, stop and propose the missing steps.
+
+### Reproducibility enforcement
+
+- Use deterministic seeds.
+- Use pinned environments.
+- Do not edit raw data directly.
+
+### Human-in-the-loop clause
+
+- Agent may draft artifacts; human approves claims and conclusions.
+
+## Stop Conditions
+
+Stop and ask for direction if any of the following occurs:
+- The requested change conflicts with existing architecture or published guidance.
+- Required facts or source-of-truth inputs are missing.
+- A change would require restructuring directories or rewriting major docs sections.
+- Security/privacy implications are uncertain.
+- Build/test verification cannot run in the current environment.
+
+## Build Verification Rules
+
+Use existing repository commands and workflows only.
+
+Primary references in this repo:
+- CI deploy workflow: `.github/workflows/deploy.yml`
+- Dependencies: `requirements.txt`
+
+Verification policy:
+1. Run the least-destructive local verification first (`mkdocs build`) when available.
+2. Do not run deploy commands (`mkdocs gh-deploy --force`) for routine verification.
+3. If required tools are missing, report exact missing commands/packages and stop.
+4. In summaries, list exactly what command ran and its result.
+
+## Devlog + Distillation Protocol
+
+Purpose:
+- Preserve decision context across sessions.
+- Convert one-off work into reusable operating knowledge.
+
+When to log:
+- Any non-trivial change, tradeoff, failure, or fix.
+- Any change likely to affect future contributors.
+
+How to log:
+1. Create an entry from `devlog/_template.md`.
+2. Capture: goal, constraints, actions, outcomes, verification, and risks.
+3. Add “distilled learnings” as short, reusable rules.
+4. Reference touched files and commands used.
+
+Distillation standard:
+- Prefer principles over narrative.
+- Keep each learning atomic and testable.
+- If a learning implies a process change, propose a minimal docs update in a future PR.
