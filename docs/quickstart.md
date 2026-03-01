@@ -23,7 +23,25 @@ This diverges from the prior Claude-focused version. Codex is now the execution 
 
 ## Step 1 — Install & Verify Codex
 
-Install Codex locally using your standard installation method.
+Codex must be installed locally before executing structured workflows.
+
+Choose your operating system.
+
+### macOS
+
+#### Option A — Install via Terminal (Recommended for CLI workflows)
+
+Using Homebrew:
+
+```bash
+brew install codex
+```
+
+Or using npm (if applicable to your environment):
+
+```bash
+npm install -g codex
+```
 
 Verify installation:
 
@@ -31,7 +49,90 @@ Verify installation:
 codex --version
 ```
 
-Run a test prompt:
+#### Option B — Install via Codex Desktop App (Recommended for macOS users)
+
+Download the Codex Desktop App from the official website.
+
+Install and sign in.
+
+The macOS app provides:
+
+- Local execution
+- Integrated terminal
+- Structured prompt management
+- Project-level context
+
+After installation, verify CLI access from Terminal:
+
+```bash
+codex --version
+```
+
+### Windows
+
+#### Option A — Install via Terminal (PowerShell)
+
+Using npm:
+
+```bash
+npm install -g codex
+```
+
+Verify:
+
+```bash
+codex --version
+```
+
+If using WSL, follow Linux instructions below.
+
+#### Option B — Install via Website
+
+Download the Windows installer from the official Codex website.
+
+Run installer and follow setup prompts.
+
+After installation, open PowerShell and verify:
+
+```bash
+codex --version
+```
+
+### Linux
+
+#### Install via Terminal
+
+Using npm:
+
+```bash
+npm install -g codex
+```
+
+Or via package manager if available:
+
+```bash
+sudo apt install codex
+```
+
+Verify:
+
+```bash
+codex --version
+```
+
+### Verify Local Execution
+
+Create a test file:
+
+`example_prompt.md`
+
+```text
+# Task: Installation Verification
+
+Output: "Codex is installed and executing locally."
+```
+
+Run:
 
 ```bash
 codex run example_prompt.md
@@ -42,7 +143,7 @@ Expected result:
 - Prompt executed
 - Output written to disk
 
-Codex must run locally before proceeding.
+Codex must execute locally before proceeding to structured workflows.
 
 ## Step 2 — Execute Structured Workflows
 
