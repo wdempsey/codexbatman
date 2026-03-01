@@ -1,105 +1,85 @@
 ---
 hide:
   - navigation
-description: Codex-native data science workflow system with structured workflow gates, reproducibility enforcement, and devlog-to-garden distillation.
+description: Codex-native workflow system for structured, reproducible data science with explicit workflow gates, artifacts, and human-in-the-loop review.
 social:
   cards_layout_options:
     title: Codex-Native Data Science Workflow System
-    description: Structured, reproducible workflow for disciplined applied data science.
+    description: Structured DS workflow with gates, reproducibility standards, and documentation discipline.
 ---
 
 # Codex-Native Data Science Workflow System
 
-This repository defines a structured, reproducible workflow for applied data science.
+<p class="hero-pitch">A structured operating system for applied data science: frame the problem, audit the data, run reproducible experiments, and document every final model.</p>
 
-It originated as a fork of the claudeblattman site and has evolved into a Codex-native operating system for disciplined analytical work.
+<div class="hero-buttons">
+<a href="workflows/data-science/goals.md" class="md-button md-button--primary">Read DS goals</a>
+<a href="workflows/data-science/blueprint.md" class="md-button">View DS blueprint</a>
+<a href="system/index.md" class="md-button">See system architecture</a>
+<a href="https://github.com/wdempsey/codexbatman" class="md-button social-btn">GitHub</a>
+</div>
 
----
+<div class="credibility-strip" markdown>
+This repository diverged from the original Claude-focused framing and now centers a Codex-native workflow for disciplined data science. The system is built around workflow gates, explicit artifacts, and reproducibility requirements. Human-in-the-loop review remains mandatory for claims, conclusions, and release decisions.
+</div>
 
-## Scope
+## What Is This?
 
-The project integrates:
+This site documents a constrained workflow system for data science and analytical work. It combines structured skills, phase gates, reproducibility standards, and documentation requirements so iteration stays auditable and decisions remain reviewable.
 
-- A structured Data Science layer  
-- Explicit workflow gates  
-- Skill-based modular architecture  
-- Reproducibility enforcement  
-- Human-in-the-loop supervision  
-- Devlog → Digital Garden separation  
+## Where to Start
 
-The objective is not faster modeling.
-The objective is better analytical discipline.
+<div class="grid cards" markdown>
 
----
+-   **:material-target: Data Science Layer Goals** <span class="badge-teal">Start here</span>
 
-## Data Science Layer
+    ---
 
-The Data Science layer formalizes a sequence:
+    Purpose, philosophy, and operating principles for the DS layer: why workflow gates exist, why artifacts matter, and how discipline is enforced.
 
-1. Problem Framing  
-2. Data Audit (Proceed / Halt protocol)  
-3. Structured EDA planning  
-4. Logged modeling experiments  
-5. Model Card documentation  
+    [:octicons-arrow-right-24: Goals](workflows/data-science/goals.md)
 
-These stages are encoded in `AGENTS.md` and implemented as modular skills.
+-   **:material-sitemap-outline: Data Science Layer Blueprint**
 
-No model is considered complete without documentation.
-No analysis proceeds without explicit framing and audit.
+    ---
 
----
+    Architecture and phase structure for the DS operating model, including workflow states, outputs, reproducibility standards, and AGENTS alignment.
 
-## Reproducibility Standards
+    [:octicons-arrow-right-24: Blueprint](workflows/data-science/blueprint.md)
 
-All workflows require:
+-   **:material-source-branch: Prompt, Plan, Review, Revise**
 
-- Deterministic seeds  
-- Versioned datasets  
-- Logged configurations  
-- Explicit evaluation strategy  
-- Separation of raw and processed data  
+    ---
 
-Reproducibility is treated as a methodological requirement, not a technical afterthought.
+    Core operating loop for structuring work, stress-testing plans, and capturing decisions before implementation.
 
----
+    [:octicons-arrow-right-24: Learn the loop](workflows/first-session-skills.md)
 
-## System Design Orientation
+-   **:material-shield-check-outline: Continuous Improvement**
 
-This repository assumes that modern data scientists operate within systems.
+    ---
 
-Accordingly, the workflow includes:
+    Use an explicit feedback cycle to convert operational observations into durable workflow improvements.
 
-- Database scoping and schema reasoning  
-- Join integrity checks  
-- Boundary awareness (batch, API, dashboard)  
-- Documentation suitable for collaborative environments  
+    [:octicons-arrow-right-24: Improvement workflow](system/continuous-improvement.md)
 
-The emphasis is on applied rigor.
+-   **:material-wrench-outline: Building Skills**
 
----
+    ---
 
-## Devlog and Digital Garden
+    Learn how to design modular skills with clear inputs, outputs, guardrails, and escalation conditions.
 
-Implementation work is recorded in structured devlogs.
+    [:octicons-arrow-right-24: Build skills](system/building-skills.md)
 
-Distilled insights are moved into a separate Digital Garden repository, where ideas are organized as:
+-   **:material-book-open-variant: Downloads & Reference Library**
 
-- Essays  
-- Notes  
-- Patterns  
-- Concept maps  
+    ---
 
-The workflow produces artifacts.
-The garden produces reflection.
+    Supporting reference material, templates, and implementation notes for extending the system.
 
----
+    [:octicons-arrow-right-24: Reference library](downloads/index.md)
 
-## Intended Audience
+</div>
 
-This project is intended for:
-
-- Data scientists seeking stronger methodological discipline  
-- Practitioners working at the boundary of research and engineering  
-- Instructors interested in teaching through constrained systems  
-
-The repository continues to evolve as a structured operating system for applied data science.
+!!! tip "System Rule"
+    No modeling before framing and audit. No final model without experiment logs and model documentation.
