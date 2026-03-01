@@ -1,135 +1,204 @@
 ---
-description: Get useful AI output in 5 minutes. One structured prompt that demonstrates the difference between casual chatbot use and effective prompting.
+description: Codex-native quickstart for structured data science workflows with workflow gates, reproducibility, and explicit outputs.
 ---
 
-# Quickstart: Your First 5 Minutes
+# Quickstart: Codex-Native Workflow
 
-**Goal:** Paste one prompt into Claude (or ChatGPT) and get something immediately useful. No setup required.
-
----
-
-## What You'll Do
-
-You're going to give an AI chatbot a structured prompt that helps it organize a messy, real-world task. This takes about 5 minutes and demonstrates two key principles:
-
-1. **Structured prompts get dramatically better results** than casual questions
-2. **Saved context** (telling the AI about you once) eliminates repetitive setup
+**Goal:** Run Codex locally with structured prompts that enforce reproducibility, validation, and clear output contracts.
 
 ---
 
-## Step 1: Pick Your Tool
+## Step 1 — Install & Verify Codex
 
-You need one of these (free tiers work fine):
+Install Codex for your environment, then verify local execution.
 
-- [Claude.ai](https://claude.ai) (Anthropic) — [sign up here](https://claude.ai/signup) if you don't have an account
-- [ChatGPT](https://chat.openai.com) (OpenAI) — [sign up here](https://chat.openai.com/auth/login) if you don't have an account
-
-Open whichever you have. If you have both, use Claude.
-
-## Step 2: Copy and Paste This Prompt
-
-Copy the entire block below and paste it into your chat:
-
-```text
-I'd like your help organizing my professional development and learning goals
-for the next 3 months. I'll describe my situation, and I want you to help me
-create a structured, actionable plan.
-
-## My context
-- Role: [FILL IN: your job title or role, e.g., "assistant professor of economics",
-  "program manager at an NGO", "PhD student in political science"]
-- Biggest time sinks: [FILL IN: 2-3 things that eat your time, e.g., "email,
-  grant reporting, coordinating with field teams"]
-- Skills I want to develop: [FILL IN: 1-3 things, e.g., "better data visualization,
-  AI tools for research, project management"]
-- Time available: [FILL IN: roughly how many hours/week you can dedicate,
-  e.g., "3-5 hours per week"]
-
-## What I want
-Create a 3-month learning plan with:
-1. Monthly themes (what to focus on each month)
-2. Weekly commitments (specific, small actions — not vague goals)
-3. Quick wins (things I can do this week that take <30 minutes each)
-4. Resources (specific tools, courses, or readings — not generic suggestions)
-
-Be concrete and realistic. I'd rather have a plan I'll actually follow than an
-ambitious one I'll abandon. If something I listed isn't realistic in the time
-available, tell me directly and suggest what to cut.
+```bash
+codex --version
+codex run example_prompt.md
 ```
 
-**Fill in the bracketed sections** with your own information, then send it.
-
-## Step 3: See the Difference
-
-=== "Vague prompt"
-
-    **What you typed:**
-
-    > Help me make a professional development plan.
-
-    **What you get back:** A generic list of suggestions — "set SMART goals," "seek mentorship," "attend conferences" — that could apply to anyone in any field. No timeline. No awareness of your constraints. You close the tab.
-
-=== "Structured prompt"
-
-    **What you typed:** The prompt from Step 2, with your details filled in.
-
-    **What you get back:** A month-by-month plan calibrated to your role, your time budget, and your actual goals. Specific resources, not platitudes. Weekly actions small enough to actually do. And if something doesn't fit your schedule, the AI tells you what to cut — because you gave it permission to push back.
-
-**Why the structured version works:**
-
-- **Context** so the AI doesn't waste time on generic advice
-- **Output format** so you get something actionable, not an essay
-- **Constraints** (time available, "be realistic") so the result fits your life
-- **Pushback permission** ("tell me directly") so the AI doesn't just agree with everything
+Successful local execution confirms your runtime is ready for structured workflow tasks.
 
 ---
 
-## What to Do With the Result
+## Step 2 — Run Structured Prompts
 
-The plan you get isn't the point. The *process* is the point. You just learned that:
+Use prompts with explicit objectives, guardrails, and output structure.
 
-1. **Five minutes of prompt structure** transforms a vague request into a useful output
-2. **Context about you** (role, constraints, goals) is what makes AI responses personal rather than generic
-3. **Explicit output format** (monthly themes, weekly commitments) controls what you get back
+### Example 1 — Regression Workflow
 
-These three principles — structure, context, and format — apply to every AI interaction. They're the foundation of everything else on this site.
+Inline dataset (`housing_sample.csv`):
+
+```csv
+sqft,bedrooms,age,price
+850,2,30,215000
+920,2,22,235000
+1100,3,18,290000
+1250,3,12,325000
+1400,3,8,360000
+1600,4,6,420000
+1750,4,4,455000
+1900,4,3,495000
+2100,5,2,540000
+2300,5,1,610000
+```
+
+Structured prompt:
+
+```text
+Task: Run a reproducible OLS regression for housing price prediction.
+
+Objectives:
+1. Validate dataset schema and numeric types.
+2. Estimate model: price ~ sqft + bedrooms + age.
+3. Report coefficients, standard errors, R^2, and residual diagnostics.
+4. Save reproducible code and outputs.
+
+Guardrails:
+- Halt if required columns are missing or non-numeric.
+- Do not impute without stating method.
+- Set and report deterministic seed.
+- Do not edit raw input data; write transformed data separately if needed.
+
+Expected output structure:
+1. Validation Summary
+2. Model Specification
+3. Results Table
+4. Diagnostics
+5. Reproducibility Notes
+6. Files Written
+
+Required file outputs:
+- outputs/regression/analysis.py
+- outputs/regression/model_summary.md
+- outputs/regression/coefficients.csv
+- outputs/regression/diagnostics.json
+```
+
+Example local CLI output:
+
+```text
+$ codex run regression_prompt.md
+[OK] Validation Summary: schema valid, 10 rows loaded.
+[OK] Model fit complete: OLS(price ~ sqft + bedrooms + age)
+[OK] Results written:
+  - outputs/regression/analysis.py
+  - outputs/regression/model_summary.md
+  - outputs/regression/coefficients.csv
+  - outputs/regression/diagnostics.json
+[OK] Reproducibility: seed=42, environment pinned.
+```
+
+### Example 2 — Repository Architecture Analysis
+
+Repository target:
+
+`https://github.com/pandas-dev/pandas`
+
+Structured prompt:
+
+```text
+Task: Analyze the repository architecture of pandas-dev/pandas for maintainability and contribution onboarding.
+
+Objectives:
+1. Identify top-level architectural domains (core, io, tests, docs, tooling).
+2. Describe module boundaries and dependency patterns.
+3. Highlight contributor entry points and high-risk complexity zones.
+4. Produce a structured analysis that is actionable for maintainers.
+
+Guardrails:
+- Do not provide a vague summary.
+- Separate observed structure from inferred recommendations.
+- Cite concrete paths/directories when making claims.
+- Flag uncertainty explicitly where repository context is incomplete.
+
+Expected output structure:
+1. Repository Topology
+2. Architectural Domains
+3. Dependency and Boundary Notes
+4. Contributor Onboarding Paths
+5. High-Risk Complexity Areas
+6. Recommended Next Actions
+```
+
+Example local CLI output:
+
+```text
+$ codex run repo_architecture_prompt.md
+[OK] Repository Topology mapped.
+[OK] Domains identified: core, io, tests, docs, tooling.
+[OK] Output sections generated:
+  1. Repository Topology
+  2. Architectural Domains
+  3. Dependency and Boundary Notes
+  4. Contributor Onboarding Paths
+  5. High-Risk Complexity Areas
+  6. Recommended Next Actions
+```
+
+---
+
+## Step 3 — Avoid Vague Instructions
+
+Vague input example 1:
+
+```text
+Run a regression on this dataset
+```
+
+Weak CLI-style output:
+
+```text
+$ codex run vague_regression_prompt.md
+Done. I ran a regression and it looks good.
+```
+
+Vague input example 2:
+
+```text
+Tell me about this repository
+```
+
+Weak CLI-style output:
+
+```text
+$ codex run vague_repo_prompt.md
+This repository is large and has many files. It seems well organized.
+```
+
+Why vague instructions fail:
+- Reproducibility: no explicit seed, environment, or file outputs.
+- Validation: no schema checks, guardrails, or halt conditions.
+- Architectural clarity: no required structure, boundaries, or evidence.
 
 ---
 
 ## Next Steps
 
-<div class="grid cards" markdown>
+- Structured Workflow Gates (in progress)
+- Data Science Layer Architecture (in progress)
+- Devlog → Digital Garden System (in progress)
+- Manager Playbooks (coming soon)
 
--   **Already use chatbots?**
+---
 
-    ---
+## Codex Flexibility Clause
 
-    Learn the techniques that separate casual users from power users.
+If Codex detects:
 
-    [:octicons-arrow-right-24: Chatbots Done Right](essentials/chatbots.md)
+- Broken formatting
+- Inconsistent heading structure
+- mkdocs rendering conflicts
+- Redundant legacy Claude references
 
--   **Want prompt engineering skills?**
+It may:
 
-    ---
+- Adjust wording minimally
+- Normalize headings
+- Remove legacy references
 
-    The bridge skill between casual chatbot use and building real workflows.
+It must:
 
-    [:octicons-arrow-right-24: Prompt Engineering](essentials/prompting.md)
-
--   **Ready for the command line?**
-
-    ---
-
-    Claude Code is where chatbots become workflow tools. Start with installation.
-
-    [:octicons-arrow-right-24: Install Claude Code (Mac)](toolkit/install-mac.md)
-
--   **Just want to browse?**
-
-    ---
-
-    See the full landscape of tools and decide what's worth your time and money.
-
-    [:octicons-arrow-right-24: The Essentials](essentials/index.md)
-
-</div>
+- Stay within Quickstart files
+- Not restructure navigation
+- Not introduce new sections beyond spec
