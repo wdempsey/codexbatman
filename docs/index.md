@@ -1,70 +1,105 @@
 ---
 hide:
   - navigation
-description: Codex-native workflow system with a structured data science layer, workflow gates, reproducibility standards, and a devlog-to-garden distillation loop.
+description: Codex-native data science workflow system with structured workflow gates, reproducibility enforcement, and devlog-to-garden distillation.
 social:
   cards_layout_options:
-    title: Codex-Native Workflow System
-    description: Structured data science operating system with explicit workflow gates and reproducibility discipline.
+    title: Codex-Native Data Science Workflow System
+    description: Structured, reproducible workflow for disciplined applied data science.
 ---
 
-# Codex-Native Workflow System
+# Codex-Native Data Science Workflow System
 
-<p class="hero-pitch">A structured operating system for data science and analytical workflows: think first, audit early, log every iteration, document every final model.</p>
+This repository defines a structured, reproducible workflow for applied data science.
 
-<div class="hero-buttons">
-<a href="workflows/data-science/goals.md" class="md-button md-button--primary">Read DS layer goals</a>
-<a href="system/index.md" class="md-button">See system architecture</a>
-<a href="about/project-direction.md" class="md-button">Project direction</a>
-</div>
+It originated as a fork of the claudeblattman site and has evolved into a Codex-native operating system for disciplined analytical work.
 
-## What This Is
+---
 
-This repository is no longer a Claude-first tutorial site.
+## Scope
 
-It is a Codex-native workflow system built around explicit structure:
+The project integrates:
 
-- Structured skills
-- Workflow gates
-- Reproducibility enforcement
-- Human-in-the-loop review
-- Devlog to Digital Garden distillation
+- A structured Data Science layer  
+- Explicit workflow gates  
+- Skill-based modular architecture  
+- Reproducibility enforcement  
+- Human-in-the-loop supervision  
+- Devlog → Digital Garden separation  
+
+The objective is not faster modeling.
+The objective is better analytical discipline.
+
+---
 
 ## Data Science Layer
 
-The Data Science layer enforces a strict operating order:
+The Data Science layer formalizes a sequence:
 
-1. Problem Framing
-2. Data Audit
-3. EDA Plan
-4. Modeling and Evaluation
-5. Experiment Logging
-6. Model Card Documentation
+1. Problem Framing  
+2. Data Audit (Proceed / Halt protocol)  
+3. Structured EDA planning  
+4. Logged modeling experiments  
+5. Model Card documentation  
 
-No modeling before framing and audit.
-No final model without logs and documentation.
+These stages are encoded in `AGENTS.md` and implemented as modular skills.
 
-## Reproducibility Gates
+No model is considered complete without documentation.
+No analysis proceeds without explicit framing and audit.
 
-The system requires:
+---
 
-- Deterministic seeds
-- Pinned environments
-- No raw data edits
-- Logged experiment decisions
+## Reproducibility Standards
 
-Speed is secondary to analytical discipline.
+All workflows require:
 
-## Devlog → Digital Garden Architecture
+- Deterministic seeds  
+- Versioned datasets  
+- Logged configurations  
+- Explicit evaluation strategy  
+- Separation of raw and processed data  
 
-Work is captured first as operational devlogs.
+Reproducibility is treated as a methodological requirement, not a technical afterthought.
 
-Distilled insights then move into a digital garden as reusable notes, patterns, and essays.
+---
 
-The workflow is designed to create durable thinking artifacts, not just model output.
+## System Design Orientation
 
-## Directional Divergence
+This repository assumes that modern data scientists operate within systems.
 
-This project now diverges from its original Claude-focused framing.
+Accordingly, the workflow includes:
 
-The emphasis is architectural: constrained workflows, explicit artifacts, and reviewable decisions.
+- Database scoping and schema reasoning  
+- Join integrity checks  
+- Boundary awareness (batch, API, dashboard)  
+- Documentation suitable for collaborative environments  
+
+The emphasis is on applied rigor.
+
+---
+
+## Devlog and Digital Garden
+
+Implementation work is recorded in structured devlogs.
+
+Distilled insights are moved into a separate Digital Garden repository, where ideas are organized as:
+
+- Essays  
+- Notes  
+- Patterns  
+- Concept maps  
+
+The workflow produces artifacts.
+The garden produces reflection.
+
+---
+
+## Intended Audience
+
+This project is intended for:
+
+- Data scientists seeking stronger methodological discipline  
+- Practitioners working at the boundary of research and engineering  
+- Instructors interested in teaching through constrained systems  
+
+The repository continues to evolve as a structured operating system for applied data science.
