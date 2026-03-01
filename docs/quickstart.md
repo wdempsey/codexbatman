@@ -1,177 +1,227 @@
 ---
-description: Codex-native quickstart for structured data science workflows with workflow gates, reproducibility, and explicit outputs.
+description: Codex-native quickstart for structured, reproducible data science workflows with explicit gates and artifact outputs.
 ---
 
-# Quickstart: Codex-Native Workflow
+# Quickstart — Codex-Native Data Science Workflow
 
-**Goal:** Run Codex locally with structured prompts that enforce reproducibility, validation, and clear output contracts.
+## Goal
 
----
+Install Codex and execute structured, reproducible data science workflows.
+
+This system is:
+
+- Codex-native
+- Workflow-gated
+- Reproducible
+- Architected for data science managers and senior data scientists
+
+This is not a prompting guide.
+
+It is a structured execution layer.
+
+This diverges from the prior Claude-focused version. Codex is now the execution engine.
 
 ## Step 1 — Install & Verify Codex
 
-Install Codex for your environment, then verify local execution.
+Install Codex locally using your standard installation method.
+
+Verify installation:
 
 ```bash
 codex --version
+```
+
+Run a test prompt:
+
+```bash
 codex run example_prompt.md
 ```
 
-Successful local execution confirms your runtime is ready for structured workflow tasks.
+Expected result:
 
----
+- Prompt executed
+- Output written to disk
 
-## Step 2 — Run Structured Prompts
+Codex must run locally before proceeding.
 
-Use prompts with explicit objectives, guardrails, and output structure.
+## Step 2 — Execute Structured Workflows
 
-### Example 1 — Regression Workflow
+### Example 1 — Reproducible Regression Pipeline
 
-Inline dataset (`housing_sample.csv`):
+Create dataset:
+
+`housing_sample.csv`
 
 ```csv
-sqft,bedrooms,age,price
-850,2,30,215000
-920,2,22,235000
-1100,3,18,290000
-1250,3,12,325000
-1400,3,8,360000
-1600,4,6,420000
-1750,4,4,455000
-1900,4,3,495000
-2100,5,2,540000
-2300,5,1,610000
+price,square_feet,bedrooms,age
+350000,2000,3,20
+450000,2500,4,10
+275000,1500,3,30
+500000,3000,5,5
+325000,1800,3,25
 ```
 
-Structured prompt:
+Create prompt:
+
+`regression_prompt.md`
 
 ```text
-Task: Run a reproducible OLS regression for housing price prediction.
+# Task: Structured Regression Workflow
+
+You are operating inside a reproducible data science pipeline.
 
 Objectives:
-1. Validate dataset schema and numeric types.
-2. Estimate model: price ~ sqft + bedrooms + age.
-3. Report coefficients, standard errors, R^2, and residual diagnostics.
-4. Save reproducible code and outputs.
+1. Load housing_sample.csv
+2. Validate schema and missing values
+3. Fit OLS model:
+   price ~ square_feet + bedrooms + age
+4. Report:
+   - coefficients
+   - R²
+   - diagnostics
+5. Output executable Python code
+6. Save summary to model_summary.txt
 
-Guardrails:
-- Halt if required columns are missing or non-numeric.
-- Do not impute without stating method.
-- Set and report deterministic seed.
-- Do not edit raw input data; write transformed data separately if needed.
+Constraints:
+- Do not skip validation
+- Do not assume columns
+- Document assumptions
 
 Expected output structure:
 1. Validation Summary
 2. Model Specification
-3. Results Table
+3. Results
 4. Diagnostics
-5. Reproducibility Notes
-6. Files Written
-
-Required file outputs:
-- outputs/regression/analysis.py
-- outputs/regression/model_summary.md
-- outputs/regression/coefficients.csv
-- outputs/regression/diagnostics.json
+5. Files Written
+6. Reproducibility Notes
 ```
 
-Example local CLI output:
+Run:
+
+```bash
+codex run regression_prompt.md
+```
+
+Example output (replace with your real run output):
 
 ```text
 $ codex run regression_prompt.md
-[OK] Validation Summary: schema valid, 10 rows loaded.
-[OK] Model fit complete: OLS(price ~ sqft + bedrooms + age)
-[OK] Results written:
-  - outputs/regression/analysis.py
-  - outputs/regression/model_summary.md
-  - outputs/regression/coefficients.csv
-  - outputs/regression/diagnostics.json
-[OK] Reproducibility: seed=42, environment pinned.
+✔ Dataset loaded: 5 rows
+✔ No missing values
+✔ OLS model fit
+
+R²: 0.91
+
+Coefficients:
+square_feet: 120.4
+bedrooms: 15000
+age: -1800
+
+✔ model_summary.txt written
 ```
+
+This is a structured workflow gate.
 
 ### Example 2 — Repository Architecture Analysis
 
-Repository target:
+Target repository:
 
 `https://github.com/pandas-dev/pandas`
 
-Structured prompt:
+Create prompt:
+
+`repo_analysis.md`
 
 ```text
-Task: Analyze the repository architecture of pandas-dev/pandas for maintainability and contribution onboarding.
+# Task: Repository Architecture Review
+
+You are performing structured engineering analysis.
 
 Objectives:
-1. Identify top-level architectural domains (core, io, tests, docs, tooling).
-2. Describe module boundaries and dependency patterns.
-3. Highlight contributor entry points and high-risk complexity zones.
-4. Produce a structured analysis that is actionable for maintainers.
-
-Guardrails:
-- Do not provide a vague summary.
-- Separate observed structure from inferred recommendations.
-- Cite concrete paths/directories when making claims.
-- Flag uncertainty explicitly where repository context is incomplete.
+1. Analyze repository structure
+2. Identify core packages
+3. Identify test architecture
+4. Identify build system
+5. Output structured report
 
 Expected output structure:
-1. Repository Topology
-2. Architectural Domains
-3. Dependency and Boundary Notes
-4. Contributor Onboarding Paths
-5. High-Risk Complexity Areas
-6. Recommended Next Actions
+- Entry Points
+- Core Modules
+- Testing Strategy
+- Build System
+- Architectural Risks
+
+Constraints:
+- Do not summarize generically
+- Base analysis on repository structure
 ```
 
-Example local CLI output:
+Run:
+
+```bash
+codex run repo_analysis.md
+```
+
+Example output (replace with your real run output):
 
 ```text
-$ codex run repo_architecture_prompt.md
-[OK] Repository Topology mapped.
-[OK] Domains identified: core, io, tests, docs, tooling.
-[OK] Output sections generated:
-  1. Repository Topology
-  2. Architectural Domains
-  3. Dependency and Boundary Notes
-  4. Contributor Onboarding Paths
-  5. High-Risk Complexity Areas
-  6. Recommended Next Actions
+$ codex run repo_analysis.md
+✔ Repository indexed
+✔ 2,300+ Python files analyzed
+
+Core Modules:
+- pandas/core
+- pandas/io
+- pandas/tests
+
+Testing:
+- pytest-based
+- extensive fixtures
+
+Build:
+- pyproject.toml
+- C extensions present
+
+✔ repo_report.md written
 ```
 
----
+Structured prompts produce structured outputs.
 
 ## Step 3 — Avoid Vague Instructions
 
-Vague input example 1:
+Vague regression:
 
 ```text
-Run a regression on this dataset
+Run a regression on this dataset.
 ```
 
 Weak CLI-style output:
 
 ```text
-$ codex run vague_regression_prompt.md
-Done. I ran a regression and it looks good.
+$ codex run vague_regression.md
+This dataset appears suitable for regression.
+A model can be fit.
 ```
 
-Vague input example 2:
+Vague repository request:
 
 ```text
-Tell me about this repository
+Tell me about this repository.
 ```
 
 Weak CLI-style output:
 
 ```text
-$ codex run vague_repo_prompt.md
-This repository is large and has many files. It seems well organized.
+$ codex run vague_repo.md
+This repository contains Python code and tests.
+It is likely a data library.
 ```
 
 Why vague instructions fail:
-- Reproducibility: no explicit seed, environment, or file outputs.
-- Validation: no schema checks, guardrails, or halt conditions.
-- Architectural clarity: no required structure, boundaries, or evidence.
 
----
+- Reproducibility: no explicit seed, environment, or output artifacts
+- Validation: no schema checks or guardrails
+- Architectural clarity: no required output structure
 
 ## Next Steps
 
@@ -179,8 +229,6 @@ Why vague instructions fail:
 - Data Science Layer Architecture (in progress)
 - Devlog → Digital Garden System (in progress)
 - Manager Playbooks (coming soon)
-
----
 
 ## Codex Flexibility Clause
 
