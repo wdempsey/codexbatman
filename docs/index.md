@@ -10,96 +10,78 @@ social:
 
 # Codex-Native Data Science Workflow System
 
-This repository defines a structured, reproducible workflow for applied data science.
+<p class="hero-pitch">A structured operating system for applied data science: clear gates, reproducible execution, and documented decisions from framing through model handoff.</p>
 
-It originated as a fork of the claudeblattman site and has evolved into a Codex-native operating system for disciplined analytical work.
+<div class="hero-buttons">
+<a href="quickstart.md" class="md-button md-button--primary">Get started</a>
+<a href="workflows/data-science/blueprint.md" class="md-button">See the workflow</a>
+<a href="workflows/data-science/goals.md" class="md-button">Set project goals</a>
+<a href="https://github.com/wdempsey/codexbatman" class="md-button social-btn">GitHub</a>
+</div>
 
----
+<div class="credibility-strip" markdown>
+This repository began as a fork of the original Claude Blattman site and evolved into a Codex-native data science system. The focus is methodological discipline: explicit stop conditions, reproducible runs, and human-reviewed conclusions.
+</div>
 
-## Scope
+## What Is This?
 
-The project integrates:
+This project defines a practical workflow for applied data science teams and solo practitioners who want rigor without process theater. It combines workflow gates, experiment logging, and model documentation so work stays auditable and reusable.
 
-- A structured Data Science layer  
-- Explicit workflow gates  
-- Skill-based modular architecture  
-- Reproducibility enforcement  
-- Human-in-the-loop supervision  
-- Devlog → Digital Garden separation  
+The objective is not faster modeling. The objective is better analytical discipline.
 
-The objective is not faster modeling.
-The objective is better analytical discipline.
+## Where to Start
 
----
+<div class="grid cards" markdown>
 
-## Data Science Layer
+-   **:material-rocket-launch-outline: Quickstart**
 
-The Data Science layer formalizes a sequence:
+    ---
 
-1. Problem Framing  
-2. Data Audit (Proceed / Halt protocol)  
-3. Structured EDA planning  
-4. Logged modeling experiments  
-5. Model Card documentation  
+    Install Codex, run the first workflow loop, and verify your setup with a concrete end-to-end check.
 
-These stages are encoded in `AGENTS.md` and implemented as modular skills.
+    [:octicons-arrow-right-24: Open Quickstart](quickstart.md)
 
-No model is considered complete without documentation.
-No analysis proceeds without explicit framing and audit.
+-   **:material-target: Problem Framing + Goals**
 
----
+    ---
 
-## Reproducibility Standards
+    Define scope, constraints, and success criteria before touching data. This enforces decision quality from day one.
 
-All workflows require:
+    [:octicons-arrow-right-24: Goals](workflows/data-science/goals.md)
 
-- Deterministic seeds  
-- Versioned datasets  
-- Logged configurations  
-- Explicit evaluation strategy  
-- Separation of raw and processed data  
+-   **:material-file-chart-outline: Data Science Blueprint**
 
-Reproducibility is treated as a methodological requirement, not a technical afterthought.
+    ---
 
----
+    Follow the full gate-based sequence: framing, data audit, planned EDA, logged experiments, and model card output.
 
-## System Design Orientation
+    [:octicons-arrow-right-24: Blueprint](workflows/data-science/blueprint.md)
 
-This repository assumes that modern data scientists operate within systems.
+-   **:material-shield-check-outline: Reproducibility Standards**
 
-Accordingly, the workflow includes:
+    ---
 
-- Database scoping and schema reasoning  
-- Join integrity checks  
-- Boundary awareness (batch, API, dashboard)  
-- Documentation suitable for collaborative environments  
+    Deterministic seeds, pinned environments, and strict raw/processed separation are required, not optional.
 
-The emphasis is on applied rigor.
+    [:octicons-arrow-right-24: Process Rules](workflows/first-session-skills.md)
 
----
+-   **:material-cog-outline: System Design Orientation**
 
-## Devlog and Digital Garden
+    ---
 
-Implementation work is recorded in structured devlogs.
+    Build with database boundaries, join integrity, and downstream consumers in mind so analysis survives real deployment.
 
-Distilled insights are moved into a separate Digital Garden repository, where ideas are organized as:
+    [:octicons-arrow-right-24: System Patterns](system/index.md)
 
-- Essays  
-- Notes  
-- Patterns  
-- Concept maps  
+-   **:material-notebook-multiple-outline: Devlog and Distillation**
 
-The workflow produces artifacts.
-The garden produces reflection.
+    ---
 
----
+    Capture implementation decisions in devlogs, then distill transferable learnings into reusable operating knowledge.
 
-## Intended Audience
+    [:octicons-arrow-right-24: Downloads and References](downloads/index.md)
 
-This project is intended for:
+</div>
 
-- Data scientists seeking stronger methodological discipline  
-- Practitioners working at the boundary of research and engineering  
-- Instructors interested in teaching through constrained systems  
-
-The repository continues to evolve as a structured operating system for applied data science.
+!!! tip "Stay in the loop"
+    Iterate in small, reversible diffs. Verify locally with `mkdocs build`, then promote only changes that preserve correctness, safety, and link integrity.

@@ -1,135 +1,353 @@
 ---
-description: Get useful AI output in 5 minutes. One structured prompt that demonstrates the difference between casual chatbot use and effective prompting.
+description: Codex-native quickstart for structured, reproducible data science workflows with explicit gates and artifact outputs.
 ---
 
-# Quickstart: Your First 5 Minutes
+# Quickstart — Codex-Native Data Science Workflow
 
-**Goal:** Paste one prompt into Claude (or ChatGPT) and get something immediately useful. No setup required.
+## Goal
 
----
+Install Codex and execute structured, reproducible data science workflows.
 
-## What You'll Do
+This system is:
 
-You're going to give an AI chatbot a structured prompt that helps it organize a messy, real-world task. This takes about 5 minutes and demonstrates two key principles:
+- Codex-native
+- Workflow-gated
+- Reproducible
+- Architected for data science managers and senior data scientists
 
-1. **Structured prompts get dramatically better results** than casual questions
-2. **Saved context** (telling the AI about you once) eliminates repetitive setup
+This is not a prompting guide.
 
----
+It is a structured execution layer.
 
-## Step 1: Pick Your Tool
+This diverges from the prior Claude-focused version. Codex is now the execution engine.
 
-You need one of these (free tiers work fine):
+## Step 1 — Install & Verify Codex
 
-- [Claude.ai](https://claude.ai) (Anthropic) — [sign up here](https://claude.ai/signup) if you don't have an account
-- [ChatGPT](https://chat.openai.com) (OpenAI) — [sign up here](https://chat.openai.com/auth/login) if you don't have an account
+Codex must be installed locally before executing structured workflows.
 
-Open whichever you have. If you have both, use Claude.
+Choose your operating system.
 
-## Step 2: Copy and Paste This Prompt
+### macOS
 
-Copy the entire block below and paste it into your chat:
+#### Option A — Install via Terminal (Recommended for CLI workflows)
 
-```text
-I'd like your help organizing my professional development and learning goals
-for the next 3 months. I'll describe my situation, and I want you to help me
-create a structured, actionable plan.
+Using Homebrew:
 
-## My context
-- Role: [FILL IN: your job title or role, e.g., "assistant professor of economics",
-  "program manager at an NGO", "PhD student in political science"]
-- Biggest time sinks: [FILL IN: 2-3 things that eat your time, e.g., "email,
-  grant reporting, coordinating with field teams"]
-- Skills I want to develop: [FILL IN: 1-3 things, e.g., "better data visualization,
-  AI tools for research, project management"]
-- Time available: [FILL IN: roughly how many hours/week you can dedicate,
-  e.g., "3-5 hours per week"]
-
-## What I want
-Create a 3-month learning plan with:
-1. Monthly themes (what to focus on each month)
-2. Weekly commitments (specific, small actions — not vague goals)
-3. Quick wins (things I can do this week that take <30 minutes each)
-4. Resources (specific tools, courses, or readings — not generic suggestions)
-
-Be concrete and realistic. I'd rather have a plan I'll actually follow than an
-ambitious one I'll abandon. If something I listed isn't realistic in the time
-available, tell me directly and suggest what to cut.
+```bash
+brew install codex
 ```
 
-**Fill in the bracketed sections** with your own information, then send it.
+Or using npm (if applicable to your environment):
 
-## Step 3: See the Difference
+```bash
+npm install -g codex
+```
 
-=== "Vague prompt"
+Verify installation:
 
-    **What you typed:**
+```bash
+codex --version
+```
 
-    > Help me make a professional development plan.
+#### Option B — Install via Codex Desktop App (Recommended for macOS users)
 
-    **What you get back:** A generic list of suggestions — "set SMART goals," "seek mentorship," "attend conferences" — that could apply to anyone in any field. No timeline. No awareness of your constraints. You close the tab.
+Download the Codex Desktop App from the official website.
 
-=== "Structured prompt"
+Install and sign in.
 
-    **What you typed:** The prompt from Step 2, with your details filled in.
+The macOS app provides:
 
-    **What you get back:** A month-by-month plan calibrated to your role, your time budget, and your actual goals. Specific resources, not platitudes. Weekly actions small enough to actually do. And if something doesn't fit your schedule, the AI tells you what to cut — because you gave it permission to push back.
+- Local execution
+- Integrated terminal
+- Structured prompt management
+- Project-level context
 
-**Why the structured version works:**
+After installation, verify CLI access from Terminal:
 
-- **Context** so the AI doesn't waste time on generic advice
-- **Output format** so you get something actionable, not an essay
-- **Constraints** (time available, "be realistic") so the result fits your life
-- **Pushback permission** ("tell me directly") so the AI doesn't just agree with everything
+```bash
+codex --version
+```
 
----
+### Windows
 
-## What to Do With the Result
+#### Option A — Install via Terminal (PowerShell)
 
-The plan you get isn't the point. The *process* is the point. You just learned that:
+Using npm:
 
-1. **Five minutes of prompt structure** transforms a vague request into a useful output
-2. **Context about you** (role, constraints, goals) is what makes AI responses personal rather than generic
-3. **Explicit output format** (monthly themes, weekly commitments) controls what you get back
+```bash
+npm install -g codex
+```
 
-These three principles — structure, context, and format — apply to every AI interaction. They're the foundation of everything else on this site.
+Verify:
 
----
+```bash
+codex --version
+```
+
+If using WSL, follow Linux instructions below.
+
+#### Option B — Install via Website
+
+Download the Windows installer from the official Codex website.
+
+Run installer and follow setup prompts.
+
+After installation, open PowerShell and verify:
+
+```bash
+codex --version
+```
+
+### Linux
+
+#### Install via Terminal
+
+Using npm:
+
+```bash
+npm install -g codex
+```
+
+Or via package manager if available:
+
+```bash
+sudo apt install codex
+```
+
+Verify:
+
+```bash
+codex --version
+```
+
+### Verify Local Execution
+
+Create a test file:
+
+`example_prompt.md`
+
+```text
+# Task: Installation Verification
+
+Output: "Codex is installed and executing locally."
+```
+
+Run:
+
+```bash
+codex run example_prompt.md
+```
+
+Expected result:
+
+- Prompt executed
+- Output written to disk
+
+Codex must execute locally before proceeding to structured workflows.
+
+## Step 2 — Execute Structured Workflows
+
+### Example 1 — Reproducible Regression Pipeline
+
+Create dataset:
+
+`housing_sample.csv`
+
+```csv
+price,square_feet,bedrooms,age
+350000,2000,3,20
+450000,2500,4,10
+275000,1500,3,30
+500000,3000,5,5
+325000,1800,3,25
+```
+
+Create prompt:
+
+`regression_prompt.md`
+
+```text
+# Task: Structured Regression Workflow
+
+You are operating inside a reproducible data science pipeline.
+
+Objectives:
+1. Load housing_sample.csv
+2. Validate schema and missing values
+3. Fit OLS model:
+   price ~ square_feet + bedrooms + age
+4. Report:
+   - coefficients
+   - R²
+   - diagnostics
+5. Output executable Python code
+6. Save summary to model_summary.txt
+
+Constraints:
+- Do not skip validation
+- Do not assume columns
+- Document assumptions
+
+Expected output structure:
+1. Validation Summary
+2. Model Specification
+3. Results
+4. Diagnostics
+5. Files Written
+6. Reproducibility Notes
+```
+
+Run:
+
+```bash
+codex run regression_prompt.md
+```
+
+Example output (replace with your real run output):
+
+```text
+$ codex run regression_prompt.md
+✔ Dataset loaded: 5 rows
+✔ No missing values
+✔ OLS model fit
+
+R²: 0.91
+
+Coefficients:
+square_feet: 120.4
+bedrooms: 15000
+age: -1800
+
+✔ model_summary.txt written
+```
+
+This is a structured workflow gate.
+
+### Example 2 — Repository Architecture Analysis
+
+Target repository:
+
+`https://github.com/pandas-dev/pandas`
+
+Create prompt:
+
+`repo_analysis.md`
+
+```text
+# Task: Repository Architecture Review
+
+You are performing structured engineering analysis.
+
+Objectives:
+1. Analyze repository structure
+2. Identify core packages
+3. Identify test architecture
+4. Identify build system
+5. Output structured report
+
+Expected output structure:
+- Entry Points
+- Core Modules
+- Testing Strategy
+- Build System
+- Architectural Risks
+
+Constraints:
+- Do not summarize generically
+- Base analysis on repository structure
+```
+
+Run:
+
+```bash
+codex run repo_analysis.md
+```
+
+Example output (replace with your real run output):
+
+```text
+$ codex run repo_analysis.md
+✔ Repository indexed
+✔ 2,300+ Python files analyzed
+
+Core Modules:
+- pandas/core
+- pandas/io
+- pandas/tests
+
+Testing:
+- pytest-based
+- extensive fixtures
+
+Build:
+- pyproject.toml
+- C extensions present
+
+✔ repo_report.md written
+```
+
+Structured prompts produce structured outputs.
+
+## Step 3 — Avoid Vague Instructions
+
+Vague regression:
+
+```text
+Run a regression on this dataset.
+```
+
+Weak CLI-style output:
+
+```text
+$ codex run vague_regression.md
+This dataset appears suitable for regression.
+A model can be fit.
+```
+
+Vague repository request:
+
+```text
+Tell me about this repository.
+```
+
+Weak CLI-style output:
+
+```text
+$ codex run vague_repo.md
+This repository contains Python code and tests.
+It is likely a data library.
+```
+
+Why vague instructions fail:
+
+- Reproducibility: no explicit seed, environment, or output artifacts
+- Validation: no schema checks or guardrails
+- Architectural clarity: no required output structure
 
 ## Next Steps
 
-<div class="grid cards" markdown>
+- Structured Workflow Gates (in progress)
+- Data Science Layer Architecture (in progress)
+- Devlog → Digital Garden System (in progress)
+- Manager Playbooks (coming soon)
 
--   **Already use chatbots?**
+## Codex Flexibility Clause
 
-    ---
+If Codex detects:
 
-    Learn the techniques that separate casual users from power users.
+- Broken formatting
+- Inconsistent heading structure
+- mkdocs rendering conflicts
+- Redundant legacy Claude references
 
-    [:octicons-arrow-right-24: Chatbots Done Right](essentials/chatbots.md)
+It may:
 
--   **Want prompt engineering skills?**
+- Adjust wording minimally
+- Normalize headings
+- Remove legacy references
 
-    ---
+It must:
 
-    The bridge skill between casual chatbot use and building real workflows.
-
-    [:octicons-arrow-right-24: Prompt Engineering](essentials/prompting.md)
-
--   **Ready for the command line?**
-
-    ---
-
-    Claude Code is where chatbots become workflow tools. Start with installation.
-
-    [:octicons-arrow-right-24: Install Claude Code (Mac)](toolkit/install-mac.md)
-
--   **Just want to browse?**
-
-    ---
-
-    See the full landscape of tools and decide what's worth your time and money.
-
-    [:octicons-arrow-right-24: The Essentials](essentials/index.md)
-
-</div>
+- Stay within Quickstart files
+- Not restructure navigation
+- Not introduce new sections beyond spec
