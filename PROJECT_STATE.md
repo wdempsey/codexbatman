@@ -1,148 +1,44 @@
-# Project State — Codex-Native Data Science Operating System
+﻿# Project State - Codex-Native Data Science Operating System
 
-This document summarizes the current architectural state of the project.
+This document summarizes the current architectural state of the project and immediate stabilization priorities.
 
-It is intended to provide context for future AI collaboration and prevent drift.
+## 1. Core Identity
 
----
+This repository is a Codex-native data science operating system.
 
-# 1. Core Identity
+It is organized around:
 
-This repository is no longer a Claude-first tutorial site.
+- one shared workflow backbone
+- three roles (student, data scientist, data science manager)
+- role-aware overlays that adapt delivery style
+- explicit workflow gates and reproducibility controls
 
-It is evolving into:
+## 2. Design Principles
 
-A Codex-native workflow system for structured, reproducible data science.
+The system is:
 
-It now integrates:
+- thinking-first
+- audit-driven
+- artifact-producing
+- documentation-enforced
+- reproducibility-centered
+- human-in-the-loop
 
-- Structured skills
-- Role-aware overlays
-- Explicit workflow gates
-- Reproducibility enforcement
-- Human-in-the-loop
-- Workflow documentation on the site
+## 3. Logging Status
 
-The goal is to teach data science through a constrained operating system.
+- `planning.md` is the active operational log for current tasks and follow-ups.
+- `PROJECT_STATE.md` is the durable architecture snapshot.
+- `devlog/` is deferred for now and is not part of routine workflow until explicitly implemented.
 
----
+## 4. Remaining Structural Tasks
 
-# 2. Data Science Layer — Current State
+- Complete identity cleanup across public-facing files.
+- Review stale branding and duplicate workflow pages inherited from migration.
+- Expand the manager layer with clearer operating workflows and examples.
+- Mature student overlays for scaffolded learning paths.
 
-## Architectural Documents
+## 5. Immediate Priority
 
-- Data Science Layer Blueprint
-- Data Science Layer Goals
-- Canonical workflow skill pages
-- Cross-references between Blueprint and Goals
-- DS workflow gates enforced in AGENTS.md
+Stabilize architecture and public identity before expansion.
 
-## Canonical Backbone Skills
-
-- project-bootstrap
-- problem-framing
-- data-audit (Proceed / Halt protocol)
-- experiment-log
-
-## Role-Aware Overlay Layers
-
-- student
-- practitioner
-- manager
-
-## Templates
-
-- workflow-driven artifacts (framing, audit, experiment log)
-- project instruction patterns
-
-## Enforcement
-
-Root AGENTS.md now requires:
-
-- Problem Framing before modeling
-- Data Audit before EDA/modeling
-- Experiment Log for each modeling iteration
-- Model Card before final model freeze
-
-Reproducibility is non-negotiable.
-
----
-
-# 3. Project Logging
-
-Current state:
-
-- `planning.md` is the active repository log for current work and follow-up tasks.
-- `PROJECT_STATE.md` is a durable architecture snapshot.
-- `AGENTS.md` still references a future `devlog/` template, but that directory does not currently exist in the repository.
-
-Implication:
-
-- A real devlog system still needs to be added or the stale references removed.
-
----
-
-# 4. Digital Garden Plan (Separate Repo)
-
-Planned separate repository.
-
-Purpose:
-
-- Public thinking space
-- Essays (long form)
-- Notes (atomic)
-- Patterns (structured ideas)
-- Maps (concept linking)
-
-The garden reflects on applying the system.
-It is not the system itself.
-
-Graph view enabled but not designed around.
-
----
-
-# 5. Remaining Structural Tasks
-
-## Identity & Differentiation
-
-- Completed: repository identity rewritten around Codex-native data science
-- Completed: role-aware MkDocs navigation
-- Completed: first-wave canonical skill and overlay architecture
-- Review for duplicate or conflicting workflow pages and stale branding
-
-## Garden System
-
-- Create separate garden repo
-- Decide whether devlog-to-garden distillation remains in scope for this repository
-- Add actual devlog infrastructure if retained
-- Cross-link tutorial and garden repos if the separate garden remains active
-
-## Future Work
-
-- Build end-to-end worked example
-- Evaluate two candidate example projects
-- Pressure-test DS workflow
-- Add later-phase canonical skills beyond the first wave
-
----
-
-# 6. Design Principles
-
-This system is:
-
-- Thinking-first
-- Audit-driven
-- Artifact-producing
-- Documentation-enforced
-- Reproducibility-centered
-- Human-in-the-loop
-
-Speed is secondary to discipline.
-
----
-
-# 7. Immediate Priority
-
-Stabilize the new architecture by reviewing for duplication, stale pages, and conflicting site language before expanding the worked examples.
-
-Architecture before application.
+No major scope growth until branding, nav alignment, and workflow-language consistency are clean.

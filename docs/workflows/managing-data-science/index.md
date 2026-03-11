@@ -1,11 +1,11 @@
-# Workflow for Managing Data Science
+﻿# Workflow for Managing Data Science
 
 A project-centered workflow for managers leading data science, analytics, and research work. Connect email, meetings, docs, Slack, Dropbox, and private notes into one system for project awareness, follow-up tracking, and weekly review.
 
 !!! note "You should read this after setup"
     Before using this workflow, you should already have:
 
-    - your AI tool installed and working
+    - Codex installed and working
     - a basic context file or project instructions file
     - access to your core systems (Google, Slack, Dropbox, notes)
 
@@ -20,7 +20,6 @@ A project-centered workflow for managers leading data science, analytics, and re
 ## 2. Core idea
 
 - Projects are primary.
-- Projects are primary; inbox, meetings, docs, Slack, and notes all feed project memory.
 - Communication and notes feed project memory.
 - The assistant helps operate the workflow, but is not the workflow itself.
 

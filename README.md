@@ -1,8 +1,8 @@
-# Codex Batman
+﻿# Codex Batman
 
 **A Codex-native Data Science Operating System for disciplined workflow design, execution, and review.**
 
-Documentation site: [claudeblattman.com](https://claudeblattman.com)
+Documentation site: [wdempsey.github.io/codexbatman](https://wdempsey.github.io/codexbatman/)
 
 ---
 
@@ -30,7 +30,21 @@ The materials are markdown-first, workflow-driven, and designed to be understand
 
 ## Quick Start
 
-Visit [claudeblattman.com/quickstart](https://claudeblattman.com/quickstart/) for a short walkthrough, then use the workflows and skill library to choose the lane that matches your role.
+1. Read the local quickstart: [`docs/quickstart.md`](docs/quickstart.md).
+2. Or use the deployed page: [Quickstart](https://wdempsey.github.io/codexbatman/quickstart/).
+3. Then choose your role lane in the workflow docs and skill library.
+
+## Architecture
+
+- Canonical workflow skills live under `skills/data-science/`.
+- Manager workflows live under `skills/manager/`.
+- Role overlays live under `skills/overlays/`.
+
+## Roles
+
+- Student -> scaffolded learning overlay
+- Data Scientist -> direct execution overlay
+- Data Science Manager -> planning, review, and communication overlay
 
 ## Skills
 
@@ -46,13 +60,13 @@ See `skills/README.md` for the current inventory and installation patterns.
 
 ```
 codexbatman/
-├── docs/               # Website source (MkDocs Material)
-├── skills/             # Downloadable skills and Codex skill folders
-├── agents/             # Downloadable agent files
-├── templates/          # Starter templates (CLAUDE.md, goals.yaml)
-├── mkdocs.yml          # Site configuration
-├── CONTRIBUTING.md     # Maintenance guide
-└── LICENSE             # MIT
+|- docs/               # Website source (MkDocs Material)
+|- skills/             # Downloadable skills and Codex skill folders
+|- agents/             # Downloadable agent files
+|- templates/          # Starter templates (CLAUDE.md, goals.yaml)
+|- mkdocs.yml          # Site configuration
+|- CONTRIBUTING.md     # Maintenance guide
+`- LICENSE             # MIT
 ```
 
 ## Contributing
@@ -61,4 +75,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to edit content, add skills, and 
 
 ## License
 
-MIT — use anything here however you want.
+MIT - use anything here however you want.

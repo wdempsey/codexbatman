@@ -1,8 +1,8 @@
----
+﻿---
 description: Codex-native quickstart for structured, reproducible data science workflows with explicit gates and artifact outputs.
 ---
 
-# Quickstart — Codex-Native Data Science Workflow
+# Quickstart - Codex-Native Data Science Workflow
 
 ## Goal
 
@@ -19,9 +19,9 @@ This is not a prompting guide.
 
 It is a structured execution layer.
 
-This diverges from the prior Claude-focused version. Codex is now the execution engine.
+Codex is the primary execution engine for this workflow system.
 
-## Step 1 — Install & Verify Codex
+## Step 1 - Install & Verify Codex
 
 Codex must be installed locally before executing structured workflows.
 
@@ -29,7 +29,7 @@ Choose your operating system.
 
 ### macOS
 
-#### Option A — Install via Terminal (Recommended for CLI workflows)
+#### Option A - Install via Terminal (Recommended for CLI workflows)
 
 Using Homebrew:
 
@@ -49,7 +49,7 @@ Verify installation:
 codex --version
 ```
 
-#### Option B — Install via Codex Desktop App (Recommended for macOS users)
+#### Option B - Install via Codex Desktop App (Recommended for macOS users)
 
 Download the Codex Desktop App from the official website.
 
@@ -70,7 +70,7 @@ codex --version
 
 ### Windows
 
-#### Option A — Install via Terminal (PowerShell)
+#### Option A - Install via Terminal (PowerShell)
 
 Using npm:
 
@@ -86,7 +86,7 @@ codex --version
 
 If using WSL, follow Linux instructions below.
 
-#### Option B — Install via Website
+#### Option B - Install via Website
 
 Download the Windows installer from the official Codex website.
 
@@ -145,9 +145,9 @@ Expected result:
 
 Codex must execute locally before proceeding to structured workflows.
 
-## Step 2 — Execute Structured Workflows
+## Step 2 - Execute Structured Workflows
 
-### Example 1 — Reproducible Regression Pipeline
+### Example 1 - Reproducible Regression Pipeline
 
 Create dataset:
 
@@ -178,7 +178,7 @@ Objectives:
    price ~ square_feet + bedrooms + age
 4. Report:
    - coefficients
-   - R²
+   - R^2
    - diagnostics
 5. Output executable Python code
 6. Save summary to model_summary.txt
@@ -207,23 +207,23 @@ Example output (replace with your real run output):
 
 ```text
 $ codex run regression_prompt.md
-✔ Dataset loaded: 5 rows
-✔ No missing values
-✔ OLS model fit
+Dataset loaded: 5 rows
+No missing values
+OLS model fit
 
-R²: 0.91
+R^2: 0.91
 
 Coefficients:
 square_feet: 120.4
 bedrooms: 15000
 age: -1800
 
-✔ model_summary.txt written
+model_summary.txt written
 ```
 
 This is a structured workflow gate.
 
-### Example 2 — Repository Architecture Analysis
+### Example 2 - Repository Architecture Analysis
 
 Target repository:
 
@@ -267,8 +267,8 @@ Example output (replace with your real run output):
 
 ```text
 $ codex run repo_analysis.md
-✔ Repository indexed
-✔ 2,300+ Python files analyzed
+Repository indexed
+2,300+ Python files analyzed
 
 Core Modules:
 - pandas/core
@@ -283,12 +283,12 @@ Build:
 - pyproject.toml
 - C extensions present
 
-✔ repo_report.md written
+repo_report.md written
 ```
 
 Structured prompts produce structured outputs.
 
-## Step 3 — Avoid Vague Instructions
+## Step 3 - Avoid Vague Instructions
 
 Vague regression:
 
@@ -328,7 +328,7 @@ Why vague instructions fail:
 
 - Structured Workflow Gates (in progress)
 - Data Science Layer Architecture (in progress)
-- Devlog → Digital Garden System (in progress)
+- Devlog -> Digital Garden System (in progress)
 - Manager Playbooks (coming soon)
 
 ## Codex Flexibility Clause
@@ -338,7 +338,7 @@ If Codex detects:
 - Broken formatting
 - Inconsistent heading structure
 - mkdocs rendering conflicts
-- Redundant legacy Claude references
+- Redundant legacy references
 
 It may:
 

@@ -1,4 +1,4 @@
-# AGENTS.md
+﻿# AGENTS.md
 
 ## Mission And Scope
 
@@ -38,6 +38,7 @@ Route requests in this order:
 
 Rule:
 - Overlays wrap shared workflow skills. They do not replace canonical workflow logic.
+- Canonical workflow logic must live in shared skills, and overlays must not duplicate that logic.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.
@@ -46,7 +47,7 @@ Scope for Codex collaborators:
 - Work in a single PR per task unless explicitly instructed otherwise.
 
 Out of scope unless explicitly requested:
-- Large-scale reorganizations of docs, nav, or folder structure.
+- Large-scale reorganizations of docs, nav, or folder structure that go beyond necessary identity alignment.
 - Broad rewrites of established pages.
 - Changes that alter project direction without maintainer approval.
 
@@ -70,7 +71,7 @@ Default mode:
 Leaning strict means:
 - Do not infer major intent beyond the request.
 - Do not silently broaden scope.
-- Do not “clean up” unrelated files.
+- Do not "clean up" unrelated files.
 - Flag assumptions when confidence is low.
 
 Execution norms:
@@ -138,15 +139,9 @@ Purpose:
 - Preserve decision context across sessions.
 - Convert one-off work into reusable operating knowledge.
 
-When to log:
-- Any non-trivial change, tradeoff, failure, or fix.
-- Any change likely to affect future contributors.
-
-How to log:
-1. Create an entry from `devlog/_template.md`.
-2. Capture: goal, constraints, actions, outcomes, verification, and risks.
-3. Add “distilled learnings” as short, reusable rules.
-4. Reference touched files and commands used.
+Current status:
+- `devlog/` infrastructure is planned but not yet active in this repository.
+- Until `devlog/` is added, capture non-trivial change context in PR summaries and `planning.md` follow-up items.
 
 Distillation standard:
 - Prefer principles over narrative.
