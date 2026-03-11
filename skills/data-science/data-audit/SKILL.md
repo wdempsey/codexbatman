@@ -1,6 +1,6 @@
 ---
 name: data-audit
-description: Semi-formal dataset audit protocol to assess data quality, leakage, bias, and temporal validity before EDA/modeling. Produces a Proceed/Halt recommendation and audit report structure.
+description: Audit data sources and derived datasets before EDA or modeling. Use when the project needs a documented quality, leakage, bias, and temporal-validity assessment with an explicit proceed decision.
 ---
 
 # Skill: Data Audit (Proceed / Halt Protocol)
@@ -10,26 +10,23 @@ description: Semi-formal dataset audit protocol to assess data quality, leakage,
 Perform a structured audit of a dataset (or data sources) before EDA, feature engineering, or modeling.
 
 This skill aims to surface:
-- Data quality issues
-- Target construction errors
-- Leakage risks
-- Temporal validity problems (especially for longitudinal/panel data)
-- Sampling and measurement biases
-- Join/key integrity risks
+- data quality issues
+- target construction errors
+- leakage risks
+- temporal validity problems
+- sampling and measurement biases
+- join and key integrity risks
 
 The output includes an explicit **Proceed / Halt** recommendation.
 
----
+## When to Invoke
 
-## When to Use
+Invoke this skill:
 
-Use this skill:
-- Immediately after Problem Framing
-- Before EDA, feature engineering, or modeling
-- Before finalizing train/test splits
-- After any major data refresh or pipeline change
-
----
+- immediately after `problem-framing`
+- before EDA, feature engineering, or modeling
+- before finalizing split strategy
+- after any major data refresh or pipeline change
 
 ## Required Inputs
 
@@ -46,8 +43,6 @@ Optional but helpful:
 - Prior baselines or historical versions of the data
 
 If essential inputs are missing, request them before completing the audit.
-
----
 
 ## Procedure
 
@@ -181,52 +176,56 @@ Flag:
 - Any split strategy that would contaminate evaluation
 - Any scenario where the same entity appears across train/test improperly
 
----
+## Expected Outputs
 
-## Output Format
-
-Produce an audit report in this structure:
+Produce an audit artifact with:
 
 ### 1. Summary
-- Data sources reviewed
-- Unit of analysis
-- Time structure (if any)
+
+- data sources reviewed
+- unit of analysis
+- time structure
 
 ### 2. Key Findings
-- Top 5 risks/issues (bullets)
 
 ### 3. Data Quality
-- Missingness issues
-- Range/distribution anomalies
-- Type/schema concerns
 
 ### 4. Leakage Assessment
-- Potential leakage variables (bullets)
-- Temporal leakage risks (bullets)
-- Join leakage risks (bullets)
 
-### 5. Bias & Representativeness
-- Coverage gaps
-- Label bias concerns
-- Proxy/fairness concerns
+### 5. Bias and Representativeness
 
-### 6. Join/Key Integrity (if applicable)
-- Join risks and recommended checks
+### 6. Join and Key Integrity
 
-### 7. Proceed / Halt Recommendation
+### 7. Proceed Decision
+
 Choose one:
-- **PROCEED**: issues are manageable and documented
-- **PROCEED WITH CONDITIONS**: must fix issues before modeling
-- **HALT**: fundamental issue blocks meaningful analysis
 
-Include:
-- Conditions required (if any)
-- Required human decisions
+- `PROCEED`
+- `PROCEED WITH CONDITIONS`
+- `HALT`
 
 ### 8. Next Actions
-Numbered list of immediate steps.
 
----
+## Artifact Checklist
+
+- Data sources listed
+- Unit of analysis documented
+- Time structure documented or explicitly absent
+- Missingness review completed
+- Schema and type issues checked
+- Leakage review completed
+- Bias and sampling risks recorded
+- Join integrity reviewed if relevant
+- Proceed decision stated with conditions
+
+## Common Failure Modes
+
+- auditing a dataset without a clear unit of analysis
+- ignoring the target construction window
+- missing temporal leakage in longitudinal data
+- assuming missingness is random
+- skipping join explosion checks
+- issuing `PROCEED` without documented conditions
 
 ## Guardrails
 
@@ -236,7 +235,9 @@ Numbered list of immediate steps.
 - Do not modify raw data; propose transformations in a processed layer.
 - Do not finalize train/test splits without explicit rationale.
 
----
+## Human Review Requirement
+
+Human review is mandatory before any modeling if the audit returns `PROCEED WITH CONDITIONS` or `HALT`.
 
 ## Escalation Conditions
 

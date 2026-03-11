@@ -1,6 +1,6 @@
 ---
 name: experiment-log
-description: Structured logging protocol for documenting modeling experiments, decisions, and outcomes to enforce reproducibility and analytical discipline.
+description: Record a modeling or evaluation run as a reproducible experiment artifact. Use after any training, feature change, split change, or evaluation change that could affect analytical conclusions.
 ---
 
 # Skill: Experiment Log
@@ -20,22 +20,18 @@ This skill prevents:
 
 Every modeling attempt must generate an experiment log entry.
 
----
+## When to Invoke
 
-## When to Use
+Invoke this skill:
 
-Use this skill:
-
-- After any model training
-- After hyperparameter changes
-- After feature set modifications
-- After split strategy changes
-- After metric changes
-- Before deciding to iterate further
+- after any model training
+- after hyperparameter changes
+- after feature set modifications
+- after split strategy changes
+- after metric changes
+- before deciding to iterate further
 
 No model iteration is considered valid until logged.
-
----
 
 ## Required Inputs
 
@@ -46,8 +42,6 @@ No model iteration is considered valid until logged.
 - Metrics computed
 - Hyperparameters used
 - Random seed (if applicable)
-
----
 
 ## Procedure
 
@@ -121,15 +115,45 @@ Choose one:
 
 Justify the decision clearly.
 
----
+## Expected Outputs
 
-## Output Format
+Produce a structured experiment entry containing:
 
-Each experiment must produce a structured entry following the template in:
+### 1. Context
 
-templates/ds/experiment-log-template.md
+### 2. Hypothesis
 
----
+### 3. Configuration
+
+### 4. Results
+
+### 5. Interpretation
+
+### 6. Decision
+
+If a local template exists, follow it. Otherwise use the canonical sections above.
+
+## Artifact Checklist
+
+- Run date recorded
+- Dataset version recorded
+- Target definition recorded
+- Split strategy recorded
+- Model and hyperparameters recorded
+- Feature set version recorded
+- Seed recorded
+- Metrics recorded
+- Comparison to baseline recorded
+- Decision and next step recorded
+
+## Common Failure Modes
+
+- logging only successful runs
+- omitting split or seed information
+- comparing against an undefined baseline
+- changing metrics without documentation
+- recording results without interpretation
+- iterating again before the current run is logged
 
 ## Guardrails
 
@@ -139,9 +163,7 @@ templates/ds/experiment-log-template.md
 - Do not reuse a random seed silently.
 - Do not interpret noise as signal without evidence.
 
----
-
-## Escalation Conditions
+## Human Review Requirement
 
 Require human review if:
 

@@ -1,91 +1,117 @@
 ---
-description: About Claude Blattman — how a professor with no coding background built an AI workflow system for academic research management. Free and open source.
+description: About Codex Batman — why this project exists, who built it, and where it is going.
 ---
 
 # About
 
 ## About This Project
 
-Claude Blattman is a free, open-source resource for building AI workflows. It documents the system I've built for managing research projects, shared so others can use it.
+Codex Batman is a Codex-native toolkit for building cleaner, more reproducible data science workflows.
 
-The name is a joke. The tools are real.
+The goal is to build in public a resource for data science students, data scientists, and data science
+managers to leverage AI to improve their learning, their workflows, and their project management skills
+respectively. It's inspired by Dan Roy's post about the role of statisticians at this moment in AI
+development. I don't think AI models are the most important students I'll ever teach, but I do think
+that avoiding this topic (or pretending to address it while just continuing to prove minimax and
+efficient influence function theory...) is the wrong approach. This site is my first attempt to
+**step up to the challenge.**
+
+<div class="narrative-block dan-roy-tweet" markdown>
+**Dan Roy on X**
+
+![Dan Roy X post placeholder](assets/about/dan-roy-x-tweet.png)
+</div>
+
+This site is intentionally hands-on and iterative. It is meant to evolve in public.
 
 ---
 
-## About Chris Blattman
+## About [Walter Dempsey](https://walterhdempsey.com)
 
-I'm a political economist at the [Harris School of Public Policy](https://harris.uchicago.edu/) at the University of Chicago. My research focuses on violence, crime, and poverty — I design and test interventions in cities across Latin America and Africa. You can read more about my research and writing at [chrisblattman.com](https://chrisblattman.com).
+<div class="about-profile-pic" markdown>
+![Walter Dempsey profile placeholder](assets/about/walter-dempsey-profile.png)
+</div>
 
-I'm not a coder — I've never written a line of code in my life. Everything on this site was built with AI tools.
+I am an Associate Professor of [Biostatistics](https://sph.umich.edu/biostat/) and an Assistant Research
+Professor in [d3lab](https://d3lab-isr.com) in the [Institute for Social Research](https://isr.umich.edu)
+at the [University of Michigan](https://umich.edu).
 
-**Website:** [chrisblattman.com](https://chrisblattman.com)
+Outside of statistics, I raise two amazing kids with my wife, hang out with my beagle, and am an avid
+soccer fan (COYG).
 
-**Book:** [Why We Fight](https://chrisblattman.com/why-we-fight/) — a book about the causes of war and peace
+While I do code in R and Python, I have 0 front-end experience. Everything on this site was built with
+AI tools and human inspirations.
 
-**Social:** [@cblatts on X/Twitter](https://twitter.com/cblatts)
+Education and training highlights:
+
+- PhD, Department of Statistics, University of Chicago
+- Postdoctoral Research Fellow, Department of Statistics, University of Michigan
+- Postdoctoral Research Fellow, Department of Statistics, Harvard University
+
+You can find publications and additional background on
+[Google Scholar](https://scholar.google.com) and the [Dempsey Lab site](https://wdempsey.netlify.app/index.html).
+
+- Website: [walterhdempsey.com](https://walterhdempsey.com)
+- Digital Garden: Link to come
+- Social: [@wdempsey on X/Twitter](https://x.com/wdempsey)
 
 ---
 
-## How I Got Here {: .section-hero }
+## How I Got Here
 
-Like most academics, the work that matters — [the research](https://chrisblattman.com/research/), the writing, the thinking — gets buried under an avalanche of email, coordination, proposals, and administrative overhead. I manage a large portfolio of research projects simultaneously, each with distributed teams across multiple countries. I spend more time answering emails and writing grant reports than doing the science I was trained for.
+This project started from a simple tension: high-quality data science work requires structure,
+but day-to-day execution often drifts toward ad hoc scripts and fragmented notes.
 
-For the past year I intensively used [AI chatbots](essentials/index.md). They were invaluable — deep research, better drafts, faster brainstorming, decent writing feedback. But they were limited. The time savings were real but modest.
+Codex made it possible to encode process directly into workflow scaffolding. The focus here is not
+just speed. The focus is better decisions, clearer assumptions, and reusable outputs.
 
-Then in January 2026 I discovered [Claude Code](https://docs.anthropic.com/en/docs/claude-code), and the center of gravity shifted from chatbots to agentic tools — AI that can read your files, search your email, manage your calendar, and build workflows that improve themselves over time.
+### Why This Site Exists
 
-I spent hours daily for a month building skills and processes. The time investment hasn't paid off yet in pure hours saved, but I can see where this is going — and things that seemed impossible are working today.
+The aim is to share a working system in progress:
 
-### The One-Time Cleanup
+- how to plan analysis before coding,
+- how to keep experiments reproducible,
+- how to document what changed and why,
+- how to hand off models and decisions cleanly.
 
-After 20 years of digital life, I had thousands of unread emails, fragmented calendars, and files scattered across multiple cloud services. A day and a half with Claude Code and it was under control — 5,000 unread emails down to 6. That sold me. ([Full process](toolkit/executive-assistant.md#the-one-time-cleanup) · [Cloud storage guide](downloads/cloud-storage-guide.md))
+### What Will Be Added Next
 
-### Why I'm Sharing This
-
-I built this site because I'm in the same position as most of my readers: buried in admin, not a developer, trying to claw back time for work that actually matters.
-
-If a non-technical professor can build a working AI workflow system, you can too.
-
-This site is the whole thing — tutorials, downloadable tools, honest assessments of what works and what doesn't — shared freely as a public good. It's not a product. It's not a course. It's one person's system, documented so you can learn from it and build your own.
-
-I write about research, conflict, policy, and increasingly about AI tools on [X/Twitter (@cblatts)](https://twitter.com/cblatts) and at [chrisblattman.com](https://chrisblattman.com).
-
-### Other Advice Posts
-
-For over a decade I've written practical advice for academics and researchers on [my blog](https://chrisblattman.com) — everything from how to get into a PhD program to how to survive the tenure track:
-
-- [International Development](https://chrisblattman.com/development/)
-- [Undergrads & Masters](https://chrisblattman.com/undergrad-ma/)
-- [PhD Students](https://chrisblattman.com/phd-advice/)
-- [Faculty](https://chrisblattman.com/advice-professors/)
-- [Travel](https://chrisblattman.com/travel/)
-- [Writing Well](https://chrisblattman.com/writing/)
+- More worked examples from real projects
+- Better templates for common data science tasks
+- Notes, essays, and lessons learned from ongoing use
 
 ---
 
 ## How This Site Was Built
 
-This site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), hosted on [GitHub Pages](https://pages.github.com/), and auto-deploys on every push via GitHub Actions.
+This site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), hosted on
+[GitHub Pages](https://pages.github.com/), and maintained as a lightweight docs-first codebase.
 
-The content was written with help from Claude. The skills and workflows documented here are the same ones I use daily.
+Source code: [github.com/wdempsey/codexbatman](https://github.com/wdempsey/codexbatman)
 
-**Source code:** [github.com/chrisblattman/claudeblattman](https://github.com/chrisblattman/claudeblattman)
-
-**License:** MIT — use anything here however you want.
+License: MIT
 
 ---
 
-## Contact & Feedback
+## Contact and Feedback
 
-- **Quick feedback on any page:** [Email me](mailto:claudeblattman+feedback@gmail.com)
-- **Bug reports or corrections:** [GitHub Issues](https://github.com/chrisblattman/claudeblattman/issues)
-- **Discussion & questions:** [GitHub Discussions](https://github.com/chrisblattman/claudeblattman/discussions)
-- **Research inquiries:** See [chrisblattman.com](https://chrisblattman.com)
+- Quick feedback on any page: [Email me](mailto:codexbatman+feedback@gmail.com)
+- Bug reports or corrections: [GitHub Issues](https://github.com/wdempsey/codexbatman/issues)
+- Discussion and questions: [GitHub Discussions](https://github.com/wdempsey/codexbatman/discussions)
+- Research inquiries: See [walterhdempsey.com](https://walterhdempsey.com)
 
 ---
 
 ## Acknowledgments
 
-This project builds on the work of many people sharing their AI workflows publicly. Special thanks to the reference implementations that influenced this system — credited on the [Resources](resources.md) page.
+This project builds on open documentation patterns and workflow examples shared by the broader AI and
+data science community.
 
-Thanks also to my research assistants who help maintain and improve these tools, and to the Claude Code team at Anthropic for building something genuinely useful.
+Special thanks to [Claude Blattman](https://claudeblattman.com/) for the original site structure that
+inspired this fork.
+
+Special thanks to the reference implementations that influenced this system — credited on the
+[Resources page](resources.md).
+
+Thanks to my sabbatical for giving me the hours to help understand these tools, and to Codex team at
+OpenAI for building a useful product.

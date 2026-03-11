@@ -213,16 +213,16 @@ For the full breakdown, see [The Anatomy of a Good Prompt](../essentials/prompti
 mkdir -p ~/.claude/commands/prompt-references
 
 curl -o ~/.claude/commands/prompt.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt.md
 
 curl -o ~/.claude/commands/prompt-only.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-only.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-only.md
 
 curl -o ~/.claude/commands/prompt-refine.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-refine.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-refine.md
 
 curl -o ~/.claude/commands/prompt-references/formatting-core.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-references/formatting-core.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-references/formatting-core.md
 ```
 
 **Variants:**
@@ -262,7 +262,7 @@ Here's what a `/review-plan` scorecard looks like — this one is from a review 
 **Install:**
 ```bash
 curl -o ~/.claude/commands/review-plan.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/review-plan.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/data-science/review-plan.md
 ```
 
 **Usage:**
@@ -312,7 +312,7 @@ Over time, this builds a searchable history of what you've done across sessions.
 **Install:**
 ```bash
 curl -o ~/.claude/commands/done.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/done.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
 ```
 
 **Usage:**

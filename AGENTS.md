@@ -2,7 +2,42 @@
 
 ## Mission And Scope
 
-This repository exists to maintain and improve the Claude Blattman documentation site, downloadable skills, agents, and templates with high editorial quality and stable site behavior.
+This repository exists to maintain and improve a Codex-native Data Science Operating System: the documentation site, downloadable skills, agents, templates, and workflow artifacts that support it.
+
+The operating system serves three roles:
+- student
+- data scientist
+- data science manager
+
+Core architecture:
+- Skills encode best practices.
+- The website explains workflows.
+- Codex executes workflows.
+
+## Routing Order
+
+Route requests in this order:
+
+1. **Role**
+   - `student` -> apply overlays from `skills/overlays/student/`
+   - `data scientist` -> apply overlays from `skills/overlays/practitioner/`
+   - `data science manager` -> apply overlays from `skills/overlays/manager/`
+2. **Mode**
+   - Role overlays determine delivery style, not workflow logic.
+   - Student mode is scaffolded, hint-first, and attempt-before-answer.
+   - Practitioner mode is direct, artifact-enforcing, and execution-oriented.
+   - Manager mode is summary-oriented, project-tracking, and communication-oriented.
+3. **Workflow skill**
+   - After role and mode are set, choose the shared workflow skill that matches the task.
+   - Prefer canonical data science skills for the analytical backbone:
+     - `project-bootstrap`
+     - `problem-framing`
+     - `data-audit`
+     - `experiment-log`
+   - Use manager workflow skills when the task is coordination or project operations.
+
+Rule:
+- Overlays wrap shared workflow skills. They do not replace canonical workflow logic.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.
@@ -43,6 +78,13 @@ Execution norms:
 - Prefer adding new files over rewriting existing ones.
 - Keep naming explicit and predictable.
 - Preserve backwards compatibility for links and docs references.
+- Do not change existing workflows unless the task explicitly requires workflow changes.
+
+## Planning File
+
+- Use `/planning.md` at the repository root as the central running TODO list.
+- When work adds follow-up tasks, append concise checklist items under the active section in `planning.md`.
+- If priorities change, update `planning.md` in the same change set so plans remain current.
 
 ## Data Science Policy
 

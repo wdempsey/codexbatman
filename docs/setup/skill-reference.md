@@ -32,7 +32,7 @@ After saving any new skill file, **restart Claude Code** for the command to beco
 **Install:**
 ```bash
 curl -o ~/.claude/commands/done.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/done.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
 ```
 
 **Usage:**
@@ -56,7 +56,7 @@ curl -o ~/.claude/commands/done.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/morning-brief.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/morning-brief.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/morning-brief.md
 
 # Config templates (if not already installed)
 mkdir -p ~/.claude-assistant/config
@@ -92,7 +92,7 @@ curl -o ~/.claude-assistant/config/triage-config.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/checkin.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/checkin.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/checkin.md
 
 # Config templates (if not already installed via /triage-inbox or /morning-brief)
 mkdir -p ~/.claude-assistant/config
@@ -142,7 +142,7 @@ curl -o ~/.claude-assistant/config/goals.yaml \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/goals-review.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/goals-review.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/goals-review.md
 
 # Goals template (if not already installed)
 mkdir -p ~/.claude-assistant/config
@@ -180,13 +180,13 @@ curl -o ~/.claude-assistant/config/goals.yaml \
 mkdir -p ~/.claude/commands/prompt-references
 
 curl -o ~/.claude/commands/prompt.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt.md
 curl -o ~/.claude/commands/prompt-only.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-only.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-only.md
 curl -o ~/.claude/commands/prompt-refine.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-refine.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-refine.md
 curl -o ~/.claude/commands/prompt-references/formatting-core.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-references/formatting-core.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-references/formatting-core.md
 ```
 
 **Usage:**
@@ -214,7 +214,7 @@ curl -o ~/.claude/commands/prompt-references/formatting-core.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/review-plan.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/review-plan.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/data-science/review-plan.md
 ```
 
 **Usage:**
@@ -239,7 +239,7 @@ curl -o ~/.claude/commands/review-plan.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/proposal-revise.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/proposal-revise.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/data-science/proposal-revise.md
 ```
 
 **Usage:**
@@ -269,7 +269,7 @@ Tighten the intro. Cut 200 words from methodology.
 **Install:**
 ```bash
 curl -o ~/.claude/commands/schedule-query.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/schedule-query.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/schedule-query.md
 
 mkdir -p ~/.claude-assistant/config
 curl -o ~/.claude-assistant/config/calendar-policy.md \
@@ -297,7 +297,7 @@ curl -o ~/.claude-assistant/config/calendar-policy.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/setup-project-management.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/setup-project-management.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/setup-project-management.md
 ```
 
 **Usage:**
@@ -322,7 +322,7 @@ curl -o ~/.claude/commands/setup-project-management.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/todo-add.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/todo-add.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-add.md
 ```
 
 **Usage:**
@@ -346,7 +346,7 @@ curl -o ~/.claude/commands/todo-add.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/todo-queue.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/todo-queue.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-queue.md
 ```
 
 **Usage:**
@@ -368,7 +368,7 @@ curl -o ~/.claude/commands/todo-queue.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/todo-review.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/todo-review.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-review.md
 ```
 
 **Usage:**
@@ -391,7 +391,7 @@ curl -o ~/.claude/commands/todo-review.md \
 mkdir -p ~/.claude-assistant/tips
 
 curl -o ~/.claude/commands/tips-curate.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/tips-curate.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/tips-curate.md
 ```
 
 **Usage:**
@@ -420,10 +420,10 @@ curl -o ~/.claude/commands/tips-curate.md \
 mkdir -p ~/.claude/commands/tips-integrate-references
 
 curl -o ~/.claude/commands/tips-integrate.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/tips-integrate.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/tips-integrate.md
 
 curl -o ~/.claude/commands/tips-integrate-references/scanning-rules.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/tips-integrate-references/scanning-rules.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/tips-integrate-references/scanning-rules.md
 ```
 
 **Usage:**
@@ -452,7 +452,7 @@ curl -o ~/.claude/commands/tips-integrate-references/scanning-rules.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/triage-inbox.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/triage-inbox.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/triage-inbox.md
 
 mkdir -p ~/.claude-assistant/config ~/.claude-assistant/state ~/.claude-assistant/logs
 curl -o ~/.claude-assistant/config/email-policy.md \
@@ -482,7 +482,7 @@ curl -o ~/.claude-assistant/config/triage-config.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/weekly-review.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/weekly-review.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/weekly-review.md
 ```
 
 **Usage:**
@@ -507,7 +507,7 @@ curl -o ~/.claude/commands/weekly-review.md \
 **Install:**
 ```bash
 curl -o ~/.claude/commands/proposal-write.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/proposal-write.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/data-science/proposal-write.md
 ```
 
 **Usage:**

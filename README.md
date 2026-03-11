@@ -1,49 +1,53 @@
-# Claude Blattman
+# Codex Batman
 
-**A professor's guide to building AI workflows — from chatbots to self-improving systems.**
+**A Codex-native Data Science Operating System for disciplined workflow design, execution, and review.**
 
-Website: [claudeblattman.com](https://claudeblattman.com)
+Documentation site: [claudeblattman.com](https://claudeblattman.com)
 
 ---
 
 ## What This Is
 
-A free, open-source resource for non-developers who want to build real AI workflows. Three paths:
+This repository defines a Codex-native operating system for applied data science.
 
-1. **The Essentials** — Tools and foundations. Chatbots done right, dictation, transcription, prompt engineering.
-2. **The Toolkit** — Claude Code setup, configuration, and downloadable skills. From "what is this?" to a working system.
-3. **Build Your Own** — Creating custom skills, agents, and self-improving workflows.
+It has three connected layers:
+
+1. **Skills encode best practices** for recurring work such as framing, audits, experiment logging, planning, review, and writing.
+2. **The website explains workflows** so users can understand the system architecture, adoption sequence, and operating rules.
+3. **Codex executes workflows** against local files, project context, and reusable skill instructions.
+
+The result is a practical system for moving from question framing to execution, review, and handoff with explicit gates and reusable documentation.
 
 ## Who It's For
 
-- Academics and researchers managing multiple projects
-- Professionals buried in email, meetings, and coordination
-- Anyone who wants to move beyond casual chatbot use
+The repository is organized around three roles:
 
-No coding background required. Everything is built with markdown and AI tools.
+- **Student**: learn structured problem framing, reproducible execution, and disciplined use of AI as a tutor and collaborator.
+- **Data scientist**: use skills, templates, and workflow documentation to execute analysis and modeling work with stronger process controls.
+- **Data science manager**: run project-centered planning, review, and coordination workflows across teams and stakeholders.
+
+The materials are markdown-first, workflow-driven, and designed to be understandable without heavy software engineering overhead.
 
 ## Quick Start
 
-Visit [claudeblattman.com/quickstart](https://claudeblattman.com/quickstart/) for a 5-minute exercise that demonstrates the core principles.
+Visit [claudeblattman.com/quickstart](https://claudeblattman.com/quickstart/) for a short walkthrough, then use the workflows and skill library to choose the lane that matches your role.
 
-## Install Skills
+## Skills
 
-Skills are markdown files that add slash commands to Claude Code. Install them with:
+This repository includes:
 
-```bash
-mkdir -p ~/.claude/commands
-curl -o ~/.claude/commands/done.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/done.md
-```
+- downloadable command-style skills for recurring workflows
+- Codex skill folders for data science operating procedures
+- agents and templates that support review, writing, and project setup
 
-See `skills/README.md` for the full list and bundle install instructions.
+See `skills/README.md` for the current inventory and installation patterns.
 
 ## Repo Structure
 
 ```
-claudeblattman/
+codexbatman/
 ├── docs/               # Website source (MkDocs Material)
-├── skills/             # Downloadable skill files
+├── skills/             # Downloadable skills and Codex skill folders
 ├── agents/             # Downloadable agent files
 ├── templates/          # Starter templates (CLAUDE.md, goals.yaml)
 ├── mkdocs.yml          # Site configuration
@@ -58,7 +62,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to edit content, add skills, and 
 ## License
 
 MIT — use anything here however you want.
-
----
-
-Built by [Chris Blattman](https://chrisblattman.com). The name is a joke. The tools are real.

@@ -21,9 +21,10 @@
 
 {% block content %}
   {{ super() }}
+  {% if page.file.src_path != "index.md" %}
   <p class="feedback-line">
     Found this useful?
-    <a href="https://github.com/chrisblattman/claudeblattman" target="_blank">Star it on GitHub</a>
+    <a href="https://github.com/wdempsey/codexbatman" target="_blank">Star it on GitHub</a>
     or share with a colleague.
     Something broken or unclear?
     <a href="mailto:claudeblattman+feedback@gmail.com?subject=Feedback%3A%20{{ page.title | urlencode }}">Send feedback</a>.
@@ -48,6 +49,7 @@
     <span class="email-banner__msg" style="display:none;"></span>
     <a href="/privacy/" class="email-banner__privacy">Privacy policy</a>
   </div>
+  {% endif %}
 {% endblock %}
 
 {% block scripts %}
@@ -68,6 +70,49 @@
         });
       }
     });
+  </script>
+
+  <script>
+    /* Homepage reveal animations + subtle hero parallax */
+    (function() {
+      function initHomeEffects() {
+        var home = document.querySelector('.hf-home');
+        if (!home) {
+          document.body.classList.remove('hf-landing');
+          return;
+        }
+        document.body.classList.add('hf-landing');
+        if (home.dataset.hfInit === '1') return;
+        home.dataset.hfInit = '1';
+
+        var revealNodes = home.querySelectorAll('.hf-reveal, .hf-reveal-image');
+        if (!revealNodes.length) return;
+
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+
+        revealNodes.forEach(function(node) {
+          observer.observe(node);
+        });
+
+        var heroBackdrop = home.querySelector('.hf-hero__backdrop');
+        if (!heroBackdrop) return;
+
+        window.addEventListener('scroll', function() {
+          var y = Math.min(window.scrollY * 0.07, 36);
+          heroBackdrop.style.transform = 'scale(1) translateY(' + y + 'px)';
+        }, { passive: true });
+      }
+
+      document$.subscribe(function() {
+        initHomeEffects();
+      });
+    })();
   </script>
 
   <script>

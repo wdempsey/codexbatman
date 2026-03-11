@@ -237,11 +237,24 @@ Install skills roughly in this order. Each works independently, but this sequenc
       ~/.claude-assistant/state ~/.claude-assistant/logs
 
     # EA skills (dependency order)
-    for skill in done triage-inbox checkin morning-brief schedule-query \
-      todo-add todo-review todo-queue goals-review; do
-      curl -o ~/.claude/commands/$skill.md \
-        https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/$skill.md
-    done
+    curl -o ~/.claude/commands/done.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
+    curl -o ~/.claude/commands/triage-inbox.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/triage-inbox.md
+    curl -o ~/.claude/commands/checkin.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/checkin.md
+    curl -o ~/.claude/commands/morning-brief.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/morning-brief.md
+    curl -o ~/.claude/commands/schedule-query.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/schedule-query.md
+    curl -o ~/.claude/commands/todo-add.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-add.md
+    curl -o ~/.claude/commands/todo-review.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-review.md
+    curl -o ~/.claude/commands/todo-queue.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-queue.md
+    curl -o ~/.claude/commands/goals-review.md \
+      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/goals-review.md
     ```
 
     Restart Claude Code after installing. All EA skills will be available as slash commands.
@@ -259,7 +272,7 @@ The easiest win. No config needed. Run it at the end of every Claude Code sessio
 ```bash
 mkdir -p ~/.claude/commands
 curl -o ~/.claude/commands/done.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/done.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
 ```
 
 Restart Claude Code, then try: `/done`
@@ -271,7 +284,7 @@ The highest-value EA skill for most people. Requires Gmail MCP and the config te
 ```bash
 mkdir -p ~/.claude-assistant/state ~/.claude-assistant/logs
 curl -o ~/.claude/commands/triage-inbox.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/triage-inbox.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/triage-inbox.md
 ```
 
 Restart Claude Code, then try: `/triage-inbox noapply` (preview mode — see what it would do before applying)
@@ -352,7 +365,7 @@ Your daily interactive session. Wraps triage, calendar review, meeting prep, and
 
 ```bash
 curl -o ~/.claude/commands/checkin.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/checkin.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/checkin.md
 ```
 
 Restart Claude Code, then try: `/checkin quick` (abbreviated version — good for your first run)

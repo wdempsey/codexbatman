@@ -1,38 +1,37 @@
 ---
 name: problem-framing
-description: Structured clarification of analytical objectives before any data analysis or modeling begins. Prevents metric confusion, leakage, and causal misinterpretation.
+description: Define the analytical problem before any audit, exploration, or modeling begins. Use when a project needs an explicit problem statement, success metrics, constraints, and a documented risk register.
 ---
 
 # Skill: Problem Framing
 
 ## Purpose
 
-Clarify and formalize the analytical objective before any data access, exploration, or modeling begins.
+Clarify and formalize the analytical objective before data audit, exploration, or modeling begins.
 
-This skill prevents:
+This skill converts an informal request into explicit analytical artifacts.
 
-- Metric confusion
-- Ill-defined targets
-- Implicit assumptions
-- Causal misinterpretation
-- Premature modeling
-- Hidden stakeholder conflicts
+It exists to prevent:
 
-No modeling or EDA should begin before this phase is completed and reviewed.
+- metric confusion
+- ill-defined targets
+- implicit assumptions
+- causal misclassification
+- premature modeling
+- silent stakeholder conflicts
 
----
+No downstream modeling work should proceed until this artifact is reviewed.
 
-## When to Use
+## When to Invoke
 
-Use this skill before:
+Invoke this skill before:
 
-- Any exploratory data analysis
-- Any feature engineering
-- Any model training
-- Any database schema design tied to modeling
-- Any metric evaluation
-
----
+- any data audit
+- any exploratory data analysis
+- any feature engineering
+- any model training
+- any evaluation design
+- any database or pipeline design tied to modeling assumptions
 
 ## Required Inputs
 
@@ -42,8 +41,6 @@ Use this skill before:
 - Known data sources (if available)
 
 If inputs are incomplete, request clarification before proceeding.
-
----
 
 ## Procedure
 
@@ -124,34 +121,53 @@ List:
 - Required external data
 - Identification assumptions (if causal)
 
----
+## Expected Outputs
 
-## Output Format
+Produce a framing artifact with:
 
-Produce a structured summary in this format:
+- problem statement
+- objective type
+- decision context
+- success metrics
+- constraints
+- risk register
+- data requirements
+
+Use this structure:
 
 ### 1. Problem Statement
-(Concise paragraph)
 
 ### 2. Objective Type
-(Predictive / Causal / etc.)
 
 ### 3. Decision Context
-(Bulleted list)
 
 ### 4. Success Metrics
-(Bulleted list with definitions)
 
 ### 5. Constraints
-(Bulleted list)
 
 ### 6. Risk Register
-(Bulleted list)
 
 ### 7. Data Requirements
-(Bulleted list)
 
----
+## Artifact Checklist
+
+- Objective type explicitly named
+- Decision user and action path stated
+- Primary metric defined operationally
+- Secondary metrics defined if needed
+- Constraints documented
+- Risk register populated
+- Data requirements listed
+- Proceed-to-audit recommendation stated
+
+## Common Failure Modes
+
+- treating every problem as predictive
+- naming metrics without operational definitions
+- skipping stakeholder or decision context
+- ignoring causal implications
+- listing data requirements too vaguely to audit
+- allowing modeling to begin without review
 
 ## Guardrails
 
@@ -161,16 +177,14 @@ Produce a structured summary in this format:
 - Do not invent metrics without definitions.
 - Do not ignore causal implications.
 
----
+## Human Review Requirement
 
-## Escalation Conditions
+Human review is mandatory before moving to `data-audit`.
 
-Stop and require human confirmation if:
+Escalate if:
 
 - The objective is ambiguous.
 - Metrics conflict.
 - Causal inference is implied but assumptions are unclear.
 - Ethical risks are detected.
 - Stakeholder goals conflict.
-
-Human review is mandatory before moving to Data Audit or EDA.

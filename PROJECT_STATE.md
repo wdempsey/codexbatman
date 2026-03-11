@@ -1,4 +1,4 @@
-# Project State — Codex-Native Data Science Workflow System
+# Project State — Codex-Native Data Science Operating System
 
 This document summarizes the current architectural state of the project.
 
@@ -14,13 +14,14 @@ It is evolving into:
 
 A Codex-native workflow system for structured, reproducible data science.
 
-It integrates:
+It now integrates:
 
 - Structured skills
+- Role-aware overlays
 - Explicit workflow gates
 - Reproducibility enforcement
 - Human-in-the-loop
-- Devlog → Digital Garden distillation loop
+- Workflow documentation on the site
 
 The goal is to teach data science through a constrained operating system.
 
@@ -32,19 +33,27 @@ The goal is to teach data science through a constrained operating system.
 
 - Data Science Layer Blueprint
 - Data Science Layer Goals
+- Canonical workflow skill pages
 - Cross-references between Blueprint and Goals
 - DS workflow gates enforced in AGENTS.md
 
-## Implemented Skills
+## Canonical Backbone Skills
 
+- project-bootstrap
 - problem-framing
 - data-audit (Proceed / Halt protocol)
 - experiment-log
 
+## Role-Aware Overlay Layers
+
+- student
+- practitioner
+- manager
+
 ## Templates
 
-- experiment-log template
-- model-card template
+- workflow-driven artifacts (framing, audit, experiment log)
+- project instruction patterns
 
 ## Enforcement
 
@@ -59,16 +68,17 @@ Reproducibility is non-negotiable.
 
 ---
 
-# 3. Devlog System
+# 3. Project Logging
 
-The repository includes:
+Current state:
 
-- devlog/
-- Devlog template
-- Weekly distillation ritual
+- `planning.md` is the active repository log for current work and follow-up tasks.
+- `PROJECT_STATE.md` is a durable architecture snapshot.
+- `AGENTS.md` still references a future `devlog/` template, but that directory does not currently exist in the repository.
 
-Devlogs are raw.
-Digital Garden entries are distilled.
+Implication:
+
+- A real devlog system still needs to be added or the stale references removed.
 
 ---
 
@@ -95,27 +105,24 @@ Graph view enabled but not designed around.
 
 ## Identity & Differentiation
 
-- Completed: Project Direction page added at docs/about/project-direction.md
-- Rewrite homepage messaging
-- Remove Claude-first framing
-- Tighten mkdocs navigation
+- Completed: repository identity rewritten around Codex-native data science
+- Completed: role-aware MkDocs navigation
+- Completed: first-wave canonical skill and overlay architecture
+- Review for duplicate or conflicting workflow pages and stale branding
 
 ## Garden System
 
 - Create separate garden repo
-- Add AGENTS.md (strict voice preservation)
-- Add folder structure
-- Add note/pattern/essay templates
-- Add distillation protocol page
-- Cross-link tutorial and garden repos
+- Decide whether devlog-to-garden distillation remains in scope for this repository
+- Add actual devlog infrastructure if retained
+- Cross-link tutorial and garden repos if the separate garden remains active
 
 ## Future Work
 
-- Add “How to Use This Layer” page
 - Build end-to-end worked example
 - Evaluate two candidate example projects
 - Pressure-test DS workflow
-- Generate garden essays from real use
+- Add later-phase canonical skills beyond the first wave
 
 ---
 
@@ -136,6 +143,6 @@ Speed is secondary to discipline.
 
 # 7. Immediate Priority
 
-Clarify repository direction and restructure navigation before starting example projects.
+Stabilize the new architecture by reviewing for duplication, stale pages, and conflicting site language before expanding the worked examples.
 
 Architecture before application.

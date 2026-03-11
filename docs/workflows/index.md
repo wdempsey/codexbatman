@@ -22,6 +22,14 @@ These aren't individual tools — they're **systems** built from skills, integra
 
     [:octicons-arrow-right-24: Read the full story](project-management.md)
 
+-   **:material-flask-outline: Managing Data Science**
+
+    ---
+
+    A project-centered workflow for managers leading data science, analytics, and research work. Connect email, meetings, docs, Slack, Dropbox, and private notes into one system for project awareness, follow-up tracking, and weekly review.
+
+    [:octicons-arrow-right-24: Read the overview](managing-data-science/index.md)
+
 -   **:material-email-check-outline: Executive Assistant**
 
     ---

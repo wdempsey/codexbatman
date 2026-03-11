@@ -1,10 +1,38 @@
 # Skills & Agents
 
-Downloadable skills (slash commands) and agents for Claude Code.
+Downloadable skills, Codex skill folders, and agents for the Codex-native Data Science Operating System.
+
+## What This Directory Does
+
+This directory contains the reusable execution layer of the system.
+
+- Skills encode best practices as repeatable operating instructions.
+- Agents provide specialized review or drafting behavior.
+- Workflow pages on the site explain when and how to use them.
+- Codex runs the workflow in context.
+
+The materials support three roles:
+
+- **Student**
+- **Data scientist**
+- **Data science manager**
+
+Two formats currently coexist in this repository:
+
+- command-style markdown skills for recurring tasks
+- folder-based Codex skills with local `SKILL.md` instructions
+
+That split is intentional. It preserves existing workflows while the repository standardizes around Codex-native patterns.
+
+## Categories
+
+- `data-science/` contains workflow skills for analytical planning, review, proposal work, tax workflows, and formal data science process gates.
+- `manager/` contains operational skills for inbox, calendar, project coordination, reviews, and recurring management routines.
+- `overlays/` contains cross-cutting overlays that improve how Codex works across domains, including prompt formatting, session capture, and tips integration.
 
 ## Quick Install
 
-Skills go in `~/.claude/commands/`. Agents go in `~/.claude/agents/`.
+Command-style skills and agents can be downloaded into your local tool directories.
 
 ```bash
 # Create directories
@@ -13,14 +41,14 @@ mkdir -p ~/.claude/agents
 
 # Download a skill
 curl -o ~/.claude/commands/done.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/done.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
 
 # Download an agent
 curl -o ~/.claude/agents/review-writing.md \
   https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/agents/review-writing.md
 ```
 
-Restart Claude Code after adding new commands.
+Restart your coding assistant after adding new commands.
 
 ## Available Skills
 
@@ -60,25 +88,25 @@ The `/prompt`, `/prompt-only`, and `/prompt-refine` skills share a companion fil
 mkdir -p ~/.claude/commands/prompt-references
 
 curl -o ~/.claude/commands/prompt.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt.md
 
 curl -o ~/.claude/commands/prompt-only.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-only.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-only.md
 
 curl -o ~/.claude/commands/prompt-refine.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-refine.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-refine.md
 
 curl -o ~/.claude/commands/prompt-references/formatting-core.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/prompt-references/formatting-core.md
+  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/prompt-references/formatting-core.md
 ```
 
 ## Templates
 
 | Template | Description |
 |----------|-------------|
-| `claude-md-template.md` | Starter CLAUDE.md file with all common sections |
+| `claude-md-template.md` | Starter project instruction file with all common sections |
 | `goals-yaml-template.yaml` | Goals and priorities tracking file (OKR format with weighted objectives) |
 
 ## Customization
 
-Each skill is designed to work out of the box but can be customized. See the [Skill Library](https://claudeblattman.com/toolkit/skill-library/) on the website for customization guidance.
+Each skill is designed to work out of the box but can be customized. See the [Skill Library](https://claudeblattman.com/toolkit/skill-library/) on the website for customization guidance and workflow context.

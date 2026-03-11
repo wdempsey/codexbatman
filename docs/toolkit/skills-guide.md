@@ -47,7 +47,7 @@ Subdirectories create namespaced commands: `prompt-references/formatting-core.md
    ```bash
    # Option 1: Download from GitHub
    curl -o ~/.claude/commands/done.md \
-     https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/done.md
+     https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
 
    # Option 2: Copy from this site
    # Copy the code block from the Skill Library page and save to a file
