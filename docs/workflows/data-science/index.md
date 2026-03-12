@@ -37,9 +37,9 @@ Each phase is executed through a Codex skill.
 
 - `/problem-framing` -> [skills/data-science/problem-framing/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/problem-framing)
 - `/data-audit` -> [skills/data-science/data-audit/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/data-audit)
-- `/eda-plan` -> `skills/data-science/eda-plan/` (planned; not yet created)
-- `/modeling` -> `skills/data-science/modeling/` (planned; not yet created)
-- `/evaluation` -> `skills/data-science/model-evaluation/` (planned; not yet created)
+- `/eda-plan` -> [skills/data-science/eda-plan/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/eda-plan)
+- `/modeling` -> [skills/data-science/modeling/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/modeling)
+- `/evaluation` -> [skills/data-science/model-evaluation/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/model-evaluation)
 - `/experiment-log` -> [skills/data-science/experiment-log/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/experiment-log)
 
 ## Roles

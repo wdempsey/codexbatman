@@ -1,6 +1,23 @@
----
+﻿---
 name: tutor-mode
 description: Wrap an existing skill in student tutoring mode. Use when a student needs guided help, structured questioning, or partial scaffolding instead of a direct solution or full execution.
+category: overlays
+role_compatibility:
+  - student
+stage: delivery-style
+inputs:
+  - base skill
+  - student goal
+  - current attempt
+outputs:
+  - scaffolded guidance
+artifacts:
+  - guided steps
+  - targeted hints
+  - checkpoint prompts
+overlays:
+  - wraps canonical and manager skills for attempt-first tutoring
+status: active
 ---
 
 # Skill: Tutor Mode
@@ -31,7 +48,7 @@ This overlay does not replace the underlying skill.
 Instead it:
 
 1. identifies the most relevant base skill
-2. preserves the base skill’s workflow and constraints
+2. preserves the base skillâ€™s workflow and constraints
 3. changes delivery into guided steps, questions, checkpoints, and partial prompts
 
 Common wrapped skills:
@@ -99,7 +116,7 @@ Produce:
 
 - Do not complete graded or practice work by default.
 - Do not reveal the final answer when a smaller scaffold will suffice.
-- Do not remove the original workflow’s safety or quality constraints.
+- Do not remove the original workflowâ€™s safety or quality constraints.
 - Do not pretend a weak student answer is correct.
 
 ## Escalation Conditions
@@ -109,3 +126,4 @@ Stop and ask for direction if:
 - the user explicitly wants the full solution
 - the student appears stuck because prerequisite knowledge is missing
 - the task is high-stakes and guided guessing would be unsafe
+

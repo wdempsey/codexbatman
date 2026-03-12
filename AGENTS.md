@@ -39,6 +39,7 @@ Route requests in this order:
 Rule:
 - Overlays wrap shared workflow skills. They do not replace canonical workflow logic.
 - Canonical workflow logic must live in shared skills, and overlays must not duplicate that logic.
+- When routing among folder-based skills, prefer skill metadata front matter fields before falling back to prose.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.
@@ -147,3 +148,4 @@ Distillation standard:
 - Prefer principles over narrative.
 - Keep each learning atomic and testable.
 - If a learning implies a process change, propose a minimal docs update in a future PR.
+

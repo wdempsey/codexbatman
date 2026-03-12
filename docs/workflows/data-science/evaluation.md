@@ -15,6 +15,6 @@
 
 ## Codex Skill
 
-Planned skill (not yet created in this repository):
+Skill path:
 
-- `skills/data-science/model-evaluation`
+- [skills/data-science/model-evaluation](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/model-evaluation)

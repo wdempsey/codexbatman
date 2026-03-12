@@ -68,5 +68,7 @@ Codex (student overlay):
 
 - [skills/data-science/problem-framing](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/problem-framing)
 - [skills/data-science/data-audit](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/data-audit)
-- [skills/data-science/experiment-log](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/experiment-log)
+
+- [skills/data-science/causal-design-check](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
 - [skills/overlays/student/tutor-mode](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/student/tutor-mode)
+

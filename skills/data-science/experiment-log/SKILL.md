@@ -1,6 +1,37 @@
----
+﻿---
 name: experiment-log
 description: Record a modeling or evaluation run as a reproducible experiment artifact. Use after any training, feature change, split change, or evaluation change that could affect analytical conclusions.
+category: data-science
+role_compatibility:
+  - student
+  - data scientist
+  - data science manager
+stage: logging
+order: 7
+inputs:
+  - model configuration
+  - dataset version
+  - split strategy
+  - metrics
+  - seed
+outputs:
+  - logged run record
+  - iteration decision
+artifacts:
+  - experiment log entry
+  - comparison table
+  - decision notes
+depends_on:
+  - modeling
+  - model-evaluation
+recommended_next:
+  - result-communication
+overlays:
+  - student/tutor-mode
+  - practitioner/execution-mode
+  - practitioner/artifact-enforcer
+  - manager/project-tracker
+status: canonical
 ---
 
 # Skill: Experiment Log
@@ -45,7 +76,7 @@ No model iteration is considered valid until logged.
 
 ## Procedure
 
-### Step 1 — Context
+### Step 1 â€” Context
 
 Record:
 
@@ -58,7 +89,7 @@ Record:
 
 ---
 
-### Step 2 — Hypothesis
+### Step 2 â€” Hypothesis
 
 Explicitly state:
 
@@ -68,7 +99,7 @@ Explicitly state:
 
 ---
 
-### Step 3 — Configuration
+### Step 3 â€” Configuration
 
 Document:
 
@@ -81,7 +112,7 @@ Document:
 
 ---
 
-### Step 4 — Results
+### Step 4 â€” Results
 
 Report:
 
@@ -93,7 +124,7 @@ Report:
 
 ---
 
-### Step 5 — Interpretation
+### Step 5 â€” Interpretation
 
 Answer:
 
@@ -104,7 +135,7 @@ Answer:
 
 ---
 
-### Step 6 — Decision
+### Step 6 â€” Decision
 
 Choose one:
 
@@ -172,3 +203,4 @@ Require human review if:
 - Large subgroup disparities appear
 - Hyperparameter search significantly increases variance
 - Baseline is unclear or undocumented
+

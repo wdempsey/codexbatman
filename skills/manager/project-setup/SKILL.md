@@ -1,6 +1,24 @@
----
+﻿---
 name: project-setup
 description: Set up a project-centered management layer for a research or data science project. Use when a user needs a project folder, document hub, team roster, workflow config, or a scoped plan before weekly reviews and stakeholder updates.
+category: manager
+role_compatibility:
+  - data science manager
+stage: planning
+inputs:
+  - project charter
+  - team context
+  - timeline constraints
+outputs:
+  - project operating setup
+artifacts:
+  - project setup plan
+  - roles and owners map
+  - cadence and checkpoints
+recommended_next:
+  - weekly-review
+  - stakeholder-update
+status: operational
 ---
 
 # Skill: Project Setup
@@ -138,3 +156,4 @@ Stop and require confirmation if:
 - sensitive data handling is unclear
 - the proposed structure would overwrite existing project conventions
 - required external systems are missing or inaccessible
+

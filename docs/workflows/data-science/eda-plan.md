@@ -22,9 +22,9 @@ A structured EDA phase links exploration to analytical goals, improves reproduci
 
 ## Codex Skill
 
-Planned skill (not yet created in this repository):
+Skill path:
 
-- `skills/data-science/eda-plan`
+- [skills/data-science/eda-plan](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/eda-plan)
 
 Command example:
 

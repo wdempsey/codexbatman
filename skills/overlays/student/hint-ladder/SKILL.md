@@ -1,6 +1,21 @@
----
+﻿---
 name: hint-ladder
 description: Provide progressive hints for a student task by wrapping an existing skill or workflow. Use when the student should receive the smallest helpful hint first, with stronger hints only if needed.
+category: overlays
+role_compatibility:
+  - student
+stage: delivery-style
+inputs:
+  - base skill step
+  - student block
+outputs:
+  - progressive hints
+artifacts:
+  - hint levels 1-4
+  - next move prompt
+overlays:
+  - wraps base skill steps with progressive disclosure
+status: active
 ---
 
 # Skill: Hint Ladder
@@ -58,7 +73,7 @@ Only give the next level after the student responds or explicitly asks.
 ## Procedure
 
 1. Identify the underlying task and base skill.
-2. Determine the student’s current blockage.
+2. Determine the studentâ€™s current blockage.
 3. Start at the lowest useful hint level.
 4. Escalate only as needed.
 5. After each hint, ask the student to attempt the next move.
@@ -85,4 +100,5 @@ Produce:
 
 ## Escalation Conditions
 
-Switch to `misconception-diagnosis` if the student’s attempts show conceptual confusion rather than simple blockage.
+Switch to `misconception-diagnosis` if the studentâ€™s attempts show conceptual confusion rather than simple blockage.
+

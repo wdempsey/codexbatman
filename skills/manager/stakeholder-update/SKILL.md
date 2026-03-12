@@ -1,6 +1,27 @@
----
+﻿---
 name: stakeholder-update
 description: Draft concise project updates for collaborators, funders, leaders, or external stakeholders using the project dashboard, weekly review, and current source materials. Use when status needs to be communicated clearly without losing factual discipline.
+category: manager
+role_compatibility:
+  - data science manager
+stage: communication
+inputs:
+  - latest workflow artifacts
+  - audience context
+  - decision asks
+outputs:
+  - stakeholder communication package
+artifacts:
+  - status update
+  - risk summary
+  - decision asks
+  - next-step commitments
+depends_on:
+  - weekly-review
+recommended_next:
+  - project-setup
+  - weekly-review
+status: operational
 ---
 
 # Skill: Stakeholder Update
@@ -102,3 +123,4 @@ Stop and ask for direction if:
 - the latest project state is stale or contradictory
 - sensitive content may require human review
 - the user needs a full proposal or report instead of a status update
+

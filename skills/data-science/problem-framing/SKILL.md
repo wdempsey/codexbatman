@@ -1,6 +1,36 @@
----
+﻿---
 name: problem-framing
 description: Define the analytical problem before any audit, exploration, or modeling begins. Use when a project needs an explicit problem statement, success metrics, constraints, and a documented risk register.
+category: data-science
+role_compatibility:
+  - student
+  - data scientist
+  - data science manager
+stage: framing
+order: 2
+inputs:
+  - problem description
+  - stakeholder context
+  - constraints
+  - data source context
+outputs:
+  - problem framing artifact
+  - go/no-go for data audit
+artifacts:
+  - problem brief
+  - metric definition
+  - data requirements
+  - risk register
+depends_on:
+  - project-bootstrap
+recommended_next:
+  - data-audit
+overlays:
+  - student/tutor-mode
+  - practitioner/execution-mode
+  - practitioner/artifact-enforcer
+  - manager/executive-summary
+status: canonical
 ---
 
 # Skill: Problem Framing
@@ -44,7 +74,7 @@ If inputs are incomplete, request clarification before proceeding.
 
 ## Procedure
 
-### Step 1 — Clarify Objective Type
+### Step 1 â€” Clarify Objective Type
 
 Determine whether the task is:
 
@@ -60,7 +90,7 @@ If unclear, ask for clarification.
 
 ---
 
-### Step 2 — Define the Decision Context
+### Step 2 â€” Define the Decision Context
 
 Document:
 
@@ -71,7 +101,7 @@ Document:
 
 ---
 
-### Step 3 — Define Success Metrics
+### Step 3 â€” Define Success Metrics
 
 Specify:
 
@@ -85,7 +115,7 @@ Avoid vague metric descriptions.
 
 ---
 
-### Step 4 — Define Constraints
+### Step 4 â€” Define Constraints
 
 Identify:
 
@@ -98,7 +128,7 @@ Identify:
 
 ---
 
-### Step 5 — Identify Risks
+### Step 5 â€” Identify Risks
 
 Create a structured risk register:
 
@@ -111,7 +141,7 @@ Create a structured risk register:
 
 ---
 
-### Step 6 — Define Data Requirements
+### Step 6 â€” Define Data Requirements
 
 List:
 
@@ -188,3 +218,4 @@ Escalate if:
 - Causal inference is implied but assumptions are unclear.
 - Ethical risks are detected.
 - Stakeholder goals conflict.
+

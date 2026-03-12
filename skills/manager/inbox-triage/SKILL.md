@@ -1,6 +1,25 @@
----
+﻿---
 name: inbox-triage
 description: Triage project-relevant inbox activity into project memory, actions, waiting-fors, and meeting-prep inputs. Use when a manager needs email processed in project context rather than as isolated messages.
+category: manager
+role_compatibility:
+  - data science manager
+stage: intake
+inputs:
+  - inbox sources
+  - project context
+  - triage policy
+outputs:
+  - triage decisions
+  - priority queue
+artifacts:
+  - triage log
+  - priority labels
+  - follow-up queue
+recommended_next:
+  - project-setup
+  - weekly-review
+status: operational
 ---
 
 # Skill: Inbox Triage
@@ -108,4 +127,5 @@ Stop and ask for clarification if:
 - project assignment is ambiguous
 - thread intent is unclear
 - an email includes sensitive personnel or legal content
-- the user’s goal is unclear between triage, meeting prep, and drafting
+- the userâ€™s goal is unclear between triage, meeting prep, and drafting
+

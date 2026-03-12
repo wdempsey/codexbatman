@@ -16,6 +16,6 @@
 
 ## Codex Skill
 
-Planned skill (not yet created in this repository):
+Skill path:
 
-- `skills/data-science/modeling`
+- [skills/data-science/modeling](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/modeling)

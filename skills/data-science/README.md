@@ -1,29 +1,39 @@
-# Data Science Skills
+﻿# Data Science Skills
 
-This category contains the canonical data science workflow backbone.
+This category contains the canonical and near-canonical data science workflow backbone.
 
 The backbone is artifact-first and Codex-native.
+
+## Canonical Chain
 
 - `project-bootstrap` establishes the workspace and artifact locations.
 - `problem-framing` defines the analytical objective before data work begins.
 - `data-audit` tests whether the available data is fit for downstream work.
+- `eda-plan` defines disciplined exploratory analysis before modeling.
+- `modeling` defines baseline and candidate model execution with controlled validation.
+- `model-evaluation` interprets performance, robustness, and failure modes.
 - `experiment-log` records every modeling iteration as a durable artifact.
 
-These skills are designed to compose in order:
+Ordered canonical workflow:
 
 1. `project-bootstrap`
 2. `problem-framing`
 3. `data-audit`
-4. `experiment-log`
+4. `eda-plan`
+5. `modeling`
+6. `model-evaluation`
+7. `experiment-log`
 
-This is the minimal canonical chain, not the full eventual system. It aligns with the blueprint in [docs/workflows/data-science/blueprint.md](/Users/wdem/Documents/github/codexbatman/docs/workflows/data-science/blueprint.md):
+## Advanced AI-Native Skills (Near-Canonical)
 
-- explicit workflow phases
-- explicit artifacts
-- reproducibility discipline
-- human review at workflow gates
+- `causal-design-check` enforces explicit causal identification logic and interpretation limits.
+- `paper-to-replication` converts published designs into executable replication artifacts.
+- `debug-analysis-notebook` diagnoses notebook failures with minimal, evidence-led fixes.
+- `result-communication` translates technical outputs into decision-facing deliverables.
 
-Each canonical skill defines:
+These skills extend the backbone without replacing canonical workflow gates.
+
+Each skill defines:
 
 - purpose
 - invocation boundary
@@ -32,4 +42,4 @@ Each canonical skill defines:
 - artifact checklist
 - common failure modes
 
-The goal is to make workflow state legible to Codex and to humans. These skills are not generic prompts. They are operating procedures for disciplined data science work.
+The goal is to make workflow state legible to Codex and to humans. These skills are operating procedures for disciplined, reproducible data science work.

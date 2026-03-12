@@ -1,6 +1,22 @@
----
+﻿---
 name: exercise-generator
 description: Generate practice exercises around an existing workflow or skill without solving the exercise. Use when a student needs targeted practice on framing, auditing, review, or project-structure reasoning.
+category: overlays
+role_compatibility:
+  - student
+stage: delivery-style
+inputs:
+  - base skill
+  - learning objective
+outputs:
+  - practice exercises
+artifacts:
+  - exercise prompt
+  - expected artifact type
+  - self-check questions
+overlays:
+  - wraps workflows into bounded practice drills
+status: active
 ---
 
 # Skill: Exercise Generator
@@ -74,8 +90,9 @@ Produce:
 
 - Do not leak the full worked solution into the exercise prompt.
 - Do not generate unrealistic exercises detached from the base workflow.
-- Do not confuse practice generation with tutoring on the student’s live assignment.
+- Do not confuse practice generation with tutoring on the studentâ€™s live assignment.
 
 ## Escalation Conditions
 
 If the student repeatedly fails the exercises for the same reason, switch to `misconception-diagnosis`.
+

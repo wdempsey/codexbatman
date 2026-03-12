@@ -1,6 +1,23 @@
----
+﻿---
 name: executive-summary
 description: Wrap a workflow skill for manager-facing summary delivery. Use when canonical or operational artifacts need to be translated into concise status, risk, and decision summaries for leaders or stakeholders.
+category: overlays
+role_compatibility:
+  - data science manager
+stage: delivery-style
+inputs:
+  - source artifact
+  - audience and decision context
+outputs:
+  - manager-facing summary
+artifacts:
+  - status summary
+  - risk summary
+  - decision ask
+  - next steps
+overlays:
+  - wraps canonical and manager skills into concise executive synthesis
+status: active
 ---
 
 # Skill: Executive Summary
@@ -77,10 +94,11 @@ Produce:
 
 ## Guardrails
 
-- Do not change the underlying artifact’s meaning.
+- Do not change the underlying artifactâ€™s meaning.
 - Do not bury halt conditions or risk flags.
 - Do not substitute summary for the required artifact itself when the artifact is still needed.
 
 ## Escalation Conditions
 
 Escalate if the underlying artifact is incomplete or too stale to summarize credibly.
+

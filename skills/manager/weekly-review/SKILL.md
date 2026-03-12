@@ -1,6 +1,26 @@
----
+﻿---
 name: weekly-review
 description: Produce a project-centered weekly review for a data science or research project by synthesizing transcripts, email, documents, and prior status artifacts into a dashboard, log, and action summary.
+category: manager
+role_compatibility:
+  - data science manager
+stage: review
+inputs:
+  - project artifacts
+  - experiment logs
+  - team updates
+  - open risks
+outputs:
+  - weekly synthesis and actions
+artifacts:
+  - weekly review report
+  - risk register update
+  - owner action list
+depends_on:
+  - project-setup
+recommended_next:
+  - stakeholder-update
+status: operational
 ---
 
 # Skill: Weekly Review
@@ -96,7 +116,7 @@ Identify:
 
 ### Step 7: Save or Update Outputs
 
-If asked to write files, update the project’s designated review artifacts. Otherwise return the review in a structured draft.
+If asked to write files, update the projectâ€™s designated review artifacts. Otherwise return the review in a structured draft.
 
 ## Output Format
 
@@ -135,3 +155,4 @@ Stop and ask for direction if:
 - source coverage is too weak for a credible review
 - sensitive content may be inappropriate for the intended audience
 - there are conflicting facts across key sources
+

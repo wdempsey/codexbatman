@@ -1,6 +1,37 @@
----
+﻿---
 name: data-audit
 description: Audit data sources and derived datasets before EDA or modeling. Use when the project needs a documented quality, leakage, bias, and temporal-validity assessment with an explicit proceed decision.
+category: data-science
+role_compatibility:
+  - student
+  - data scientist
+  - data science manager
+stage: audit
+order: 3
+inputs:
+  - dataset sources
+  - schema or dictionary
+  - target definition
+  - time index
+  - unit of analysis
+outputs:
+  - audit decision
+  - remediation actions
+artifacts:
+  - data audit report
+  - schema summary
+  - quality flags
+  - proceed/halt decision
+depends_on:
+  - problem-framing
+recommended_next:
+  - eda-plan
+overlays:
+  - student/tutor-mode
+  - practitioner/execution-mode
+  - practitioner/artifact-enforcer
+  - manager/project-tracker
+status: canonical
 ---
 
 # Skill: Data Audit (Proceed / Halt Protocol)
@@ -46,7 +77,7 @@ If essential inputs are missing, request them before completing the audit.
 
 ## Procedure
 
-### Step 1 — Confirm Unit of Analysis and Time Structure
+### Step 1 â€” Confirm Unit of Analysis and Time Structure
 
 Document:
 - Unit of analysis (what one row represents)
@@ -60,7 +91,7 @@ Checks:
 
 ---
 
-### Step 2 — Schema & Type Validation
+### Step 2 â€” Schema & Type Validation
 
 Check:
 - Column names and types match expectations
@@ -74,7 +105,7 @@ Flag:
 
 ---
 
-### Step 3 — Missingness & Coverage
+### Step 3 â€” Missingness & Coverage
 
 Assess:
 - Overall missingness rate per column
@@ -84,11 +115,11 @@ Assess:
 Flag:
 - Columns with extreme missingness
 - Systematic missingness (entire groups/time periods)
-- “Missing not at random” signals (strong correlation with outcomes)
+- â€œMissing not at randomâ€ signals (strong correlation with outcomes)
 
 ---
 
-### Step 4 — Distribution & Range Sanity Checks
+### Step 4 â€” Distribution & Range Sanity Checks
 
 For numeric variables:
 - Range, percentiles, outliers, invalid values (negative ages, impossible counts)
@@ -105,7 +136,7 @@ Flag:
 
 ---
 
-### Step 5 — Target Construction Review (if applicable)
+### Step 5 â€” Target Construction Review (if applicable)
 
 Document:
 - Exact target definition and window
@@ -122,7 +153,7 @@ If target is time-dependent:
 
 ---
 
-### Step 6 — Leakage Risk Scan (Predictive + Longitudinal)
+### Step 6 â€” Leakage Risk Scan (Predictive + Longitudinal)
 
 Systematically identify:
 - Direct leakage: target itself or proxies
@@ -132,11 +163,11 @@ Systematically identify:
 
 Flag:
 - Any variable that would not exist at prediction time
-- Any join that could pull future information (e.g., “latest status” tables)
+- Any join that could pull future information (e.g., â€œlatest statusâ€ tables)
 
 ---
 
-### Step 7 — Bias and Representativeness Checks
+### Step 7 â€” Bias and Representativeness Checks
 
 Assess:
 - Sampling frame (who is included/excluded)
@@ -151,7 +182,7 @@ Flag:
 
 ---
 
-### Step 8 — Join and Key Integrity (if multiple sources)
+### Step 8 â€” Join and Key Integrity (if multiple sources)
 
 If multiple tables/sources:
 - Validate join keys
@@ -166,7 +197,7 @@ Flag:
 
 ---
 
-### Step 9 — Split Validity (Preview Only)
+### Step 9 â€” Split Validity (Preview Only)
 
 Do not finalize splits here, but assess plausibility:
 - For longitudinal: time-based split or blocked split may be required
@@ -248,3 +279,4 @@ Require human confirmation if:
 - Join integrity suggests row explosion or major drop
 - Fairness or proxy risks are detected
 - Dataset appears non-representative relative to intended use
+
