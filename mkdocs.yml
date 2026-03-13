@@ -70,3 +70,26 @@ nav:
     - Modeling: workflows/data-science/modeling.md
     - Evaluation: workflows/data-science/evaluation.md
     - Experiment Logging: workflows/data-science/experiment-log.md
+  - Data Science Students:
+    - Overview: students/index.md
+  - Data Scientists:
+    - Overview: data-scientists/index.md
+  - Data Science Managers:
+    - Overview: managers/index.md
+    - Project Management: workflows/project-management.md
+    - Managing Data Science: workflows/managing-data-science/index.md
+    - "Example: Project Dashboard": workflows/examples/project-overview-example.md
+  - Skill Library:
+    - Skill Library: setup/skill-reference.md
+    - How Skills Work: toolkit/skills-guide.md
+  - Build Your Own:
+    - Overview: system/index.md
+    - Building Skills: system/building-skills.md
+    - Agents vs Skills: system/agents-vs-skills.md
+    - Continuous Improvement: system/continuous-improvement.md
+    - Patterns: system/patterns.md
+    - Downloads & Reference Library: downloads/index.md
+    - Agents vs Skills Guide: downloads/agents-vs-skills-guide.md
+    - Model and Tool Behavior: downloads/claude-under-the-hood.md
+    - Skill Patterns: downloads/skill-patterns.md
+    - Collected Tips Log: downloads/collected-tips-log.md
