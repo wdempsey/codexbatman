@@ -1,21 +1,18 @@
-﻿---
+---
 name: hint-ladder
 description: Provide progressive hints for a student task by wrapping an existing skill or workflow. Use when the student should receive the smallest helpful hint first, with stronger hints only if needed.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - student
-stage: delivery-style
-inputs:
-  - base skill step
-  - student block
-outputs:
-  - progressive hints
-artifacts:
-  - hint levels 1-4
-  - next move prompt
 overlays:
-  - wraps base skill steps with progressive disclosure
-status: active
+  - problem-framing
+  - data-audit
+  - eda-plan
+  - modeling
+  - model-evaluation
+  - experiment-log
 ---
 
 # Skill: Hint Ladder

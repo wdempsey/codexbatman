@@ -1,10 +1,11 @@
-﻿---
+---
 name: weekly-review
 description: Produce a project-centered weekly review for a data science or research project by synthesizing transcripts, email, documents, and prior status artifacts into a dashboard, log, and action summary.
 category: manager
+status: active
+stage: manager-ops
 role_compatibility:
   - data science manager
-stage: review
 inputs:
   - project artifacts
   - experiment logs
@@ -20,7 +21,6 @@ depends_on:
   - project-setup
 recommended_next:
   - stakeholder-update
-status: operational
 ---
 
 # Skill: Weekly Review

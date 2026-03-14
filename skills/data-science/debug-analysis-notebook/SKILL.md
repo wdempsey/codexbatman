@@ -1,11 +1,12 @@
-﻿---
+---
 name: debug-analysis-notebook
 description: Debug analytical notebooks without uncontrolled rewrites. Use when analysis outputs are inconsistent or broken and the team needs a structured diagnosis of logic, leakage, shape, split, and metric issues.
 category: data-science
+status: active
+stage: modeling
 role_compatibility:
   - data scientist
   - data science manager
-stage: debugging
 inputs:
   - notebook path
   - error traces
@@ -28,9 +29,8 @@ recommended_next:
   - experiment-log
   - model-evaluation
 overlays:
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-status: near-canonical
+  - execution-mode
+  - artifact-enforcer
 ---
 
 # Skill: Debug Analysis Notebook

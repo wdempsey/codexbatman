@@ -1,22 +1,19 @@
-﻿---
+---
 name: execution-mode
 description: Wrap a canonical workflow skill for practitioner execution. Use when a data scientist needs direct progress, artifact production, and minimal pedagogical or managerial framing.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - data scientist
-stage: delivery-style
-inputs:
-  - base skill
-  - available inputs
-outputs:
-  - direct execution artifact
-artifacts:
-  - assumptions
-  - artifact draft
-  - blocker list
 overlays:
-  - wraps canonical skills for direct execution
-status: active
+  - project-bootstrap
+  - problem-framing
+  - data-audit
+  - eda-plan
+  - modeling
+  - model-evaluation
+  - experiment-log
 ---
 
 # Skill: Execution Mode

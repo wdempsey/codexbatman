@@ -1,23 +1,16 @@
-﻿---
+---
 name: project-tracker
 description: Wrap workflow artifacts into a manager-facing project-state view. Use when a manager needs cross-artifact tracking of progress, blockers, owners, and upcoming checkpoints.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - data science manager
-stage: delivery-style
-inputs:
-  - workflow artifacts
-  - project timeline
-outputs:
-  - project-state tracker
-artifacts:
-  - stage status
-  - blockers
-  - owners
-  - checkpoints
 overlays:
-  - wraps canonical and manager artifacts into project-state memory
-status: active
+  - project-bootstrap
+  - data-audit
+  - experiment-log
+  - weekly-review
 ---
 
 # Skill: Project Tracker

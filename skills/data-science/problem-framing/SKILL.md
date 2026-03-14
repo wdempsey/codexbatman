@@ -1,13 +1,14 @@
-﻿---
+---
 name: problem-framing
 description: Define the analytical problem before any audit, exploration, or modeling begins. Use when a project needs an explicit problem statement, success metrics, constraints, and a documented risk register.
 category: data-science
+status: canonical
+stage: framing
+order: 2
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: framing
-order: 2
 inputs:
   - problem description
   - stakeholder context
@@ -26,11 +27,14 @@ depends_on:
 recommended_next:
   - data-audit
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-  - manager/executive-summary
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - artifact-enforcer
+  - executive-summary
+human_review_required: true
+halts_if_missing:
+  - problem description
+produces_gate: audit-ready
 ---
 
 # Skill: Problem Framing

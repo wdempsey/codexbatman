@@ -1,20 +1,16 @@
-﻿# Data Science Skills
+# Data Science Skills
 
-This category contains the canonical and near-canonical data science workflow backbone.
+This category contains the canonical and near-canonical workflows for disciplined, reproducible data science. The backbone is artifact-first and Codex-native, and these skills function as operating procedures rather than generic prompts.
 
-The backbone is artifact-first and Codex-native.
+## Canonical Workflow Backbone
 
-## Canonical Chain
-
-- `project-bootstrap` establishes the workspace and artifact locations.
-- `problem-framing` defines the analytical objective before data work begins.
-- `data-audit` tests whether the available data is fit for downstream work.
-- `eda-plan` defines disciplined exploratory analysis before modeling.
-- `modeling` defines baseline and candidate model execution with controlled validation.
-- `model-evaluation` interprets performance, robustness, and failure modes.
-- `experiment-log` records every modeling iteration as a durable artifact.
-
-Ordered canonical workflow:
+- `project-bootstrap`: establish the minimum workspace structure and artifact locations before analytical work begins
+- `problem-framing`: define the analytical question, constraints, stakeholders, and success criteria
+- `data-audit`: assess data readiness, risks, assumptions, and stop conditions before modeling
+- `eda-plan`: define bounded exploratory analysis linked to the framed question
+- `modeling`: execute baseline and candidate model work within explicit workflow gates
+- `model-evaluation`: interpret performance, robustness, and failure modes against project goals
+- `experiment-log`: record each modeling run, decision, result, and next step as a durable artifact
 
 1. `project-bootstrap`
 2. `problem-framing`
@@ -24,16 +20,16 @@ Ordered canonical workflow:
 6. `model-evaluation`
 7. `experiment-log`
 
-## Advanced AI-Native Skills (Near-Canonical)
+## Advanced AI-Native Skills
 
-- `causal-design-check` enforces explicit causal identification logic and interpretation limits.
-- `paper-to-replication` converts published designs into executable replication artifacts.
-- `debug-analysis-notebook` diagnoses notebook failures with minimal, evidence-led fixes.
-- `result-communication` translates technical outputs into decision-facing deliverables.
+- `causal-design-check`
+- `paper-to-replication`
+- `debug-analysis-notebook`
+- `result-communication`
 
-These skills extend the backbone without replacing canonical workflow gates.
+These skills extend the backbone without replacing the canonical gates.
 
-Each skill defines:
+## What Each Skill Defines
 
 - purpose
 - invocation boundary
@@ -41,5 +37,3 @@ Each skill defines:
 - expected outputs
 - artifact checklist
 - common failure modes
-
-The goal is to make workflow state legible to Codex and to humans. These skills are operating procedures for disciplined, reproducible data science work.

@@ -1,13 +1,14 @@
-﻿---
+---
 name: project-bootstrap
 description: Initialize the artifact backbone for a Codex-native data science project before analysis begins. Use when a repository or workspace needs the core files, directories, and workflow anchors required for framing, audit, and experiment logging.
 category: data-science
+status: canonical
+stage: bootstrap
+order: 1
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: bootstrap
-order: 1
 inputs:
   - project scope
   - repository context
@@ -18,13 +19,17 @@ outputs:
 artifacts:
   - project bootstrap artifact
   - workspace conventions
+depends_on: []
 recommended_next:
   - problem-framing
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - artifact-enforcer
+halts_if_missing:
+  - project scope
+  - repository context
+produces_gate: framing-ready
 ---
 
 # Skill: Project Bootstrap

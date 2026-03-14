@@ -1,13 +1,14 @@
-﻿---
+---
 name: model-evaluation
 description: Evaluate model behavior with performance interpretation, failure analysis, and robustness checks. Use after modeling to determine whether a model is ready to advance, needs revision, or should be rejected.
 category: data-science
+status: canonical
+stage: evaluation
+order: 6
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: evaluation
-order: 6
 inputs:
   - modeling summary
   - baseline and candidate metrics
@@ -28,11 +29,16 @@ depends_on:
 recommended_next:
   - experiment-log
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - manager/executive-summary
-  - manager/communication-workflows
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - executive-summary
+  - communication-workflows
+human_review_required: true
+halts_if_missing:
+  - modeling summary
+  - baseline and candidate metrics
+  - validation design
+produces_gate: evaluation-recommendation
 ---
 
 # Skill: Model Evaluation

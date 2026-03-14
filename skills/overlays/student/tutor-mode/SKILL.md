@@ -1,23 +1,21 @@
-﻿---
+---
 name: tutor-mode
 description: Wrap an existing skill in student tutoring mode. Use when a student needs guided help, structured questioning, or partial scaffolding instead of a direct solution or full execution.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - student
-stage: delivery-style
-inputs:
-  - base skill
-  - student goal
-  - current attempt
-outputs:
-  - scaffolded guidance
-artifacts:
-  - guided steps
-  - targeted hints
-  - checkpoint prompts
 overlays:
-  - wraps canonical and manager skills for attempt-first tutoring
-status: active
+  - project-bootstrap
+  - problem-framing
+  - data-audit
+  - eda-plan
+  - modeling
+  - model-evaluation
+  - experiment-log
+  - project-setup
+  - weekly-review
 ---
 
 # Skill: Tutor Mode

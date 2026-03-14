@@ -1,10 +1,11 @@
-﻿---
+---
 name: inbox-triage
 description: Triage project-relevant inbox activity into project memory, actions, waiting-fors, and meeting-prep inputs. Use when a manager needs email processed in project context rather than as isolated messages.
 category: manager
+status: active
+stage: manager-ops
 role_compatibility:
   - data science manager
-stage: intake
 inputs:
   - inbox sources
   - project context
@@ -19,7 +20,6 @@ artifacts:
 recommended_next:
   - project-setup
   - weekly-review
-status: operational
 ---
 
 # Skill: Inbox Triage

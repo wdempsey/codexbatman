@@ -1,23 +1,18 @@
-﻿---
+---
 name: executive-summary
 description: Wrap a workflow skill for manager-facing summary delivery. Use when canonical or operational artifacts need to be translated into concise status, risk, and decision summaries for leaders or stakeholders.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - data science manager
-stage: delivery-style
-inputs:
-  - source artifact
-  - audience and decision context
-outputs:
-  - manager-facing summary
-artifacts:
-  - status summary
-  - risk summary
-  - decision ask
-  - next steps
 overlays:
-  - wraps canonical and manager skills into concise executive synthesis
-status: active
+  - problem-framing
+  - data-audit
+  - model-evaluation
+  - weekly-review
+  - stakeholder-update
+  - result-communication
 ---
 
 # Skill: Executive Summary

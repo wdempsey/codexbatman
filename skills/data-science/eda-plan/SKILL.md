@@ -1,13 +1,14 @@
-﻿---
+---
 name: eda-plan
 description: Plan exploratory data analysis as a disciplined workflow phase before modeling. Use when a project needs explicit exploratory questions, plot priorities, subgroup checks, and outlier/confounder checks tied to the framing and audit artifacts.
 category: data-science
+status: canonical
+stage: eda
+order: 4
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: eda
-order: 4
 inputs:
   - problem framing artifact
   - data audit artifact
@@ -28,10 +29,13 @@ depends_on:
 recommended_next:
   - modeling
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - artifact-enforcer
+halts_if_missing:
+  - problem framing artifact
+  - data audit artifact
+produces_gate: modeling-ready
 ---
 
 # Skill: EDA Plan

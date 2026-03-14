@@ -1,13 +1,14 @@
-﻿---
+---
 name: modeling
 description: Specify and compare models in a controlled, reproducible way. Use when EDA is complete and the project needs a baseline, candidate model set, validation approach, and training record before evaluation.
 category: data-science
+status: canonical
+stage: modeling
+order: 5
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: modeling
-order: 5
 inputs:
   - problem framing artifact
   - data audit artifact
@@ -31,10 +32,15 @@ depends_on:
 recommended_next:
   - model-evaluation
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - artifact-enforcer
+halts_if_missing:
+  - problem framing artifact
+  - data audit artifact
+  - EDA plan
+  - split strategy
+  - metrics
 ---
 
 # Skill: Modeling

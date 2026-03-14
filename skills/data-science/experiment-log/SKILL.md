@@ -1,13 +1,14 @@
-﻿---
+---
 name: experiment-log
 description: Record a modeling or evaluation run as a reproducible experiment artifact. Use after any training, feature change, split change, or evaluation change that could affect analytical conclusions.
 category: data-science
+status: canonical
+stage: logging
+order: 7
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: logging
-order: 7
 inputs:
   - model configuration
   - dataset version
@@ -27,11 +28,16 @@ depends_on:
 recommended_next:
   - result-communication
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-  - manager/project-tracker
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - artifact-enforcer
+  - project-tracker
+halts_if_missing:
+  - model configuration
+  - dataset version
+  - split strategy
+  - metrics
+produces_gate: experiment-recorded
 ---
 
 # Skill: Experiment Log

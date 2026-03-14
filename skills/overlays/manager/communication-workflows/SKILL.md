@@ -1,23 +1,16 @@
-﻿---
+---
 name: communication-workflows
 description: Wrap workflow artifacts into manager-facing email, meeting, and stakeholder communication workflows. Use when a data science manager needs communication support grounded in existing project and analysis artifacts.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - data science manager
-stage: delivery-style
-inputs:
-  - current artifacts
-  - communication objective
-  - audience
-outputs:
-  - communication-ready draft
-artifacts:
-  - meeting prep
-  - stakeholder draft
-  - follow-up actions
 overlays:
-  - wraps workflow artifacts into manager communication outputs
-status: active
+  - weekly-review
+  - stakeholder-update
+  - result-communication
+  - model-evaluation
 ---
 
 # Skill: Communication Workflows

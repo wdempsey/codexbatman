@@ -1,22 +1,18 @@
-﻿---
+---
 name: misconception-diagnosis
 description: Diagnose why a student is stuck when working through an existing skill or workflow. Use when repeated errors suggest a conceptual misunderstanding rather than a missing hint.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - student
-stage: delivery-style
-inputs:
-  - student attempt
-  - base skill standard
-outputs:
-  - conceptual diagnosis and repair prompt
-artifacts:
-  - misconception note
-  - corrective contrast
-  - revision prompt
 overlays:
-  - wraps base skills for conceptual error diagnosis
-status: active
+  - problem-framing
+  - data-audit
+  - eda-plan
+  - modeling
+  - model-evaluation
+  - experiment-log
 ---
 
 # Skill: Misconception Diagnosis

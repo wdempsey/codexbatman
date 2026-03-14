@@ -1,13 +1,14 @@
-﻿---
+---
 name: data-audit
 description: Audit data sources and derived datasets before EDA or modeling. Use when the project needs a documented quality, leakage, bias, and temporal-validity assessment with an explicit proceed decision.
 category: data-science
+status: canonical
+stage: audit
+order: 3
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: audit
-order: 3
 inputs:
   - dataset sources
   - schema or dictionary
@@ -27,11 +28,16 @@ depends_on:
 recommended_next:
   - eda-plan
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-  - practitioner/artifact-enforcer
-  - manager/project-tracker
-status: canonical
+  - tutor-mode
+  - execution-mode
+  - artifact-enforcer
+  - project-tracker
+human_review_required: true
+halts_if_missing:
+  - dataset sources
+  - target definition
+  - unit of analysis
+produces_gate: audit-decision
 ---
 
 # Skill: Data Audit (Proceed / Halt Protocol)

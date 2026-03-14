@@ -1,11 +1,12 @@
-﻿---
+---
 name: result-communication
 description: Convert technical outputs into decision-facing communication artifacts. Use when analysis results need memo, update, or slide-ready summaries with uncertainty, caveats, and recommended actions.
 category: data-science
+status: active
+stage: evaluation
 role_compatibility:
   - data scientist
   - data science manager
-stage: communication
 inputs:
   - evaluation or experiment artifacts
   - audience
@@ -26,9 +27,9 @@ depends_on:
 recommended_next:
   - stakeholder-update
 overlays:
-  - manager/executive-summary
-  - manager/communication-workflows
-status: near-canonical
+  - executive-summary
+  - communication-workflows
+human_review_required: true
 ---
 
 # Skill: Result Communication

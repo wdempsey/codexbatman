@@ -1,17 +1,14 @@
-﻿# Project State - Codex-Native Data Science Operating System
-
-This document summarizes the current architectural state of the project and immediate stabilization priorities.
+# Project State - Codex-Native Data Science Operating System
 
 ## 1. Core Identity
 
-This repository is a Codex-native data science operating system.
-
-It is organized around:
+This repository is a Codex-native data science operating system organized around:
 
 - one shared workflow backbone
-- three roles (student, data scientist, data science manager)
-- role-aware overlays that adapt delivery style
-- explicit workflow gates and reproducibility controls
+- three roles
+- role-aware overlays
+- explicit workflow gates
+- reproducibility controls
 
 ## 2. Design Principles
 
@@ -26,19 +23,37 @@ The system is:
 
 ## 3. Logging Status
 
-- `planning.md` is the active operational log for current tasks and follow-ups.
-- `PROJECT_STATE.md` is the durable architecture snapshot.
-- `devlog/` is deferred for now and is not part of routine workflow until explicitly implemented.
+- `planning.md` is the active operational log for current tasks and follow-ups
+- `PROJECT_STATE.md` is the durable architecture snapshot
+- `devlog/` is deferred unless explicitly implemented
 
-## 4. Remaining Structural Tasks
+## 4. Current Backbone Status
 
-- Complete identity cleanup across public-facing files.
-- Review stale branding and duplicate workflow pages inherited from migration.
-- Expand the manager layer with clearer operating workflows and examples.
-- Mature student overlays for scaffolded learning paths.
+The canonical data-science backbone currently includes:
 
-## 5. Immediate Priority
+- `project-bootstrap`
+- `problem-framing`
+- `data-audit`
+- `eda-plan`
+- `modeling`
+- `model-evaluation`
+- `experiment-log`
 
-Stabilize architecture and public identity before expansion.
+The next layer of advanced AI-native skills is also present or emerging:
 
-No major scope growth until branding, nav alignment, and workflow-language consistency are clean.
+- `causal-design-check`
+- `paper-to-replication`
+- `debug-analysis-notebook`
+- `result-communication`
+
+## 5. Remaining Structural Tasks
+
+- sync stale docs and config to current architecture
+- tighten role entry pages into stronger operating lanes
+- standardize metadata across folder-based skills
+- expand manager examples and workflows
+- mature student overlay behavior
+
+## 6. Immediate Priority
+
+stabilization and synchronization before major expansion

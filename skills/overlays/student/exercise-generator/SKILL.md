@@ -1,22 +1,18 @@
-﻿---
+---
 name: exercise-generator
 description: Generate practice exercises around an existing workflow or skill without solving the exercise. Use when a student needs targeted practice on framing, auditing, review, or project-structure reasoning.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - student
-stage: delivery-style
-inputs:
-  - base skill
-  - learning objective
-outputs:
-  - practice exercises
-artifacts:
-  - exercise prompt
-  - expected artifact type
-  - self-check questions
 overlays:
-  - wraps workflows into bounded practice drills
-status: active
+  - problem-framing
+  - data-audit
+  - eda-plan
+  - experiment-log
+  - project-setup
+  - weekly-review
 ---
 
 # Skill: Exercise Generator

@@ -1,21 +1,19 @@
-﻿---
+---
 name: artifact-enforcer
 description: Wrap a canonical skill with strict artifact enforcement. Use when a data scientist needs Codex to refuse workflow drift and require the canonical output before proceeding.
 category: overlays
+status: active
+stage: overlay
 role_compatibility:
   - data scientist
-stage: delivery-style
-inputs:
-  - base skill
-  - artifact checklist
-outputs:
-  - completeness decision
-artifacts:
-  - completeness check
-  - missing elements list
 overlays:
-  - wraps canonical skills with strict artifact gating
-status: active
+  - project-bootstrap
+  - problem-framing
+  - data-audit
+  - eda-plan
+  - modeling
+  - model-evaluation
+  - experiment-log
 ---
 
 # Skill: Artifact Enforcer

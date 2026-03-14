@@ -1,38 +1,43 @@
-﻿# Skills & Agents
-
-Execution-layer skills and agents for this repository's Codex-native Data Science Operating System.
+# Skills & Agents
 
 ## What This Directory Does
 
-This directory contains reusable workflow instructions and role overlays that Codex executes in-repo.
+This directory contains the execution-layer workflows for this repository's Codex-native data science operating system.
 
-- Skills encode repeatable best practices.
-- Agents provide specialized review or drafting behavior.
-- The docs explain when to use each workflow.
-- Codex routes by role, mode, then workflow skill.
+Skills encode repeatable best practices. Overlays adapt those workflows by role and delivery style. Codex routes requests in the repository by role, then mode, then workflow skill.
 
-Two formats currently coexist:
+## Skill Formats
+
+Two skill formats currently coexist in this repository:
 
 - command-style markdown skills
 - folder-based Codex skills with `SKILL.md`
 
+Folder-based skills are now the canonical format for this repo. They are the primary way the workflow backbone, manager workflows, and role overlays are expressed.
+
+Command-style markdown skills remain only for compatibility and transition. They are not the primary authoring target for new repository-native workflow logic.
+
 ## Categories
 
-- `data-science/` = canonical analytical workflow backbone.
-- `manager/` = operational and coordination workflows.
-- `overlays/` = role-aware delivery wrappers.
+- `data-science/` = canonical analytical workflow backbone
+- `manager/` = project management, communication, and coordination workflows
+- `overlays/` = role-aware wrappers for delivery style
 
-## Quick Install
+## Recommended Usage
 
-### Repo-native (recommended)
+Normal use is repo-native.
 
-Folder-based Codex skills are intended to stay in this repository and be executed in local context. In normal use, no extra install step is required beyond cloning the repo and opening it in Codex.
+Users clone the repository and open it in Codex. Folder-based skills are intended to be read and executed in local repository context, where adjacent docs, workflow pages, and project state are available.
 
-### Legacy command-style compatibility
+Overlays modify delivery style without replacing canonical workflow logic. The shared workflow backbone remains the source of truth for analytical sequencing, gates, and artifacts.
 
-Command-style markdown skills can still be copied into a user tool directory if you need compatibility with command-based setups.
+## Legacy Compatibility
 
-Legacy Claude-compatible install example:
+Legacy command-style usage remains optional.
+
+If you need compatibility with a command-based setup, you can still copy a markdown skill into a user command directory. This is a secondary path, not the default operating model.
+
+Example:
 
 ```bash
 mkdir -p ~/.claude/commands
@@ -40,13 +45,7 @@ curl -o ~/.claude/commands/review-plan.md \
   https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/data-science/review-plan.md
 ```
 
-## Recommended Usage
-
-- Use repo-native skill folders for canonical workflows.
-- Use overlays to adapt behavior by role.
-- Treat command-style skills as transitional compatibility tools.
-
 ## Additional References
 
-- Skill library docs: `docs/setup/skill-reference.md`
-- System architecture docs: `docs/system/`
+- [Skill Library](../docs/setup/skill-reference.md)
+- [System documentation](../docs/system/index.md)

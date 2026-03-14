@@ -1,11 +1,12 @@
-﻿---
+---
 name: paper-to-replication
 description: Convert a paper or empirical design into executable replication artifacts. Use when teams need a structured summary, data requirements map, replication plan, and implementation checklist.
 category: data-science
+status: active
+stage: bootstrap
 role_compatibility:
   - student
   - data scientist
-stage: replication-planning
 inputs:
   - paper or methods text
   - appendices
@@ -24,9 +25,8 @@ recommended_next:
   - problem-framing
   - data-audit
 overlays:
-  - student/tutor-mode
-  - practitioner/execution-mode
-status: near-canonical
+  - tutor-mode
+  - execution-mode
 ---
 
 # Skill: Paper to Replication

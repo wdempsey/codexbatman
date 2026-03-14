@@ -2,11 +2,9 @@
 
 ## Why Workflows Matter
 
-AI tools make analysis easier and faster, but discipline and reproducibility still determine whether results are trustworthy.
+AI makes analysis faster. Workflow discipline makes it trustworthy.
 
-AI can generate analysis. Workflows ensure the analysis is correct, reproducible, and interpretable.
-
-This system encodes best practices as reusable workflow phases so teams can execute consistently across projects.
+This system encodes best practices as reusable workflow phases so analytical work stays legible, reproducible, and reviewable across projects.
 
 ## The Canonical Workflow
 
@@ -20,23 +18,29 @@ This system encodes best practices as reusable workflow phases so teams can exec
 
 ```text
 project bootstrap
-↓
+|
+v
 problem framing
-↓
+|
+v
 data audit
-↓
+|
+v
 EDA
-↓
+|
+v
 modeling
-↓
+|
+v
 evaluation
-↓
+|
+v
 experiment logging
 ```
 
 ## Skills as Workflow Execution
 
-Each phase is executed through a Codex skill.
+Each phase is an active Codex skill in the current repository workflow.
 
 - `/project-bootstrap` -> [skills/data-science/project-bootstrap/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/project-bootstrap)
 - `/problem-framing` -> [skills/data-science/problem-framing/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/problem-framing)
@@ -48,6 +52,6 @@ Each phase is executed through a Codex skill.
 
 ## Roles
 
-- students -> learn the workflow
-- data scientists -> execute the workflow
-- managers -> review and coordinate the workflow
+- students learn the workflow
+- data scientists execute the workflow
+- managers review and coordinate the workflow

@@ -1,4 +1,4 @@
-﻿# AGENTS.md
+# AGENTS.md
 
 ## Mission And Scope
 
@@ -39,7 +39,7 @@ Route requests in this order:
 Rule:
 - Overlays wrap shared workflow skills. They do not replace canonical workflow logic.
 - Canonical workflow logic must live in shared skills, and overlays must not duplicate that logic.
-- When routing among folder-based skills, prefer skill metadata front matter fields before falling back to prose.
+- When routing among folder-based skills, prefer skill metadata front matter fields before falling back to prose. Use `skills/METADATA.md` as the schema source of truth for those fields.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.

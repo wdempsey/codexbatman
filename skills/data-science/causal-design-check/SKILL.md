@@ -1,12 +1,13 @@
-﻿---
+---
 name: causal-design-check
 description: Validate causal design logic before causal claims are made. Use when analysis includes treatment effects, policy effects, or intervention impacts that require explicit estimands, assumptions, and threat assessment.
 category: data-science
+status: active
+stage: framing
 role_compatibility:
   - student
   - data scientist
   - data science manager
-stage: causal-design
 inputs:
   - problem framing artifact
   - treatment definition
@@ -29,9 +30,9 @@ recommended_next:
   - modeling
   - model-evaluation
 overlays:
-  - student/tutor-mode
-  - manager/executive-summary
-status: near-canonical
+  - tutor-mode
+  - executive-summary
+human_review_required: true
 ---
 
 # Skill: Causal Design Check
