@@ -1,4 +1,4 @@
-﻿site_name: Codex Batman - Data Science Operating System
+site_name: Codex Batman - Data Science Operating System
 site_url: https://wdempsey.github.io/codexbatman/
 site_description: Codex-native data science operating system with role-aware workflows for students, practitioners, and managers
 site_author: William Dempsey
@@ -64,6 +64,7 @@ nav:
     - Privacy: privacy.md
   - Core Data Science Workflow:
     - Overview: workflows/data-science/index.md
+    - Project Bootstrap: workflows/data-science/project-bootstrap.md
     - Problem Framing: workflows/data-science/problem-framing.md
     - Data Audit: workflows/data-science/data-audit.md
     - Exploratory Analysis: workflows/data-science/eda-plan.md
@@ -89,7 +90,3 @@ nav:
     - Continuous Improvement: system/continuous-improvement.md
     - Patterns: system/patterns.md
     - Downloads & Reference Library: downloads/index.md
-    - Agents vs Skills Guide: downloads/agents-vs-skills-guide.md
-    - Model and Tool Behavior: downloads/claude-under-the-hood.md
-    - Skill Patterns: downloads/skill-patterns.md
-    - Collected Tips Log: downloads/collected-tips-log.md

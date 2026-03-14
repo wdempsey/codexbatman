@@ -1,74 +1,39 @@
-﻿# For Data Scientists
+# For Data Scientists
 
-## AI-Native Data Science
+## Role Summary
 
-This system treats Codex as a workflow executor, not a generic chat interface.
+Data scientists use Codex as a workflow executor for the shared canonical data science process.
 
-Workflows encode best practices directly into operational steps. Each step produces explicit artifacts so analysis decisions are inspectable, reproducible, and reviewable.
+The role-specific difference is delivery style, not workflow logic. In practitioner mode the emphasis is direct execution, artifact quality, and forward progress.
 
-Typical outputs include:
+If you are actively doing analysis, start with [Core Data Science Workflow](../workflows/data-science/index.md). Use this page as a guide to the practitioner overlays and the skills that matter most during execution.
 
-- analysis notebooks
-- data audits
-- experiment logs
-- model cards
-- decision memos
+## What Changes In Practitioner Mode
 
-## The Canonical Workflow
-
-The shared workflow backbone is:
-
-- problem framing
-- data audit
-- EDA plan
-- modeling
-- evaluation
-- experiment logging
-- documentation
-
-These stages are encoded as skills. The skill system standardizes execution while preserving project-specific choices.
-
-## Using Skills
-
-Skills are invoked directly in Codex, for example:
-
-- `/problem-framing`
-- `/data-audit`
-- `/experiment-log`
-
-Each skill:
-
-- defines required inputs
-- produces structured artifacts
-- enforces workflow guardrails
-
-## Example Workflow
-
-problem-framing  
-↓  
-data-audit  
-↓  
-eda-plan  
-↓  
-modeling  
-↓  
-experiment-log
-
-## Key Skills for Practitioners
+Practitioner overlays keep the shared workflow strict and execution-oriented.
 
 - `project-bootstrap`
+- `execution-mode`
+- `artifact-enforcer`
 - `problem-framing`
 - `data-audit`
 - `eda-plan`
-- `modeling-plan`
-- `evaluation-plan`
+- `modeling`
+- `model-evaluation`
 - `experiment-log`
-- `model-card`
-- `decision-memo`
+- `result-communication`
 
-## Skill Links
+## Typical Practitioner Outputs
 
-- [skills/data-science/problem-framing](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/problem-framing)
-- [skills/data-science/data-audit](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/data-audit)
-- [skills/data-science/experiment-log](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/experiment-log)
-- [skills/overlays/practitioner](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/practitioner)
+- framing artifacts
+- data audit reports
+- bounded EDA plans
+- modeling outputs
+- evaluation summaries
+- experiment logs
+
+## Where To Go Next
+
+- Use the [Skill Library](../setup/skill-reference.md) for the shared catalog and direct links to the underlying skill folders.
+- Use [How Skills Work](../toolkit/skills-guide.md) if you want invocation examples and operating guidance.
+- Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.

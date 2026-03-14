@@ -1,53 +1,37 @@
-﻿# For Data Science Managers
+# For Data Science Managers
 
-## AI for Managing Data Science
+## Role Summary
 
-Managers do not run models as a primary responsibility. They run the operating system around model work.
+Managers use the same operating system, but their focus is coordination rather than direct model execution.
 
-In this system, managers coordinate:
+The shared workflow still matters because teams should only advance when required artifacts and gates are in place. Manager mode emphasizes summaries, tracking, communication, and governance around that workflow.
 
-- priorities
-- communication
-- risk
-- progress
-- decisions
+If you are leading or coordinating work, start with the shared workflow pages and the manager workflow pages, then use this page to see which manager-specific skills and overlays fit that role.
 
-Codex helps structure these processes with repeatable workflows and explicit artifacts.
+## What Changes In Manager Mode
 
-## Manager Workflow
+Manager overlays help Codex summarize and coordinate instead of diving straight into hands-on analysis.
 
-A standard manager workflow is:
+- `executive-summary`
+- `project-tracker`
+- `communication-workflows`
+
+Manager workflow skills focus on:
 
 - project setup
 - weekly review
 - stakeholder updates
-- risk monitoring
-- decision documentation
+- inbox triage
 
-This layer uses the same underlying skill system as student and practitioner workflows, but applies it to coordination, planning, and governance.
-
-## Example Manager Session
-
-Manager: prepare weekly review for churn project
-
-Codex:
-
-- summarizes experiment logs
-- highlights risks
-- drafts update memo
-- lists open questions
-
-## Manager Skills
+## Manager-Focused Skills
 
 - `project-setup`
 - `weekly-review`
 - `inbox-triage`
 - `stakeholder-update`
-- `meeting-prep`
 
-## Skill Links
+## Where To Go Next
 
-- [skills/manager/project-setup](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-setup)
-- [skills/manager/weekly-review](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/weekly-review)
-- [skills/manager/stakeholder-update](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/stakeholder-update)
-- [skills/overlays/manager](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/manager)
+- Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of manager skills, overlays, and workflow skills.
+- Use [Project Management](../workflows/project-management.md) and [Managing Data Science](../workflows/managing-data-science/index.md) for the manager workflow layer.
+- Return to [Core Data Science Workflow](../workflows/data-science/index.md) when you need to verify whether a project is ready to move forward.

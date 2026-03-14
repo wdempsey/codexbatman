@@ -1,4 +1,4 @@
-﻿# Core Data Science Workflow
+# Core Data Science Workflow
 
 ## Why Workflows Matter
 
@@ -10,14 +10,17 @@ This system encodes best practices as reusable workflow phases so teams can exec
 
 ## The Canonical Workflow
 
-1. problem framing
-2. data audit
-3. exploratory analysis
-4. modeling
-5. evaluation
-6. experiment logging
+1. project bootstrap
+2. problem framing
+3. data audit
+4. exploratory analysis
+5. modeling
+6. evaluation
+7. experiment logging
 
 ```text
+project bootstrap
+↓
 problem framing
 ↓
 data audit
@@ -35,6 +38,7 @@ experiment logging
 
 Each phase is executed through a Codex skill.
 
+- `/project-bootstrap` -> [skills/data-science/project-bootstrap/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/project-bootstrap)
 - `/problem-framing` -> [skills/data-science/problem-framing/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/problem-framing)
 - `/data-audit` -> [skills/data-science/data-audit/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/data-audit)
 - `/eda-plan` -> [skills/data-science/eda-plan/](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/eda-plan)

@@ -1,6 +1,6 @@
 # Planning
 
-Last updated: 2026-03-11
+Last updated: 2026-03-13
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
@@ -12,6 +12,7 @@ Last updated: 2026-03-11
 - [x] Establish the first-wave canonical data science skills.
 - [x] Add workflow documentation pages for Project Bootstrap, Problem Framing, Data Audit, and Experiment Log.
 - [x] Add role-aware overlays for student, practitioner, and manager delivery.
+- [x] Restore top-level tabs while keeping Skill Library as the shared catalog hub and role pages as summary pages.
 - [ ] Review the repository for duplicate or conflicting files, redundant workflow pages, and stale site language after the architecture changes.
 - [ ] Decide whether to add a real `devlog/` directory and template or remove stale references to that system.
 
