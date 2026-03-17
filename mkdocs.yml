@@ -73,6 +73,7 @@ nav:
     - Experiment Logging: workflows/data-science/experiment-log.md
   - Data Science Students:
     - Overview: students/index.md
+    - Student First Session: students/first-session.md
   - Data Scientists:
     - Overview: data-scientists/index.md
   - Data Science Managers:
@@ -82,9 +83,10 @@ nav:
     - "Example: Project Dashboard": workflows/examples/project-overview-example.md
   - Skill Library:
     - Skill Library: setup/skill-reference.md
-    - How Skills Work: toolkit/skills-guide.md
+    - How Skills Work: system/skills-explained.md
   - Build Your Own:
     - Overview: system/index.md
+    - How Skills Work: system/skills-explained.md
     - Building Skills: system/building-skills.md
     - Agents vs Skills: system/agents-vs-skills.md
     - Continuous Improvement: system/continuous-improvement.md

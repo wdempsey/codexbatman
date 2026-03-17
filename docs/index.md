@@ -83,6 +83,7 @@ social:
             <h3>Students</h3>
             <p>Learn workflows through guided practice, attempt-first tutoring, and structured feedback.</p>
             <p><a href="students/index.md">Open student path</a></p>
+            <p><a href="students/first-session.md">Start learning with a real dataset: Predict Housing Prices with Tutor Mode</a></p>
           </div>
         </article>
 

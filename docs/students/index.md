@@ -1,5 +1,11 @@
 # For Students
 
+## Start Here
+
+If you are new to this system, begin with:
+
+[**First Session - Predict Housing Prices with Tutor Mode**](first-session.md)
+
 ## Role Summary
 
 Students use the same canonical data science workflow as practitioners, but with a scaffolded delivery style.
@@ -40,5 +46,5 @@ Student overlays wrap the shared workflow skills rather than replacing them.
 ## Where To Go Next
 
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of workflow skills, overlays, and manager tools.
-- Use [How Skills Work](../toolkit/skills-guide.md) if you want the mental model for invoking skills in Codex.
+- Use [How Skills Work](../system/skills-explained.md) if you want the mental model for how workflow skills, tutor overlays, and method skills fit together.
 - Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.
