@@ -64,6 +64,8 @@ Common wrapped skills:
 
 State which base skill or workflow best matches the request.
 
+If the base workflow proposes a method and its metadata includes method-handoff guidance, use that guidance before inventing an ad hoc teaching path.
+
 ### Step 2: Set the Tutoring Contract
 
 Tell the student that the interaction will:
@@ -75,6 +77,8 @@ Tell the student that the interaction will:
 ### Step 3: Decompose the Task
 
 Break the work into small steps with clear checkpoints.
+
+If the student is blocked by an unfamiliar method, pause the workflow and route to the relevant method skill before continuing.
 
 ### Step 4: Ask Before Revealing
 

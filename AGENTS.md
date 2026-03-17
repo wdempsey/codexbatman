@@ -40,12 +40,16 @@ Rule:
 - Overlays wrap shared workflow skills. They do not replace canonical workflow logic.
 - Canonical workflow logic must live in shared skills, and overlays must not duplicate that logic.
 - When routing among folder-based skills, prefer skill metadata front matter fields before falling back to prose. Use `skills/METADATA.md` as the schema source of truth for those fields.
+- When a workflow skill includes method-handoff metadata, prefer that metadata over ad hoc method suggestions.
+- If the learner is a student and a proposed method is unfamiliar, route to the relevant method skill before continuing the workflow.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.
 - Preserve existing information architecture and editorial voice.
 - Prefer additive updates over rewrites.
 - Work in a single PR per task unless explicitly instructed otherwise.
+- Grow the methods skill library incrementally from trusted sources such as ISLP, ISLR-Python, and Hands-On Machine Learning (`handson-ml3`), and add new entries as repo-native teaching adapters rather than chapter-summary copies.
+- When creating or updating method skills, treat ISLP, ISLR-Python, and Hands-On Machine Learning (`handson-ml3`) as preferred source materials and implementation-pattern references. Do not copy chapter structure directly; create concise repo-native teaching adapters that fit this system's workflow and overlay architecture.
 
 Out of scope unless explicitly requested:
 - Large-scale reorganizations of docs, nav, or folder structure that go beyond necessary identity alignment.

@@ -54,6 +54,8 @@ The next layer of advanced AI-native skills is also present or emerging:
 - expand manager examples and workflows
 - mature student overlay behavior
 
+The methods skill library is intentionally incremental. Its initial methods cover common supervised learning workflows, and additional method skills will be added gradually using trusted sources such as ISLP, ISLR-Python, and Hands-On Machine Learning (`handson-ml3`) as repo-native teaching adapters rather than chapter-summary imports.
+
 ## 6. Immediate Priority
 
 stabilization and synchronization before major expansion

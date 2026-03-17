@@ -33,6 +33,22 @@ overlays:
   - execution-mode
   - executive-summary
   - communication-workflows
+method_prerequisites:
+  - linear-regression
+  - random-forest
+  - gradient-boosting
+method_default_path:
+  - linear-regression
+  - random-forest
+  - gradient-boosting
+method_escalation_rule: >
+  If the learner cannot explain what model is being evaluated
+  or why it was chosen, pause evaluation and route to the
+  relevant method skill before interpreting results.
+method_handoff_prompts:
+  unfamiliar: "Pause evaluation and teach the method before interpreting metrics."
+  compare: "Explain the tradeoff between the baseline and the stronger model."
+  stronger-than-baseline: "Explain why the stronger model was proposed over the baseline."
 human_review_required: true
 halts_if_missing:
   - modeling summary

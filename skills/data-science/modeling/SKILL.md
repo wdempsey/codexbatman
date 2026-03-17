@@ -35,6 +35,28 @@ overlays:
   - tutor-mode
   - execution-mode
   - artifact-enforcer
+method_prerequisites:
+  - linear-regression
+  - ridge-regression
+  - lasso
+  - random-forest
+  - gradient-boosting
+method_default_path:
+  - linear-regression
+  - ridge-regression
+  - lasso
+  - random-forest
+  - gradient-boosting
+method_escalation_rule: >
+  Start with the simplest method the learner can understand and defend.
+  If a new method is proposed and the learner is unfamiliar with it,
+  pause the workflow, route to the relevant method skill,
+  then resume modeling.
+method_handoff_prompts:
+  unfamiliar: "Pause modeling and teach the method before continuing."
+  compare: "Explain why this method is being compared to the baseline."
+  baseline-first: "Teach or fit the simplest defensible baseline before advanced models."
+  why-this-method: "Explain why this method is appropriate for the current modeling step."
 halts_if_missing:
   - problem framing artifact
   - data audit artifact

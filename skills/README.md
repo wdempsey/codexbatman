@@ -4,7 +4,7 @@
 
 This directory contains the execution-layer workflows for this repository's Codex-native data science operating system.
 
-Skills encode repeatable best practices. Overlays adapt those workflows by role and delivery style. Codex routes requests in the repository by role, then mode, then workflow skill.
+Skills encode repeatable best practices. Overlays adapt those workflows by role and delivery style. Method skills support tutoring when a student encounters an unfamiliar algorithm. Codex routes requests in the repository by role, then mode, then workflow skill.
 
 ## Skill Formats
 
@@ -21,6 +21,7 @@ Command-style markdown skills remain only for compatibility and transition. They
 
 - `data-science/` = canonical analytical workflow backbone
 - `manager/` = project management, communication, and coordination workflows
+- `methods/` = tutoring-oriented method explainers used by the tutor overlay to teach algorithms and statistical or ML concepts when a student has a knowledge gap
 - `overlays/` = role-aware wrappers for delivery style
 
 ## Recommended Usage
@@ -30,6 +31,8 @@ Normal use is repo-native.
 Users clone the repository and open it in Codex. Folder-based skills are intended to be read and executed in local repository context, where adjacent docs, workflow pages, and project state are available.
 
 Overlays modify delivery style without replacing canonical workflow logic. The shared workflow backbone remains the source of truth for analytical sequencing, gates, and artifacts.
+
+Method skills are not workflow skills. They are lightweight teaching references that the tutor overlay can invoke when a student needs help understanding a model or algorithm before continuing with a workflow.
 
 ## Legacy Compatibility
 
