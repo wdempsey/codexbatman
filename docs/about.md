@@ -8,6 +8,8 @@ description: About Codex Batman — why this project exists, who built it, and w
 
 Codex Batman is a Codex-native toolkit for building cleaner, more reproducible data science workflows.
 
+This page explains who I am, why this site exists, and what kind of system I am trying to build in public.
+
 The goal is to build in public a resource for data science students, data scientists, and data science
 managers to leverage AI to improve their learning, their workflows, and their project management skills
 respectively. It's inspired by Dan Roy's post about the role of statisticians at this moment in AI
@@ -19,17 +21,21 @@ efficient influence function theory...) is the wrong approach. This site is my f
 <div class="narrative-block dan-roy-tweet" markdown>
 **Dan Roy on X**
 
-![Dan Roy X post placeholder](assets/about/dan-roy-x-tweet.png)
+<img src="assets/about/dan-roy-x-tweet.png" alt="Dan Roy X post" />
 </div>
 
 This site is intentionally hands-on and iterative. It is meant to evolve in public.
 
 ---
 
+## Who I Am
+
+I am [Walter Dempsey](https://walterhdempsey.com), an academic statistician and applied methodologist trying to make AI genuinely useful for disciplined analytical work.
+
 ## About [Walter Dempsey](https://walterhdempsey.com)
 
 <div class="about-profile-pic" markdown>
-![Walter Dempsey profile placeholder](assets/about/walter-dempsey-profile.png)
+<img src="assets/about/walter-dempsey-profile.png" alt="Walter Dempsey profile" />
 </div>
 
 I am an Associate Professor of [Biostatistics](https://sph.umich.edu/biostat/) and an Assistant Research

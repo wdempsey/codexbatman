@@ -51,7 +51,7 @@ social:
       </div>
 
       <p class="hf-inline-cta">
-        <a class="md-button md-button--primary" href="/about/">About the project</a>
+        <a class="md-button md-button--primary" href="about/">About the project</a>
       </p>
     </div>
   </section>
@@ -73,7 +73,7 @@ social:
           <div>
             <h3>Installation and Setup</h3>
             <p>Set up the base toolkit, environment, and local workflow checks.</p>
-            <p><a href="setup/index.md">Open setup</a></p>
+            <p><a href="setup/">Open setup</a></p>
           </div>
         </article>
 
@@ -82,8 +82,8 @@ social:
           <div>
             <h3>Students</h3>
             <p>Learn workflows through guided practice, attempt-first tutoring, and structured feedback.</p>
-            <p><a href="students/index.md">Open student path</a></p>
-            <p><a href="students/first-session.md">Start learning with a real dataset: Predict Housing Prices with Tutor Mode</a></p>
+            <p><a href="students/">Open student path</a></p>
+            <p><a href="students/first-session/">Start learning with a real dataset: Predict Housing Prices with Tutor Mode</a></p>
           </div>
         </article>
 

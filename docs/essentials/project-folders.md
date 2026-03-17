@@ -53,7 +53,9 @@ I built my first project file for family vacation planning. That one file — an
 
 ---
 
-## Build Your First File {: #build-your-first-file }
+<a id="build-your-first-file"></a>
+
+## Build Your First File
 
 This takes about an hour for a first file, then 10 minutes to update after each use.
 
