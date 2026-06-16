@@ -1,6 +1,6 @@
 # Planning
 
-Last updated: 2026-03-13
+Last updated: 2026-06-16
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
@@ -28,6 +28,30 @@ Last updated: 2026-03-13
 - [ ] Replace section 3 media placeholders with final images and captions.
 - [ ] Validate homepage appearance on mobile and tablet breakpoints.
 - [ ] Decide and link final destination for "digital garden" CTA.
+
+## Active: Site Alignment And UI Reset
+
+- [ ] Decide the canonical public identity and URL strategy for this repo: `claudeblattman.com`, GitHub Pages, or a new domain aligned to Codex Batman.
+- [ ] Audit and resolve stale cross-branding across `docs/`, `overrides/`, `README.md`, contact emails, analytics, newsletter hooks, and external links.
+- [ ] Align deployment configuration (`mkdocs.yml`, `docs/CNAME`, GitHub Pages expectations) with the chosen public identity.
+- [ ] Restore local verification by documenting or installing the repo build toolchain so `mkdocs build` runs successfully in a fresh environment.
+- [x] Compare the local homepage, role pages, and navigation against the live site and list exact content, branding, and UX mismatches.
+- [x] Produce a prioritized UI redesign brief covering homepage visuals, navigation clarity, typography, imagery, and mobile/tablet behavior.
+- [x] Produce a structural site review covering orphaned pages, duplicated explanation layers, and newcomer-path ambiguity before a full content pass.
+
+## Active: Roadmap Execution
+
+- [x] PR 1: Add Tooling Stack registry docs and nav.
+- [x] PR 2: Add Backbone Protocol v0.1 docs and nav.
+- [x] PR 3: Add minimal data science project template and template docs.
+- [x] PR 4: Add `core-ml` skill pack and links.
+- [x] PR 5: Add workflow-trace, trace-distillation, and handoff skills.
+- [x] PR 6: Add Lab Manager workflow docs.
+- [x] PR 7: Add Research OS templates and docs.
+- [x] PR 8: Add Lab Manager and Project Manager skills.
+- [ ] PR 9: Add worked examples across learning, execution, and manager lenses.
+- [ ] PR 10: Add UI/UX standards and repo-local site review skills, using `UI_REDESIGN_BRIEF.md` and `SITE_STRUCTURE_REVIEW.md`.
+- [ ] PR 11: Run first site UI/UX pass and write `docs/site/ui-pass-001.md`.
 
 ## Backlog (Low Priority)
 

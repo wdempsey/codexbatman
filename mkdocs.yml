@@ -80,10 +80,23 @@ nav:
     - Overview: managers/index.md
     - Project Management: workflows/project-management.md
     - Managing Data Science: workflows/managing-data-science/index.md
+    - Lab Manager Agent: workflows/manager/lab-manager-agent.md
+    - Research OS Template: workflows/manager/research-os-template.md
     - "Example: Project Dashboard": workflows/examples/project-overview-example.md
   - Skill Library:
     - Skill Library: setup/skill-reference.md
+    - Core ML Pack: setup/core-ml-pack.md
     - How Skills Work: system/skills-explained.md
+  - Tooling Stack:
+    - Overview: tooling/index.md
+    - Ponytail: tooling/ponytail.md
+    - codebase-memory-mcp: tooling/codebase-memory.md
+  - Backbone Protocol:
+    - Overview: backbone/index.md
+    - Artifacts: backbone/artifacts.md
+    - Lifecycle: backbone/lifecycle.md
+    - Self-Improvement Loop: backbone/self-improvement.md
+    - Project Template: backbone/project-template.md
   - Build Your Own:
     - Overview: system/index.md
     - How Skills Work: system/skills-explained.md

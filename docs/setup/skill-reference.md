@@ -36,12 +36,14 @@ Role guides:
 
 These support coordination, planning, and communication around analytical work.
 
+- [`lab-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/lab-manager-agent): maintain portfolio visibility across projects, deadlines, handoffs, and waiting-on dependencies
 - [`project-setup`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-setup): initialize project operations and coordination structure
+- [`project-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-manager-agent): maintain one project's state, actions, decisions, and handoffs
 - [`weekly-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/weekly-review): summarize progress, blockers, and open questions
 - [`stakeholder-update`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/stakeholder-update): turn project state into clear communication
 - [`inbox-triage`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/inbox-triage): manage operational intake and prioritize follow-up
 
-See [Project Management](../workflows/project-management.md) and [Managing Data Science](../workflows/managing-data-science/index.md) for the manager workflow layer.
+See [Project Management](../workflows/project-management.md), [Managing Data Science](../workflows/managing-data-science/index.md), and [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) for the manager workflow layer.
 
 ## Additional Shared Skills
 
@@ -49,8 +51,19 @@ The repository also contains additional reusable data science skills that can pl
 
 - [`causal-design-check`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
 - [`debug-analysis-notebook`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-analysis-notebook)
+- [`handoff`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/handoff)
 - [`paper-to-replication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/paper-to-replication)
 - [`result-communication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/result-communication)
+- [`trace-distillation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/trace-distillation)
+- [`workflow-trace`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/workflow-trace)
+
+## Skill Packs
+
+Skill packs group a workflow family with reusable checks and templates.
+
+- [`core-ml`](https://github.com/wdempsey/codexbatman/tree/main/skills/packs/core-ml): basic supervised ML workflows with explicit leakage checks, split-validity checks, metric alignment checks, evaluation scaffolds, and model-card scaffolds
+
+See [Core ML Pack](core-ml-pack.md) for the repository-facing overview.
 
 ## Build And Extend
 
