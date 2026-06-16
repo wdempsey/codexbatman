@@ -92,7 +92,7 @@ social:
           <div>
             <h3>Data Scientists</h3>
             <p>Execute reproducible projects with workflow skills, artifacts, and operational guardrails.</p>
-            <p><a href="data-scientists/index.md">Open practitioner path</a></p>
+            <p><a href="data-scientists/">Open practitioner path</a></p>
           </div>
         </article>
 
@@ -101,7 +101,7 @@ social:
           <div>
             <h3>Data Science Managers</h3>
             <p>Coordinate priorities, communication, risk, and decisions through manager workflows.</p>
-            <p><a href="managers/index.md">Open manager path</a></p>
+            <p><a href="managers/">Open manager path</a></p>
           </div>
         </article>
       </div>
@@ -123,7 +123,7 @@ social:
 
         <p class="hf-links">
           <a class="md-button md-button--primary" href="https://github.com/wdempsey/codexbatman">Follow development</a>
-          <a class="md-button" href="privacy.md">Privacy policy</a>
+          <a class="md-button" href="privacy/">Privacy policy</a>
         </p>
       </div>
 

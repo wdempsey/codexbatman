@@ -1,4 +1,4 @@
-# Contributing to Claude Blattman
+# Contributing to Codex Batman
 
 This guide is primarily for site maintainers, but contributions from others are welcome too.
 
@@ -32,13 +32,19 @@ The site will rebuild and deploy automatically.
 ### Using a Local Clone (More Powerful)
 
 ```bash
-git clone https://github.com/chrisblattman/claudeblattman.git
-cd claudeblattman
+git clone https://github.com/wdempsey/codexbatman.git
+cd codexbatman
+
+# Create or refresh the repo-local virtualenv
+python3 -m venv .venv
+./.venv/bin/pip install -r requirements.txt
+
+# Build locally
+make docs
 
 # Optional: preview locally
-pip install mkdocs-material
-mkdocs serve
-# Open http://localhost:8000
+make docs-serve
+# Then open http://localhost:8000
 
 # Make changes, then push
 git add -A
