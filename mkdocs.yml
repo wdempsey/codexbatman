@@ -116,6 +116,8 @@ nav:
       - Manager Lens: examples/methods-code-project/manager.md
   - Build Your Own:
     - Overview: system/index.md
+    - Site Review: site/index.md
+    - UI/UX Standards: site/ui-ux-standards.md
     - How Skills Work: system/skills-explained.md
     - Building Skills: system/building-skills.md
     - Agents vs Skills: system/agents-vs-skills.md

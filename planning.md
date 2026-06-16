@@ -50,7 +50,7 @@ Last updated: 2026-06-16
 - [x] PR 7: Add Research OS templates and docs.
 - [x] PR 8: Add Lab Manager and Project Manager skills.
 - [x] PR 9: Add worked examples across learning, execution, and manager lenses.
-- [ ] PR 10: Add UI/UX standards and repo-local site review skills, using `UI_REDESIGN_BRIEF.md` and `SITE_STRUCTURE_REVIEW.md`.
+- [x] PR 10: Add UI/UX standards and repo-local site review skills, using `UI_REDESIGN_BRIEF.md` and `SITE_STRUCTURE_REVIEW.md`.
 - [ ] PR 11: Run first site UI/UX pass and write `docs/site/ui-pass-001.md`.
 
 ## Backlog (Low Priority)

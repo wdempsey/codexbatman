@@ -65,6 +65,16 @@ Skill packs group a workflow family with reusable checks and templates.
 
 See [Core ML Pack](core-ml-pack.md) for the repository-facing overview.
 
+## Site Review Skills
+
+These skills help future Codex sessions improve the documentation site without overbuilding it.
+
+- [`ui-ux-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/site/ui-ux-review): review one page at a time for page purpose, audience, hierarchy, copy density, and next-action clarity
+- [`navigation-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/site/navigation-review): review `mkdocs.yml`, section naming, orphan pages, and cross-links among major site sections
+- [`visual-polish-pass`](https://github.com/wdempsey/codexbatman/tree/main/skills/site/visual-polish-pass): apply restrained Material-native polish after structure and content are already in place
+
+See [Site Review](../site/index.md) and [UI/UX Standards](../site/ui-ux-standards.md) for the repo-local guidance these skills should follow.
+
 ## Build And Extend
 
 Use [Build Your Own](../system/index.md) for the meta-layer: how to design skills, when to use agents, and how to improve the system over time. Use [Downloads & Reference Library](../downloads/index.md) for longer-form guides and templates.

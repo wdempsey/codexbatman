@@ -58,6 +58,7 @@ Use for `category: methods` skills:
 - `manager`
 - `methods`
 - `overlays`
+- `site`
 
 ### `status`
 
@@ -80,6 +81,7 @@ Use concise stable names such as:
 - `manager-ops`
 - `methods`
 - `overlay`
+- `site-review`
 
 ### `role_compatibility`
 
