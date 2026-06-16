@@ -1,0 +1,21 @@
+name:
+workflow:
+role_mode:
+  default: practitioner
+skill_pack:
+  - core-ml
+artifacts:
+  required:
+    - PROJECT_STATE.md
+    - problem_frame.md
+    - data_card.md
+    - analysis_plan.md
+    - experiment_log.md
+    - model_card.md
+    - workflow_trace.md
+    - decision_log.md
+gates:
+  problem_framing_required: true
+  data_audit_required: true
+  experiment_log_required: true
+  model_card_required: true
