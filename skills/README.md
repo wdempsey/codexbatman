@@ -22,6 +22,7 @@ Command-style markdown skills remain only for compatibility and transition. They
 - `data-science/` = canonical analytical workflow backbone
 - `manager/` = project management, communication, and coordination workflows
 - `methods/` = tutoring-oriented method explainers used by the tutor overlay to teach algorithms and statistical or ML concepts when a student has a knowledge gap
+- `packs/` = reusable skill bundles that support a workflow family with checks, sub-workflows, and templates
 - `overlays/` = role-aware wrappers for delivery style
 
 ## Recommended Usage
