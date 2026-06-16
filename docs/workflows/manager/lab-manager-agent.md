@@ -8,6 +8,10 @@ The Lab Manager Agent is the portfolio-level coordination layer above project-sp
 
 It does not replace project-level analysis. It organizes many projects at once, keeps state visible, and turns fragmented updates into short actionable management outputs.
 
+## Start Here If
+
+Use this page when you need to coordinate many projects, students, deadlines, and handoffs at once rather than manage one analysis task in isolation.
+
 ## Hierarchy
 
 ```text

@@ -51,7 +51,7 @@ Last updated: 2026-06-16
 - [x] PR 8: Add Lab Manager and Project Manager skills.
 - [x] PR 9: Add worked examples across learning, execution, and manager lenses.
 - [x] PR 10: Add UI/UX standards and repo-local site review skills, using `UI_REDESIGN_BRIEF.md` and `SITE_STRUCTURE_REVIEW.md`.
-- [ ] PR 11: Run first site UI/UX pass and write `docs/site/ui-pass-001.md`.
+- [x] PR 11: Run first site UI/UX pass and write `docs/site/ui-pass-001.md`.
 
 ## Backlog (Low Priority)
 

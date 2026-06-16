@@ -8,6 +8,12 @@ Codex Batman is the workflow backbone.
 
 It defines the operating rules, artifact expectations, and reusable skill structure for AI-native data science and research-management work. The tools in this section are optional companions, not required dependencies.
 
+## Start Here If
+
+Use this section when you are asking whether an external helper should be added to your workflow at all.
+
+The default answer should still be to start with the backbone first and add tools only when they solve a specific recurring problem.
+
 ## What This Section Covers
 
 These pages explain external tools that can be useful alongside Codex Batman when you need:
@@ -51,6 +57,8 @@ Recommended stance:
 
 ## Related Pages
 
+- [Examples](../examples/index.md)
+- [Backbone Protocol](../backbone/index.md)
 - [Core Data Science Workflow](../workflows/data-science/index.md)
 - [Backbone Project Template](../backbone/project-template.md)
 - [Skill Library](../setup/skill-reference.md)

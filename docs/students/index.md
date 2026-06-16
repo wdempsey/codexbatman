@@ -1,5 +1,7 @@
 # For Students
 
+**Use this path if you want to learn data science workflows through guided practice without losing the discipline of real project artifacts.**
+
 ## Start Here
 
 If you are new to this system, begin with:
@@ -31,6 +33,12 @@ Student overlays wrap the shared workflow skills rather than replacing them.
 4. [`eda-plan`](../workflows/data-science/eda-plan.md) to define bounded exploration.
 5. [`experiment-log`](../workflows/data-science/experiment-log.md) to document what changed and what you learned.
 
+## Recommended First Three Steps
+
+1. Start with [First Session](first-session.md) if you want a concrete guided walkthrough.
+2. Read [Core Data Science Workflow](../workflows/data-science/index.md) to see the full shared backbone.
+3. Use the [Skill Library](../setup/skill-reference.md) when you want to understand which student overlays wrap that backbone.
+
 ## Student-Focused Skills
 
 - `tutor-mode`
@@ -46,5 +54,6 @@ Student overlays wrap the shared workflow skills rather than replacing them.
 ## Where To Go Next
 
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of workflow skills, overlays, and manager tools.
+- Review [Examples](../examples/index.md) to see how the same backbone looks in learning, execution, and manager modes.
 - Use [How Skills Work](../system/skills-explained.md) if you want the mental model for how workflow skills, tutor overlays, and method skills fit together.
 - Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.

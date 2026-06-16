@@ -2,7 +2,11 @@
 description: Codex-native quickstart for structured, reproducible data science workflows with explicit gates and artifact outputs.
 ---
 
-# Quickstart - Codex-Native Data Science Workflow
+# Quickstart
+
+**Use this page when you want the fastest path from installation to a working Codex Batman workflow.**
+
+If you are brand new, do not read the whole site first. Install Codex, verify local execution, then move into the setup, examples, and role pages that match your use case.
 
 ## Goal
 
@@ -20,6 +24,15 @@ This is not a prompting guide.
 It is a structured execution layer.
 
 Codex is the primary execution engine for this workflow system.
+
+## Recommended First Path
+
+1. Install and verify Codex locally.
+2. Open [Setup Overview](setup/index.md) for the repository-specific environment and workflow checks.
+3. Review [Examples](examples/index.md) or your role page:
+   [Students](students/index.md),
+   [Data Scientists](data-scientists/index.md),
+   [Managers](managers/index.md).
 
 ## Step 1 - Install & Verify Codex
 

@@ -15,9 +15,13 @@ social:
     <div class="hf-shell">
       <h1>Codex-Native Data Science Workflow</h1>
       <p class="hf-lead">
-        A structured approach to applied data science. It encodes best practices into a Codex workflow using clear gates,
-        reproducible execution, and documentation standards. The goal is an interpretable process from scientific
-        question to model handoff.
+        Codex Batman is a markdown-first, artifact-first operating system for reproducible data science. It gives
+        students, practitioners, and managers one shared workflow backbone with clear gates, durable project memory,
+        and role-aware execution.
+      </p>
+      <p class="hf-inline-cta">
+        <a class="md-button md-button--primary" href="quickstart/">Start with Quickstart</a>
+        <a class="md-button" href="examples/">See worked examples</a>
       </p>
     </div>
     <div class="hf-scroll-cue" aria-hidden="true">Scroll</div>
@@ -51,7 +55,8 @@ social:
       </div>
 
       <p class="hf-inline-cta">
-        <a class="md-button md-button--primary" href="about/">About the project</a>
+        <a class="md-button md-button--primary" href="backbone/">Explore the Backbone Protocol</a>
+        <a class="md-button" href="tooling/">View the Tooling Stack</a>
       </p>
     </div>
   </section>
@@ -107,7 +112,7 @@ social:
       </div>
 
       <p class="hf-inline-cta">
-        <a class="md-button" href="#stay-in-the-loop">Where to start</a>
+        <a class="md-button" href="quickstart/">Open the guided quickstart</a>
       </p>
     </div>
   </section>
@@ -118,11 +123,12 @@ social:
         <p class="hf-kicker">Stay In The Loop</p>
         <h2>Get Connected</h2>
         <p class="hf-summary">
-          Follow development as the Codex-native workflow system evolves.
+          Follow development, review the docs structure, and move into the right workflow section without guessing.
         </p>
 
         <p class="hf-links">
           <a class="md-button md-button--primary" href="https://github.com/wdempsey/codexbatman">Follow development</a>
+          <a class="md-button" href="site/ui-ux-standards/">Read UI/UX standards</a>
           <a class="md-button" href="privacy/">Privacy policy</a>
         </p>
       </div>

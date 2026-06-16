@@ -12,6 +12,10 @@ The point is not to show three unrelated systems. The point is to show that the 
 - execution
 - manager coordination
 
+## Start Here If
+
+Use this section when abstract workflow pages feel clear in theory but you want to see what the system actually looks like in practice.
+
 ## How To Read These Examples
 
 Each example includes:
@@ -45,5 +49,6 @@ These worked examples show:
 ## Related Pages
 
 - [Backbone Protocol](../backbone/index.md)
+- [Tooling Stack](../tooling/index.md)
 - [Research OS Template](../workflows/manager/research-os-template.md)
 - [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)

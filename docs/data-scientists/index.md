@@ -1,5 +1,7 @@
 # For Data Scientists
 
+**Use this path when you are executing real analysis and want Codex Batman to enforce artifacts, gates, and reproducible forward progress.**
+
 ## Role Summary
 
 Data scientists use Codex as a workflow executor for the shared canonical data science process.
@@ -23,6 +25,12 @@ Practitioner overlays keep the shared workflow strict and execution-oriented.
 - `experiment-log`
 - `result-communication`
 
+## Recommended First Three Steps
+
+1. Start with [Core Data Science Workflow](../workflows/data-science/index.md) for the canonical sequence.
+2. Review [Backbone Protocol](../backbone/index.md) so your project leaves durable artifacts, not just chat output.
+3. Open [Examples](../examples/index.md) to see how execution mode looks in realistic workflows.
+
 ## Typical Practitioner Outputs
 
 - framing artifacts
@@ -35,5 +43,6 @@ Practitioner overlays keep the shared workflow strict and execution-oriented.
 ## Where To Go Next
 
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog and direct links to the underlying skill folders.
-- Use [How Skills Work](../toolkit/skills-guide.md) if you want invocation examples and operating guidance.
+- Use [How Skills Work](../system/skills-explained.md) if you want the operating model behind workflow skills, overlays, and method handoffs.
+- Use [Core ML Pack](../setup/core-ml-pack.md) when you want a concrete supervised ML starter pack.
 - Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.

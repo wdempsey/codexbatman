@@ -8,6 +8,15 @@ Backbone Protocol v0.1 is the minimal artifact system for AI-native reproducible
 
 It gives Codex Batman a shared structure for work that must survive beyond a single chat session. The protocol is intentionally small: enough to support disciplined execution, review, handoff, and improvement without turning the project into a heavy framework.
 
+## Start Here If
+
+Use this section when you want to answer one of these questions quickly:
+
+- What durable files should every project keep?
+- What workflow stages should leave artifacts behind?
+- How does project memory survive beyond one chat session?
+- What is the minimum structure before we add templates or skill packs?
+
 ## Why This Exists
 
 AI can accelerate analysis, but acceleration without durable structure creates brittle work:
@@ -96,4 +105,5 @@ It is a shared operating layer for reproducible project memory.
 - [Self-Improvement Loop](self-improvement.md)
 - [Project Template](project-template.md)
 - [Examples](../examples/index.md)
+- [Tooling Stack](../tooling/index.md)
 - [Core Data Science Workflow](../workflows/data-science/index.md)
