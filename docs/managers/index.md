@@ -33,5 +33,5 @@ Manager workflow skills focus on:
 ## Where To Go Next
 
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of manager skills, overlays, and workflow skills.
-- Use [Project Management](../workflows/project-management.md) and [Managing Data Science](../workflows/managing-data-science/index.md) for the manager workflow layer.
+- Use [Project Management](../workflows/project-management.md), [Managing Data Science](../workflows/managing-data-science/index.md), and [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) for the manager workflow layer.
 - Return to [Core Data Science Workflow](../workflows/data-science/index.md) when you need to verify whether a project is ready to move forward.
