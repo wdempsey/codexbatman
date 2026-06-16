@@ -29,10 +29,17 @@ Codex is the primary execution engine for this workflow system.
 
 1. Install and verify Codex locally.
 2. Open [Setup Overview](setup/index.md) for the repository-specific environment and workflow checks.
-3. Review [Examples](examples/index.md) or your role page:
+3. Review [Choose Your Role](roles/index.md), [Examples](examples/index.md), or your role page:
    [Students](students/index.md),
-   [Data Scientists](data-scientists/index.md),
+   [Researchers & Data Scientists](data-scientists/index.md),
    [Managers](managers/index.md).
+
+## Choose Your Route After Install
+
+- If you want the full workflow model, go next to [Core Data Science Workflow](workflows/data-science/index.md).
+- If you want concrete project structure, go next to [Backbone Protocol](backbone/index.md).
+- If you want worked scenarios before changing your own process, go next to [Examples](examples/index.md).
+- If you want role-specific guidance, go next to [Choose Your Role](roles/index.md), [Students](students/index.md), [Researchers & Data Scientists](data-scientists/index.md), or [Managers](managers/index.md).
 
 ## Step 1 - Install & Verify Codex
 
@@ -235,6 +242,14 @@ model_summary.txt written
 ```
 
 This is a structured workflow gate.
+
+## Next Step
+
+After you finish installation and the first verification run, move to:
+
+- [Setup Overview](setup/index.md) for repository-specific environment guidance
+- [Core Data Science Workflow](workflows/data-science/index.md) for the shared execution sequence
+- [Examples](examples/index.md) for concrete backbone scenarios
 
 ### Example 2 - Repository Architecture Analysis
 

@@ -2,6 +2,19 @@
 
 **Use this path when your job is to keep projects moving, make blockers visible, and turn distributed work into clear next actions.**
 
+## Start Here
+
+If you coordinate multiple analytical projects or a lab portfolio, begin with:
+
+[**Lab Manager Agent**](../workflows/manager/lab-manager-agent.md)
+
+## This Path Is For You If
+
+- you need portfolio visibility across projects
+- you review project health, blockers, and handoffs
+- you turn analytical work into stakeholder updates
+- you manage data science work without doing every technical step yourself
+
 ## Role Summary
 
 Managers use the same operating system, but their focus is coordination rather than direct model execution.
@@ -14,32 +27,33 @@ If you are leading or coordinating work, start with the shared workflow pages an
 
 Manager overlays help Codex summarize and coordinate instead of diving straight into hands-on analysis.
 
-- `executive-summary`
-- `project-tracker`
-- `communication-workflows`
-
-Manager workflow skills focus on:
-
-- project setup
-- weekly review
-- stakeholder updates
-- inbox triage
-
-## Manager-Focused Skills
-
-- `project-setup`
-- `weekly-review`
-- `inbox-triage`
-- `stakeholder-update`
-
 ## Recommended First Three Steps
 
 1. Read [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) for the portfolio-level coordination model.
 2. Review the [Research OS Template](../workflows/manager/research-os-template.md) for the durable files that support weekly review.
 3. Use [Examples](../examples/index.md) to compare project and portfolio views before changing your own process.
 
+## Typical Manager Outputs
+
+- weekly reviews
+- waiting-on lists
+- next-actions lists
+- meeting prep notes
+- stakeholder-facing updates
+
+## Manager-Focused Skills
+
+- `executive-summary`
+- `project-tracker`
+- `communication-workflows`
+- `project-setup`
+- `weekly-review`
+- `inbox-triage`
+- `stakeholder-update`
+
 ## Where To Go Next
 
+- Use [Choose Your Role](../roles/index.md) if you want to compare this path with the student or researcher/data scientist paths.
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of manager skills, overlays, and workflow skills.
 - Use [Project Management](../workflows/project-management.md), [Managing Data Science](../workflows/managing-data-science/index.md), and [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) for the manager workflow layer.
 - Use [Backbone Protocol](../backbone/index.md) when you need to verify which project artifacts should exist before a team advances.

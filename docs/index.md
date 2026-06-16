@@ -21,53 +21,53 @@ social:
       </p>
       <p class="hf-inline-cta">
         <a class="md-button md-button--primary" href="quickstart/">Start with Quickstart</a>
-        <a class="md-button" href="examples/">See worked examples</a>
+        <a class="md-button" href="roles/">Choose your role</a>
       </p>
     </div>
     <div class="hf-scroll-cue" aria-hidden="true">Scroll</div>
   </section>
 
-  <section class="hf-section hf-section--dark" id="what-is-this">
+  <section class="hf-section hf-section--dark" id="choose-your-path">
     <div class="hf-shell hf-reveal">
-      <p class="hf-kicker">What Is This?</p>
-      <h2>A Codex-Native Data Science Workflow System</h2>
+      <p class="hf-kicker">Choose Your Path</p>
+      <h2>Start From The Role You Actually Have</h2>
       <p class="hf-summary">
-        This repository is a Codex-native data science workflow system. Skills encode best practices, documentation pages
-        explain the workflows, and role overlays adapt the same backbone to learning, execution, and management.
+        Students, researchers, data scientists, and managers all use the same workflow backbone. The role paths change
+        the delivery style and first action so you do not have to learn the whole architecture before getting started.
       </p>
 
       <div class="hf-bubble-grid">
         <article class="hf-bubble">
-          <span class="hf-icon-placeholder">01</span>
-          <h3>Shared Workflow Backbone</h3>
-          <p>Canonical workflow skills provide a stable operating model from framing through review and handoff.</p>
+          <h3>Students</h3>
+          <p>Learn through guided practice, hints, and attempt-before-answer tutoring.</p>
+          <p><a href="students/">Open student path</a></p>
         </article>
         <article class="hf-bubble">
-          <span class="hf-icon-placeholder">02</span>
-          <h3>Role-Aware Delivery</h3>
-          <p>Student, data scientist, and manager overlays shape delivery style without changing core workflow logic.</p>
+          <h3>Researchers & Data Scientists</h3>
+          <p>Run trustworthy analysis with gates, artifacts, and reproducible project memory.</p>
+          <p><a href="data-scientists/">Open research path</a></p>
         </article>
         <article class="hf-bubble">
-          <span class="hf-icon-placeholder">03</span>
-          <h3>Codex-Native Execution</h3>
-          <p>Designed for Codex-native workflows and adaptable to other assistants later if needed.</p>
+          <h3>Managers</h3>
+          <p>Track project health, blockers, handoffs, decisions, and stakeholder updates.</p>
+          <p><a href="managers/">Open manager path</a></p>
         </article>
       </div>
 
       <p class="hf-inline-cta">
-        <a class="md-button md-button--primary" href="backbone/">Explore the Backbone Protocol</a>
-        <a class="md-button" href="tooling/">View the Tooling Stack</a>
+        <a class="md-button md-button--primary" href="roles/">Compare role paths</a>
+        <a class="md-button" href="examples/">See worked examples</a>
       </p>
     </div>
   </section>
 
-  <section class="hf-section" id="where-to-start">
+  <section class="hf-section" id="how-it-works">
     <div class="hf-shell hf-reveal">
-      <p class="hf-kicker">Where To Start</p>
-      <h2>Pick Your Entry Point</h2>
+      <p class="hf-kicker">How It Works</p>
+      <h2>One Backbone, Different Lenses</h2>
       <p class="hf-summary">
-        Start where you are. Each lane is scoped for a different role and depth level, with links to the exact pages
-        that get you moving quickly.
+        Skills encode best practices, documentation pages explain the workflows, and role overlays adapt the same
+        backbone to learning, execution, and management.
       </p>
 
       <div class="hf-media-list">
@@ -83,36 +83,31 @@ social:
         </article>
 
         <article class="hf-media-row hf-media-row--alt hf-reveal">
-          <div class="hf-media-placeholder" aria-hidden="true"></div>
+          <div class="hf-media-image">
+            <img src="assets/home/hero-workflow-bg-exit.png" alt="Codex Batman workflow visual" loading="lazy">
+          </div>
           <div>
-            <h3>Students</h3>
-            <p>Learn workflows through guided practice, attempt-first tutoring, and structured feedback.</p>
-            <p><a href="students/">Open student path</a></p>
-            <p><a href="students/first-session/">Start learning with a real dataset: Predict Housing Prices with Tutor Mode</a></p>
+            <h3>Workflow Backbone</h3>
+            <p>Move from project bootstrap through problem framing, data audit, modeling, evaluation, and experiment logging.</p>
+            <p><a href="workflows/data-science/">Open workflow overview</a></p>
           </div>
         </article>
 
         <article class="hf-media-row hf-reveal">
-          <div class="hf-media-placeholder" aria-hidden="true"></div>
-          <div>
-            <h3>Data Scientists</h3>
-            <p>Execute reproducible projects with workflow skills, artifacts, and operational guardrails.</p>
-            <p><a href="data-scientists/">Open practitioner path</a></p>
+          <div class="hf-media-image">
+            <img src="assets/home/hero-workflow-bg.png" alt="Codex Batman project workflow backdrop" loading="lazy">
           </div>
-        </article>
-
-        <article class="hf-media-row hf-media-row--alt hf-reveal">
-          <div class="hf-media-placeholder" aria-hidden="true"></div>
           <div>
-            <h3>Data Science Managers</h3>
-            <p>Coordinate priorities, communication, risk, and decisions through manager workflows.</p>
-            <p><a href="managers/">Open manager path</a></p>
+            <h3>Worked Examples</h3>
+            <p>See the same system through learning, execution, and manager coordination lenses.</p>
+            <p><a href="examples/">Open examples</a></p>
           </div>
         </article>
       </div>
 
       <p class="hf-inline-cta">
         <a class="md-button" href="quickstart/">Open the guided quickstart</a>
+        <a class="md-button" href="backbone/">Explore the Backbone Protocol</a>
       </p>
     </div>
   </section>
@@ -120,16 +115,17 @@ social:
   <section class="hf-section hf-section--connect" id="stay-in-the-loop">
     <div class="hf-shell hf-connect-grid hf-reveal">
       <div>
-        <p class="hf-kicker">Stay In The Loop</p>
-        <h2>Get Connected</h2>
+        <p class="hf-kicker">Next Step</p>
+        <h2>Move Into A Concrete Workflow</h2>
         <p class="hf-summary">
-          Follow development, review the docs structure, and move into the right workflow section without guessing.
+          Start with setup, compare role paths, or review worked examples before changing your own project process.
         </p>
 
         <p class="hf-links">
-          <a class="md-button md-button--primary" href="https://github.com/wdempsey/codexbatman">Follow development</a>
-          <a class="md-button" href="site/ui-ux-standards/">Read UI/UX standards</a>
-          <a class="md-button" href="privacy/">Privacy policy</a>
+          <a class="md-button md-button--primary" href="quickstart/">Start quickstart</a>
+          <a class="md-button" href="roles/">Choose your role</a>
+          <a class="md-button" href="examples/">See examples</a>
+          <a class="md-button" href="https://github.com/wdempsey/codexbatman">GitHub</a>
         </p>
       </div>
 

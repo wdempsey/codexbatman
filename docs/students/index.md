@@ -8,6 +8,13 @@ If you are new to this system, begin with:
 
 [**First Session - Predict Housing Prices with Tutor Mode**](first-session.md)
 
+## This Path Is For You If
+
+- you are learning data science workflows for the first time
+- you want Codex to coach your reasoning instead of just giving answers
+- you need hints, checks for understanding, and structured practice
+- you still want to produce real project artifacts while learning
+
 ## Role Summary
 
 Students use the same canonical data science workflow as practitioners, but with a scaffolded delivery style.
@@ -25,19 +32,19 @@ Student overlays wrap the shared workflow skills rather than replacing them.
 - Feedback focuses on reasoning quality, not just correctness.
 - Workflow artifacts still matter, because learning includes learning disciplined process.
 
-## Recommended Learning Path
-
-1. [`project-bootstrap`](../workflows/data-science/project-bootstrap.md) to understand where artifacts live.
-2. [`problem-framing`](../workflows/data-science/problem-framing.md) to turn a vague question into a workable analysis plan.
-3. [`data-audit`](../workflows/data-science/data-audit.md) to check whether the data can support the question.
-4. [`eda-plan`](../workflows/data-science/eda-plan.md) to define bounded exploration.
-5. [`experiment-log`](../workflows/data-science/experiment-log.md) to document what changed and what you learned.
-
 ## Recommended First Three Steps
 
 1. Start with [First Session](first-session.md) if you want a concrete guided walkthrough.
 2. Read [Core Data Science Workflow](../workflows/data-science/index.md) to see the full shared backbone.
 3. Use the [Skill Library](../setup/skill-reference.md) when you want to understand which student overlays wrap that backbone.
+
+## Typical Student Outputs
+
+- problem frames
+- data audit notes
+- bounded exploration plans
+- experiment logs
+- reflection on what changed and why
 
 ## Student-Focused Skills
 
@@ -53,6 +60,7 @@ Student overlays wrap the shared workflow skills rather than replacing them.
 
 ## Where To Go Next
 
+- Use [Choose Your Role](../roles/index.md) if you want to compare this path with the researcher/data scientist or manager paths.
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of workflow skills, overlays, and manager tools.
 - Review [Examples](../examples/index.md) to see how the same backbone looks in learning, execution, and manager modes.
 - Use [How Skills Work](../system/skills-explained.md) if you want the mental model for how workflow skills, tutor overlays, and method skills fit together.

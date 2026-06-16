@@ -1,6 +1,6 @@
 site_name: Codex Batman - Data Science Operating System
 site_url: https://wdempsey.github.io/codexbatman/
-site_description: Codex-native data science operating system with role-aware workflows for students, practitioners, and managers
+site_description: Codex-native data science operating system with role-aware workflows for students, researchers, data scientists, and managers
 site_author: William Dempsey
 repo_url: https://github.com/wdempsey/codexbatman
 repo_name: wdempsey/codexbatman
@@ -54,15 +54,27 @@ nav:
     - Home: index.md
     - Quickstart: quickstart.md
     - Setup Overview: setup/index.md
-    - Install (Mac): toolkit/install-mac.md
-    - Install (Windows): toolkit/install-windows.md
-    - Set Up VS Code: setup/vscode-setup.md
-    - MCP Setup: toolkit/mcp-setup.md
+    - Install:
+      - Mac: toolkit/install-mac.md
+      - Windows: toolkit/install-windows.md
+      - VS Code: setup/vscode-setup.md
+      - MCP Setup: toolkit/mcp-setup.md
     - How Codex Modes Work: setup/modes.md
-    - About: about.md
-    - Resources: resources.md
-    - Privacy: privacy.md
-  - Core Data Science Workflow:
+  - Roles:
+    - Choose Your Role: roles/index.md
+    - Students:
+      - Overview: students/index.md
+      - Student First Session: students/first-session.md
+    - Researchers & Data Scientists:
+      - Overview: data-scientists/index.md
+    - Managers:
+      - Overview: managers/index.md
+      - Project Management: workflows/project-management.md
+      - Managing Data Science: workflows/managing-data-science/index.md
+      - Lab Manager Agent: workflows/manager/lab-manager-agent.md
+      - Research OS Template: workflows/manager/research-os-template.md
+      - "Example: Project Dashboard": workflows/examples/project-overview-example.md
+  - Workflow:
     - Overview: workflows/data-science/index.md
     - Project Bootstrap: workflows/data-science/project-bootstrap.md
     - Problem Framing: workflows/data-science/problem-framing.md
@@ -71,32 +83,12 @@ nav:
     - Modeling: workflows/data-science/modeling.md
     - Evaluation: workflows/data-science/evaluation.md
     - Experiment Logging: workflows/data-science/experiment-log.md
-  - Students:
-    - Overview: students/index.md
-    - Student First Session: students/first-session.md
-  - Data Scientists:
-    - Overview: data-scientists/index.md
-  - Managers:
-    - Overview: managers/index.md
-    - Project Management: workflows/project-management.md
-    - Managing Data Science: workflows/managing-data-science/index.md
-    - Lab Manager Agent: workflows/manager/lab-manager-agent.md
-    - Research OS Template: workflows/manager/research-os-template.md
-    - "Example: Project Dashboard": workflows/examples/project-overview-example.md
-  - Skill Library:
-    - Skill Library: setup/skill-reference.md
-    - Core ML Pack: setup/core-ml-pack.md
-    - How Skills Work: system/skills-explained.md
-  - Tooling Stack:
-    - Overview: tooling/index.md
-    - Ponytail: tooling/ponytail.md
-    - codebase-memory-mcp: tooling/codebase-memory.md
-  - Backbone Protocol:
-    - Overview: backbone/index.md
-    - Artifacts: backbone/artifacts.md
-    - Lifecycle: backbone/lifecycle.md
-    - Self-Improvement Loop: backbone/self-improvement.md
-    - Project Template: backbone/project-template.md
+    - Backbone Protocol:
+      - Overview: backbone/index.md
+      - Artifacts: backbone/artifacts.md
+      - Lifecycle: backbone/lifecycle.md
+      - Self-Improvement Loop: backbone/self-improvement.md
+      - Project Template: backbone/project-template.md
   - Examples:
     - Overview: examples/index.md
     - Basic Classification:
@@ -114,14 +106,26 @@ nav:
       - Learning Lens: examples/methods-code-project/learning.md
       - Execution Lens: examples/methods-code-project/execution.md
       - Manager Lens: examples/methods-code-project/manager.md
-  - Build Your Own:
-    - Overview: system/index.md
-    - Site Review: site/index.md
-    - UI/UX Standards: site/ui-ux-standards.md
-    - UI Pass 001: site/ui-pass-001.md
+  - Skills:
+    - Skill Library: setup/skill-reference.md
+    - Core ML Pack: setup/core-ml-pack.md
     - How Skills Work: system/skills-explained.md
+  - Build:
+    - Overview: system/index.md
+    - Tooling Stack:
+      - Overview: tooling/index.md
+      - Ponytail: tooling/ponytail.md
+      - codebase-memory-mcp: tooling/codebase-memory.md
     - Building Skills: system/building-skills.md
     - Agents vs Skills: system/agents-vs-skills.md
     - Continuous Improvement: system/continuous-improvement.md
     - Patterns: system/patterns.md
+    - Site Review: site/index.md
+    - UI/UX Standards: site/ui-ux-standards.md
+    - UI Pass 001: site/ui-pass-001.md
+    - Structural UI/UX Pass 002: site/structural-ui-ux-pass-002.md
     - Downloads & Reference Library: downloads/index.md
+  - About:
+    - About: about.md
+    - Resources: resources.md
+    - Privacy: privacy.md

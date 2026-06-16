@@ -22,6 +22,9 @@ Last updated: 2026-06-16
 - [x] Build custom four-section landing page flow.
 - [x] Add initial transition effects and full-bleed sections.
 - [x] Remove Tax Workflow from primary navigation.
+- [x] Propose structural UI/UX pass for role routing and navigation in `docs/site/structural-ui-ux-pass-002.md`.
+- [x] Move role selection earlier on the homepage and make role paths the dominant routing choice.
+- [x] Replace homepage final section with user-centered next actions instead of internal site-review links.
 - [ ] Tune hero background composition to avoid edge cutoff across common viewport sizes.
 - [ ] Keep section 1 -> section 2 handoff smooth with gradient-only transition.
 - [ ] Replace section 2 icon placeholders with final icon set.
@@ -35,6 +38,10 @@ Last updated: 2026-06-16
 - [ ] Audit and resolve stale cross-branding across `docs/`, `overrides/`, `README.md`, contact emails, analytics, newsletter hooks, and external links.
 - [ ] Align deployment configuration (`mkdocs.yml`, `docs/CNAME`, GitHub Pages expectations) with the chosen public identity.
 - [ ] Restore local verification by documenting or installing the repo build toolchain so `mkdocs build` runs successfully in a fresh environment.
+- [x] Create a `Roles` landing page that routes students, researchers/data scientists, and managers.
+- [x] Collapse role tabs under `Roles` and rename the practitioner nav label to `Researchers & Data Scientists`.
+- [x] Move `Backbone Protocol` under `Workflow` and `Tooling Stack` under `Build` if the structural proposal is accepted.
+- [x] Standardize student, researcher/data scientist, and manager role pages around one shared landing-page structure.
 - [x] Compare the local homepage, role pages, and navigation against the live site and list exact content, branding, and UX mismatches.
 - [x] Produce a prioritized UI redesign brief covering homepage visuals, navigation clarity, typography, imagery, and mobile/tablet behavior.
 - [x] Produce a structural site review covering orphaned pages, duplicated explanation layers, and newcomer-path ambiguity before a full content pass.
