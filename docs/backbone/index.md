@@ -95,4 +95,5 @@ It is a shared operating layer for reproducible project memory.
 - [Lifecycle](lifecycle.md)
 - [Self-Improvement Loop](self-improvement.md)
 - [Project Template](project-template.md)
+- [Examples](../examples/index.md)
 - [Core Data Science Workflow](../workflows/data-science/index.md)

@@ -184,4 +184,5 @@ Good Lab Manager outputs are short and operational:
 - [Project Management](../project-management.md)
 - [Managing Data Science](../managing-data-science/index.md)
 - [Research OS Template](research-os-template.md)
+- [Examples](../../examples/index.md)
 - [Backbone Protocol](../../backbone/index.md)

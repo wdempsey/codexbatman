@@ -97,6 +97,23 @@ nav:
     - Lifecycle: backbone/lifecycle.md
     - Self-Improvement Loop: backbone/self-improvement.md
     - Project Template: backbone/project-template.md
+  - Examples:
+    - Overview: examples/index.md
+    - Basic Classification:
+      - Overview: examples/basic-classification/index.md
+      - Learning Lens: examples/basic-classification/learning.md
+      - Execution Lens: examples/basic-classification/execution.md
+      - Manager Lens: examples/basic-classification/manager.md
+    - Grant Project:
+      - Overview: examples/grant-project/index.md
+      - Learning Lens: examples/grant-project/learning.md
+      - Execution Lens: examples/grant-project/execution.md
+      - Manager Lens: examples/grant-project/manager.md
+    - Methods / Code Project:
+      - Overview: examples/methods-code-project/index.md
+      - Learning Lens: examples/methods-code-project/learning.md
+      - Execution Lens: examples/methods-code-project/execution.md
+      - Manager Lens: examples/methods-code-project/manager.md
   - Build Your Own:
     - Overview: system/index.md
     - How Skills Work: system/skills-explained.md
