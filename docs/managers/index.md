@@ -64,6 +64,14 @@ That page explains the coordination model. Open the template page second if you 
 - meeting prep notes
 - stakeholder-facing updates
 
+## What This Can Look Like
+
+![Example project overview dashboard showing priorities, metrics, milestones, and owner tasks](../images/project-overview-dashboard-v1.png)
+
+This kind of artifact is the practical target of the manager lane: a durable project or portfolio view that makes it obvious what moved, what is blocked, and what needs attention next.
+
+See [Project Overview Example](../workflows/examples/project-overview-example.md) for the full example.
+
 ## Manager-Focused Skills
 
 - `executive-summary`

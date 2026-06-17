@@ -112,6 +112,34 @@ social:
     </div>
   </section>
 
+  <section class="hf-section hf-section--dark" id="proof-of-utility">
+    <div class="hf-shell hf-reveal">
+      <p class="hf-kicker">Proof Of Utility</p>
+      <h2>What The System Produces</h2>
+      <p class="hf-summary">
+        The point is not just to explain a workflow. The point is to leave behind durable artifacts that help the next analysis session, the next collaborator, or the next manager review start from real project state instead of chat memory.
+      </p>
+
+      <div class="hf-media-list">
+        <article class="hf-media-row hf-reveal">
+          <div class="hf-media-image">
+            <img src="images/project-overview-dashboard-v1.png" alt="Example project overview dashboard showing project status, priorities, metrics, and tasks" loading="lazy">
+          </div>
+          <div>
+            <h3>Project Dashboard Snapshot</h3>
+            <p>A manager-facing artifact that surfaces status, priorities, owners, risks, deadlines, and next actions in one place.</p>
+            <p><a href="workflows/examples/project-overview-example/">Open the example dashboard</a></p>
+          </div>
+        </article>
+      </div>
+
+      <p class="hf-inline-cta">
+        <a class="md-button md-button--primary" href="examples/">See worked examples</a>
+        <a class="md-button" href="workflows/examples/project-overview-example/">See a manager artifact</a>
+      </p>
+    </div>
+  </section>
+
   <section class="hf-section hf-section--connect" id="stay-in-the-loop">
     <div class="hf-shell hf-connect-grid hf-reveal">
       <div>

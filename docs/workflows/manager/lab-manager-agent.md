@@ -184,6 +184,14 @@ Good Lab Manager outputs are short and operational:
 - meeting prep notes
 - draft follow-up messages
 
+## Example Artifact Shape
+
+An artifact in this lane should look like a working management surface, not just a narrative summary.
+
+![Example project overview dashboard showing project status, next actions, metrics, and risks](../../images/project-overview-dashboard-v1.png)
+
+Use [Project Overview Example](../examples/project-overview-example.md) as a concrete reference for the kind of output this layer should support.
+
 ## Related Pages
 
 - [For Data Science Managers](../../managers/index.md)
