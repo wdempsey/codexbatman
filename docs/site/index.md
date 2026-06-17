@@ -8,6 +8,7 @@ The goal is not a flashy redesign. The goal is a restrained, trustworthy MkDocs 
 
 - [UI/UX Standards](ui-ux-standards.md): the lightweight rules for page purpose, hierarchy, readability, navigation, and visual polish
 - [Structural UI/UX Pass 002](structural-ui-ux-pass-002.md): proposed navigation and role-routing changes for students, researchers/data scientists, and managers
+- [Archive Vs Companion Policy](archive-vs-companion-policy.md): the classification rule for canonical pages, companion references, and archive candidates
 - repo-local review skills for page audits, navigation checks, and visual cleanup passes
 - a shared standard for making small, reversible site improvements instead of one-off redesigns
 

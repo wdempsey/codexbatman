@@ -47,7 +47,7 @@ Last updated: 2026-06-16
 - [x] Compare the local homepage, role pages, and navigation against the live site and list exact content, branding, and UX mismatches.
 - [x] Produce a prioritized UI redesign brief covering homepage visuals, navigation clarity, typography, imagery, and mobile/tablet behavior.
 - [x] Produce a structural site review covering orphaned pages, duplicated explanation layers, and newcomer-path ambiguity before a full content pass.
-- [ ] Decide which remaining legacy sections stay as companion references versus move toward archive status after the cleanup pass.
+- [x] Decide which remaining legacy sections stay as companion references versus move toward archive status after the cleanup pass.
 
 ## Active: Roadmap Execution
 
