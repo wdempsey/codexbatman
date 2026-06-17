@@ -1,418 +1,203 @@
-﻿---
-description: Codex-native quickstart for structured, reproducible data science workflows with explicit gates and artifact outputs.
+---
+description: Install Codex and run your first structured data science workflow. Complete in under ten minutes.
 ---
 
 # Quickstart
 
-**Use this page when you want the fastest path from installation to a working Codex Batman workflow.**
+Install Codex, verify it runs locally, and see what a structured workflow looks like — that's the full goal here. When you're done, pick the path that fits your role and follow one example end to end.
 
-If you are brand new, do not read the whole site first. Install Codex, verify local execution, then move into the setup, examples, and role pages that match your use case.
+By the end of this page you'll have Codex installed, a clear mental model of how structured prompts work, and a concrete starting point for your role.
 
-If you only do one thing after install, open [Choose Your Role](roles/index.md) and follow one path instead of browsing the whole site.
+---
 
-## Goal
+## Step 1 — Install Codex
 
-Install Codex and execute structured, reproducible data science workflows.
+<style>
+.qs-tabs { display:flex; gap:0.5rem; margin-bottom:0.85rem; flex-wrap:wrap; }
+.qs-tab {
+  padding:0.35rem 1rem; border-radius:6px;
+  border:1px solid var(--md-default-fg-color--lightest);
+  background:transparent; color:var(--md-default-fg-color);
+  cursor:pointer; font-family:inherit; font-size:0.88rem;
+  transition:background 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+.qs-tab:hover { border-color:var(--md-accent-fg-color); }
+.qs-tab.qs-active {
+  background:var(--md-accent-fg-color);
+  color:#fff; border-color:var(--md-accent-fg-color);
+}
+.qs-panel { display:none; }
+.qs-panel.qs-visible { display:block; }
+.qs-cmd {
+  font-family:'JetBrains Mono','Courier New',monospace;
+  font-size:0.85rem; line-height:1.7;
+  background:#0d1b2e; color:#e2e8f0;
+  border-radius:9px; padding:1rem 1.2rem;
+  margin:0.5rem 0 0.9rem; border:1px solid #1a2f4a;
+  white-space:pre;
+}
+.qs-cmd .qs-prompt { color:#3bc9db; user-select:none; }
+.qs-note { font-size:0.83rem; color:var(--md-default-fg-color--light); margin-top:0.2rem; }
+</style>
 
-This system is:
+<div>
+  <div class="qs-tabs">
+    <button class="qs-tab qs-active" onclick="qsOs('mac',this)">macOS</button>
+    <button class="qs-tab" onclick="qsOs('win',this)">Windows</button>
+    <button class="qs-tab" onclick="qsOs('linux',this)">Linux</button>
+  </div>
 
-- Codex-native
-- Workflow-gated
-- Reproducible
-- Role-aware for students, practitioners, and managers
+  <div id="qs-mac" class="qs-panel qs-visible">
+    <p style="font-size:0.9rem;margin-bottom:0.5rem;">Install via Homebrew (recommended):</p>
+    <div class="qs-cmd"><span class="qs-prompt">$ </span>brew install codex</div>
+    <p style="font-size:0.9rem;margin-bottom:0.5rem;">Or via npm if you don't have Homebrew:</p>
+    <div class="qs-cmd"><span class="qs-prompt">$ </span>npm install -g @openai/codex</div>
+    <p class="qs-note">The macOS desktop app (from the official Codex website) also includes CLI access — install and sign in, then run <code>codex --version</code> to confirm.</p>
+  </div>
 
-This is not a prompting guide.
+  <div id="qs-win" class="qs-panel">
+    <p style="font-size:0.9rem;margin-bottom:0.5rem;">Install via npm in PowerShell:</p>
+    <div class="qs-cmd"><span class="qs-prompt">PS> </span>npm install -g @openai/codex</div>
+    <p class="qs-note">On Windows Subsystem for Linux, use the Linux steps instead. After install, run <code>codex --version</code> in a new terminal window to confirm.</p>
+  </div>
 
-It is a structured execution layer.
+  <div id="qs-linux" class="qs-panel">
+    <p style="font-size:0.9rem;margin-bottom:0.5rem;">Install via npm:</p>
+    <div class="qs-cmd"><span class="qs-prompt">$ </span>npm install -g @openai/codex</div>
+    <p style="font-size:0.9rem;margin-bottom:0.5rem;">Or via apt on Debian/Ubuntu:</p>
+    <div class="qs-cmd"><span class="qs-prompt">$ </span>sudo apt install codex</div>
+    <p class="qs-note">Run <code>codex --version</code> in a new terminal window after install.</p>
+  </div>
+</div>
 
-Codex is the primary execution engine for this workflow system.
+<script>
+function qsOs(id, btn) {
+  document.querySelectorAll('.qs-panel').forEach(p => p.classList.remove('qs-visible'));
+  document.querySelectorAll('.qs-tab').forEach(b => b.classList.remove('qs-active'));
+  document.getElementById('qs-' + id).classList.add('qs-visible');
+  btn.classList.add('qs-active');
+}
+</script>
 
-## Recommended First Ten Minutes
+<p style="font-size:0.83rem;color:var(--md-default-fg-color--light);margin-top:0.75rem;">New to Terminal or never used npm? See the step-by-step guides: <a href="toolkit/install-mac.md">macOS install guide</a> · <a href="toolkit/install-windows.md">Windows install guide</a></p>
 
-1. Install and verify Codex locally.
-2. Open [Setup Overview](setup/index.md) for the repository-specific environment and workflow checks.
-3. Open [Choose Your Role](roles/index.md).
-4. Pick one concrete next page:
-   [Students](students/index.md),
-   [Researchers & Data Scientists](data-scientists/index.md),
-   [Managers](managers/index.md).
-5. If you want a real project shape immediately, open [Analytics Repo Example](examples/analytics-repo/index.md).
+---
 
-## Choose Your Route After Install
+## Step 2 — Verify
 
-- If you are a student and want the real first action, go next to [Repo Bootstrap For Students](setup/skill-reference.md#additional-shared-skills) and then [Analytics Repo Example - Student Path](examples/analytics-repo/student.md).
-- If you are a researcher or data scientist and want the real project path, go next to [Analytics Repo Example - Practitioner Path](examples/analytics-repo/practitioner.md).
-- If you are a manager and want the coordination path, go next to [Lab Manager Agent](workflows/manager/lab-manager-agent.md).
-- If you want the full workflow model first, go next to [Core Data Science Workflow](workflows/data-science/index.md).
-
-## Practitioner Shortcut
-
-If you are a researcher or data scientist and want the intended route without deciding among multiple concepts, use this order:
-
-1. [Core Data Science Workflow](workflows/data-science/index.md)
-2. [Backbone Protocol](backbone/index.md)
-3. [Analytics Repo Example - Practitioner Path](examples/analytics-repo/practitioner.md)
-4. [Skill Library](setup/skill-reference.md)
-
-## Concrete Repo Example
-
-If you want to see a real repo shape before changing your own workflow, open [Analytics Repo Example](examples/analytics-repo/index.md).
-
-Use [Student Path](examples/analytics-repo/student.md) if you want scaffolded, attempt-before-answer guidance.
-
-Use [Practitioner Path](examples/analytics-repo/practitioner.md) if you want the shorter execution-oriented version of the same project.
-
-## Best Next Page By Role
-
-- Students: [For Students](students/index.md)
-- Researchers & Data Scientists: [For Researchers & Data Scientists](data-scientists/index.md)
-- Managers: [For Data Science Managers](managers/index.md)
-
-## Step 1 - Install & Verify Codex
-
-Codex must be installed locally before executing structured workflows.
-
-Choose your operating system.
-
-### macOS
-
-#### Option A - Install via Terminal (Recommended for CLI workflows)
-
-Using Homebrew:
-
-```bash
-brew install codex
-```
-
-Or using npm (if applicable to your environment):
-
-```bash
-npm install -g codex
-```
-
-Verify installation:
+Open a new terminal and run:
 
 ```bash
 codex --version
 ```
 
-#### Option B - Install via Codex Desktop App (Recommended for macOS users)
+You should see a version number. If you see a "command not found" error, check that your npm global bin directory is in your PATH — `npm bin -g` shows you where it is.
 
-Download the Codex Desktop App from the official website.
+When you launch Codex it starts in **Default mode** — it proposes changes and waits for your confirmation before applying them. That's the right mode for learning. You can switch to Plan Mode (Codex explores before acting) or Auto-Accept (applies edits immediately) from the controls in your Codex environment.
 
-Install and sign in.
+---
 
-The macOS app provides:
+## Step 3 — What a structured workflow looks like
 
-- Local execution
-- Integrated terminal
-- Structured prompt management
-- Project-level context
+Codex isn't a chatbot you prompt casually. It's a workflow executor — it runs structured prompt patterns (called **skills**) that enforce analysis gates and produce artifact outputs. Here's the difference:
 
-After installation, verify CLI access from Terminal:
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0 1.6rem;">
+  <div>
+    <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--md-default-fg-color--light);margin-bottom:0.5rem;">Without structure</div>
+    <pre style="margin:0;font-size:0.82rem;color:var(--md-default-fg-color--light);background:color-mix(in srgb,var(--md-default-bg-color) 96%,#888 4%);padding:0.85rem 1rem;border-radius:8px;border:1px solid var(--md-default-fg-color--lightest);white-space:pre-wrap;font-family:'JetBrains Mono','Courier New',monospace;">"Run a regression on this dataset."</pre>
+    <div style="margin-top:0.55rem;font-size:0.81rem;color:var(--md-default-fg-color--light);">What you get: a generic "this dataset appears suitable for regression." No files written. No reproducibility. Nothing to hand off.</div>
+  </div>
+  <div>
+    <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--md-accent-fg-color);margin-bottom:0.5rem;">With structure</div>
+    <pre style="margin:0;font-size:0.82rem;color:var(--md-default-fg-color);background:color-mix(in srgb,var(--md-default-bg-color) 95%,var(--md-accent-fg-color) 5%);padding:0.85rem 1rem;border-radius:8px;border:1px solid color-mix(in srgb,var(--md-accent-fg-color) 25%,transparent);white-space:pre-wrap;font-family:'JetBrains Mono','Courier New',monospace;">Run problem-framing skill.
+Target: SalePrice
+Metric: RMSE
+Output: problem_frame.md</pre>
+    <div style="margin-top:0.55rem;font-size:0.81rem;color:var(--md-default-fg-color);">What you get: a named file, an explicit metric, documented risks, and a defined next gate — something another session can pick up and continue.</div>
+  </div>
+</div>
 
-```bash
-codex --version
-```
+Structure matters for three reasons: no explicit seed, environment, or output artifacts means the run isn't reproducible; no schema check means silent data quality problems; no required output structure means no handoff to the next session.
 
-### Windows
+### Two interaction modes
 
-#### Option A - Install via Terminal (PowerShell)
+Before you paste anything in, one thing to understand: Codex has two interaction styles, and the right one depends on what you're trying to get out of the session.
 
-Using npm:
+**Tutor mode** — Codex asks for your reasoning at each step before revealing the gate output. It coaches rather than executes: you attempt an answer, Codex builds on it or corrects it, and the artifact gets written once the reasoning is solid. This is the mode for building understanding alongside the artifact.
 
-```bash
-npm install -g codex
-```
+**Practitioner mode** — Codex runs the workflow gates directly and expects artifact-quality responses from you. No scaffolding, no pedagogical detours — just gates, outputs, and forward progress. This is the mode once you know the workflow.
 
-Verify:
+For a first session, use tutor mode. The example below shows what that looks like.
 
-```bash
-codex --version
-```
+### Your first session
 
-If using WSL, follow Linux instructions below.
-
-#### Option B - Install via Website
-
-Download the Windows installer from the official Codex website.
-
-Run installer and follow setup prompts.
-
-After installation, open PowerShell and verify:
-
-```bash
-codex --version
-```
-
-### Linux
-
-#### Install via Terminal
-
-Using npm:
-
-```bash
-npm install -g codex
-```
-
-Or via package manager if available:
-
-```bash
-sudo apt install codex
-```
-
-Verify:
-
-```bash
-codex --version
-```
-
-### Verify Local Execution
-
-Create a test file:
-
-`example_prompt.md`
+The canonical example throughout this site is a housing-price prediction project on the [Ames dataset](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques). You can start it right now — paste this into Codex:
 
 ```text
-# Task: Installation Verification
+Use tutor mode to guide me through the first steps of a housing price prediction project.
 
-Output: "Codex is installed and executing locally."
+Dataset: Kaggle Housing Prices
+(https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
+Objective: predict SalePrice with low RMSE.
+
+Start with the problem-framing skill.
+
+Ask me questions instead of giving the full answer immediately.
 ```
 
-Run:
+Here's what that exchange looks like. Codex asks for your reasoning at each step before the gate completes — the goal is to build your understanding alongside the artifact.
 
-```bash
-codex run example_prompt.md
-```
+<div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.83rem;line-height:1.65;background:#0d1b2e;border-radius:10px;padding:1.25rem 1.4rem;margin:1.4rem 0;border:1px solid #1a2f4a;">
+<div style="color:#6c7a8d;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:1rem;text-transform:uppercase;">Tutor Mode · Problem-Framing Skill</div>
 
-Expected result:
+<div style="color:#3bc9db;font-size:0.76rem;font-weight:600;margin-bottom:0.25rem;">Codex</div>
+<div style="color:#f4a261;margin-bottom:1rem;white-space:pre-wrap;">Your stated objective is "predict SalePrice with low RMSE."
 
-- Prompt executed
-- Output written to disk
+Before we confirm that's the right metric — what decision would this prediction support? Will someone use this to price a house before listing, or to evaluate an automated offer?</div>
 
-Codex must execute locally before proceeding to structured workflows.
+<div style="color:#94a3b8;font-size:0.76rem;font-weight:600;margin-bottom:0.25rem;">You</div>
+<div style="color:#cbd5e1;margin-bottom:1rem;">To evaluate automated offers — checking whether the offer price is reasonable before accepting.</div>
 
-## Step 2 - Start With One Real Workflow
+<div style="color:#3bc9db;font-size:0.76rem;font-weight:600;margin-bottom:0.25rem;">Codex</div>
+<div style="color:#f4a261;margin-bottom:1rem;white-space:pre-wrap;">Good — that context matters. Automated-offer evaluation has a symmetric error profile: overestimates and underestimates are both costly, so RMSE is the right call.
 
-Do not try to learn the whole architecture at once.
+I'll log that as the decision context. Now: LotFrontage has about 17% missing values in this dataset. What's your first instinct — drop those rows, impute, or flag them separately?</div>
 
-Pick one route:
+<div style="color:#94a3b8;font-size:0.76rem;font-weight:600;margin-bottom:0.25rem;">You</div>
+<div style="color:#cbd5e1;margin-bottom:1rem;">Impute with the median — it should be roughly normal.</div>
 
-- student: [Analytics Repo Example - Student Path](examples/analytics-repo/student.md)
-- practitioner: [Analytics Repo Example - Practitioner Path](examples/analytics-repo/practitioner.md)
-- manager: [Lab Manager Agent](workflows/manager/lab-manager-agent.md)
+<div style="color:#3bc9db;font-size:0.76rem;font-weight:600;margin-bottom:0.25rem;">Codex</div>
+<div style="color:#f4a261;margin-bottom:1rem;white-space:pre-wrap;">Close — but first check whether LotFrontage has a cluster of structural zeros (no street frontage) versus true missing values. If it does, median imputation conflates two very different things. How would you separate those cases?</div>
 
-## Step 3 - Execute Structured Workflows
+<div style="color:#a6e3a1;border-top:1px solid #1a2f4a;margin-top:0.25rem;padding-top:1rem;">→ problem_frame.md written
+→ Decision context: automated-offer evaluation · Metric: RMSE · LotFrontage risk flagged
+→ Ready for data-audit gate</div>
+</div>
 
-### Example 1 - Reproducible Regression Pipeline
+The exchange continues the same way through data audit, split strategy, baseline, and evaluation. Each gate produces an artifact file. By the end of a session the repo is self-documenting — another person (or another session) can open it and immediately understand what's been decided and what comes next.
 
-Create dataset:
+---
 
-`housing_sample.csv`
+## Where to go from here
 
-```csv
-price,square_feet,bedrooms,age
-350000,2000,3,20
-450000,2500,4,10
-275000,1500,3,30
-500000,3000,5,5
-325000,1800,3,25
-```
+Pick the path that matches your role.
 
-Create prompt:
+<div class="decision-grid" style="margin-top:1rem;">
+  <a href="examples/analytics-repo/student.md" class="decision-card">
+    <span class="decision-label">Student</span>
+    <span class="decision-action">Attempt before answer</span>
+    <span class="decision-desc">Tutor mode — Codex asks for your reasoning before revealing the output. Best for building intuition alongside the artifact. Includes an interactive 8-step demo.</span>
+  </a>
+  <a href="examples/analytics-repo/practitioner.md" class="decision-card">
+    <span class="decision-label">Researcher / Data Scientist</span>
+    <span class="decision-action">Direct execution</span>
+    <span class="decision-desc">Practitioner mode — same eight gates, Codex executes directly and expects artifact-quality output. Faster, less hand-holding.</span>
+  </a>
+  <a href="workflows/manager/lab-manager-agent.md" class="decision-card">
+    <span class="decision-label">Manager</span>
+    <span class="decision-action">Coordinate and oversee</span>
+    <span class="decision-desc">Lab manager mode — use Codex to track project state across a team, review gate artifacts, and flag when a project needs attention.</span>
+  </a>
+</div>
 
-`regression_prompt.md`
-
-```text
-# Task: Structured Regression Workflow
-
-You are operating inside a reproducible data science pipeline.
-
-Objectives:
-1. Load housing_sample.csv
-2. Validate schema and missing values
-3. Fit OLS model:
-   price ~ square_feet + bedrooms + age
-4. Report:
-   - coefficients
-   - R^2
-   - diagnostics
-5. Output executable Python code
-6. Save summary to model_summary.txt
-
-Constraints:
-- Do not skip validation
-- Do not assume columns
-- Document assumptions
-
-Expected output structure:
-1. Validation Summary
-2. Model Specification
-3. Results
-4. Diagnostics
-5. Files Written
-6. Reproducibility Notes
-```
-
-Run:
-
-```bash
-codex run regression_prompt.md
-```
-
-Example output (replace with your real run output):
-
-```text
-$ codex run regression_prompt.md
-Dataset loaded: 5 rows
-No missing values
-OLS model fit
-
-R^2: 0.91
-
-Coefficients:
-square_feet: 120.4
-bedrooms: 15000
-age: -1800
-
-model_summary.txt written
-```
-
-This is a structured workflow gate.
-
-## Next Step
-
-After you finish installation and the first verification run, move to:
-
-- [Setup Overview](setup/index.md) for repository-specific environment guidance
-- [Core Data Science Workflow](workflows/data-science/index.md) for the shared execution sequence
-- [Examples](examples/index.md) for concrete backbone scenarios
-
-### Example 2 - Repository Architecture Analysis
-
-Target repository:
-
-`https://github.com/pandas-dev/pandas`
-
-Create prompt:
-
-`repo_analysis.md`
-
-```text
-# Task: Repository Architecture Review
-
-You are performing structured engineering analysis.
-
-Objectives:
-1. Analyze repository structure
-2. Identify core packages
-3. Identify test architecture
-4. Identify build system
-5. Output structured report
-
-Expected output structure:
-- Entry Points
-- Core Modules
-- Testing Strategy
-- Build System
-- Architectural Risks
-
-Constraints:
-- Do not summarize generically
-- Base analysis on repository structure
-```
-
-Run:
-
-```bash
-codex run repo_analysis.md
-```
-
-Example output (replace with your real run output):
-
-```text
-$ codex run repo_analysis.md
-Repository indexed
-2,300+ Python files analyzed
-
-Core Modules:
-- pandas/core
-- pandas/io
-- pandas/tests
-
-Testing:
-- pytest-based
-- extensive fixtures
-
-Build:
-- pyproject.toml
-- C extensions present
-
-repo_report.md written
-```
-
-Structured prompts produce structured outputs.
-
-## Step 3 - Avoid Vague Instructions
-
-Vague regression:
-
-```text
-Run a regression on this dataset.
-```
-
-Weak CLI-style output:
-
-```text
-$ codex run vague_regression.md
-This dataset appears suitable for regression.
-A model can be fit.
-```
-
-Vague repository request:
-
-```text
-Tell me about this repository.
-```
-
-Weak CLI-style output:
-
-```text
-$ codex run vague_repo.md
-This repository contains Python code and tests.
-It is likely a data library.
-```
-
-Why vague instructions fail:
-
-- Reproducibility: no explicit seed, environment, or output artifacts
-- Validation: no schema checks or guardrails
-- Architectural clarity: no required output structure
-
-## Next Steps
-
-- Structured Workflow Gates (in progress)
-- Data Science Layer Architecture (in progress)
-- Devlog -> Digital Garden System (in progress)
-- Manager Playbooks (coming soon)
-
-## Codex Flexibility Clause
-
-If Codex detects:
-
-- Broken formatting
-- Inconsistent heading structure
-- mkdocs rendering conflicts
-- Redundant legacy references
-
-It may:
-
-- Adjust wording minimally
-- Normalize headings
-- Remove legacy references
-
-It must:
-
-- Stay within Quickstart files
-- Not restructure navigation
-- Not introduce new sections beyond spec
+Not sure which fits you? [Choose Your Role →](roles/index.md) has a quick decision guide.

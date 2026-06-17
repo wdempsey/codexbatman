@@ -53,13 +53,6 @@ nav:
   - Start Here:
     - Home: index.md
     - Quickstart: quickstart.md
-    - Setup Overview: setup/index.md
-    - Install:
-      - Mac: toolkit/install-mac.md
-      - Windows: toolkit/install-windows.md
-      - VS Code: setup/vscode-setup.md
-      - MCP Setup: toolkit/mcp-setup.md
-    - How Codex Modes Work: setup/modes.md
   - Roles:
     - Choose Your Role: roles/index.md
     - Students:
@@ -94,6 +87,7 @@ nav:
     - Analytics Repo Example:
       - Overview: examples/analytics-repo/index.md
       - Student Path: examples/analytics-repo/student.md
+      - Live Session Example: examples/analytics-repo/live-session.md
       - Practitioner Path: examples/analytics-repo/practitioner.md
     - Basic Classification:
       - Overview: examples/basic-classification/index.md
@@ -114,12 +108,14 @@ nav:
     - Skill Library: setup/skill-reference.md
     - Core ML Pack: setup/core-ml-pack.md
     - How Skills Work: system/skills-explained.md
+    - Textbook Resources: system/textbook-resources.md
   - Build:
     - Overview: system/index.md
     - Tooling Stack:
       - Overview: tooling/index.md
       - Ponytail: tooling/ponytail.md
       - codebase-memory-mcp: tooling/codebase-memory.md
+      - MCP Setup: toolkit/mcp-setup.md
     - Building Skills: system/building-skills.md
     - Agents vs Skills: system/agents-vs-skills.md
     - Continuous Improvement: system/continuous-improvement.md
