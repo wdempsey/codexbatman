@@ -27,10 +27,13 @@ Each example includes:
 
 The backbone stays the same. What changes is the emphasis.
 
+If you want the single best example of what a real Codex Batman project repo should look like, start with [Analytics Repo Example](analytics-repo/index.md).
+
 ## Examples In This Section
 
 | Example | Purpose |
 |---------|---------|
+| [Analytics Repo Example](analytics-repo/index.md) | Show what a real Kaggle-style supervised ML repository looks like for both students and practitioners |
 | [Basic Classification](basic-classification/index.md) | Show how beginner ML can still be reproducible and artifact-producing |
 | [Grant Project](grant-project/index.md) | Show how the Research OS layer coordinates deadlines, meetings, handoffs, and weekly review |
 | [Methods / Code Project](methods-code-project/index.md) | Show how project state, repo memory, and handoffs support technical research and code work |

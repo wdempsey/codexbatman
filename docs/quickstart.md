@@ -47,8 +47,16 @@ If you are a researcher or data scientist and want the intended route without de
 
 1. [Core Data Science Workflow](workflows/data-science/index.md)
 2. [Backbone Protocol](backbone/index.md)
-3. [Examples](examples/index.md)
+3. [Analytics Repo Example - Practitioner Path](examples/analytics-repo/practitioner.md)
 4. [Skill Library](setup/skill-reference.md)
+
+## Concrete Repo Example
+
+If you want to see a real repo shape before changing your own workflow, open [Analytics Repo Example](examples/analytics-repo/index.md).
+
+Use [Student Path](examples/analytics-repo/student.md) if you want scaffolded, attempt-before-answer guidance.
+
+Use [Practitioner Path](examples/analytics-repo/practitioner.md) if you want the shorter execution-oriented version of the same project.
 
 ## Step 1 - Install & Verify Codex
 

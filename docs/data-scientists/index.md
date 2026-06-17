@@ -75,6 +75,12 @@ Use this shortened path:
 - evaluation summaries
 - experiment logs
 
+## If You Want A Real Repo Example
+
+Open [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md).
+
+That page shows the intended shorter practitioner sequence for the same housing-price project backbone used in the student path.
+
 ## Researcher And Data Scientist Skills
 
 - `project-bootstrap`

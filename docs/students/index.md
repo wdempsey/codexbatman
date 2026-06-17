@@ -82,6 +82,12 @@ If you are brand new, you can safely ignore these until after the first guided s
 - `experiment-log`
 - `causal-design-check`
 
+## If You Want A Real Repo Example
+
+Open [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md).
+
+That page shows how the student path should build a real Kaggle-style housing analysis repo without Codex simply giving the solution away.
+
 ## Where To Go Next
 
 - Go straight to [First Session](first-session.md) if you have not done it yet.

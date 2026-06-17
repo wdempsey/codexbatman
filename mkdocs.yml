@@ -91,6 +91,10 @@ nav:
       - Project Template: backbone/project-template.md
   - Examples:
     - Overview: examples/index.md
+    - Analytics Repo Example:
+      - Overview: examples/analytics-repo/index.md
+      - Student Path: examples/analytics-repo/student.md
+      - Practitioner Path: examples/analytics-repo/practitioner.md
     - Basic Classification:
       - Overview: examples/basic-classification/index.md
       - Learning Lens: examples/basic-classification/learning.md
