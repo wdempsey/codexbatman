@@ -5,6 +5,8 @@ description: A worked student example using the Kaggle Housing Prices dataset an
 
 # First Session - Predict Housing Prices with Tutor Mode
 
+**This is the default first page for students. If you are new, start here before reading the broader workflow or skills pages.**
+
 ## What You Will Learn
 
 This first session shows how to run Codex inside this repository, how workflow skills structure a data science project, and how tutor mode helps you learn the workflow instead of skipping straight to answers.
@@ -19,6 +21,13 @@ evaluation
 experiment log
 
 The point is not to finish the whole project in one sitting. The point is to learn how the workflow, tutor overlay, and method skills work together on a real dataset.
+
+## What To Do Right Now
+
+1. copy the first prompt below
+2. paste it into Codex
+3. stay in tutor mode until you produce a problem brief
+4. come back to this page for the next prompt
 
 ## Dataset
 
@@ -99,6 +108,14 @@ Switch to workflow skill data-audit.
 
 Help me examine the housing dataset structure and identify potential issues before modeling.
 ```
+
+## After This Session
+
+When you finish the first guided pass:
+
+1. open [Core Data Science Workflow](../workflows/data-science/index.md) to see the full sequence you just started
+2. return to [For Students](index.md) for the student path and next steps
+3. open [Examples](../examples/index.md) if you want to compare this guided mode with execution and manager views
 
 ## What Comes Next
 

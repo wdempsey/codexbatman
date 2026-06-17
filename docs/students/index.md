@@ -8,6 +8,8 @@ If you are new to this system, begin with:
 
 [**First Session - Predict Housing Prices with Tutor Mode**](first-session.md)
 
+If you only open one page today, open [First Session](first-session.md).
+
 ## This Path Is For You If
 
 - you are learning data science workflows for the first time
@@ -21,16 +23,20 @@ Students use the same canonical data science workflow as practitioners, but with
 
 The workflow logic does not change by role. What changes is how Codex helps you move through it: more prompting, more hints, more checks for understanding, and more attempt-before-answer behavior.
 
-If you are learning, start with the shared workflow pages under [Core Data Science Workflow](../workflows/data-science/index.md), then use this page to understand which overlays and skills matter most for student mode.
+You do not need to learn the whole architecture first.
+
+Start with the guided session, then come back to the workflow pages after you have seen one concrete example.
 
 ## What Changes In Student Mode
 
-Student overlays wrap the shared workflow skills rather than replacing them.
+Student mode changes how Codex teaches, not the standards of the work.
 
 - Codex asks for your attempt before giving the full answer.
 - Hints usually come before worked solutions.
 - Feedback focuses on reasoning quality, not just correctness.
 - Workflow artifacts still matter, because learning includes learning disciplined process.
+
+Under the hood, this uses student overlays on top of the shared workflow skills. You do not need to memorize that structure before starting.
 
 ## Recommended First Three Steps
 
@@ -54,6 +60,15 @@ Follow this path in order if you are new:
 - experiment logs
 - reflection on what changed and why
 
+## What To Ignore For Now
+
+If you are brand new, you can safely ignore these until after the first guided session:
+
+- the full skill catalog
+- most build/customization pages
+- advanced manager workflow pages
+- older companion/reference sections
+
 ## Student-Focused Skills
 
 - `tutor-mode`
@@ -68,8 +83,9 @@ Follow this path in order if you are new:
 
 ## Where To Go Next
 
+- Go straight to [First Session](first-session.md) if you have not done it yet.
 - Use [Choose Your Role](../roles/index.md) if you want to compare this path with the researcher/data scientist or manager paths.
-- Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of workflow skills, overlays, and manager tools.
-- Review [Examples](../examples/index.md) to see how the same backbone looks in learning, execution, and manager modes.
+- Read [Core Data Science Workflow](../workflows/data-science/index.md) after the first session if you want to see the full shared sequence.
+- Use the [Skill Library](../setup/skill-reference.md) after the first session if you want the shared catalog of workflow skills, overlays, and manager tools.
+- Review [Examples](../examples/index.md) after the first session to see how the same backbone looks in learning, execution, and manager modes.
 - Use [How Skills Work](../system/skills-explained.md) if you want the mental model for how workflow skills, tutor overlays, and method skills fit together.
-- Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.
