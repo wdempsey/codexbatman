@@ -27,6 +27,15 @@ If you are actively doing analysis, start with [Core Data Science Workflow](../w
 
 Practitioner overlays keep the shared workflow strict and execution-oriented.
 
+This role page is meant to remove choice overload.
+
+If you are wondering whether to open the workflow, the backbone, the examples, or the skill catalog first, the answer is:
+
+1. workflow first
+2. backbone second
+3. examples third
+4. skill catalog fourth
+
 ## Recommended First Three Steps
 
 1. Start with [Core Data Science Workflow](../workflows/data-science/index.md) for the canonical sequence.
@@ -41,6 +50,21 @@ Follow this path in order when you are setting up a real project:
 2. [Backbone Protocol](../backbone/index.md)
 3. [Examples](../examples/index.md)
 4. [Skill Library](../setup/skill-reference.md)
+
+## What Each Step Solves
+
+- [Core Data Science Workflow](../workflows/data-science/index.md): learn the execution sequence and the workflow gates
+- [Backbone Protocol](../backbone/index.md): see which durable artifacts your project should keep
+- [Examples](../examples/index.md): see what the system looks like in practice before adapting it
+- [Skill Library](../setup/skill-reference.md): find the concrete skills and packs that support the workflow
+
+## If You Only Have Ten Minutes
+
+Use this shortened path:
+
+1. scan [Core Data Science Workflow](../workflows/data-science/index.md)
+2. open [Backbone Protocol](../backbone/index.md)
+3. bookmark [Examples](../examples/index.md) for the first real project
 
 ## Typical Practitioner Outputs
 
@@ -67,7 +91,7 @@ Follow this path in order when you are setting up a real project:
 ## Where To Go Next
 
 - Use [Choose Your Role](../roles/index.md) if you want to compare this path with the student or manager paths.
-- Use the [Skill Library](../setup/skill-reference.md) for the shared catalog and direct links to the underlying skill folders.
+- Use the [Skill Library](../setup/skill-reference.md) only after you understand the workflow and backbone relationship.
 - Use [How Skills Work](../system/skills-explained.md) if you want the operating model behind workflow skills, overlays, and method handoffs.
 - Use [Core ML Pack](../setup/core-ml-pack.md) when you want a concrete supervised ML starter pack.
 - Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.

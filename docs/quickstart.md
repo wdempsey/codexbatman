@@ -41,6 +41,15 @@ Codex is the primary execution engine for this workflow system.
 - If you want worked scenarios before changing your own process, go next to [Examples](examples/index.md).
 - If you want role-specific guidance, go next to [Choose Your Role](roles/index.md), [Students](students/index.md), [Researchers & Data Scientists](data-scientists/index.md), or [Managers](managers/index.md).
 
+## Practitioner Shortcut
+
+If you are a researcher or data scientist and want the intended route without deciding among multiple concepts, use this order:
+
+1. [Core Data Science Workflow](workflows/data-science/index.md)
+2. [Backbone Protocol](backbone/index.md)
+3. [Examples](examples/index.md)
+4. [Skill Library](setup/skill-reference.md)
+
 ## Step 1 - Install & Verify Codex
 
 Codex must be installed locally before executing structured workflows.
