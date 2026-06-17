@@ -817,6 +817,35 @@ body.hf-landing .md-content__inner {
   object-position: center;
 }
 
+.hf-home .hf-proof-card {
+  height: 100%;
+  min-height: 165px;
+  padding: 0.9rem;
+  background:
+    linear-gradient(155deg, rgba(96, 111, 255, 0.12), rgba(0, 188, 212, 0.08)),
+    color-mix(in srgb, var(--md-default-bg-color) 94%, #0f1724 6%);
+}
+
+.hf-home .hf-proof-card p {
+  margin: 0 0 0.55rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hf-home .hf-proof-card pre {
+  margin: 0;
+  height: calc(100% - 1.4rem);
+  border-radius: 0.7rem;
+  border: 1px solid color-mix(in srgb, var(--md-accent-fg-color) 18%, var(--hf-light-border));
+  background: rgba(15, 23, 36, 0.82);
+}
+
+.hf-home .hf-proof-card code {
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
 
 .hf-home .hf-section--connect {
   background:

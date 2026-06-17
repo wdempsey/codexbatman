@@ -60,6 +60,21 @@ Follow this path in order if you are new:
 - experiment logs
 - reflection on what changed and why
 
+## Example Student Artifact
+
+This is the kind of artifact the student path should leave behind early:
+
+```md
+# problem_frame.md
+
+- target: SalePrice
+- metric: RMSE
+- decision context: estimate likely sale price from structured housing features
+- first risks: missing values, leakage, overfitting to leaderboard habits
+```
+
+The point is not polished prose. The point is durable project memory that proves the learner framed the task before modeling.
+
 ## What To Ignore For Now
 
 If you are brand new, you can safely ignore these until after the first guided session:

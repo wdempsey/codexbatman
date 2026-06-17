@@ -75,6 +75,24 @@ Use this shortened path:
 - evaluation summaries
 - experiment logs
 
+## Example Practitioner Artifact
+
+This is the kind of artifact the practitioner path should leave behind during execution:
+
+```md
+# experiment_log.md
+
+- run_id: 2026-06-17-baseline-001
+- baseline: linear regression
+- comparison candidate: random forest
+- split: fixed validation set
+- metric: RMSE
+- result: baseline remains the reference
+- next action: inspect feature leakage and missingness handling
+```
+
+The point is that another analyst can see what has already been tried and what should happen next without reopening the whole chat history.
+
 ## If You Want A Real Repo Example
 
 Open [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md).

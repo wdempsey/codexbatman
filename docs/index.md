@@ -123,6 +123,42 @@ social:
       <div class="hf-media-list">
         <article class="hf-media-row hf-reveal">
           <div class="hf-media-image">
+            <div class="hf-proof-card">
+              <p><strong>Student Artifact</strong></p>
+              <pre><code>problem_frame.md
+- target: SalePrice
+- metric: RMSE
+- prediction time: before sale
+- first risks: missingness, leakage</code></pre>
+            </div>
+          </div>
+          <div>
+            <h3>Student Workflow Artifact</h3>
+            <p>A beginner-facing artifact that proves the learner framed the problem before modeling and can resume from real project state.</p>
+            <p><a href="examples/analytics-repo/student/">Open the student repo example</a></p>
+          </div>
+        </article>
+
+        <article class="hf-media-row hf-media-row--alt hf-reveal">
+          <div class="hf-media-image">
+            <div class="hf-proof-card">
+              <p><strong>Practitioner Artifact</strong></p>
+              <pre><code>experiment_log.md
+- baseline: linear regression
+- candidate: random forest
+- split: fixed validation set
+- next action: inspect leakage risk</code></pre>
+            </div>
+          </div>
+          <div>
+            <h3>Practitioner Workflow Artifact</h3>
+            <p>An execution-facing artifact that records what was tried, what won so far, and what needs to happen next.</p>
+            <p><a href="examples/analytics-repo/practitioner/">Open the practitioner repo example</a></p>
+          </div>
+        </article>
+
+        <article class="hf-media-row hf-reveal">
+          <div class="hf-media-image">
             <img src="images/project-overview-dashboard-v1.png" alt="Example project overview dashboard showing project status, priorities, metrics, and tasks" loading="lazy">
           </div>
           <div>
@@ -135,6 +171,7 @@ social:
 
       <p class="hf-inline-cta">
         <a class="md-button md-button--primary" href="examples/">See worked examples</a>
+        <a class="md-button" href="examples/analytics-repo/">See repo artifacts</a>
         <a class="md-button" href="workflows/examples/project-overview-example/">See a manager artifact</a>
       </p>
     </div>
