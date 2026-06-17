@@ -12,23 +12,23 @@ If you are overwhelmed, do not read the whole site. Pick one role page and follo
 
 ## Pick Your Path
 
-### Students
-
-Learn the workflow through guided practice, hints, and attempt-before-answer tutoring while still producing real project artifacts.
-
-[Start as a student](../students/index.md)
-
-### Researchers & Data Scientists
-
-Execute trustworthy analysis with explicit workflow gates, reproducible artifacts, and handoff-ready project memory.
-
-[Start as a researcher or data scientist](../data-scientists/index.md)
-
-### Managers
-
-Track project health, blockers, decisions, handoffs, and stakeholder communication across analytical work.
-
-[Start as a manager](../managers/index.md)
+<div class="role-grid">
+  <article class="role-card">
+    <h3>Students</h3>
+    <p>Learn the workflow through guided practice, hints, and attempt-before-answer tutoring while still producing real project artifacts.</p>
+    <p><a href="../students/index.md">Start as a student</a></p>
+  </article>
+  <article class="role-card">
+    <h3>Researchers &amp; Data Scientists</h3>
+    <p>Execute trustworthy analysis with explicit workflow gates, reproducible artifacts, and handoff-ready project memory.</p>
+    <p><a href="../data-scientists/index.md">Start as a researcher or data scientist</a></p>
+  </article>
+  <article class="role-card">
+    <h3>Managers</h3>
+    <p>Track project health, blockers, decisions, handoffs, and stakeholder communication across analytical work.</p>
+    <p><a href="../managers/index.md">Start as a manager</a></p>
+  </article>
+</div>
 
 ## Quick Decision Guide
 
