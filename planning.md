@@ -1,6 +1,6 @@
 # Planning
 
-Last updated: 2026-06-16
+Last updated: 2026-06-17
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
@@ -62,6 +62,15 @@ Last updated: 2026-06-16
 - [x] PR 9: Add worked examples across learning, execution, and manager lenses.
 - [x] PR 10: Add UI/UX standards and repo-local site review skills, using `UI_REDESIGN_BRIEF.md` and `SITE_STRUCTURE_REVIEW.md`.
 - [x] PR 11: Run first site UI/UX pass and write `docs/site/ui-pass-001.md`.
+
+## Active: Next Pass PR Sequence
+
+- [ ] PR 19: Add a concrete analytics repo example with student and practitioner paths around the same standard ML pipeline.
+- [ ] PR 20: Make the setup and quickstart path concrete for the first 10 minutes in the repo, including stronger student entry points.
+- [ ] PR 21: Add proof artifacts across the homepage and role lanes so each audience sees a concrete output.
+- [ ] PR 22: Run a focused UI/UX polish pass on homepage readability, spacing, and navigation weight.
+- [ ] PR 23: Add an asset prompt pack and asset request workflow for future homepage and role-page visuals.
+- [ ] Prepare a Claude audit handoff with agent-specific scope, constraints, and expected outputs.
 
 ## Backlog (Low Priority)
 
