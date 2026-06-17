@@ -27,7 +27,7 @@ If you want to start using the system right away, go to [Quickstart](quickstart.
 <div class="narrative-block dan-roy-tweet" markdown>
 **Dan Roy on X**
 
-<img src="assets/about/dan-roy-x-tweet.png" alt="Dan Roy X post" />
+<img src="../assets/about/dan-roy-x-tweet.png" alt="Dan Roy X post" />
 </div>
 
 This site is intentionally hands-on and iterative. It is meant to evolve in public.
@@ -41,7 +41,7 @@ I am [Walter Dempsey](https://walterhdempsey.com), an academic statistician and 
 ## About [Walter Dempsey](https://walterhdempsey.com)
 
 <div class="about-profile-pic" markdown>
-<img src="assets/about/walter-dempsey-profile.png" alt="Walter Dempsey profile" />
+<img src="../assets/about/walter-dempsey-profile.png" alt="Walter Dempsey profile" />
 </div>
 
 I am an Associate Professor of [Biostatistics](https://sph.umich.edu/biostat/) and an Assistant Research
