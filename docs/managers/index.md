@@ -33,6 +33,15 @@ Manager overlays help Codex summarize and coordinate instead of diving straight 
 2. Review the [Research OS Template](../workflows/manager/research-os-template.md) for the durable files that support weekly review.
 3. Use [Examples](../examples/index.md) to compare project and portfolio views before changing your own process.
 
+## Recommended Sequence
+
+Follow this path in order when you are building a manager workflow:
+
+1. [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)
+2. [Research OS Template](../workflows/manager/research-os-template.md)
+3. [Examples](../examples/index.md)
+4. [Project Management](../workflows/project-management.md) and [Managing Data Science](../workflows/managing-data-science/index.md)
+
 ## Typical Manager Outputs
 
 - weekly reviews

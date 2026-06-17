@@ -38,6 +38,14 @@ Student overlays wrap the shared workflow skills rather than replacing them.
 2. Read [Core Data Science Workflow](../workflows/data-science/index.md) to see the full shared backbone.
 3. Use the [Skill Library](../setup/skill-reference.md) when you want to understand which student overlays wrap that backbone.
 
+## Recommended Sequence
+
+Follow this path in order if you are new:
+
+1. [First Session](first-session.md)
+2. [Core Data Science Workflow](../workflows/data-science/index.md)
+3. [Skill Library](../setup/skill-reference.md)
+
 ## Typical Student Outputs
 
 - problem frames

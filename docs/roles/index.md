@@ -38,6 +38,28 @@ Track project health, blockers, decisions, handoffs, and stakeholder communicati
 | see the system in practice first | [Examples](../examples/index.md) |
 | find reusable workflow skills | [Skill Library](../setup/skill-reference.md) |
 
+## Recommended Sequence By Role
+
+### Students
+
+1. [Student First Session](../students/first-session.md)
+2. [Core Data Science Workflow](../workflows/data-science/index.md)
+3. [Skill Library](../setup/skill-reference.md)
+
+### Researchers & Data Scientists
+
+1. [Core Data Science Workflow](../workflows/data-science/index.md)
+2. [Backbone Protocol](../backbone/index.md)
+3. [Examples](../examples/index.md)
+4. [Skill Library](../setup/skill-reference.md)
+
+### Managers
+
+1. [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)
+2. [Research OS Template](../workflows/manager/research-os-template.md)
+3. [Examples](../examples/index.md)
+4. [Project Management](../workflows/project-management.md) and [Managing Data Science](../workflows/managing-data-science/index.md)
+
 ## Shared Backbone
 
 All three roles use the same core sequence:

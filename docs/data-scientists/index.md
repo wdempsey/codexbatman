@@ -33,6 +33,15 @@ Practitioner overlays keep the shared workflow strict and execution-oriented.
 2. Review [Backbone Protocol](../backbone/index.md) so your project leaves durable artifacts, not just chat output.
 3. Open [Examples](../examples/index.md) to see how execution mode looks in realistic workflows.
 
+## Recommended Sequence
+
+Follow this path in order when you are setting up a real project:
+
+1. [Core Data Science Workflow](../workflows/data-science/index.md)
+2. [Backbone Protocol](../backbone/index.md)
+3. [Examples](../examples/index.md)
+4. [Skill Library](../setup/skill-reference.md)
+
 ## Typical Practitioner Outputs
 
 - framing artifacts
