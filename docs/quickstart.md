@@ -8,6 +8,8 @@ description: Codex-native quickstart for structured, reproducible data science w
 
 If you are brand new, do not read the whole site first. Install Codex, verify local execution, then move into the setup, examples, and role pages that match your use case.
 
+If you only do one thing after install, open [Choose Your Role](roles/index.md) and follow one path instead of browsing the whole site.
+
 ## Goal
 
 Install Codex and execute structured, reproducible data science workflows.
@@ -17,7 +19,7 @@ This system is:
 - Codex-native
 - Workflow-gated
 - Reproducible
-- Architected for data science managers and senior data scientists
+- Role-aware for students, practitioners, and managers
 
 This is not a prompting guide.
 
@@ -25,21 +27,23 @@ It is a structured execution layer.
 
 Codex is the primary execution engine for this workflow system.
 
-## Recommended First Path
+## Recommended First Ten Minutes
 
 1. Install and verify Codex locally.
 2. Open [Setup Overview](setup/index.md) for the repository-specific environment and workflow checks.
-3. Review [Choose Your Role](roles/index.md), [Examples](examples/index.md), or your role page:
+3. Open [Choose Your Role](roles/index.md).
+4. Pick one concrete next page:
    [Students](students/index.md),
    [Researchers & Data Scientists](data-scientists/index.md),
    [Managers](managers/index.md).
+5. If you want a real project shape immediately, open [Analytics Repo Example](examples/analytics-repo/index.md).
 
 ## Choose Your Route After Install
 
-- If you want the full workflow model, go next to [Core Data Science Workflow](workflows/data-science/index.md).
-- If you want concrete project structure, go next to [Backbone Protocol](backbone/index.md).
-- If you want worked scenarios before changing your own process, go next to [Examples](examples/index.md).
-- If you want role-specific guidance, go next to [Choose Your Role](roles/index.md), [Students](students/index.md), [Researchers & Data Scientists](data-scientists/index.md), or [Managers](managers/index.md).
+- If you are a student and want the real first action, go next to [Repo Bootstrap For Students](setup/skill-reference.md#additional-shared-skills) and then [Analytics Repo Example - Student Path](examples/analytics-repo/student.md).
+- If you are a researcher or data scientist and want the real project path, go next to [Analytics Repo Example - Practitioner Path](examples/analytics-repo/practitioner.md).
+- If you are a manager and want the coordination path, go next to [Lab Manager Agent](workflows/manager/lab-manager-agent.md).
+- If you want the full workflow model first, go next to [Core Data Science Workflow](workflows/data-science/index.md).
 
 ## Practitioner Shortcut
 
@@ -57,6 +61,12 @@ If you want to see a real repo shape before changing your own workflow, open [An
 Use [Student Path](examples/analytics-repo/student.md) if you want scaffolded, attempt-before-answer guidance.
 
 Use [Practitioner Path](examples/analytics-repo/practitioner.md) if you want the shorter execution-oriented version of the same project.
+
+## Best Next Page By Role
+
+- Students: [For Students](students/index.md)
+- Researchers & Data Scientists: [For Researchers & Data Scientists](data-scientists/index.md)
+- Managers: [For Data Science Managers](managers/index.md)
 
 ## Step 1 - Install & Verify Codex
 
@@ -182,7 +192,17 @@ Expected result:
 
 Codex must execute locally before proceeding to structured workflows.
 
-## Step 2 - Execute Structured Workflows
+## Step 2 - Start With One Real Workflow
+
+Do not try to learn the whole architecture at once.
+
+Pick one route:
+
+- student: [Analytics Repo Example - Student Path](examples/analytics-repo/student.md)
+- practitioner: [Analytics Repo Example - Practitioner Path](examples/analytics-repo/practitioner.md)
+- manager: [Lab Manager Agent](workflows/manager/lab-manager-agent.md)
+
+## Step 3 - Execute Structured Workflows
 
 ### Example 1 - Reproducible Regression Pipeline
 

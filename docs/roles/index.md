@@ -8,6 +8,8 @@ description: Choose the Codex Batman path for students, researchers and data sci
 
 Codex Batman uses one shared workflow backbone. The role pages change the delivery style and first actions, not the underlying data science standards.
 
+If you are overwhelmed, do not read the whole site. Pick one role page and follow that sequence only.
+
 ## Pick Your Path
 
 ### Students
@@ -32,7 +34,7 @@ Track project health, blockers, decisions, handoffs, and stakeholder communicati
 
 | If you need to... | Open this |
 | --- | --- |
-| learn with a concrete guided exercise | [Student First Session](../students/first-session.md) |
+| learn with a concrete guided exercise | [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md) |
 | run a disciplined analysis workflow | [Core Data Science Workflow](../workflows/data-science/index.md) |
 | coordinate a lab or project portfolio | [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) |
 | see the system in practice first | [Examples](../examples/index.md) |
@@ -42,9 +44,9 @@ Track project health, blockers, decisions, handoffs, and stakeholder communicati
 
 ### Students
 
-1. [Student First Session](../students/first-session.md)
-2. [Core Data Science Workflow](../workflows/data-science/index.md)
-3. [Skill Library](../setup/skill-reference.md)
+1. [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md)
+2. [Student First Session](../students/first-session.md)
+3. [Core Data Science Workflow](../workflows/data-science/index.md)
 
 ### Researchers & Data Scientists
 

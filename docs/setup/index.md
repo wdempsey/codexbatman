@@ -2,7 +2,11 @@
 
 This section takes you from zero to a working Codex setup for this repository.
 
-If you want a concrete student entry point after setup, start with [First Session - Predict Housing Prices with Tutor Mode](../students/first-session.md).
+If you only do one thing after setup, start one concrete path instead of browsing:
+
+- students: [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md)
+- practitioners: [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md)
+- managers: [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)
 
 ## What This Setup Path Covers
 
@@ -11,7 +15,7 @@ This setup path is for students and other new users who want to:
 1. install Codex
 2. clone this repository
 3. open the repository in Codex
-4. begin the first session tutorial
+4. begin one real workflow path
 
 ## Two Ways to Run Codex
 
@@ -43,14 +47,17 @@ If you want a visual working environment, use [Set Up VS Code](vscode-setup.md).
 
 Read [How Codex Modes Work](modes.md) for the basic interaction model.
 
-### Step 5: Start the First Student Session
+### Step 5: Start One Concrete Path
 
-Begin with [First Session - Predict Housing Prices with Tutor Mode](../students/first-session.md).
+- If you are learning, start with [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md).
+- If you want the student warm-up first, use [First Session - Predict Housing Prices with Tutor Mode](../students/first-session.md).
+- If you are executing a real project, start with [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md).
 
 ## Learn and Browse
 
 | Page | What You'll Learn |
 |------|-------------------|
+| [Analytics Repo Example](../examples/analytics-repo/index.md) | What a real Codex Batman analytics repository should look like |
 | [How Skills Work](../system/skills-explained.md) | How workflow skills, tutor overlays, and method skills fit together |
 | [Skill Library](skill-reference.md) | The shared catalog of skills in this repository |
 
@@ -61,7 +68,13 @@ After working through this section, you should have:
 - Codex available in your working environment
 - a local clone of this repository
 - the repository open in Codex
-- a clear first student path through the housing tutorial
+- a clear next workflow page instead of a vague tour of the site
+
+## Student First Action
+
+If you are a student, the first real repo-building step is [Repo Bootstrap For Students](skill-reference.md#additional-shared-skills).
+
+That skill exists to help a learner create the repository structure before moving into the rest of the workflow.
 
 ## Common Issues
 
@@ -69,4 +82,4 @@ After working through this section, you should have:
 |---------|-----|
 | `codex` command not found | Reopen the terminal after installation and verify Codex is on your PATH |
 | Codex cannot see the repository | Open the repository folder itself, not a single file |
-| The workflow feels abstract | Start with the housing example instead of the full workflow docs |
+| The workflow feels abstract | Start with [Analytics Repo Example](../examples/analytics-repo/index.md) instead of the full workflow docs |
