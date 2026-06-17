@@ -143,3 +143,5 @@ The current repo-local sources of truth for site improvement are:
 - the relevant page being reviewed
 
 Use those together with the site review skills to guide future passes.
+
+When a future pass needs new visuals, use [Asset Prompt Pack](asset-prompt-pack.md) so image requests stay aligned with the site's actual visual direction.

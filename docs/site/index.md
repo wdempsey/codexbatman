@@ -7,6 +7,7 @@ The goal is not a flashy redesign. The goal is a restrained, trustworthy MkDocs 
 ## What This Section Covers
 
 - [UI/UX Standards](ui-ux-standards.md): the lightweight rules for page purpose, hierarchy, readability, navigation, and visual polish
+- [Asset Prompt Pack](asset-prompt-pack.md): reusable prompts and a request workflow for homepage, role-page, and artifact-support visuals
 - [Structural UI/UX Pass 002](structural-ui-ux-pass-002.md): proposed navigation and role-routing changes for students, researchers/data scientists, and managers
 - [Archive Vs Companion Policy](archive-vs-companion-policy.md): the classification rule for canonical pages, companion references, and archive candidates
 - repo-local review skills for page audits, navigation checks, and visual cleanup passes
@@ -25,5 +26,6 @@ Site work should follow the same discipline as the rest of the repository:
 ## Where This Fits
 
 - Use [UI/UX Standards](ui-ux-standards.md) before editing page structure or presentation.
+- Use [Asset Prompt Pack](asset-prompt-pack.md) when the next improvement requires a new image or artifact mockup request.
 - Use [Skill Library](../setup/skill-reference.md) to find the repo-local site review skills.
 - Use [Examples](../examples/index.md), [Backbone Protocol](../backbone/index.md), and [Tooling Stack](../tooling/index.md) as anchor sections when reviewing cross-links and newcomer flow.
