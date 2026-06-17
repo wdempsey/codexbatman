@@ -2,6 +2,12 @@
 
 Before using AI for anything involving tax documents, you need to make deliberate choices about what data touches which systems. This page walks through the decisions and their trade-offs.
 
+## Start Here If
+
+Use this page before handling sensitive documents in this case study.
+
+It is part of a specialized companion workflow, not the main repository onboarding path. For the main Codex Batman workflow system, return to [Quickstart](../../quickstart.md) or [Backbone Protocol](../../backbone/index.md).
+
 !!! warning "This is not tax advice"
     Educational content about AI workflow design. Not tax, legal, or financial advice.
 
@@ -122,3 +128,9 @@ To replicate the full workflow described in this case study, you need:
 ---
 
 **Next:** [The Workflow Overview](../case-study/the-workflow-overview.md) — how the full pipeline works, and meet the fictional personas.
+
+## Related Pages
+
+- [Tax Workflow Overview](../index.md)
+- [Downloads & Reference Library](../../downloads/index.md)
+- [Quickstart](../../quickstart.md)

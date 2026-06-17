@@ -1,6 +1,12 @@
 # Data Science Layer Blueprint
 ## A Codex-Native, Reproducible Analyst Assistant System
 
+## Start Here If
+
+Use this page as a legacy blueprint reference for the broader data-science layer architecture.
+
+For the current canonical docs, start with [Core Data Science Workflow](index.md), [Backbone Protocol](../../backbone/index.md), and [Examples](../../examples/index.md).
+
 ---
 
 # 1. Purpose
@@ -218,6 +224,12 @@ Each skill has:
 - Guardrails
 - Escalation conditions
 - Human review requirement
+
+## Related Pages
+
+- [Core Data Science Workflow](index.md)
+- [Backbone Protocol](../../backbone/index.md)
+- [Project Template](../../backbone/project-template.md)
 
 ---
 

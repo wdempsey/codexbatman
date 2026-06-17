@@ -1,5 +1,11 @@
 # AI Project Folders: Turn Any Recurring Task into a System
 
+## Start Here If
+
+Use this page when you want a reusable planning pattern for recurring life or work tasks outside the repository's main data-science backbone.
+
+This is a companion pattern page. If you want the current Codex Batman workflow model first, start with [Backbone Protocol](../backbone/index.md), [Examples](../examples/index.md), or [Build Your Own](../system/index.md).
+
 <div class="grid cards" markdown>
 
 -   :octicons-book-24: [**Vacation Planning**](folders/vacation.md)
@@ -217,6 +223,12 @@ You're done when your file has: stable preferences for each person, at least 2-3
 **File too long or bloated.** Prune to under 500 words. Remove situation-specific details (those belong in per-instance briefs, not the canonical file). Shorter files produce noticeably better adherence, especially in ChatGPT. Aim for 300-500 words after stabilization.
 
 ---
+
+## Related Pages
+
+- [Chatbot Essentials](index.md)
+- [Build Your Own](../system/index.md)
+- [Examples](../examples/index.md)
 
 ## How This Actually Develops
 

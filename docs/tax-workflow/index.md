@@ -1,6 +1,6 @@
 # Using Claude Code for Tax Season
 
-*Claude Blattman — not quite a CPA.*
+*A personal case study, not tax advice.*
 
 ## Start Here If
 

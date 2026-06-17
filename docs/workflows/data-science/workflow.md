@@ -1,5 +1,11 @@
 # Workflow for Managing Data Science
 
+## Start Here If
+
+Use this page as an older reference description of the manager workflow logic.
+
+For the current canonical manager path, start with [For Data Science Managers](../../managers/index.md), [Lab Manager Agent](../manager/lab-manager-agent.md), and [Research OS Template](../manager/research-os-template.md).
+
 ## 1. Why This Workflow Exists
 
 Managing data science is unusually context-heavy.
@@ -217,6 +223,12 @@ What gets installed:
 Why this phase matters:
 
 - turns the workflow into a real manager operating system, not an inbox helper
+
+## Related Pages
+
+- [For Data Science Managers](../../managers/index.md)
+- [Lab Manager Agent](../manager/lab-manager-agent.md)
+- [Research OS Template](../manager/research-os-template.md)
 
 After completing this phase, you can:
 

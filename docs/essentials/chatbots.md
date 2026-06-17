@@ -2,6 +2,12 @@
 
 <span class="badge-teal">No Claude Code required</span>
 
+## Start Here If
+
+Use this page when you want stronger general chatbot habits before moving into Codex-native workflows.
+
+This is a companion foundations page. For the repository's structured operating-system path, go next to [Quickstart](../quickstart.md), [Core Data Science Workflow](../workflows/data-science/index.md), or [Skill Library](../setup/skill-reference.md).
+
 Most people use AI chatbots like Google: one question, one answer, move on. That's the least valuable way to use them.
 
 This page covers the techniques that separate casual users from people who get genuinely useful work out of AI chatbots.
@@ -214,3 +220,9 @@ Over time, this library becomes the seed of something more powerful. On this sit
     [:octicons-arrow-right-24: Get Started](../setup/index.md)
 
 </div>
+
+## Related Pages
+
+- [Prompt Engineering](prompting.md)
+- [Quickstart](../quickstart.md)
+- [Skill Library](../setup/skill-reference.md)
