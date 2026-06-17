@@ -2,6 +2,12 @@
 
 A project-centered workflow for managers leading data science, analytics, and research work. Connect email, meetings, docs, Slack, Dropbox, and private notes into one system for project awareness, follow-up tracking, and weekly review.
 
+## Start Here If
+
+Use this page when you want the manager workflow organized around daily execution and project-centered coordination.
+
+This is the day-to-day operating layer. If you want the portfolio model first, start with [Lab Manager Agent](../manager/lab-manager-agent.md). If you want the build story first, start with [Project Management](../project-management.md).
+
 !!! note "You should read this after setup"
     Before using this workflow, you should already have:
 
@@ -74,3 +80,9 @@ A project-centered workflow for managers leading data science, analytics, and re
 - Relationship to Project Management: this is a manager-facing operating workflow that applies project-management logic to daily execution.
 - Relationship to Executive Assistant: this extends inbox and calendar support into project-centered managerial synthesis.
 - Relationship to setup guides and Toolkit pages: setup/toolkit pages explain installation and components, while this page explains operating behavior.
+
+## Related Pages
+
+- [Lab Manager Agent](../manager/lab-manager-agent.md)
+- [Research OS Template](../manager/research-os-template.md)
+- [Examples](../../examples/index.md)

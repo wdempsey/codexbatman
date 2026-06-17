@@ -6,6 +6,12 @@ description: AI-powered project management for data science and research teams -
 
 How I went from scattered information across five platforms to living project dashboards that write weekly reviews and draft proposals on demand. Built in four layers over several months - each one building on the last.
 
+## Start Here If
+
+Use this page when you want the build story for project dashboards, weekly reviews, and proposal support.
+
+This page is best for understanding how a project-management system was assembled over time. If you want the portfolio operating model first, start with [Lab Manager Agent](manager/lab-manager-agent.md). If you want the durable file structure first, start with [Research OS Template](manager/research-os-template.md).
+
 ---
 
 ## The Mess

@@ -12,6 +12,8 @@ It does not replace project-level analysis. It organizes many projects at once, 
 
 Use this page when you need to coordinate many projects, students, deadlines, and handoffs at once rather than manage one analysis task in isolation.
 
+This is the portfolio-level concept page for the manager lane. Read this first if you want to understand the coordination model before looking at templates, examples, or implementation stories.
+
 ## Hierarchy
 
 ```text

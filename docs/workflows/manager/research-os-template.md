@@ -8,6 +8,12 @@ These templates provide the folder-first artifact layer for the Research OS / La
 
 They are designed to support portfolio visibility, project coordination, handoffs, deadlines, and weekly review without turning the system into a separate application.
 
+## Start Here If
+
+Use this page when you want the actual manager-facing files and folders, not just the coordination concept.
+
+This is the template page for the manager lane. Read it after [Lab Manager Agent](lab-manager-agent.md) if you want to translate the operating model into durable artifacts.
+
 ## Template Locations
 
 Lab-level templates:
