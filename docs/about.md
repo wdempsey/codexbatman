@@ -18,6 +18,12 @@ that avoiding this topic (or pretending to address it while just continuing to p
 efficient influence function theory...) is the wrong approach. This site is my first attempt to
 **step up to the challenge.**
 
+## Start Here If
+
+Use this page when you want the project story rather than the workflow instructions.
+
+If you want to start using the system right away, go to [Quickstart](quickstart.md), [Examples](examples/index.md), or [Backbone Protocol](backbone/index.md).
+
 <div class="narrative-block dan-roy-tweet" markdown>
 **Dan Roy on X**
 
@@ -86,6 +92,13 @@ The aim is to share a working system in progress:
 - Better templates for common data science tasks
 - Notes, essays, and lessons learned from ongoing use
 
+## How To Use The Site
+
+- Start with [Quickstart](quickstart.md) if you want the shortest route into the system.
+- Use [Examples](examples/index.md) if you want to see the backbone in practice before adopting it.
+- Use [Tooling Stack](tooling/index.md) if you want to understand which external helpers are optional.
+- Use [Build Your Own](system/index.md) if you want to adapt the system rather than just use it.
+
 ---
 
 ## How This Site Was Built
@@ -121,3 +134,9 @@ Special thanks to the reference implementations that influenced this system — 
 
 Thanks to my sabbatical for giving me the hours to help understand these tools, and to Codex team at
 OpenAI for building a useful product.
+
+## Related Pages
+
+- [Quickstart](quickstart.md)
+- [Examples](examples/index.md)
+- [Resources](resources.md)

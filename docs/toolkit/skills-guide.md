@@ -2,6 +2,12 @@
 
 Skills (also called slash commands) are reusable prompts that run inside Claude Code with a single command. Instead of typing out a detailed prompt every time you want to triage your inbox or summarize a meeting, you type `/done` or `/review-plan` and the skill handles the rest.
 
+## Start Here If
+
+Use this page when you want the older command-style mental model for installable markdown skills.
+
+For the current repository catalog and role-aware organization, start with [Skill Library](../setup/skill-reference.md). This page is best read as a companion explainer for the older slash-command workflow style.
+
 ---
 
 ## What Skills Are
@@ -47,7 +53,7 @@ Subdirectories create namespaced commands: `prompt-references/formatting-core.md
    ```bash
    # Option 1: Download from GitHub
    curl -o ~/.claude/commands/done.md \
-     https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
+     https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/overlays/done.md
 
    # Option 2: Copy from this site
    # Copy the code block from the Skill Library page and save to a file
@@ -173,3 +179,4 @@ The [Build Your Own](../system/building-skills.md) section goes deeper into skil
 
 - **[Skill Library](../setup/skill-reference.md)** — Browse and download pre-built skills
 - **[Building Skills](../system/building-skills.md)** — Learn to create your own
+- **[How Skills Work](../system/skills-explained.md)** — See how skills, overlays, and workflow routing fit together in the current system

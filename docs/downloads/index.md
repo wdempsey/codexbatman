@@ -2,7 +2,23 @@
 
 Guides, templates, and reference documents from my actual setup. Download, adapt, and use freely.
 
+## Start Here If
+
+Use this page when you want longer-form reference material, concrete templates, or real working examples that sit beside the main workflow docs.
+
+If you are brand new to the site, start with [Quickstart](../quickstart.md), [Skill Library](../setup/skill-reference.md), or [Examples](../examples/index.md) first. Come back here when you want deeper supporting material.
+
 **A note on dates:** AI tools evolve fast. Each resource includes a date so you know how current it is. I'll update these periodically, but always check official documentation for the latest on any specific tool.
+
+---
+
+## Best First Picks
+
+If you only open three things, start with:
+
+- [A Real CLAUDE.md — Annotated](real-claude-md-example.md) for a concrete working example
+- [Skill Design Patterns](skill-patterns.md) for reusable build ideas
+- [Tool Limitations & When to Use What](tool-limitations.md) for decision support across tools
 
 ---
 
@@ -138,15 +154,15 @@ Guides, templates, and reference documents from my actual setup. Download, adapt
 
 ## Templates
 
-Starter configuration files for setting up your own system. All are in the [GitHub repository](https://github.com/chrisblattman/claudeblattman/tree/main/templates).
+Starter configuration files for setting up your own system. All are in the current [Codex Batman repository](https://github.com/wdempsey/codexbatman/tree/main/templates).
 
 | Template | Purpose |
 |----------|---------|
-| [CLAUDE.md Template](https://github.com/chrisblattman/claudeblattman/blob/main/templates/claude-md-template.md) | Starter configuration for Claude Code |
-| [Email Policy Template](https://github.com/chrisblattman/claudeblattman/blob/main/templates/email-policy-template.md) | Rules for email triage autonomy |
-| [Calendar Policy Template](https://github.com/chrisblattman/claudeblattman/blob/main/templates/calendar-policy-template.md) | Calendar management policies |
-| [Triage Config Template](https://github.com/chrisblattman/claudeblattman/blob/main/templates/triage-config-template.md) | Email classification rules |
-| [Goals Template](https://github.com/chrisblattman/claudeblattman/blob/main/templates/goals-yaml-template.yaml) | Quarterly goal tracking format |
+| [CLAUDE.md Template](https://github.com/wdempsey/codexbatman/blob/main/templates/claude-md-template.md) | Starter configuration for Claude Code |
+| [Email Policy Template](https://github.com/wdempsey/codexbatman/blob/main/templates/email-policy-template.md) | Rules for email triage autonomy |
+| [Calendar Policy Template](https://github.com/wdempsey/codexbatman/blob/main/templates/calendar-policy-template.md) | Calendar management policies |
+| [Triage Config Template](https://github.com/wdempsey/codexbatman/blob/main/templates/triage-config-template.md) | Email classification rules |
+| [Goals Template](https://github.com/wdempsey/codexbatman/blob/main/templates/goals-yaml-template.yaml) | Quarterly goal tracking format |
 
 ---
 
@@ -158,4 +174,10 @@ All checklists, templates, and architecture patterns for the tax workflow live i
 
 ## Keeping These Current
 
-These resources reflect my setup as of the dates shown. AI tools change fast — what works today may have better approaches tomorrow. I review and update these periodically. If something seems outdated, [let me know](mailto:claudeblattman+feedback@gmail.com).
+These resources reflect my setup as of the dates shown. AI tools change fast — what works today may have better approaches tomorrow. I review and update these periodically. If something seems outdated, [let me know](mailto:codexbatman+feedback@gmail.com).
+
+## Related Pages
+
+- [Build Your Own](../system/index.md)
+- [Skill Library](../setup/skill-reference.md)
+- [Examples](../examples/index.md)

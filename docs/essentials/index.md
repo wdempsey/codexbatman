@@ -2,6 +2,12 @@
 
 **I don't know if I have the best habits in the world, but these ones really changed my research and my life.**
 
+## Start Here If
+
+Use this section when you want the general AI habits and tool foundations that sit underneath the more structured Codex Batman workflow.
+
+These pages are a companion layer, not the main operating-system backbone. If you want the current repository's canonical workflow path, start with [Quickstart](../quickstart.md), [Core Data Science Workflow](../workflows/data-science/index.md), or [Skill Library](../setup/skill-reference.md).
+
 ??? tip "Some very basic advice before you dive in"
 
     Get a paid subscription to Claude or ChatGPT (or both). Always use the strongest model available — the quality gap is large. Give the AI context about who you are and what you need before diving into a request. The [Chatbots Done Right](chatbots.md) page covers the fundamentals; the [Prompt Engineering](prompting.md) page formalizes the full framework.
@@ -104,3 +110,9 @@ You don't need all of these. Start with one chatbot subscription and add tools a
     apply. And for any tool recommendation on this site, AI chatbots can help you
     find the right alternative for your workflow — just verify pricing and availability
     on the tool's own website.
+
+## Related Pages
+
+- [Quickstart](../quickstart.md)
+- [Skill Library](../setup/skill-reference.md)
+- [Tooling Stack](../tooling/index.md)

@@ -254,7 +254,7 @@ This is useful when you work on multiple projects with different conventions, te
 
 ## Downloadable Template & Real Example
 
-- **[CLAUDE.md Template](https://github.com/chrisblattman/claudeblattman/blob/main/templates/claude-md-template.md)** — The starter file. Fill in the blanks.
+- **[CLAUDE.md Template](https://github.com/wdempsey/codexbatman/blob/main/templates/claude-md-template.md)** — The starter file. Fill in the blanks.
 - **[A Real CLAUDE.md — Annotated](../downloads/real-claude-md-example.md)** — My actual production CLAUDE.md (sanitized), showing what a mature configuration looks like after months of iteration. Study this when you're ready to level up.
 
 ---

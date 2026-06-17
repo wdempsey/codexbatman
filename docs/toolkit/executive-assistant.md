@@ -6,6 +6,12 @@ description: Build an AI executive assistant with Claude Code — inbox triage, 
 
 A system that manages your inbox, tracks your projects, processes your meetings, and drafts your communications — assembled from skills and integrations that compound over time.
 
+## Start Here If
+
+Use this page when you want a specialized communication-and-operations workflow layered on top of Claude Code.
+
+This page is a companion workflow story, not the canonical project-management backbone. For the current manager lane, start with [For Data Science Managers](../managers/index.md), [Lab Manager Agent](../workflows/manager/lab-manager-agent.md), and [Research OS Template](../workflows/manager/research-os-template.md).
+
 > *I started with 5,000 unread emails. A day and a half later, I had six.*
 
 ---
@@ -152,19 +158,19 @@ mkdir -p ~/.claude-assistant/config
 
 # Email policy — VIP contacts, auto-archive patterns, label routing
 curl -o ~/.claude-assistant/config/email-policy.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/templates/email-policy-template.md
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/templates/email-policy-template.md
 
 # Triage config — Gmail label IDs, classification rules, score thresholds
 curl -o ~/.claude-assistant/config/triage-config.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/templates/triage-config-template.md
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/templates/triage-config-template.md
 
 # Calendar policy — calendar IDs, working hours, timezone, deep work protection
 curl -o ~/.claude-assistant/config/calendar-policy.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/templates/calendar-policy-template.md
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/templates/calendar-policy-template.md
 
 # Goals — quarterly objectives for goal alignment in briefings and check-ins
 curl -o ~/.claude-assistant/config/goals.yaml \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/templates/goals-yaml-template.yaml
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/templates/goals-yaml-template.yaml
 ```
 
 Once installed, you'll customize these files by editing them directly or by asking Claude Code to help you fill them in.
@@ -238,23 +244,23 @@ Install skills roughly in this order. Each works independently, but this sequenc
 
     # EA skills (dependency order)
     curl -o ~/.claude/commands/done.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/overlays/done.md
     curl -o ~/.claude/commands/triage-inbox.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/triage-inbox.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/triage-inbox.md
     curl -o ~/.claude/commands/checkin.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/checkin.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/checkin.md
     curl -o ~/.claude/commands/morning-brief.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/morning-brief.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/morning-brief.md
     curl -o ~/.claude/commands/schedule-query.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/schedule-query.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/schedule-query.md
     curl -o ~/.claude/commands/todo-add.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-add.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/todo-add.md
     curl -o ~/.claude/commands/todo-review.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-review.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/todo-review.md
     curl -o ~/.claude/commands/todo-queue.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/todo-queue.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/todo-queue.md
     curl -o ~/.claude/commands/goals-review.md \
-      https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/goals-review.md
+      https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/goals-review.md
     ```
 
     Restart Claude Code after installing. All EA skills will be available as slash commands.
@@ -272,7 +278,7 @@ The easiest win. No config needed. Run it at the end of every Claude Code sessio
 ```bash
 mkdir -p ~/.claude/commands
 curl -o ~/.claude/commands/done.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/overlays/done.md
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/overlays/done.md
 ```
 
 Restart Claude Code, then try: `/done`
@@ -284,7 +290,7 @@ The highest-value EA skill for most people. Requires Gmail MCP and the config te
 ```bash
 mkdir -p ~/.claude-assistant/state ~/.claude-assistant/logs
 curl -o ~/.claude/commands/triage-inbox.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/triage-inbox.md
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/triage-inbox.md
 ```
 
 Restart Claude Code, then try: `/triage-inbox noapply` (preview mode — see what it would do before applying)
@@ -365,7 +371,7 @@ Your daily interactive session. Wraps triage, calendar review, meeting prep, and
 
 ```bash
 curl -o ~/.claude/commands/checkin.md \
-  https://raw.githubusercontent.com/chrisblattman/claudeblattman/main/skills/manager/checkin.md
+  https://raw.githubusercontent.com/wdempsey/codexbatman/main/skills/manager/checkin.md
 ```
 
 Restart Claude Code, then try: `/checkin quick` (abbreviated version — good for your first run)
@@ -403,7 +409,7 @@ Once `/triage-inbox` and `/checkin` are running daily, add [`/morning-brief`](..
 
 ??? note "Research notes and sources"
 
-    The policy and graduated-autonomy patterns emerged from research I did in January–February 2026, documented in my [EA research playbook](https://github.com/chrisblattman/claudeblattman). Key sources that shaped the approach:
+    The policy and graduated-autonomy patterns emerged from research I did in January–February 2026, documented in my earlier EA research playbook. Key sources that shaped the approach:
 
     - **[Claude Chief of Staff](https://github.com/mimurchison/claude-chief-of-staff)** (Mike Murchison) — Goal alignment, operating modes, and the "push philosophy" where Claude challenges your time allocation. My `/morning-brief` and `/checkin` skills descend from this repo's `/gm` command.
     - **[Dex](https://github.com/davekilleen/Dex)** (Dave Killeen) — Extends the chief-of-staff pattern with pillars, session learnings capture, and usage logging.

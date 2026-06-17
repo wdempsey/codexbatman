@@ -4,6 +4,12 @@
 
 The Essentials taught you to use AI tools. The Toolkit gave you a configured system. This path teaches you to *build* — to create custom tools that solve your specific problems and a system that gets better the more you use it.
 
+## Start Here If
+
+Use this section when the default workflows are no longer enough and you want to design your own skills, operating rules, or improvement loops.
+
+If you still need the core execution path, return to [Quickstart](../quickstart.md), [Skill Library](../setup/skill-reference.md), or [Backbone Protocol](../backbone/index.md) first.
+
 ---
 
 ## What's Here
@@ -43,6 +49,14 @@ You don't need to know how to code. Skills are written in markdown (structured t
 
 ---
 
+## Recommended Path
+
+1. Read [How Skills Work](skills-explained.md) for the shared mental model.
+2. Read [Building Skills](building-skills.md) once you are ready to create or adapt a skill.
+3. Use [Patterns](patterns.md) and [Continuous Improvement](continuous-improvement.md) when you want to systematize what you learned.
+
+---
+
 ## Reference Materials
 
 Downloadable guides from my setup, for when you want to go deeper:
@@ -53,3 +67,9 @@ Downloadable guides from my setup, for when you want to go deeper:
 - **[Collected Tips & Research Log](../downloads/collected-tips-log.md)** — Curated findings from ongoing research into prompting, agents, and context management
 
 See the full [Downloads & Reference Library](../downloads/index.md) for all available resources.
+
+## Related Pages
+
+- [Skill Library](../setup/skill-reference.md)
+- [Tooling Stack](../tooling/index.md)
+- [Downloads & Reference Library](../downloads/index.md)

@@ -4,6 +4,17 @@
 
 This site respects your privacy. Here's what we collect and why.
 
+## What This Page Covers
+
+This page is short on purpose. It covers:
+
+- site analytics
+- email updates
+- your basic rights around those systems
+- where to write with questions
+
+If you only need the summary: the site uses privacy-friendly analytics and email updates are opt-in.
+
 ## Analytics
 
 This site uses [GoatCounter](https://www.goatcounter.com), an open-source, privacy-friendly analytics tool. GoatCounter does not use cookies, does not track you across sites, and does not collect personal information. It counts page views so we know which guides are useful and which need work.
@@ -19,8 +30,13 @@ We do not share, sell, or use your email for any other purpose.
 ## Your Rights
 
 - **Unsubscribe** from any email using the link at the bottom of every message.
-- **Request deletion** of your email by writing to [claudeblattman+privacy@gmail.com](mailto:claudeblattman+privacy@gmail.com).
+- **Request deletion** of your email by writing to [codexbatman+feedback@gmail.com](mailto:codexbatman+feedback@gmail.com).
 
 ## Questions
 
-If you have questions about how your data is handled, contact [claudeblattman+privacy@gmail.com](mailto:claudeblattman+privacy@gmail.com).
+If you have questions about how your data is handled, contact [codexbatman+feedback@gmail.com](mailto:codexbatman+feedback@gmail.com).
+
+## Related Pages
+
+- [About](about.md)
+- [Resources](resources.md)

@@ -2,6 +2,12 @@
 
 These aren't individual tools — they're **systems** built from skills, integrations, and habits that improve with use. Each page tells the story of how the workflow developed, what it actually does, and how to build it yourself.
 
+## Start Here If
+
+Use this page for companion workflow stories and specialized build-outs.
+
+This is not the canonical starting point for the repository anymore. For the shared operating-system path, start with [Quickstart](../quickstart.md), [Core Data Science Workflow](data-science/index.md), [Backbone Protocol](../backbone/index.md), or [Examples](../examples/index.md).
+
 ---
 
 <div class="grid cards" markdown>
@@ -62,3 +68,9 @@ The three workflows serve different needs and timelines:
 | **Tax Season** | Document collection, compilation, verification | 2-3 hours one-time | When you're comfortable with MCP + skills |
 
 You don't need all three. Start wherever your biggest pain point is. But they're designed to layer — the project management workflow works best when you already have inbox triage and meeting capture running.
+
+## Related Pages
+
+- [Core Data Science Workflow](data-science/index.md)
+- [Backbone Protocol](../backbone/index.md)
+- [Examples](../examples/index.md)

@@ -2,7 +2,22 @@
 
 A curated collection of the resources, tools, and reference implementations that shaped this project. Each entry includes a brief summary of what's useful and why I found it worth your time.
 
+## Start Here If
+
+Use this page when you want to understand the surrounding ecosystem: what influenced this project, which tools support it, and where to go for deeper outside reading.
+
+If you want the repository's own operating model first, start with [Quickstart](quickstart.md), [Backbone Protocol](backbone/index.md), or [Tooling Stack](tooling/index.md).
+
 Thanks to [Anup Malani](https://www.law.uchicago.edu/faculty/malani) for being my first tutor on the basics — he's the one who got me started with Claude Code and showed me what was possible.
+
+---
+
+## How To Use This Page
+
+- Start with **Reference Implementations** if you want to see the models that shaped the system.
+- Use **Official Documentation** when you need product or protocol source material.
+- Use **Tools Used on This Site** to see the current working stack behind the project.
+- Use **Further Reading** when you want to keep exploring after the core docs.
 
 ---
 
@@ -105,7 +120,7 @@ The framework this site is built with. If you want to build something similar �
 
 | Tool | Role in this project | Link |
 |------|---------------------|------|
-| **GitHub** | Version control, hosting, collaboration | [github.com/chrisblattman/claudeblattman](https://github.com/chrisblattman/claudeblattman) |
+| **GitHub** | Version control, hosting, collaboration | [github.com/wdempsey/codexbatman](https://github.com/wdempsey/codexbatman) |
 | **GitHub Pages** | Free site hosting, auto-deploys on push | [pages.github.com](https://pages.github.com/) |
 | **GitHub Actions** | CI/CD — builds and deploys the site | Configured in `.github/workflows/deploy.yml` |
 
@@ -128,4 +143,10 @@ Resources I've found useful for thinking about AI in research and professional w
 
 ## Contributing
 
-Found a resource that should be here? Have a correction? Open an issue or start a discussion on [GitHub](https://github.com/chrisblattman/claudeblattman/discussions).
+Found a resource that should be here? Have a correction? Open an issue or start a discussion on [GitHub](https://github.com/wdempsey/codexbatman/discussions).
+
+## Related Pages
+
+- [Tooling Stack](tooling/index.md)
+- [Downloads & Reference Library](downloads/index.md)
+- [Build Your Own](system/index.md)

@@ -2,6 +2,12 @@
 
 *Claude Blattman — not quite a CPA.*
 
+## Start Here If
+
+Use this section as a specialized document-workflow case study.
+
+It is a companion example rather than part of the repository's main data-science backbone. If you want the current canonical path first, start with [Quickstart](../quickstart.md), [Examples](../examples/index.md), or [Backbone Protocol](../backbone/index.md).
+
 In a former life — for about six to twelve months during and after college — I was an auditor and then a tax accountant. I was not particularly good at it, and I hated every minute. But I learned enough to be dangerous: enough to do my own taxes, and enough, I think, to teach Claude Code how to take the painful pieces away.
 
 This year I decided to use Claude Code for as much of my tax preparation as I could. I used it to assemble my charitable contributions from a sprawling Google Sheet, compile my itemized deductions from scattered receipts across email and credit card statements, and build a Schedule C for my consulting income. Some of it was still manual. I had to eyeball credit card statements to flag which charges were medical and which were childcare. But Claude Code is surprisingly good at the grunt work: sorting transactions, filtering by category, downloading and parsing CSV exports, and assembling it all into spreadsheets ready for tax software.
@@ -21,7 +27,7 @@ The case study below uses fictional profiles to walk through the skills I built.
     Two shortcuts:
 
     1. **Install `/tax-guide`** (below) and let it ask you 8 questions — it'll tell you exactly which parts apply to your situation.
-    2. **Point Claude Code at this page.** Paste the URL `https://claudeblattman.com/tax-workflow/` into a Claude Code session and ask it to walk you through the workflow based on your tax situation. It can read the site, summarize the relevant parts, and help you decide what to do.
+    2. **Point Claude Code at this page.** Paste the URL `https://wdempsey.github.io/codexbatman/tax-workflow/` into a Claude Code session and ask it to walk you through the workflow based on your tax situation. It can read the site, summarize the relevant parts, and help you decide what to do.
 
 ---
 
@@ -31,13 +37,13 @@ Install `/tax-guide` and answer 8 questions. You'll get a personalized plan: wha
 
 ### Install /tax-guide
 
-Copy [`tax-guide.md`](https://github.com/chrisblattman/claudeblattman/blob/main/skills/data-science/tax-guide.md) to your Claude Code commands directory:
+Copy [`tax-guide.md`](https://github.com/wdempsey/codexbatman/blob/main/skills/data-science/tax-guide.md) to your Claude Code commands directory:
 
 ```bash
 cp tax-guide.md ~/.claude/commands/
 ```
 
-Or create `~/.claude/commands/tax-guide.md` manually and paste the [skill file contents](https://github.com/chrisblattman/claudeblattman/blob/main/skills/data-science/tax-guide.md). Then type `/tax-guide` in Claude Code to start.
+Or create `~/.claude/commands/tax-guide.md` manually and paste the [skill file contents](https://github.com/wdempsey/codexbatman/blob/main/skills/data-science/tax-guide.md). Then type `/tax-guide` in Claude Code to start.
 
 ??? example "Sample output — W-2 + side consulting profile"
 
@@ -166,3 +172,9 @@ I built two Claude Code skills: one that searches Gmail for tax documents, downl
 **If you want to build something similar:** Start with [Privacy & Setup](before-you-start/privacy-and-setup.md), then read the case study pages in order, then move to [Build Your Own](build-your-own/architecture-patterns.md).
 
 **If you're an academic wondering about your own taxes:** Start with [Academic Tax Basics](reference/academic-tax-basics.md) and [When to Get Help](reference/when-to-get-help.md).
+
+## Related Pages
+
+- [Examples](../examples/index.md)
+- [Build Your Own](../system/index.md)
+- [Downloads & Reference Library](../downloads/index.md)
