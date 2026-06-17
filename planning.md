@@ -42,6 +42,8 @@ Last updated: 2026-06-16
 - [x] Collapse role tabs under `Roles` and rename the practitioner nav label to `Researchers & Data Scientists`.
 - [x] Move `Backbone Protocol` under `Workflow` and `Tooling Stack` under `Build` if the structural proposal is accepted.
 - [x] Standardize student, researcher/data scientist, and manager role pages around one shared landing-page structure.
+- [ ] Fix broken About page asset paths for profile and tweet images.
+- [ ] Run a full visual QA pass across primary nav pages after the next asset/link cleanup.
 - [x] Compare the local homepage, role pages, and navigation against the live site and list exact content, branding, and UX mismatches.
 - [x] Produce a prioritized UI redesign brief covering homepage visuals, navigation clarity, typography, imagery, and mobile/tablet behavior.
 - [x] Produce a structural site review covering orphaned pages, duplicated explanation layers, and newcomer-path ambiguity before a full content pass.
