@@ -10,27 +10,23 @@ Codex Batman uses one shared workflow backbone. The role pages change the delive
 
 ## Pick Your Path
 
-<div class="grid cards" markdown>
+### Students
 
--   **Students**
+Learn the workflow through guided practice, hints, and attempt-before-answer tutoring while still producing real project artifacts.
 
-    Learn the workflow through guided practice, hints, and attempt-before-answer tutoring while still producing real project artifacts.
+[Start as a student](../students/index.md)
 
-    [:octicons-arrow-right-24: Start as a student](../students/index.md)
+### Researchers & Data Scientists
 
--   **Researchers & Data Scientists**
+Execute trustworthy analysis with explicit workflow gates, reproducible artifacts, and handoff-ready project memory.
 
-    Execute trustworthy analysis with explicit workflow gates, reproducible artifacts, and handoff-ready project memory.
+[Start as a researcher or data scientist](../data-scientists/index.md)
 
-    [:octicons-arrow-right-24: Start as a researcher or data scientist](../data-scientists/index.md)
+### Managers
 
--   **Managers**
+Track project health, blockers, decisions, handoffs, and stakeholder communication across analytical work.
 
-    Track project health, blockers, decisions, handoffs, and stakeholder communication across analytical work.
-
-    [:octicons-arrow-right-24: Start as a manager](../managers/index.md)
-
-</div>
+[Start as a manager](../managers/index.md)
 
 ## Quick Decision Guide
 

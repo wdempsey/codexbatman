@@ -646,6 +646,19 @@ body.hf-landing .md-content__inner {
   max-width: 72ch;
 }
 
+.hf-home .hf-hero .md-button:not(.md-button--primary) {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(9, 15, 24, 0.28);
+}
+
+.hf-home .hf-hero .md-button:not(.md-button--primary):hover,
+.hf-home .hf-hero .md-button:not(.md-button--primary):focus {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.85);
+  background: rgba(9, 15, 24, 0.42);
+}
+
 .hf-home .hf-scroll-cue {
   position: absolute;
   right: 1.25rem;
