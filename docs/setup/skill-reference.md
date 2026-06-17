@@ -53,6 +53,7 @@ The repository also contains additional reusable data science skills that can pl
 - [`debug-analysis-notebook`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-analysis-notebook)
 - [`handoff`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/handoff)
 - [`paper-to-replication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/paper-to-replication)
+- [`repo-bootstrap-student`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/repo-bootstrap-student): teach a student how to create a GitHub-backed data science repository with a minimal artifact-first structure and first commit
 - [`result-communication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/result-communication)
 - [`trace-distillation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/trace-distillation)
 - [`workflow-trace`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/workflow-trace)

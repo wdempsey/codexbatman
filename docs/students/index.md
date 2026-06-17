@@ -75,6 +75,7 @@ If you are brand new, you can safely ignore these until after the first guided s
 - `hint-ladder`
 - `misconception-diagnosis`
 - `exercise-generator`
+- `repo-bootstrap-student`
 - `problem-framing`
 - `data-audit`
 - `eda-plan`
