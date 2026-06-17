@@ -1,0 +1,125 @@
+<svg viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg" font-family="'DM Sans', sans-serif">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b2e"/>
+      <stop offset="100%" stop-color="#091422"/>
+    </linearGradient>
+    <linearGradient id="wacc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c7cfa"/>
+      <stop offset="100%" stop-color="#3bc9db"/>
+    </linearGradient>
+    <linearGradient id="wstage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2f4a"/>
+      <stop offset="100%" stop-color="#112236"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="380" fill="url(#wbg)" rx="12"/>
+
+  <!-- Subtle radial glow -->
+  <ellipse cx="320" cy="190" rx="280" ry="160" fill="rgba(92,124,250,0.04)"/>
+
+  <!-- Header -->
+  <text x="320" y="40" text-anchor="middle" fill="#5c7cfa" font-size="10" font-weight="700" letter-spacing="0.12em">SHARED WORKFLOW BACKBONE</text>
+  <rect x="120" y="48" width="400" height="1.5" fill="url(#wacc)" opacity="0.3" rx="1"/>
+
+  <!-- Pipeline stages — two rows of 4 -->
+  <!-- Row 1 -->
+  <g>
+    <!-- Bootstrap -->
+    <rect x="36" y="72" width="126" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="36" y="72" width="126" height="3" rx="2" fill="#5c7cfa"/>
+    <text x="99" y="103" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 1</text>
+    <text x="99" y="120" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Bootstrap</text>
+    <text x="99" y="136" text-anchor="middle" fill="#4a6885" font-size="10">PROJECT_STATE.md</text>
+
+    <!-- Arrow -->
+    <line x1="162" y1="108" x2="178" y2="108" stroke="#2a4a6a" stroke-width="1.5"/>
+    <polygon points="178,103 186,108 178,113" fill="#2a4a6a"/>
+
+    <!-- Problem Frame -->
+    <rect x="186" y="72" width="126" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="186" y="72" width="126" height="3" rx="2" fill="#6b8cfa"/>
+    <text x="249" y="103" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 2</text>
+    <text x="249" y="120" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Problem Frame</text>
+    <text x="249" y="136" text-anchor="middle" fill="#4a6885" font-size="10">problem_frame.md</text>
+
+    <!-- Arrow -->
+    <line x1="312" y1="108" x2="328" y2="108" stroke="#2a4a6a" stroke-width="1.5"/>
+    <polygon points="328,103 336,108 328,113" fill="#2a4a6a"/>
+
+    <!-- Data Audit -->
+    <rect x="336" y="72" width="126" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="336" y="72" width="126" height="3" rx="2" fill="#4da6b8"/>
+    <text x="399" y="103" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 3</text>
+    <text x="399" y="120" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Data Audit</text>
+    <text x="399" y="136" text-anchor="middle" fill="#4a6885" font-size="10">data_card.md</text>
+
+    <!-- Arrow -->
+    <line x1="462" y1="108" x2="478" y2="108" stroke="#2a4a6a" stroke-width="1.5"/>
+    <polygon points="478,103 486,108 478,113" fill="#2a4a6a"/>
+
+    <!-- Modeling -->
+    <rect x="486" y="72" width="118" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="486" y="72" width="118" height="3" rx="2" fill="#3bc9db"/>
+    <text x="545" y="103" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 4</text>
+    <text x="545" y="120" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Modeling</text>
+    <text x="545" y="136" text-anchor="middle" fill="#4a6885" font-size="10">analysis_plan.md</text>
+  </g>
+
+  <!-- Curved connector between rows -->
+  <path d="M 545 144 Q 545 172 486 172 L 36 172 Q 30 172 30 178 L 30 196" stroke="#2a4a6a" stroke-width="1.5" fill="none"/>
+  <polygon points="25,196 30,204 35,196" fill="#2a4a6a"/>
+
+  <!-- Row 2 -->
+  <g>
+    <!-- Evaluation -->
+    <rect x="36" y="204" width="126" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="36" y="204" width="126" height="3" rx="2" fill="#a6e3a1"/>
+    <text x="99" y="235" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 5</text>
+    <text x="99" y="252" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Evaluation</text>
+    <text x="99" y="268" text-anchor="middle" fill="#4a6885" font-size="10">experiment_log.md</text>
+
+    <!-- Arrow -->
+    <line x1="162" y1="240" x2="178" y2="240" stroke="#2a4a6a" stroke-width="1.5"/>
+    <polygon points="178,235 186,240 178,245" fill="#2a4a6a"/>
+
+    <!-- Experiment Log -->
+    <rect x="186" y="204" width="126" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="186" y="204" width="126" height="3" rx="2" fill="#f4b942"/>
+    <text x="249" y="235" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 6</text>
+    <text x="249" y="252" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Experiment Log</text>
+    <text x="249" y="268" text-anchor="middle" fill="#4a6885" font-size="10">model_card.md</text>
+
+    <!-- Arrow -->
+    <line x1="312" y1="240" x2="328" y2="240" stroke="#2a4a6a" stroke-width="1.5"/>
+    <polygon points="328,235 336,240 328,245" fill="#2a4a6a"/>
+
+    <!-- Communicate -->
+    <rect x="336" y="204" width="126" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="336" y="204" width="126" height="3" rx="2" fill="#f08080"/>
+    <text x="399" y="235" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 7</text>
+    <text x="399" y="252" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Communicate</text>
+    <text x="399" y="268" text-anchor="middle" fill="#4a6885" font-size="10">workflow_trace.md</text>
+
+    <!-- Arrow -->
+    <line x1="462" y1="240" x2="478" y2="240" stroke="#2a4a6a" stroke-width="1.5"/>
+    <polygon points="478,235 486,240 478,245" fill="#2a4a6a"/>
+
+    <!-- Improve -->
+    <rect x="486" y="204" width="118" height="72" rx="9" fill="url(#wstage)" stroke="#1e3a5a" stroke-width="1.2"/>
+    <rect x="486" y="204" width="118" height="3" rx="2" fill="#5c7cfa"/>
+    <text x="545" y="235" text-anchor="middle" fill="#7fa8d4" font-size="10" letter-spacing="0.04em">STAGE 8</text>
+    <text x="545" y="252" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Improve</text>
+    <text x="545" y="268" text-anchor="middle" fill="#4a6885" font-size="10">decision_log.md</text>
+  </g>
+
+  <!-- Bottom artifact banner -->
+  <rect x="36" y="296" width="568" height="36" rx="8" fill="#0e2033" stroke="#1e3a5a" stroke-width="1"/>
+  <text x="320" y="319" text-anchor="middle" fill="#4a6885" font-size="11" letter-spacing="0.04em">Every stage leaves a durable artifact. Humans and agents can resume from any point.</text>
+
+  <!-- Bottom label -->
+  <rect x="0" y="348" width="640" height="32" fill="#091422" rx="0"/>
+  <rect x="0" y="348" width="640" height="2" fill="url(#wacc)" opacity="0.4" rx="1"/>
+  <text x="320" y="370" text-anchor="middle" fill="#4a6885" font-size="10" letter-spacing="0.06em">CODEX BATMAN — ONE BACKBONE, DIFFERENT LENSES</text>
+</svg>

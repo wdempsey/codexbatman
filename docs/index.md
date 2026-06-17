@@ -39,17 +39,17 @@ social:
       <div class="hf-bubble-grid">
         <article class="hf-bubble">
           <h3>Students</h3>
-          <p>Learn through guided practice, hints, and attempt-before-answer tutoring.</p>
+          <p>Work through real projects with coaching, hints, and attempt-before-answer guidance — you build the artifact, Codex helps you think.</p>
           <p><a href="students/">Open student path</a></p>
         </article>
         <article class="hf-bubble">
           <h3>Researchers & Data Scientists</h3>
-          <p>Run trustworthy analysis with gates, artifacts, and reproducible project memory.</p>
+          <p>Run analysis with explicit gates and durable project memory — so nothing lives only in the chat history.</p>
           <p><a href="data-scientists/">Open research path</a></p>
         </article>
         <article class="hf-bubble">
           <h3>Managers</h3>
-          <p>Track project health, blockers, handoffs, decisions, and stakeholder updates.</p>
+          <p>Keep projects moving by surfacing blockers, handoffs, and next actions before they get lost.</p>
           <p><a href="managers/">Open manager path</a></p>
         </article>
       </div>
@@ -73,33 +73,33 @@ social:
       <div class="hf-media-list">
         <article class="hf-media-row hf-reveal">
           <div class="hf-media-image">
-            <img src="assets/home/where-start-installation.png" alt="Cartoon installation scene for Codex setup" loading="lazy">
+            <img src="assets/home/setup-installation.svg" alt="Terminal showing codex install and verification steps" loading="lazy">
           </div>
           <div>
             <h3>Installation and Setup</h3>
-            <p>Set up the base toolkit, environment, and local workflow checks.</p>
+            <p>Get Codex running locally, open the repository, and pick one role path — all in under ten minutes.</p>
             <p><a href="setup/">Open setup</a></p>
           </div>
         </article>
 
         <article class="hf-media-row hf-media-row--alt hf-reveal">
           <div class="hf-media-image">
-            <img src="assets/home/hero-workflow-bg-exit.png" alt="Codex Batman workflow visual" loading="lazy">
+            <img src="assets/home/workflow-backbone.svg" alt="Eight-stage workflow backbone diagram from bootstrap through improve" loading="lazy">
           </div>
           <div>
             <h3>Workflow Backbone</h3>
-            <p>Move from project bootstrap through problem framing, data audit, modeling, evaluation, and experiment logging.</p>
+            <p>Bootstrap, frame, audit, model, evaluate, log. Every stage leaves a durable artifact so your next session starts from real project state.</p>
             <p><a href="workflows/data-science/">Open workflow overview</a></p>
           </div>
         </article>
 
         <article class="hf-media-row hf-reveal">
           <div class="hf-media-image">
-            <img src="assets/home/hero-workflow-bg.png" alt="Codex Batman project workflow backdrop" loading="lazy">
+            <img src="assets/home/examples-three-lenses.svg" alt="One shared project shown through student, practitioner, and manager lenses" loading="lazy">
           </div>
           <div>
             <h3>Worked Examples</h3>
-            <p>See the same system through learning, execution, and manager coordination lenses.</p>
+            <p>One project — a Kaggle-style housing analysis — shown from three angles: learning, execution, and coordination. Same backbone, different lenses.</p>
             <p><a href="examples/">Open examples</a></p>
           </div>
         </article>
@@ -117,7 +117,7 @@ social:
       <p class="hf-kicker">Proof Of Utility</p>
       <h2>What The System Produces</h2>
       <p class="hf-summary">
-        The point is not just to explain a workflow. The point is to leave behind durable artifacts that help the next analysis session, the next collaborator, or the next manager review start from real project state instead of chat memory.
+        Every workflow stage leaves a file. That file is what lets the next session, the next collaborator, or the next review start from real project state — not reconstructed chat history.
       </p>
 
       <div class="hf-media-list">
@@ -134,7 +134,7 @@ social:
           </div>
           <div>
             <h3>Student Workflow Artifact</h3>
-            <p>A beginner-facing artifact that proves the learner framed the problem before modeling and can resume from real project state.</p>
+            <p>This file proves the learner framed the problem before touching the model — and gives them something real to resume from next session.</p>
             <p><a href="examples/analytics-repo/student/">Open the student repo example</a></p>
           </div>
         </article>
@@ -152,18 +152,25 @@ social:
           </div>
           <div>
             <h3>Practitioner Workflow Artifact</h3>
-            <p>An execution-facing artifact that records what was tried, what won so far, and what needs to happen next.</p>
+            <p>What was tried, what's winning so far, and what happens next — in a file another analyst can read without reopening the chat.</p>
             <p><a href="examples/analytics-repo/practitioner/">Open the practitioner repo example</a></p>
           </div>
         </article>
 
         <article class="hf-media-row hf-reveal">
           <div class="hf-media-image">
-            <img src="images/project-overview-dashboard-v1.png" alt="Example project overview dashboard showing project status, priorities, metrics, and tasks" loading="lazy">
+            <div class="hf-proof-card">
+              <p><strong>Manager Artifact</strong></p>
+              <pre><code>weekly_review.md
+- housing-model: evaluation phase, on track
+- grant-project: blocked on data access
+- waiting-on: data team (due 2026-06-19)
+- next: stakeholder update end of sprint</code></pre>
+            </div>
           </div>
           <div>
             <h3>Project Dashboard Snapshot</h3>
-            <p>A manager-facing artifact that surfaces status, priorities, owners, risks, deadlines, and next actions in one place.</p>
+            <p>Status, blockers, owners, deadlines, and next actions — visible in one file, without re-reading any chat history.</p>
             <p><a href="workflows/examples/project-overview-example/">Open the example dashboard</a></p>
           </div>
         </article>

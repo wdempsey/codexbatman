@@ -544,7 +544,7 @@ h1, h2 {
   --hf-radius: 14px;
   --hf-dark-bg: #0f1724;
   --hf-dark-bg-soft: #152235;
-  --hf-dark-border: rgba(255, 255, 255, 0.12);
+  --hf-dark-border: rgba(255, 255, 255, 0.22);
   --hf-light-border: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
   --hf-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
   overflow-x: clip;
@@ -665,6 +665,47 @@ body.hf-landing .md-content__inner {
   background: rgba(9, 15, 24, 0.42);
 }
 
+/* Dark section button overrides — amber CTA */
+.hf-home .hf-hero .md-button--primary {
+  background: #f4a261;
+  color: #1a0a00;
+  border-color: #f4a261;
+}
+.hf-home .hf-hero .md-button--primary:hover,
+.hf-home .hf-hero .md-button--primary:focus {
+  background: #e8914f;
+  border-color: #e8914f;
+  color: #1a0a00;
+}
+
+.hf-home .hf-section--dark .md-button--primary {
+  background: #f4a261;
+  color: #1a0a00;
+  border-color: #f4a261;
+}
+.hf-home .hf-section--dark .md-button--primary:hover,
+.hf-home .hf-section--dark .md-button--primary:focus {
+  background: #e8914f;
+  border-color: #e8914f;
+  color: #1a0a00;
+}
+
+.hf-home .hf-section--dark .md-button:not(.md-button--primary) {
+  color: #e9eef9;
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+}
+.hf-home .hf-section--dark .md-button:not(.md-button--primary):hover,
+.hf-home .hf-section--dark .md-button:not(.md-button--primary):focus {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hf-home .hf-section--dark .hf-kicker {
+  color: #f4a261;
+}
+
 .hf-home .hf-scroll-cue {
   position: absolute;
   right: 1.25rem;
@@ -717,7 +758,7 @@ body.hf-landing .md-content__inner {
   padding: 1rem;
   background: linear-gradient(165deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
   backdrop-filter: blur(4px);
-  transition: transform 220ms ease, border-color 220ms ease;
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1), border-color 200ms ease;
 }
 
 .hf-home .hf-bubble:hover {
@@ -873,7 +914,7 @@ body.hf-landing .md-content__inner {
 
 .hf-home .hf-proof-card code {
   font-size: 0.76rem;
-  line-height: 1.45;
+  line-height: 1.6;
 }
 
 
@@ -957,6 +998,83 @@ body.hf-landing .md-content__inner {
   border-radius: 8px;
 }
 
+/* Connect/footer section primary button — amber to match rest of dark sections */
+.hf-home .hf-section--connect .md-button--primary {
+  background: #f4a261;
+  color: #1a0a00;
+  border-color: #f4a261;
+}
+.hf-home .hf-section--connect .md-button--primary:hover,
+.hf-home .hf-section--connect .md-button--primary:focus {
+  background: #e8914f;
+  border-color: #e8914f;
+  color: #1a0a00;
+}
+
+/* ============================
+   Quick Decision Guide — card grid
+   ============================ */
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.decision-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 180ms cubic-bezier(0.2, 0, 0, 1), box-shadow 180ms ease;
+  background: color-mix(in srgb, var(--md-default-bg-color) 96%, var(--md-accent-fg-color) 4%);
+}
+
+.decision-card:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+  color: inherit;
+}
+
+.decision-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+}
+
+.decision-action {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+  line-height: 1.3;
+}
+
+.decision-desc {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.4;
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 760px) {
+  .decision-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 375px) {
+  .decision-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .hf-home .hf-honeypot {
   display: none;
 }
@@ -1036,6 +1154,12 @@ body.hf-landing .md-content__inner {
   }
 
   .role-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .role-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1073,5 +1197,9 @@ body.hf-landing .md-content__inner {
   .hf-home .hf-subscribe-row {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hf-home .hf-exit-figure {
+    margin-bottom: 1.5rem;
   }
 }
