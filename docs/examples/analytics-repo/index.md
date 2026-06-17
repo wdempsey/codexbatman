@@ -4,49 +4,16 @@ description: Canonical example of a real analytics repository built around the C
 
 # Analytics Repo Example
 
-This is the clearest answer to the question:
+This is the clearest answer to "what does a real Codex Batman project look like?" — a Kaggle-style housing-price analysis built through all eight workflow gates, with durable artifacts at each stage.
 
-> What does a real Codex Batman data science repository look like?
+The project uses the [Ames Housing dataset](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) to predict `SalePrice`. It's approachable enough to learn from, but structured like real work: explicit target, fixed validation set, baseline before model comparison, and a written record of every decision.
 
-The shared project is a Kaggle-style housing price analysis using a standard supervised ML pipeline.
-
-It is still a learning-friendly project, but it is structured like real work:
-
-- the target is explicit
-- the train/test split is explicit
-- the baseline comes before model comparison
-- artifacts are updated as the project advances
-- the result is not just a chat transcript
-
-## Shared Scenario
-
-Dataset:
-
-- Kaggle House Prices: Advanced Regression Techniques
-
-Primary objective:
-
-- predict `SalePrice`
-
-Shared pipeline shape:
-
-1. problem framing
-2. data audit
-3. split and prediction-time check
-4. baseline model
-5. feature handling
-6. model comparison
-7. evaluation
-8. model card
-9. workflow trace
-
-## What The Repository Should Contain
+## What ends up in the repository
 
 ```text
 housing-prices-repo/
   README.md
   PROJECT_STATE.md
-  project.yaml
   analysis/
     problem_frame.md
     analysis_plan.md
@@ -61,35 +28,21 @@ housing-prices-repo/
     workflow_trace.md
 ```
 
-## Why This Example Matters
+These aren't documentation files bolted on afterward — they're produced during the workflow, one gate at a time. The `experiment_log.md` gets a new entry every time you run a model. The `workflow_trace.md` captures what happened and what comes next so the next session can start from real project state.
 
-This page is not only about the model.
+## Same backbone, different delivery
 
-It is about showing that a serious but approachable analytics repo has:
+Both paths run the same eight-gate sequence: problem framing, data audit, split strategy, baseline model, feature handling, model comparison, evaluation, and workflow trace. The backbone and artifact standards are identical.
 
-- a bounded problem
-- durable project memory
-- explicit decisions
-- reproducible run records
-- a final explanation of what the model should and should not be used for
+What changes is how Codex helps you move through it. On the student path, Codex asks for your attempt before revealing the output — the goal is to build your understanding alongside the artifact. On the practitioner path, Codex executes more directly and compresses the working sequence.
 
-## Same Standards, Different Delivery
+## Choose your path
 
-The student and practitioner paths use the same backbone and should produce the same class of artifacts.
+- [Student path →](student.md) — attempt-before-answer coaching, interactive 8-step demo, and a live session example
+- [Practitioner path →](practitioner.md) — direct execution, same standards, shorter sequence
 
-The difference is interaction style:
+## Related
 
-- student path: Codex teaches step by step, asks for attempts, and does not simply hand over the solution
-- practitioner path: Codex executes more directly and compresses the path into a shorter working sequence
-
-## Choose The Lens
-
-- [Student path](student.md)
-- [Practitioner path](practitioner.md)
-
-## Related Pages
-
-- [First Session - Predict Housing Prices with Tutor Mode](../../students/first-session.md)
 - [For Students](../../students/index.md)
 - [For Researchers & Data Scientists](../../data-scientists/index.md)
 - [Core Data Science Workflow](../../workflows/data-science/index.md)
