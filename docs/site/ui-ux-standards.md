@@ -133,6 +133,29 @@ When reviewing a page or section:
 - Do not add custom JavaScript.
 - Do not use visual polish to hide structural confusion.
 
+## Voice And Writing Style
+
+The site voice is second-person, direct, and warm. See `skills/site-voice/SKILL.md` for the full voice guide. Key rules:
+
+- Lead with payoff, not setup — open with the thing that matters, not context paragraphs
+- Write "you", never "the user" or "students" or "researchers"
+- Contractions are fine ("you're", "don't", "it's")
+- Prose over bullet lists for three items or fewer
+- Keep paragraphs short — two sentences is often enough
+- "Where to go next" sections: one or two links with a sentence of context, not a link dump
+- Avoid these headers: "Role Summary", "This path is for you if...", "Overview", "What Each Page Is For"
+
+## Design Decisions (June 2026 Pass)
+
+These decisions are in effect and should not be reversed without cause:
+
+- **Amber CTAs on dark sections**: `#f4a261` fill, `#1a0a00` text, `#e8914f` hover — applies to `.hf-hero`, `.hf-section--dark`, `.hf-section--connect` only. Light sections keep indigo.
+- **Bubble hover**: `180ms cubic-bezier(0.2, 0, 0, 1)` — snappier than the default `220ms ease`
+- **Role grid**: `repeat(3, 1fr)` → `repeat(2, 1fr)` at 960px → `1fr` at 600px
+- **Decision Guide**: card grid (`.decision-grid` / `.decision-card` classes), not a table — wraps at 760px and 375px
+- **Student first step**: analytics-repo/student.md is the canonical first action everywhere. first-session.md is optional warm-up only.
+- **New SVGs**: setup-installation.svg, workflow-backbone.svg, examples-three-lenses.svg in `docs/assets/home/`
+
 ## Inputs For Future Passes
 
 The current repo-local sources of truth for site improvement are:
@@ -140,6 +163,7 @@ The current repo-local sources of truth for site improvement are:
 - `UI_REDESIGN_BRIEF.md`
 - `SITE_STRUCTURE_REVIEW.md`
 - `mkdocs.yml`
+- `skills/site-voice/SKILL.md` — voice and writing style
 - the relevant page being reviewed
 
 Use those together with the site review skills to guide future passes.

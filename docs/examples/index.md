@@ -12,20 +12,11 @@ The point is not to show three unrelated systems. The point is to show that the 
 - execution
 - manager coordination
 
-## Start Here If
-
-Use this section when abstract workflow pages feel clear in theory but you want to see what the system actually looks like in practice.
+Use this section when the abstract workflow pages make sense in theory but you want to see what the system actually looks like in practice.
 
 ## How To Read These Examples
 
-Each example includes:
-
-- a shared scenario page
-- a learning lens
-- an execution lens
-- a manager lens
-
-The backbone stays the same. What changes is the emphasis.
+Each example shares a scenario page, then shows it through a learning lens, an execution lens, and a manager lens. The backbone stays the same — what changes is the emphasis and the artifacts that come out.
 
 If you want the single best example of what a real Codex Batman project repo should look like, start with [Analytics Repo Example](analytics-repo/index.md).
 
@@ -38,16 +29,7 @@ If you want the single best example of what a real Codex Batman project repo sho
 | [Grant Project](grant-project/index.md) | Show how the Research OS layer coordinates deadlines, meetings, handoffs, and weekly review |
 | [Methods / Code Project](methods-code-project/index.md) | Show how project state, repo memory, and handoffs support technical research and code work |
 
-## Why This Section Matters
-
-A good operating system should be understandable from examples, not only from abstract rules.
-
-These worked examples show:
-
-- what artifacts get created
-- how workflow gates shape execution
-- how managers see risk and blockers
-- how the same project looks different depending on the lens
+A good operating system should be understandable from examples, not only from abstract rules. These worked examples show what artifacts get created, how workflow gates shape execution, how managers see risk and blockers, and how the same project looks different depending on the lens.
 
 ## Related Pages
 
@@ -55,3 +37,11 @@ These worked examples show:
 - [Tooling Stack](../tooling/index.md)
 - [Research OS Template](../workflows/manager/research-os-template.md)
 - [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)
+
+## Return To Your Role Path
+
+When you are ready to apply what you have seen here, return to the path that matches your role:
+
+- [For Students](../students/index.md) — guided practice with attempt-before-answer coaching
+- [For Researchers & Data Scientists](../data-scientists/index.md) — direct execution with artifact discipline
+- [For Managers](../managers/index.md) — coordination, tracking, and stakeholder communication

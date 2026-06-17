@@ -49,8 +49,8 @@ Read [How Codex Modes Work](modes.md) for the basic interaction model.
 
 ### Step 5: Start One Concrete Path
 
-- If you are learning, start with [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md).
-- If you want the student warm-up first, use [First Session - Predict Housing Prices with Tutor Mode](../students/first-session.md).
+- If you are learning, start with [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md). This is the primary student starting point.
+- If you want a shorter warm-up before the repo example, open [First Session - Predict Housing Prices with Tutor Mode](../students/first-session.md) first.
 - If you are executing a real project, start with [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md).
 
 ## Learn and Browse
@@ -63,23 +63,17 @@ Read [How Codex Modes Work](modes.md) for the basic interaction model.
 
 ## What You End Up With
 
-After working through this section, you should have:
-
-- Codex available in your working environment
-- a local clone of this repository
-- the repository open in Codex
-- a clear next workflow page instead of a vague tour of the site
+After this section you'll have Codex running locally, the repository cloned and open, and one clear next step waiting — not a list of things to read.
 
 ## Student First Action
 
-If you are a student, the first real repo-building step is [Repo Bootstrap For Students](skill-reference.md#additional-shared-skills).
-
-That skill exists to help a learner create the repository structure before moving into the rest of the workflow.
+If you're a student, start with [Repo Bootstrap For Students](skill-reference.md#additional-shared-skills). It builds the right folder and file structure so you're not starting from a blank slate when the workflow asks for artifacts.
 
 ## Common Issues
 
-| Problem | Fix |
-|---------|-----|
-| `codex` command not found | Reopen the terminal after installation and verify Codex is on your PATH |
-| Codex cannot see the repository | Open the repository folder itself, not a single file |
-| The workflow feels abstract | Start with [Analytics Repo Example](../examples/analytics-repo/index.md) instead of the full workflow docs |
+!!! warning "Stuck? Check these first."
+    | Problem | Fix |
+    |---------|-----|
+    | `codex` command not found | Reopen the terminal after installation and verify Codex is on your PATH |
+    | Codex cannot see the repository | Open the repository folder itself, not a single file |
+    | The workflow feels abstract | Start with [Analytics Repo Example](../examples/analytics-repo/index.md) instead of the full workflow docs |

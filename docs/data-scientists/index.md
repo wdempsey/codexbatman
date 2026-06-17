@@ -1,70 +1,28 @@
 # For Researchers & Data Scientists
 
-**Use this path when you are executing real analysis and want Codex Batman to enforce artifacts, gates, and reproducible forward progress.**
+**This is for you if you're running real analysis and want Codex to enforce artifacts, workflow gates, and reproducible forward progress — not just chat along while you work.**
 
 ## Start Here
 
-If you are actively doing analysis, begin with:
+Begin with [**Core Data Science Workflow**](../workflows/data-science/index.md).
 
-[**Core Data Science Workflow**](../workflows/data-science/index.md)
-
-## This Path Is For You If
-
-- you are running research, analysis, or applied data science projects
-- you need explicit gates before modeling or interpretation
-- you want durable project memory instead of chat-only progress
-- you care about reproducibility, handoff, and reviewability
-
-## Role Summary
-
-Researchers and data scientists use Codex as a workflow executor for the shared canonical data science process.
-
-The role-specific difference is delivery style, not workflow logic. In practitioner mode the emphasis is direct execution, artifact quality, and forward progress.
-
-If you are actively doing analysis, start with [Core Data Science Workflow](../workflows/data-science/index.md). Use this page as a guide to the practitioner overlays and the skills that matter most during execution.
+Researchers and data scientists use Codex as a workflow executor — not a chat assistant. The emphasis is direct execution, artifact quality, and forward progress. Use this page to find the practitioner overlays and skills that matter most during execution.
 
 ## What Changes In Practitioner Mode
 
-Practitioner overlays keep the shared workflow strict and execution-oriented.
+Practitioner overlays keep the shared workflow strict and execution-oriented. Codex executes workflow steps directly rather than asking for your attempt first. Artifacts are produced with minimal scaffolding — the emphasis is output quality and forward progress, not step-by-step coaching. Workflow gates still apply, but Codex moves through them faster and expects you to direct the exceptions.
 
-This role page is meant to remove choice overload.
+The underlying backbone and standards are identical to the student path. What changes is speed, delegation, and the assumption that you already know what you're trying to produce.
 
-If you are wondering whether to open the workflow, the backbone, the examples, or the skill catalog first, the answer is:
+If you're not sure where to open first: workflow, then backbone, then examples, then skill catalog.
 
-1. workflow first
-2. backbone second
-3. examples third
-4. skill catalog fourth
+## Here's Why This Order Matters
 
-## Recommended First Three Steps
-
-1. Start with [Core Data Science Workflow](../workflows/data-science/index.md) for the canonical sequence.
-2. Review [Backbone Protocol](../backbone/index.md) so your project leaves durable artifacts, not just chat output.
-3. Open [Examples](../examples/index.md) to see how execution mode looks in realistic workflows.
-
-## Recommended Sequence
-
-Follow this path in order when you are setting up a real project:
-
-1. [Core Data Science Workflow](../workflows/data-science/index.md)
-2. [Backbone Protocol](../backbone/index.md)
-3. [Examples](../examples/index.md)
-4. [Skill Library](../setup/skill-reference.md)
-
-## What Each Step Solves
-
-- [Core Data Science Workflow](../workflows/data-science/index.md): learn the execution sequence and the workflow gates
-- [Backbone Protocol](../backbone/index.md): see which durable artifacts your project should keep
-- [Examples](../examples/index.md): see what the system looks like in practice before adapting it
-- [Skill Library](../setup/skill-reference.md): find the concrete skills and packs that support the workflow
+Start with [Core Data Science Workflow](../workflows/data-science/index.md) to learn the execution sequence and the gates that separate each stage. Then read [Backbone Protocol](../backbone/index.md) — it tells you which durable artifacts your project should keep, so nothing lives only in the chat. Open [Examples](../examples/index.md) before adapting the system to your own project, and use the [Skill Library](../setup/skill-reference.md) once you understand how workflow and backbone fit together.
 
 ## If You Only Have Ten Minutes
 
-Use this shortened path:
-
-1. scan [Core Data Science Workflow](../workflows/data-science/index.md)
-2. open [Backbone Protocol](../backbone/index.md)
-3. bookmark [Examples](../examples/index.md) for the first real project
+Scan [Core Data Science Workflow](../workflows/data-science/index.md), open [Backbone Protocol](../backbone/index.md), and bookmark [Examples](../examples/index.md) for when you start your first real project. That's enough to get moving without reading everything first.
 
 ## Typical Practitioner Outputs
 
@@ -114,8 +72,4 @@ That page shows the intended shorter practitioner sequence for the same housing-
 
 ## Where To Go Next
 
-- Use [Choose Your Role](../roles/index.md) if you want to compare this path with the student or manager paths.
-- Use the [Skill Library](../setup/skill-reference.md) only after you understand the workflow and backbone relationship.
-- Use [How Skills Work](../system/skills-explained.md) if you want the operating model behind workflow skills, overlays, and method handoffs.
-- Use [Core ML Pack](../setup/core-ml-pack.md) when you want a concrete supervised ML starter pack.
-- Return to [Core Data Science Workflow](../workflows/data-science/index.md) for the full shared sequence.
+Start with [Core Data Science Workflow](../workflows/data-science/index.md) if you haven't already. After your first session, use the [Skill Library](../setup/skill-reference.md) to find practitioner skills and packs, and open [Core ML Pack](../setup/core-ml-pack.md) when you want a concrete supervised ML starter. [How Skills Work](../system/skills-explained.md) is worth reading once you want to understand the operating model beneath the surface.

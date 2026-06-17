@@ -16,29 +16,49 @@ If you are overwhelmed, do not read the whole site. Pick one role page and follo
   <article class="role-card">
     <h3>Students</h3>
     <p>Learn the workflow through guided practice, hints, and attempt-before-answer tutoring while still producing real project artifacts.</p>
-    <p><a href="../students/index.md">Start as a student</a></p>
+    <p><a href="../students/">Start as a student</a></p>
   </article>
   <article class="role-card">
     <h3>Researchers &amp; Data Scientists</h3>
     <p>Execute trustworthy analysis with explicit workflow gates, reproducible artifacts, and handoff-ready project memory.</p>
-    <p><a href="../data-scientists/index.md">Start as a researcher or data scientist</a></p>
+    <p><a href="../data-scientists/">Start as a researcher or data scientist</a></p>
   </article>
   <article class="role-card">
     <h3>Managers</h3>
     <p>Track project health, blockers, decisions, handoffs, and stakeholder communication across analytical work.</p>
-    <p><a href="../managers/index.md">Start as a manager</a></p>
+    <p><a href="../managers/">Start as a manager</a></p>
   </article>
 </div>
 
 ## Quick Decision Guide
 
-| If you need to... | Open this |
-| --- | --- |
-| learn with a concrete guided exercise | [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md) |
-| run a disciplined analysis workflow | [Core Data Science Workflow](../workflows/data-science/index.md) |
-| coordinate a lab or project portfolio | [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) |
-| see the system in practice first | [Examples](../examples/index.md) |
-| find reusable workflow skills | [Skill Library](../setup/skill-reference.md) |
+<div class="decision-grid">
+  <a class="decision-card" href="../examples/analytics-repo/student.md">
+    <span class="decision-label">Learning</span>
+    <span class="decision-action">Analytics Repo — Student Path</span>
+    <span class="decision-desc">Start here if you want a guided, attempt-before-answer walkthrough</span>
+  </a>
+  <a class="decision-card" href="../workflows/data-science/index.md">
+    <span class="decision-label">Executing</span>
+    <span class="decision-action">Core Data Science Workflow</span>
+    <span class="decision-desc">Start here if you're running a real analysis and want workflow gates</span>
+  </a>
+  <a class="decision-card" href="../workflows/manager/lab-manager-agent.md">
+    <span class="decision-label">Coordinating</span>
+    <span class="decision-action">Lab Manager Agent</span>
+    <span class="decision-desc">Start here if you're tracking a lab or project portfolio</span>
+  </a>
+  <a class="decision-card" href="../examples/index.md">
+    <span class="decision-label">Exploring</span>
+    <span class="decision-action">Examples</span>
+    <span class="decision-desc">See the system in practice before committing to a path</span>
+  </a>
+  <a class="decision-card" href="../setup/skill-reference.md">
+    <span class="decision-label">Skills</span>
+    <span class="decision-action">Skill Library</span>
+    <span class="decision-desc">Find reusable workflow skills and overlays</span>
+  </a>
+</div>
 
 ## Recommended Sequence By Role
 
@@ -64,14 +84,4 @@ If you are overwhelmed, do not read the whole site. Pick one role page and follo
 
 ## Shared Backbone
 
-All three roles use the same core sequence:
-
-1. project bootstrap
-2. problem framing
-3. data audit
-4. exploratory analysis
-5. modeling
-6. evaluation
-7. experiment logging
-
-The difference is how Codex helps you move through that sequence.
+All three roles run the same sequence: bootstrap, problem framing, data audit, exploratory analysis, modeling, evaluation, and experiment logging. What changes is how Codex helps you move through it — coaching and scaffolding for students, direct execution for practitioners, summarizing and tracking for managers.

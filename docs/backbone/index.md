@@ -6,7 +6,7 @@ description: Backbone Protocol v0.1 for AI-native, reproducible, artifact-first 
 
 Backbone Protocol v0.1 is the minimal artifact system for AI-native reproducible data science projects.
 
-It gives Codex Batman a shared structure for work that must survive beyond a single chat session. The protocol is intentionally small: enough to support disciplined execution, review, handoff, and improvement without turning the project into a heavy framework.
+It gives Codex Batman a shared structure for work that needs to survive beyond a single chat session. The protocol is intentionally small — enough to support disciplined execution, review, handoff, and improvement without turning every project into a heavy framework.
 
 ## Start Here If
 
@@ -30,17 +30,7 @@ Backbone Protocol exists to keep project state legible to both humans and agents
 
 ## Core Principle
 
-The protocol is artifact-first.
-
-Important work should leave durable files that answer:
-
-- what problem this project is solving
-- what data is being used
-- what plan is being executed
-- what experiments were run
-- what decisions were made
-- what model or output is being shared
-- what happened during the workflow
+The protocol is artifact-first. Important work should leave durable files that answer what problem this project is solving, what data is being used, what plan is being executed, what experiments were run, what decisions were made, what model or output is being shared, and what happened during the workflow.
 
 ## Minimum Artifact Set
 
@@ -107,3 +97,11 @@ It is a shared operating layer for reproducible project memory.
 - [Examples](../examples/index.md)
 - [Tooling Stack](../tooling/index.md)
 - [Core Data Science Workflow](../workflows/data-science/index.md)
+
+## Return To Your Role Path
+
+Once you have reviewed the protocol, return to the path that matches your role:
+
+- [For Students](../students/index.md) — see how artifact discipline fits into guided learning
+- [For Researchers & Data Scientists](../data-scientists/index.md) — apply the backbone to a real project
+- [For Managers](../managers/index.md) — use the artifact list to verify project readiness before team advancement

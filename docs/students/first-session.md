@@ -1,26 +1,17 @@
 ---
 title: First Session - Predict Housing Prices with Tutor Mode
-description: A worked student example using the Kaggle Housing Prices dataset and tutor mode across the canonical workflow.
+description: A short warm-up exercise using the Kaggle Housing Prices dataset and tutor mode — for students who want a gentler intro before the full analytics repo example.
 ---
 
 # First Session - Predict Housing Prices with Tutor Mode
 
-**This is the default first page for students. If you are new, start here before reading the broader workflow or skills pages.**
+**This is a warm-up exercise.** If you're brand new, you can start here to see what a single tutor-mode exchange feels like — but the main student starting point is [Analytics Repo Example — Student Path](../examples/analytics-repo/student.md), which takes you through the full eight-gate workflow.
 
-## What You Will Learn
+This session covers just the first two steps: problem framing and data audit. It's useful if you want to get a feel for how Codex asks questions before you commit to the full sequence.
 
-This first session shows how to run Codex inside this repository, how workflow skills structure a data science project, and how tutor mode helps you learn the workflow instead of skipping straight to answers.
+## What You'll Get Out of This
 
-You will move through the canonical sequence:
-
-problem framing  
-data audit  
-EDA  
-baseline modeling  
-evaluation  
-experiment log
-
-The point is not to finish the whole project in one sitting. The point is to learn how the workflow, tutor overlay, and method skills work together on a real dataset.
+You'll see how tutor mode structures a coaching exchange — Codex asks for your reasoning before explaining, and the session ends with a problem brief artifact. That's it. The full project (split strategy, baseline model, feature handling, model comparison, evaluation, and workflow trace) is in the [Analytics Repo Example](../examples/analytics-repo/student.md).
 
 ## What To Do Right Now
 
@@ -111,23 +102,6 @@ Help me examine the housing dataset structure and identify potential issues befo
 
 ## After This Session
 
-When you finish the first guided pass:
+Once you've done this warm-up, go to [Analytics Repo Example — Student Path](../examples/analytics-repo/student.md). That page continues from where this leaves off and takes you through all eight gates of the real project — with an interactive demo you can work through step by step before running it in Codex yourself.
 
-1. open [Core Data Science Workflow](../workflows/data-science/index.md) to see the full sequence you just started
-2. return to [For Students](index.md) for the student path and next steps
-3. open [Examples](../examples/index.md) if you want to compare this guided mode with execution and manager views
-
-## What Comes Next
-
-The next workflow skills are:
-
-- [problem-framing](../workflows/data-science/problem-framing.md)
-- [data-audit](../workflows/data-science/data-audit.md)
-- [eda-plan](../workflows/data-science/eda-plan.md)
-- [modeling](../workflows/data-science/modeling.md)
-- [model-evaluation](../workflows/data-science/evaluation.md)
-- [experiment-log](../workflows/data-science/experiment-log.md)
-
-These pages correspond to the canonical workflow backbone.
-
-When a modeling step introduces a method you do not know yet, tutor mode can pause the workflow, route to a method skill such as `linear-regression` or `random-forest`, and then return you to the workflow step.
+When a modeling step introduces a method you don't know yet, tutor mode can pause the workflow, route to a method skill like `linear-regression` or `random-forest`, and then return you to the workflow step.
