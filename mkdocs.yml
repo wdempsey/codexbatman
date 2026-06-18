@@ -84,11 +84,12 @@ nav:
       - Project Template: backbone/project-template.md
   - Examples:
     - Overview: examples/index.md
-    - Analytics Repo Example:
+    - Linear Regression:
       - Overview: examples/analytics-repo/index.md
-      - Student Path: examples/analytics-repo/student.md
-      - Live Session Example: examples/analytics-repo/live-session.md
-      - Practitioner Path: examples/analytics-repo/practitioner.md
+      - Learning Lens: examples/analytics-repo/learning.md
+      - Execution Lens: examples/analytics-repo/execution.md
+      - Manager Lens: examples/analytics-repo/manager.md
+      - Live Session: examples/analytics-repo/live-session.md
     - Basic Classification:
       - Overview: examples/basic-classification/index.md
       - Learning Lens: examples/basic-classification/learning.md
