@@ -1,0 +1,211 @@
+{
+  "_schema_version": "1.0",
+  "_notes": {
+    "mastery_levels": [
+      "unknown   — not yet encountered in sessions",
+      "introduced — seen once, student has surface familiarity",
+      "practiced  — worked through at least one exercise with tutor",
+      "mastered   — student can explain it in their own words (Feynman check passed)"
+    ],
+    "update_policy": "Tutor may SUGGEST updates at session end. Student must CONFIRM before mastery.json is written. Never update without a corresponding session-log.md entry dated the same day.",
+    "adding_topics": "Add new topic keys under the appropriate domain object. Use snake_case. Do not remove existing keys — set to 'unknown' if not yet relevant to this student.",
+    "source_tracking": "Each topic entry can optionally include a 'last_session' date and 'notes' string for maintainer context. These are written by the tutor at session wrap."
+  },
+  "student": {
+    "name": "",
+    "role": "",
+    "registered": ""
+  },
+  "domains": {
+    "probability_and_statistics": {
+      "descriptive_statistics": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "probability_foundations": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "hypothesis_testing": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "confidence_intervals": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "bayesian_reasoning": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "likelihood_and_estimation": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "m_estimation": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      }
+    },
+    "regression_and_modeling": {
+      "linear_regression": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "logistic_regression": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "generalized_linear_models": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "regularization_lasso_ridge": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "model_selection_and_validation": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "causal_inference_basics": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      }
+    },
+    "survival_analysis": {
+      "censoring_and_truncation": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "kaplan_meier_estimator": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "log_rank_test": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "cox_proportional_hazards": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "accelerated_failure_time_models": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "competing_risks": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      }
+    },
+    "machine_learning": {
+      "bias_variance_tradeoff": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "cross_validation": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "decision_trees_and_ensembles": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "neural_networks_basics": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "feature_engineering": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "evaluation_metrics": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      }
+    },
+    "data_science_workflow": {
+      "problem_framing": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "data_audit": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "experiment_logging": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "reproducibility": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "model_cards_and_documentation": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      }
+    },
+    "programming_and_tools": {
+      "python_data_stack": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "r_and_tidyverse": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "sql_basics": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "version_control_git": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      },
+      "shell_and_environment": {
+        "level": "unknown",
+        "last_session": null,
+        "notes": ""
+      }
+    }
+  },
+  "open_questions": [],
+  "misconceptions_resolved": [],
+  "feynman_checks_passed": []
+}

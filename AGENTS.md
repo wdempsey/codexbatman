@@ -18,6 +18,12 @@ Core architecture:
 
 Route requests in this order:
 
+0. **Identity** *(student sessions only)*
+   - Before role overlays engage, run `skills/overlays/student/identity-loader/SKILL.md`.
+   - This loads `memory/students/{name}/profile.md` and `mastery.json`, surfaces a one-line context header, and calibrates session depth to the student's current mastery levels.
+   - If no subfolder exists for the student, offer to register them on the spot (copy `memory/students/_template/` and walk through `profile.md`).
+   - Identity resolution happens once per session — do not re-run mid-session.
+   - If the session is not in student role, skip this step entirely.
 1. **Role**
    - `student` -> apply overlays from `skills/overlays/student/`
    - `data scientist` -> apply overlays from `skills/overlays/practitioner/`
@@ -42,6 +48,28 @@ Rule:
 - When routing among folder-based skills, prefer skill metadata front matter fields before falling back to prose. Use `skills/METADATA.md` as the schema source of truth for those fields.
 - When a workflow skill includes method-handoff metadata, prefer that metadata over ad hoc method suggestions.
 - If the learner is a student and a proposed method is unfamiliar, route to the relevant method skill before continuing the workflow.
+
+## Skill Promotion Pipeline
+
+When a student discovers a technique or framing worth sharing, it travels through this pipeline before entering the shared skill library.
+
+1. **Flag** — Student says `/flag-skill` during a session. The `session-wrap` overlay (`skills/overlays/student/session-wrap/SKILL.md`) collects the structured entry and appends it to `memory/students/{name}/flagged-skills.md`.
+
+2. **PR** — Student opens a PR that includes their updated `flagged-skills.md`. This triggers the skill-auditor agent.
+
+3. **Audit** — The skill-auditor (`agents/skill-auditor.md`) reads every new entry in the diff and evaluates each against three criteria: not already covered, generalizable beyond this session, has a clear trigger description. It posts a structured verdict comment: **RECOMMEND FOR PROMOTION / NOT READY / NEEDS CLARIFICATION**.
+
+4. **Draft skill PR** — If the verdict is RECOMMEND, a maintainer opens a draft skill PR using the suggested title and trigger from the audit comment. The student may contribute the draft content.
+
+5. **Human review** — A maintainer reviews the draft skill for fit with the existing skill architecture (metadata schema, overlay compatibility, editorial voice). Edits as needed.
+
+6. **Merge** — On approval, the skill is merged into the appropriate `skills/` subfolder and added to `skills/METADATA.md`.
+
+Rules:
+- The skill-auditor produces verdicts only — it does not merge, create, or modify files.
+- Maintainer approval is required before any student-flagged entry becomes a shared skill.
+- Entries that fail the audit stay in `flagged-skills.md` — they are not deleted. The student can revise and re-submit.
+- See `memory/students/README.md` → Skill promotion pipeline for the student-facing view of this process.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.
