@@ -1,43 +1,47 @@
 ---
-description: Shared scenario for a basic classification example using the Codex Batman backbone.
+description: A classification walkthrough using the Cleveland Heart Disease dataset — predicting cardiac risk with the Codex Batman backbone.
 ---
 
-# Basic Classification
+# Basic Classification Example
 
-This is a small synthetic example for showing how the backbone makes beginner ML reproducible.
+This example runs the full Codex Batman workflow on a real clinical dataset: predicting the presence of heart disease from patient features to support a referral decision.
 
-## Scenario
+The dataset is the [Cleveland Heart Disease dataset](https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci) (UCI). 303 patients, 13 features — age, sex, chest pain type, cholesterol, resting heart rate, and others measured at a cardiology clinic. The target is whether heart disease is present (binary: no disease vs. disease detected). The decision it supports: should this patient be referred for further cardiac evaluation?
 
-A team wants to predict whether a student will miss a required advising appointment next week.
+This is a genuine classification problem with real stakes. The leakage question is non-trivial (several features are only available after a stress test). The threshold decision matters clinically — false negatives send sick patients home. And the model card has to say something honest about who this model was trained on and where it shouldn't be deployed.
 
-The goal is not to build a production system here. The goal is to show how even a simple classification problem should still produce durable artifacts and explicit decisions.
+## What ends up in the repository
 
-## Shared Backbone
+```text
+cardiac-risk-classifier/
+  README.md
+  PROJECT_STATE.md
+  analysis/
+    problem_frame.md
+    analysis_plan.md
+    decision_log.md
+  data/
+    data_card.md
+  runs/
+    experiment_log.md
+  reports/
+    model_card.md
+  memory/
+    workflow_trace.md
+```
 
-This example assumes the project creates:
+## Same backbone, different problem type
 
-- `PROJECT_STATE.md`
-- `problem_frame.md`
-- `data_card.md`
-- `analysis_plan.md`
-- `experiment_log.md`
-- `model_card.md`
-- `workflow_trace.md`
-- `decision_log.md`
+The housing-price example targets a continuous outcome and optimizes RMSE. This example targets a binary outcome and optimizes ROC-AUC — but the gate structure is identical. Problem framing, data audit, split strategy, baseline, candidate models, evaluation, experiment logging. The discipline is the same; what changes is how you reason about the metric, the threshold, and the failure modes.
 
-## What This Example Demonstrates
+## Three lenses on the same project
 
-- problem framing
-- data card creation
-- leakage risk review
-- baseline model discipline
-- model evaluation
-- model card production
-- workflow trace capture
-- manager-facing summary
+- [Learning lens →](learning.md) — tutor mode with attempt-before-answer coaching and a 7-step interactive demo
+- [Execution lens →](execution.md) — practitioner pace, direct gate traversal, same artifact standards
+- [Manager lens →](manager.md) — artifact review and go/no-go decisions; no code, no modeling calls
 
-## Lenses
+## Related
 
-- [Learning lens](learning.md)
-- [Execution lens](execution.md)
-- [Manager lens](manager.md)
+- [Analytics Repo Example](../analytics-repo/index.md) — the regression counterpart with the same backbone
+- [Core Data Science Workflow](../../workflows/data-science/index.md)
+- [Backbone Protocol](../../backbone/index.md)
