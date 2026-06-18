@@ -105,6 +105,8 @@ nav:
       - Learning Lens: examples/methods-code-project/learning.md
       - Execution Lens: examples/methods-code-project/execution.md
       - Manager Lens: examples/methods-code-project/manager.md
+    - Survival RAG:
+      - Overview: examples/survival-rag/index.md
   - Skills:
     - Skill Library: setup/skill-reference.md
     - Core ML Pack: setup/core-ml-pack.md

@@ -1,0 +1,37 @@
+# Survival RAG example requirements
+# Install with: pip install -r requirements.txt
+#
+# Embedding model: OpenAI text-embedding-3-small
+#   Requires OPENAI_API_KEY in environment (or .env file)
+#   To use a local model instead, see the Ollama note in ingest.py
+#
+# Python >= 3.10 required
+
+# PDF extraction
+pypdf>=3.17.0
+
+# Text chunking
+langchain-text-splitters>=0.2.0
+
+# Vector store (local, no external service)
+chromadb>=0.5.0
+
+# Embeddings + chat completion
+openai>=1.0.0
+
+# Dataset handling
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.31.0
+
+# Progress display
+tqdm>=4.65.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Notebook
+jupyter>=1.0.0
+ipykernel>=6.0.0
+matplotlib>=3.7.0
+lifelines>=0.28.0

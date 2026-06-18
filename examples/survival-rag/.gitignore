@@ -1,0 +1,17 @@
+# Never commit the PDF textbook — copyright
+*.pdf
+
+# ChromaDB is built locally on first ingest; each student has their own
+chroma_db/
+
+# Python environment
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
