@@ -91,8 +91,18 @@ Produce:
 ## Changes To Avoid
 ```
 
+## Established Design Decisions (Do Not Reverse)
+
+Before making visual changes, read `docs/site/ui-ux-standards.md` for the current state. Key decisions already in effect:
+
+- **Amber CTAs on dark sections**: `#f4a261` fill, `#1a0a00` text — applies to `.hf-hero`, `.hf-section--dark`, `.hf-section--connect` only. Light sections keep indigo. Do not revert to indigo on dark backgrounds.
+- **Bubble hover**: `180ms cubic-bezier(0.2, 0, 0, 1)` — do not change back to `220ms ease`.
+- **Decision Guide cards**: the `.decision-grid` / `.decision-card` pattern replaces the Quick Decision Guide table on roles/index.md.
+- **Voice**: see `skills/site-voice/SKILL.md` before touching any copy.
+
 ## Guardrails
 
 - Preserve the existing MkDocs Material structure.
 - Keep the diff minimal and reversible.
 - Improve aesthetics only where it also improves comprehension.
+- Do not introduce new CSS classes when an existing one already covers the case.
