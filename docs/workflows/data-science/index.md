@@ -20,19 +20,20 @@ Every project moves through these stages in order. The gates between them are no
 
 **7. Experiment Logging** — record every run so the next session can start from real project state, not a reconstruction of what you think you tried.
 
-## Skills That Run Each Stage
+## The Gates in Detail
 
-Each phase is a Codex skill you can invoke directly. The skill enforces the gate — it won't let you skip to modeling before the audit is in reasonable shape.
+Each gate has its own page explaining what Codex checks, why it matters, and what the common failure modes are — with interactive exercises using the cardiac risk dataset as a running example.
 
-| Stage | Skill | What it enforces |
-|---|---|---|
-| Project Bootstrap | [`project-bootstrap`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/project-bootstrap) | backbone folder structure and initial files |
-| Problem Framing | [`problem-framing`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/problem-framing) | target, metric, decision context, risk register |
-| Data Audit | [`data-audit`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/data-audit) | missingness, leakage flags, schema review |
-| Exploratory Analysis | [`eda-plan`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/eda-plan) | bounded exploration questions and plot priorities |
-| Modeling | [`modeling`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/modeling) | baseline + candidate models, validation approach |
-| Evaluation | [`model-evaluation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/model-evaluation) | performance interpretation, failure analysis, advance decision |
-| Experiment Logging | [`experiment-log`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/experiment-log) | reproducible run record with next action |
+| Gate | What it enforces |
+|---|---|
+| [Problem Framing](problem-framing.md) | target, metric, decision context, prediction time, population scope |
+| [Data Audit](data-audit.md) | missingness, leakage flags, schema review, stop conditions |
+| [EDA Plan](eda-plan.md) | bounded exploration questions, stopping criterion, analysis plan |
+| [Modeling](modeling.md) | baseline first, preprocessing inside the fold, cross-validation setup |
+| [Evaluation](evaluation.md) | held-out performance, confusion matrix at threshold, subgroup analysis, limitations |
+| [Experiment Log](experiment-log.md) | every run recorded with decision notes, not just the winner |
+
+Project Bootstrap (folder structure and backbone files before any analysis) is covered in [Quickstart](../../quickstart.md).
 
 ## How Each Role Uses This
 
@@ -42,6 +43,6 @@ Students work through the gates with coaching — Codex asks for their reasoning
 
 ## Where To Go Next
 
-If you haven't run a project yet, the [Analytics Repo Example](../../examples/analytics-repo/index.md) shows the full sequence on a concrete housing-price dataset — with student and practitioner lenses. That's the fastest way to see this workflow in practice.
+If you haven't run a project yet, the [Basic Classification Example](../../examples/basic-classification/index.md) shows the full sequence on the Cleveland Heart Disease dataset — with student, practitioner, and manager lenses. That's the fastest way to see this workflow in practice.
 
 If you want to understand the artifact system underneath the workflow, read [Backbone Protocol](../../backbone/index.md).

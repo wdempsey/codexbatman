@@ -50,13 +50,44 @@ See [Project Management](../workflows/project-management.md), [Managing Data Sci
 The repository also contains additional reusable data science skills that can plug into specific projects:
 
 - [`causal-design-check`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
-- [`debug-analysis-notebook`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-analysis-notebook)
-- [`handoff`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/handoff)
+- [`causal-design-check`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
+- [`debug-analysis-notebook`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-analysis-notebook): diagnose notebook execution errors without destructive rewrites
+- [`debug-model-failure`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-model-failure): systematic loop for semantic model failures — code runs but results are wrong; reproduce → minimise → hypothesise → fix
+- [`grill-problem-frame`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/grill-problem-frame): challenge a problem statement before any data is touched — decision context, metric, prediction time, leakage risks, population scope
+- [`explain-method`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/explain-method): zoom out and explain why a method fits the current problem — assumptions, alternatives, model card justification
+- [`handoff`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/handoff): produce a short structured session handoff so the next person or agent can continue without rebuilding context
+- [`model-prototype`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/model-prototype): quick throwaway model to test a specific hypothesis before committing to the full workflow
 - [`paper-to-replication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/paper-to-replication)
 - [`repo-bootstrap-student`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/repo-bootstrap-student): teach a student how to create a GitHub-backed data science repository with a minimal artifact-first structure and first commit
 - [`result-communication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/result-communication)
 - [`trace-distillation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/trace-distillation)
 - [`workflow-trace`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/workflow-trace)
+
+## Software Team Skills
+
+These skills are for data scientists working as part of a software engineering team — writing production code, collaborating with engineers, and shipping ML features through a standard development workflow. Adapted from [Matt Pocock's engineering skills](https://github.com/mattpocock/skills).
+
+- [`tdd-data-pipeline`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/tdd-data-pipeline): test-driven development for data pipelines, feature transforms, and model inference wrappers — red-green-refactor loop, behavioral contracts not implementation details
+- [`zoom-out`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/zoom-out): map an unfamiliar section of code — callers, data flow, downstream dependencies, backbone artifact references — before modifying anything
+- [`grill-with-codebase`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/grill-with-codebase): build a shared domain language with the engineering team before writing production data science code — resolves naming conflicts, documents conventions, creates `DATA_CONTEXT.md` and ADRs
+- [`ml-feature-spec`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/ml-feature-spec): write a machine learning feature spec (PRD) and break it into vertical-slice GitHub issues — input/output contracts, validation criteria, user stories, monitoring requirements
+
+## Methods Skills
+
+Method skills teach a specific ML technique in context — they pause the workflow, explain the method, and hand back to the gate where the method will be applied. Each references the relevant ISLR chapter.
+
+- [`linear-regression`](https://github.com/wdempsey/codexbatman/tree/main/skills/methods/linear-regression): ISLR Ch. 3
+- [`ridge-regression`](https://github.com/wdempsey/codexbatman/tree/main/skills/methods/ridge-regression): ISLR Ch. 6
+- [`lasso`](https://github.com/wdempsey/codexbatman/tree/main/skills/methods/lasso): ISLR Ch. 6
+- [`cross-validation`](https://github.com/wdempsey/codexbatman/tree/main/skills/methods/cross-validation): ISLR Ch. 5 — k-fold CV, LOOCV, the preprocessing-inside-the-fold rule
+- [`random-forest`](https://github.com/wdempsey/codexbatman/tree/main/skills/methods/random-forest): ISLR Ch. 8 — bagging, variable importance, when to use vs. linear baseline
+- [`gradient-boosting`](https://github.com/wdempsey/codexbatman/tree/main/skills/methods/gradient-boosting): ISLR Ch. 8 — sequential improvement on residuals, tuning parameters
+
+## Textbook Resources
+
+Resource skills map canonical textbooks to the method and workflow skills that use them. Install a resource skill to give Codex access to chapter-level explanations when a method is introduced in tutor mode.
+
+- [`islr-resource`](https://github.com/wdempsey/codexbatman/tree/main/skills/resources/islr): chapter index for *An Introduction to Statistical Learning* (James et al.) — routes students to the right chapter for any method in the curriculum
 
 ## Skill Packs
 
