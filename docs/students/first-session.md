@@ -1,17 +1,17 @@
 ---
 title: First Session - Predict Housing Prices with Tutor Mode
-description: A short warm-up exercise using the Kaggle Housing Prices dataset and tutor mode — for students who want a gentler intro before the full analytics repo example.
+description: A short warm-up exercise using the Kaggle Housing Prices dataset and tutor mode — for students who want a gentler intro before the full learning lens example.
 ---
 
 # First Session - Predict Housing Prices with Tutor Mode
 
-**This is a warm-up exercise.** If you're brand new, you can start here to see what a single tutor-mode exchange feels like — but the main student starting point is [Analytics Repo Example — Student Path](../examples/analytics-repo/student.md), which takes you through the full eight-gate workflow.
+**This is a warm-up exercise.** If you're brand new, you can start here to see what a single tutor-mode exchange feels like — but the main student starting point is [Basic Classification — Learning Lens](../examples/basic-classification/learning.md), which takes you through the full 7-gate workflow with an interactive demo at every step.
 
 This session covers just the first two steps: problem framing and data audit. It's useful if you want to get a feel for how Codex asks questions before you commit to the full sequence.
 
 ## What You'll Get Out of This
 
-You'll see how tutor mode structures a coaching exchange — Codex asks for your reasoning before explaining, and the session ends with a problem brief artifact. That's it. The full project (split strategy, baseline model, feature handling, model comparison, evaluation, and workflow trace) is in the [Analytics Repo Example](../examples/analytics-repo/student.md).
+You'll see how tutor mode structures a coaching exchange — Codex asks for your reasoning before explaining, and the session ends with a problem brief artifact. That's it. The full project (split strategy, baseline model, feature handling, model comparison, evaluation, and workflow trace) is in the [Basic Classification — Learning Lens](../examples/basic-classification/learning.md).
 
 ## What To Do Right Now
 
@@ -102,6 +102,6 @@ Help me examine the housing dataset structure and identify potential issues befo
 
 ## After This Session
 
-Once you've done this warm-up, go to [Analytics Repo Example — Student Path](../examples/analytics-repo/student.md). That page continues from where this leaves off and takes you through all eight gates of the real project — with an interactive demo you can work through step by step before running it in Codex yourself.
+Once you've done this warm-up, go to [Basic Classification — Learning Lens](../examples/basic-classification/learning.md). That page takes you through all 7 gates of a cardiac risk classification project — with an interactive demo you can work through step by step before running it in Codex yourself.
 
 When a modeling step introduces a method you don't know yet, tutor mode can pause the workflow, route to a method skill like `linear-regression` or `random-forest`, and then return you to the workflow step.

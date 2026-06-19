@@ -18,16 +18,17 @@ Use this section when the abstract workflow pages make sense in theory but you w
 
 Each example shares a scenario page, then shows it through a learning lens, an execution lens, and a manager lens. The backbone stays the same — what changes is the emphasis and the artifacts that come out.
 
-If you want the single best example of what a real Codex Batman project repo should look like, start with [Analytics Repo Example](analytics-repo/index.md).
+If you're a student starting out, begin with [Basic Classification](basic-classification/index.md) — the most straightforward entry point into the full 7-gate workflow.
 
 ## Examples In This Section
 
 | Example | Purpose |
 |---------|---------|
-| [Analytics Repo Example](analytics-repo/index.md) | Show what a real Kaggle-style supervised ML repository looks like for both students and practitioners |
-| [Basic Classification](basic-classification/index.md) | Show how beginner ML can still be reproducible and artifact-producing |
+| [Basic Classification](basic-classification/index.md) | Binary classification with Cleveland Heart Disease data — the student entry point. 303 patients, cardiac referral triage, ROC-AUC metric. |
+| [Linear Regression](analytics-repo/index.md) | California Housing census-tract regression. 20,640 rows, $500K ceiling artifact, multicollinearity between AveRooms and AveBedrms. |
 | [Grant Project](grant-project/index.md) | Show how the Research OS layer coordinates deadlines, meetings, handoffs, and weekly review |
 | [Methods / Code Project](methods-code-project/index.md) | Show how project state, repo memory, and handoffs support technical research and code work |
+| [Survival RAG](survival-rag/index.md) | Bring-your-own-textbook RAG pipeline — PDF ingestion, local ChromaDB, Socratic responses grounded in retrieved passages. |
 
 A good operating system should be understandable from examples, not only from abstract rules. These worked examples show what artifacts get created, how workflow gates shape execution, how managers see risk and blockers, and how the same project looks different depending on the lens.
 

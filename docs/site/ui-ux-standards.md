@@ -153,7 +153,7 @@ These decisions are in effect and should not be reversed without cause:
 - **Bubble hover**: `180ms cubic-bezier(0.2, 0, 0, 1)` — snappier than the default `220ms ease`
 - **Role grid**: `repeat(3, 1fr)` → `repeat(2, 1fr)` at 960px → `1fr` at 600px
 - **Decision Guide**: card grid (`.decision-grid` / `.decision-card` classes), not a table — wraps at 760px and 375px
-- **Student first step**: analytics-repo/student.md is the canonical first action everywhere. first-session.md is optional warm-up only.
+- **Student first step**: basic-classification/learning.md is the canonical first action for students. first-session.md is optional warm-up only. analytics-repo/student.md and practitioner.md are redirect stubs — do not link to them directly.
 - **New SVGs**: setup-installation.svg, workflow-backbone.svg, examples-three-lenses.svg in `docs/assets/home/`
 
 ## Inputs For Future Passes
