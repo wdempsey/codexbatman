@@ -166,6 +166,32 @@ The experiment log documents both the winner (ridge) and the alternatives, with 
 
 ---
 
+## Try It for Real
+
+No file download needed — California Housing ships with scikit-learn.
+
+```python
+from sklearn.datasets import fetch_california_housing
+data = fetch_california_housing(as_frame=True)
+df = data.frame  # 20,640 rows × 9 columns (8 features + MedHouseVal target)
+df.to_csv("california_housing.csv", index=False)
+```
+
+Then paste this into Codex:
+
+```text
+Use tutor mode to guide me through a housing price regression project.
+
+Dataset: California Housing (sklearn fetch_california_housing, saved to california_housing.csv)
+Target: MedHouseVal (median house value in units of $100,000; values capped at $500K)
+Goal: predict median house value per census tract.
+Metric: RMSE.
+
+Start with problem-framing. Ask for my reasoning before each gate output.
+```
+
+---
+
 ## What this example didn't cover
 
 **Nonlinear geographic modeling.** Lat/lon as linear predictors captures only a fraction of the geographic signal. The residual map shows clear coastal underprediction. Geographic region dummies (coastal/inland/valley/mountain), spatial interpolation, or kernel methods would address this — but that's a feature engineering problem, not a workflow problem.

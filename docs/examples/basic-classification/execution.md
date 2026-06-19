@@ -40,8 +40,8 @@ Three gates, three artifact updates. The prediction-time call at gate 1 is the k
 ```text
 Set up and execute a cardiac risk classification repository using the Codex Batman backbone.
 
-Dataset: Heart Disease Cleveland UCI
-(https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci)
+Dataset: Heart Disease Cleveland UCI (UCI ML Repository, no login required)
+Run `python examples/basic-classification/data/get_heart.py` to download heart.csv first.
 Goal: predict presence of heart disease. Binary target (0 = no disease, 1+ = disease).
 Decision context: cardiology referral triage (post-stress-test tool).
 Metric: ROC-AUC.

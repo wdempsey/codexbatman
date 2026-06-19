@@ -1,6 +1,6 @@
 # Basic Classification — Learning Lens
 
-You're predicting whether a patient has heart disease — a binary classification task with real clinical stakes. The dataset is the [Cleveland Heart Disease dataset](https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci): 303 patients, 13 features, one question: should this patient be referred for further cardiac evaluation?
+You're predicting whether a patient has heart disease — a binary classification task with real clinical stakes. The dataset is the [Cleveland Heart Disease dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) from UCI ML Repository: 303 patients, 13 features, one question: should this patient be referred for further cardiac evaluation?
 
 **Student mode means attempt-before-answer**: type your reasoning at each step before Codex reveals its output. By the end you'll understand why each gate exists and have a full set of artifacts a collaborator could pick up and continue.
 
@@ -187,11 +187,19 @@ At each gate below, Codex asks for your reasoning first. Type something — even
 
 Once you've worked through the demo, run this in Codex to start the actual project:
 
+First, download the dataset — no login required:
+
+```bash
+python examples/basic-classification/data/get_heart.py
+```
+
+This pulls 303 rows from the UCI ML Repository and saves `heart.csv` in the same folder. Then paste this into Codex:
+
 ```text
 Use tutor mode to guide me through a cardiac risk classification project.
 
-Dataset: Heart Disease Cleveland UCI
-(https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci)
+Dataset: Cleveland Heart Disease (UCI ML Repository)
+Data file: examples/basic-classification/data/heart.csv
 Goal: predict presence of heart disease. Binary target (0 = no disease, 1+ = disease).
 Decision context: should this patient be referred for further cardiac evaluation?
 Metric: ROC-AUC.
