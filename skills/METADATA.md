@@ -275,6 +275,42 @@ related_workflow_skills:
 ---
 ```
 
+### Socratic Tutor Overlay
+
+```yaml
+---
+name: socratic-tutor
+description: Default interaction style for all student-role sessions. Three-layer Socratic
+  teaching system — turn-level question ladder, RHRS session arc, teaching quality self-check.
+  Activates automatically in tutor-mode; no prompt required. Student role only.
+category: overlays
+status: active
+stage: overlay
+role_compatibility:
+  - student
+default_interaction: socratic
+trigger_keywords:
+  - tutor
+  - student mode
+  - help me understand
+  - teach me
+  - walk me through
+  - what should I do
+  - I don't know where to start
+  - explain this to me
+role_scope: student only — practitioner and manager overlays unaffected
+synthesizes:
+  - Socratic questioning (classical pedagogy — Plato's elenchus method)
+  - RHRS session arc (Review-Heuristic-Rectify-Summarize, cognitive apprenticeship)
+  - Feynman technique (learning-by-teaching self-check)
+overlays:
+  - tutor-mode
+  - hint-ladder
+  - exercise-generator
+  - misconception-diagnosis
+---
+```
+
 ## Routing Guidance
 
 Codex should use metadata as the first routing layer for folder-based skills.
@@ -286,3 +322,4 @@ Codex should use metadata as the first routing layer for folder-based skills.
 5. For student flows, route to the relevant method skill when the learner is unfamiliar with a proposed method, then return to the workflow skill.
 6. Read prose after metadata to confirm fit, execution details, and stop conditions.
 7. Treat overlays as delivery-style wrappers, not canonical workflow steps.
+8. For student sessions, `socratic-tutor` is the default interaction style. It activates automatically — do not wait for explicit invocation. The other student overlays (`tutor-mode`, `hint-ladder`, `misconception-diagnosis`) handle structure and escalation; `socratic-tutor` governs the question pattern within each response.

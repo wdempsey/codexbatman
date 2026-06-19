@@ -6,6 +6,8 @@ status: active
 stage: overlay
 role_compatibility:
   - student
+default_interaction: socratic
+interaction_skill: socratic-tutor
 overlays:
   - project-bootstrap
   - problem-framing

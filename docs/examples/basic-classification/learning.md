@@ -10,6 +10,8 @@ Ready to execute yourself? [See the practitioner path →](execution.md) | Want 
 
 ## Walk Through the 7 Gates
 
+*This session follows Socratic mode — expect questions, not answers.*
+
 At each gate below, Codex asks for your reasoning first. Type something — even a rough guess — then click **See what Codex said** to reveal the output. Step 1 is shown open so you can see the pattern.
 
 <div id="cl-root" style="font-family:'JetBrains Mono','Courier New',monospace;background:#0d1b2e;border-radius:10px;padding:24px 28px 20px 28px;max-width:680px;margin:32px 0;box-shadow:0 4px 32px rgba(0,0,0,0.45);border:1px solid #1a2f4a;">
