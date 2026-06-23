@@ -8,7 +8,7 @@ Begin with [**Basic Classification — Learning Lens**](../examples/basic-classi
 
 You use the same canonical data science workflow as practitioners. What changes is how Codex helps you move through it — more prompting, more hints, more checks for understanding, and attempt-before-answer at every gate. You don't need to learn the whole architecture first. Start with the guided session, then come back to the workflow pages after you've seen one concrete example.
 
-If you want a shorter warm-up first, open [First Session — Predict Housing Prices with Tutor Mode](first-session.md) to see a single tutor exchange, then return to the basic classification example.
+If you'd rather start with linear regression, open [First Session — Predict Housing Prices with Tutor Mode](first-session.md) — a two-gate warm-up on California Housing that feeds directly into [Linear Regression — Learning Lens](../examples/analytics-repo/learning.md).
 
 ## What Changes In Student Mode
 
