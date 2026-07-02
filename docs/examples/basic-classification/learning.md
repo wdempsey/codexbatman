@@ -14,35 +14,35 @@ Ready to execute yourself? [See the practitioner path →](execution.md) | Want 
 
 At each gate below, Codex asks for your reasoning first. Type something — even a rough guess — then click **See what Codex said** to reveal the output. Step 1 is shown open so you can see the pattern.
 
-<div id="cl-root" style="font-family:'JetBrains Mono','Courier New',monospace;background:#0d1b2e;border-radius:10px;padding:24px 28px 20px 28px;max-width:680px;margin:32px 0;box-shadow:0 4px 32px rgba(0,0,0,0.45);border:1px solid #1a2f4a;">
+<div id="cl-root" class="cb-terminal">
 
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;">
-    <span style="width:12px;height:12px;border-radius:50%;background:#ff5f56;display:inline-block;"></span>
-    <span style="width:12px;height:12px;border-radius:50%;background:#ffbd2e;display:inline-block;"></span>
-    <span style="width:12px;height:12px;border-radius:50%;background:#27c93f;display:inline-block;"></span>
-    <span id="cl-step-label" style="margin-left:12px;font-size:0.78rem;color:#4a6885;letter-spacing:0.04em;">Step 1 of 7 — Problem Framing</span>
+  <div class="cb-term-titlebar">
+    <span class="cb-term-dot cb-term-dot--r"></span>
+    <span class="cb-term-dot cb-term-dot--y"></span>
+    <span class="cb-term-dot cb-term-dot--g"></span>
+    <span id="cl-step-label" class="cb-term-steplabel">Step 1 of 7 — Problem Framing</span>
   </div>
 
-  <div id="cl-body" style="min-height:320px;">
-    <div id="cl-prompt" style="color:#3bc9db;font-size:0.85rem;margin-bottom:14px;"></div>
-    <div style="color:#4a6885;font-size:0.72rem;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.08em;">Codex asks</div>
-    <div id="cl-question" style="color:#f4a261;font-size:0.87rem;line-height:1.55;margin-bottom:14px;min-height:44px;white-space:pre-wrap;"></div>
-    <div style="color:#4a6885;font-size:0.72rem;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.08em;">Your attempt</div>
-    <textarea id="cl-textarea" placeholder="Type your reasoning before seeing Codex's response…" style="width:100%;box-sizing:border-box;background:#091422;border:1px solid #1e3a5a;border-radius:6px;color:#e2e8f0;font-family:inherit;font-size:0.82rem;line-height:1.5;padding:8px 10px;resize:vertical;min-height:60px;outline:none;transition:border-color 200ms ease;" onfocus="this.style.borderColor='#3bc9db'" onblur="this.style.borderColor='#1e3a5a'"></textarea>
-    <button id="cl-submit" onclick="clSubmit()" style="margin-top:8px;background:#f4a261;color:#1a0a00;border:none;border-radius:5px;padding:6px 18px;font-family:inherit;font-size:0.8rem;font-weight:700;cursor:pointer;">See what Codex said →</button>
+  <div id="cl-body" class="cb-term-body">
+    <div id="cl-prompt" class="cb-term-cmd"></div>
+    <div class="cb-term-eyebrow">Codex asks</div>
+    <div id="cl-question" class="cb-term-question"></div>
+    <div class="cb-term-eyebrow cb-term-eyebrow--attempt">Your attempt</div>
+    <textarea id="cl-textarea" class="cb-term-textarea" placeholder="Type your reasoning before seeing Codex's response…" onfocus="this.style.borderColor='#3bc9db'" onblur="this.style.borderColor='#1e3a5a'"></textarea>
+    <button id="cl-submit" class="cb-btn cb-btn--primary" onclick="clSubmit()">See what Codex said →</button>
 
-    <div id="cl-answer-wrap" style="display:none;margin-top:18px;">
-      <div style="color:#4a6885;font-size:0.72rem;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.08em;">Codex output</div>
-      <div id="cl-answer" style="color:#a6e3a1;font-size:0.84rem;line-height:1.55;margin-bottom:16px;white-space:pre-wrap;"></div>
-      <div id="cl-badge" style="display:inline-block;background:#1a2f4a;border:1px solid #3bc9db;border-radius:5px;padding:4px 12px;font-size:0.74rem;color:#3bc9db;"></div>
+    <div id="cl-answer-wrap" class="cb-term-answerwrap">
+      <div class="cb-term-eyebrow">Codex output</div>
+      <div id="cl-answer" class="cb-term-answer"></div>
+      <div id="cl-badge" class="cb-term-badge"></div>
     </div>
   </div>
 
-  <div style="display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap;">
-    <button id="cl-prev" onclick="clNav(-1)" style="background:#1a2f4a;color:#3bc9db;border:1px solid #3bc9db;border-radius:5px;padding:6px 18px;font-family:inherit;font-size:0.8rem;cursor:pointer;">← Prev</button>
-    <button id="cl-next" onclick="clNav(1)" style="background:#1a2f4a;color:#3bc9db;border:1px solid #3bc9db;border-radius:5px;padding:6px 18px;font-family:inherit;font-size:0.8rem;cursor:pointer;">Next →</button>
-    <button id="cl-play" onclick="clPlay()" style="background:#0d1b2e;color:#f4a261;border:1px solid #f4a261;border-radius:5px;padding:6px 18px;font-family:inherit;font-size:0.8rem;cursor:pointer;">▶ Play all</button>
-    <span id="cl-dots" style="margin-left:4px;color:#4a6885;font-size:0.78rem;letter-spacing:0.12em;"></span>
+  <div class="cb-term-nav">
+    <button id="cl-prev" class="cb-btn cb-btn--nav" onclick="clNav(-1)">← Prev</button>
+    <button id="cl-next" class="cb-btn cb-btn--nav" onclick="clNav(1)">Next →</button>
+    <button id="cl-play" class="cb-btn cb-btn--play" onclick="clPlay()">▶ Play all</button>
+    <span id="cl-dots" class="cb-term-dots"></span>
   </div>
 </div>
 
