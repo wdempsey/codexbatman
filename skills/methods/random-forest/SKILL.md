@@ -20,6 +20,8 @@ related_workflow_skills:
 
 # Skill: Random Forest
 
+> **Watch first (optional, ~10 min):** StatQuest — [Random Forests Part 1: Building, Using and Evaluating](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ). Josh Starmer's visual walkthrough is the fastest way to build intuition before working through this skill. (Video by StatQuest, linked with attribution — not affiliated with this repo.)
+
 ## Purpose
 
 Teach random forests when a student needs a practical explanation of tree ensembles, nonlinearity, interactions, and why flexible models should still be compared to simpler baselines.

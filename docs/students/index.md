@@ -12,6 +12,12 @@ You use the same canonical data science workflow as practitioners. What changes 
 
 If you'd rather start with linear regression, open [First Session — Predict Housing Prices with Tutor Mode](first-session.md) — a two-gate warm-up on California Housing that feeds directly into [Linear Regression — Learning Lens](../examples/analytics-repo/learning.md).
 
+## What You Should Already Know
+
+The guided sessions assume you can read and run basic Python — variables, functions, and a rough idea of what a pandas DataFrame is. No statistics background is required; that's what tutor mode teaches.
+
+If the Python itself is the blocker, spend an evening with the free [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) (chapters 2–3: NumPy and pandas) or [Kaggle Learn](https://www.kaggle.com/learn)'s short Python and pandas courses, then come back.
+
 ## What Changes In Student Mode
 
 Student mode changes how Codex teaches, not the standards of the work. Codex asks for your attempt before giving a full answer, leads with hints before solutions, and focuses feedback on your reasoning rather than just whether the output is correct. Workflow artifacts still matter — learning includes learning disciplined process. Under the hood this uses student overlays on top of the shared workflow skills, but you don't need to memorize that structure before starting.

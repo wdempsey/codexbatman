@@ -20,6 +20,8 @@ related_workflow_skills:
 
 # Skill: Gradient Boosting
 
+> **Watch first (optional, ~10 min):** StatQuest — [Gradient Boost Part 1: Regression Main Ideas](https://www.youtube.com/watch?v=3CC4N4z3GJc). Josh Starmer's visual walkthrough is the fastest way to build intuition before working through this skill. (Video by StatQuest, linked with attribution — not affiliated with this repo.)
+
 ## Purpose
 
 Teach gradient boosting when a student needs a beginner-safe explanation of sequential error correction, strong tabular prediction, and why this method usually comes after simpler baselines.
