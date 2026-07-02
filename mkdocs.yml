@@ -53,6 +53,7 @@ nav:
   - Start Here:
     - Home: index.md
     - Quickstart: quickstart.md
+    - Setup Guide: setup/index.md
   - Roles:
     - Choose Your Role: roles/index.md
     - Students:

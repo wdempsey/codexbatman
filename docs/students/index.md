@@ -4,6 +4,8 @@
 
 ## Start Here
 
+One thing before anything else: clone the codexbatman repository and run Codex from inside it — that's where the skills, tutor mode, and your session memory live. [Quickstart Step 0](../quickstart.md) covers it in two commands.
+
 Begin with [**Basic Classification — Learning Lens**](../examples/basic-classification/learning.md). It walks you through predicting cardiac risk from clinical data — 303 patients, 7 workflow gates, one binary question: should this patient be referred for further cardiac evaluation? Codex asks for your reasoning at each step before revealing its output.
 
 You use the same canonical data science workflow as practitioners. What changes is how Codex helps you move through it — more prompting, more hints, more checks for understanding, and attempt-before-answer at every gate. You don't need to learn the whole architecture first. Start with the guided session, then come back to the workflow pages after you've seen one concrete example.
