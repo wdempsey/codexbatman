@@ -38,7 +38,7 @@ EDA without a plan produces three failure modes.
 
 <style>
 .ep-terminal{font-family:'JetBrains Mono','Courier New',monospace;font-size:0.82rem;line-height:1.65;background:#0d1b2e;border-radius:10px;padding:1.25rem 1.4rem;margin:1.4rem 0;border:1px solid #1a2f4a;}
-.ep-label{font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:#6c7a8d;margin-bottom:0.9rem;}
+.ep-label{font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:#7d90a8;margin-bottom:0.9rem;}
 .ep-q{color:#f4a261;margin-bottom:0.7rem;font-weight:600;}
 .ep-ta{width:100%;background:#0a1628;border:1px solid #1e3a5f;border-radius:6px;color:#e2e8f0;padding:0.6rem 0.8rem;font-family:inherit;font-size:0.82rem;resize:vertical;min-height:70px;box-sizing:border-box;margin-bottom:0.6rem;}
 .ep-ta:focus{outline:none;border-color:#3bc9db;}
@@ -47,12 +47,12 @@ EDA without a plan produces three failure modes.
 .ep-btn-play{background:#f4a261;color:#1a0a00;}
 .ep-btn-play:hover{background:#e8935a;}
 .ep-answer{display:none;margin-top:0.8rem;padding:0.8rem 1rem;background:#0a1e35;border-radius:6px;border-left:3px solid #a6e3a1;}
-.ep-answer-label{color:#6c7a8d;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.4rem;}
+.ep-answer-label{color:#7d90a8;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.4rem;}
 .ep-answer-text{color:#a6e3a1;white-space:pre-wrap;}
 .ep-nav{margin-top:0.8rem;display:flex;align-items:center;gap:0.5rem;}
 .ep-step{display:none;}
 .ep-step.ep-active{display:block;}
-.ep-progress{color:#6c7a8d;font-size:0.75rem;}
+.ep-progress{color:#7d90a8;font-size:0.75rem;}
 </style>
 
 <div class="ep-terminal">

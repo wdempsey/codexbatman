@@ -27,7 +27,7 @@ Be direct. I'm reviewing for a go/no-go decision, not a technical briefing.
 What you should get back:
 
 <div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.83rem;line-height:1.65;background:#0d1b2e;border-radius:10px;padding:1.25rem 1.4rem;margin:1.4rem 0;border:1px solid #1a2f4a;">
-<div style="color:#6c7a8d;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:1rem;text-transform:uppercase;">Codex · Project Status Summary</div>
+<div style="color:#7d90a8;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:1rem;text-transform:uppercase;">Codex · Project Status Summary</div>
 <div style="color:#f4a261;margin-bottom:1rem;white-space:pre-wrap;"><strong style="color:#e2e8f0;">Decision:</strong> Cardiology referral triage. Given 13 clinical features measured post-stress-test, predict whether a patient has heart disease (binary) to flag them for further evaluation.
 
 <strong style="color:#e2e8f0;">Prediction time:</strong> Explicitly defined — post-stress-test. All 13 features including exang, oldpeak, and thal are available. Leakage review complete.
@@ -132,7 +132,7 @@ Run all three independently. Do not let the critics respond to each other. Then 
 ### What comes back
 
 <div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.83rem;line-height:1.65;background:#0d1b2e;border-radius:10px;padding:1.25rem 1.4rem;margin:1.4rem 0;border:1px solid #1a2f4a;">
-<div style="color:#6c7a8d;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:1rem;text-transform:uppercase;">Codex · Analysis Plan Council</div>
+<div style="color:#7d90a8;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:1rem;text-transform:uppercase;">Codex · Analysis Plan Council</div>
 <div style="color:#cbd5e1;margin-bottom:1rem;white-space:pre-wrap;"><strong style="color:#e2e8f0;">Skeptic:</strong> The decision context (referral triage) is clear, but the population scope is buried in a footnote. If a referring physician asks "who does this model apply to?" the answer needs to be in the problem frame, not the data card.
 
 <strong style="color:#e2e8f0;">Methodologist:</strong> ROC-AUC is appropriate for model selection. The stratified 80/20 split is correct given class imbalance. Issue: the analysis plan doesn't state whether preprocessing will happen inside the CV fold or before it. This needs to be explicit.
