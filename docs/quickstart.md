@@ -10,6 +10,19 @@ By the end of this page you'll have Codex installed, a clear mental model of how
 
 ---
 
+## Step 0 — Get the repo
+
+Everything this site describes — the workflow skills, tutor mode, student memory, `/wrap` — lives in the codexbatman repository. Codex only finds it when you launch from inside the repo folder. Clone it first:
+
+```bash
+git clone https://github.com/wdempsey/codexbatman.git
+cd codexbatman
+```
+
+Every session that follows starts from this folder. If you skip this step, Codex runs as a plain assistant with none of the structure below. New to git or the terminal? The [setup guide](setup/index.md) walks through it step by step.
+
+---
+
 ## Step 1 — Install Codex
 
 <style>
