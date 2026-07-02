@@ -20,6 +20,8 @@ related_workflow_skills:
 
 # Skill: Lasso
 
+> **Watch first (optional, ~10 min):** StatQuest — [Regularization Part 2: Lasso (L1) Regression](https://www.youtube.com/watch?v=NGf0voTMlcs). Josh Starmer's visual walkthrough is the fastest way to build intuition before working through this skill. (Video by StatQuest, linked with attribution — not affiliated with this repo.)
+
 ## Purpose
 
 Teach lasso when a student needs to understand sparsity, feature selection intuition, and how lasso differs from ridge.

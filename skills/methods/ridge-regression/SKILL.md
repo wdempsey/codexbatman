@@ -20,6 +20,8 @@ related_workflow_skills:
 
 # Skill: Ridge Regression
 
+> **Watch first (optional, ~10 min):** StatQuest — [Regularization Part 1: Ridge (L2) Regression](https://www.youtube.com/watch?v=Q81RR3yKn30). Josh Starmer's visual walkthrough is the fastest way to build intuition before working through this skill. (Video by StatQuest, linked with attribution — not affiliated with this repo.)
+
 ## Purpose
 
 Teach ridge regression as the first regularized extension of linear regression when a student needs to understand shrinkage, stability, and the bias-variance tradeoff.

@@ -20,14 +20,17 @@ The [Skill Library](../setup/skill-reference.md) has two sections that matter he
 
 ## The chapter map
 
-| ISLR Chapter | Topic | Codexbatman Skill |
-|---|---|---|
-| Ch. 3 | Linear Regression | `linear-regression` |
-| Ch. 5 | Resampling — cross-validation, bootstrap | `cross-validation` |
-| Ch. 6 | Regularization — ridge, lasso, elastic net | `ridge-regression`, `lasso` |
-| Ch. 8 | Tree-based methods — random forests, boosting | `random-forest`, `gradient-boosting` |
+| ISLR Chapter | Topic | Codexbatman Skill | StatQuest video |
+|---|---|---|---|
+| Ch. 3 | Linear Regression | `linear-regression` | [Linear Regression, Clearly Explained](https://www.youtube.com/watch?v=nk2CQITm_eo) |
+| Ch. 4 | Classification — logistic regression, ROC | *not yet built — taught inline* | [Logistic Regression](https://www.youtube.com/watch?v=yIYKR4sgzI8) · [ROC and AUC](https://www.youtube.com/watch?v=4jRBRDbJemM) |
+| Ch. 5 | Resampling — cross-validation, bootstrap | `cross-validation` | [Cross Validation](https://www.youtube.com/watch?v=fSytzGwwBVw) |
+| Ch. 6 | Regularization — ridge, lasso, elastic net | `ridge-regression`, `lasso` | [Ridge (L2)](https://www.youtube.com/watch?v=Q81RR3yKn30) · [Lasso (L1)](https://www.youtube.com/watch?v=NGf0voTMlcs) |
+| Ch. 8 | Tree-based methods — random forests, boosting | `random-forest`, `gradient-boosting` | [Random Forests Pt 1](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ) · [Gradient Boost Pt 1](https://www.youtube.com/watch?v=3CC4N4z3GJc) |
 
-Chapters 4, 7, 9, 12 (classification basics, splines, SVMs, unsupervised) are mapped in the skill but method skills for them are not yet built. When Codex encounters one of these chapters, it will explain the concept inline rather than routing to a dedicated skill.
+Chapters 7, 9, 12 (splines, SVMs, unsupervised) are mapped in the skill but method skills for them are not yet built. When Codex encounters one of these chapters — or Chapter 4, whose classification methods sit on the primary student path — it will explain the concept inline rather than routing to a dedicated skill.
+
+The videos are by [StatQuest with Josh Starmer](https://statquest.org/) — free on YouTube, linked here with attribution (not affiliated with this repo). The full topic index is at [statquest.org/video-index](https://statquest.org/video-index/). Watching the video *before* the workflow gate is the fastest way to build intuition; the ISLR chapter is the reference you go back to.
 
 ---
 
@@ -128,6 +131,14 @@ You don't get a standalone lecture that floats free of the project. You get an e
 Methods without a dedicated skill (ISLR Ch. 4, 7, 9, 12) are taught inline when they come up, without the structured skill scaffolding. If you want to add a method skill for one of these, see [Building Skills](building-skills.md).
 
 ---
+
+## More free resources
+
+ISLR is the canonical anchor, but three other free resources cover gaps it doesn't:
+
+- [**Python Data Science Handbook**](https://jakevdp.github.io/PythonDataScienceHandbook/) (Jake VanderPlas) — if the *Python itself* is what's blocking you (NumPy, pandas, sklearn basics), not the statistics. Chapters 2–3 cover NumPy and pandas; chapter 5 covers the sklearn patterns these workflows use. Free online; text CC-BY-NC-ND, code MIT.
+- [**Causal Inference: The Mixtape**](https://mixtape.scunning.com/) (Scott Cunningham) — when a project raises a *why* question instead of a *what* question. Prediction models don't answer causal questions; chapters 1–4 explain the potential-outcomes framing. Free official web edition, Yale University Press.
+- [**The Elements of Statistical Learning**](https://hastie.su.domains/ElemStatLearn/) (Hastie, Tibshirani, Friedman) — the theory-depth companion to ISLR, for when the ISLR chapter feels too gentle. Free PDF from the authors' site.
 
 ## See also
 

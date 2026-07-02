@@ -18,6 +18,8 @@ role_compatibility:
 
 # Skill: Cross-Validation
 
+> **Watch first (optional, ~10 min):** StatQuest — [Machine Learning Fundamentals: Cross Validation](https://www.youtube.com/watch?v=fSytzGwwBVw). Josh Starmer's visual walkthrough is the fastest way to build intuition before working through this skill. (Video by StatQuest, linked with attribution — not affiliated with this repo.)
+
 ## Purpose
 
 Teach cross-validation when a student uses training error to judge a model or needs a principled way to compare models without touching the test set.

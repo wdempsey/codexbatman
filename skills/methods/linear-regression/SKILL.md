@@ -20,6 +20,8 @@ related_workflow_skills:
 
 # Skill: Linear Regression
 
+> **Watch first (optional, ~10 min):** StatQuest — [Linear Regression, Clearly Explained!!!](https://www.youtube.com/watch?v=nk2CQITm_eo). Josh Starmer's visual walkthrough is the fastest way to build intuition before working through this skill. (Video by StatQuest, linked with attribution — not affiliated with this repo.)
+
 ## Purpose
 
 Teach linear regression as the simplest serious baseline for predicting a continuous outcome.
