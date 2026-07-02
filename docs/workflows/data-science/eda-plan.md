@@ -157,7 +157,7 @@ function epPlayAll(){
 
 ## In the basic-classification example
 
-The EDA for the cardiac risk project is in [Basic Classification — Practitioner Lens](../../examples/basic-classification/practitioner.md). The three scoped questions from the EDA plan are answered in sequence: feature-target associations, correlation structure among the stress-test features, and sex-stratified subgroup analysis. The output feeds directly into the analysis plan's feature selection rationale.
+The EDA for the cardiac risk project is in [Basic Classification — Execution Lens](../../examples/basic-classification/execution.md). The three scoped questions from the EDA plan are answered in sequence: feature-target associations, correlation structure among the stress-test features, and sex-stratified subgroup analysis. The output feeds directly into the analysis plan's feature selection rationale.
 
 ---
 
