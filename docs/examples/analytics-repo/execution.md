@@ -9,7 +9,7 @@ Same project as the learning lens — California Housing, median house value pre
 ## What a practitioner session looks like
 
 <div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.84rem;line-height:1.6;background:#0d1b2e;border-radius:10px;padding:1.2rem 1.4rem;margin:1.5rem 0;border:1px solid #1a2f4a;">
-<div style="color:#6c7a8d;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.8rem;">California Housing — Practitioner Session</div>
+<div style="color:#7d90a8;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.8rem;">California Housing — Practitioner Session</div>
 <div style="color:#3bc9db;margin-bottom:0.3rem;">$ codex run problem_frame.md --skill problem-framing --mode practitioner</div>
 <div style="color:#a6e3a1;margin-bottom:1rem;">Decision: housing agency program prioritization<br>
 Target: MedHouseVal (continuous, per census tract)<br>

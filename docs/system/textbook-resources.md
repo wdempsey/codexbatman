@@ -81,7 +81,7 @@ The method skill handles the teaching. The workflow skill handles the execution.
 You're at the modeling gate for a regression project. Codex suggests using k-fold cross-validation instead of a single train/test split. You haven't seen this before.
 
 <div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.83rem;line-height:1.65;background:#0d1b2e;border-radius:10px;padding:1.25rem 1.4rem;margin:1.4rem 0;border:1px solid #1a2f4a;">
-<div style="color:#6c7a8d;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:0.9rem;text-transform:uppercase;">Tutor Mode — Modeling Gate</div>
+<div style="color:#7d90a8;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:0.9rem;text-transform:uppercase;">Tutor Mode — Modeling Gate</div>
 
 <div style="margin-bottom:0.9rem;">
 <div style="color:#3bc9db;margin-bottom:0.3rem;">Codex</div>

@@ -32,7 +32,7 @@ Every session that follows starts from this folder. If you skip this step, Codex
   border:1px solid var(--md-default-fg-color--lightest);
   background:transparent; color:var(--md-default-fg-color);
   cursor:pointer; font-family:inherit; font-size:0.88rem;
-  transition:background 150ms ease, color 150ms ease, border-color 150ms ease;
+  transition:background 180ms cubic-bezier(0.2,0,0,1), color 180ms cubic-bezier(0.2,0,0,1), border-color 180ms cubic-bezier(0.2,0,0,1);
 }
 .qs-tab:hover { border-color:var(--md-accent-fg-color); }
 .qs-tab.qs-active {
@@ -48,9 +48,13 @@ Every session that follows starts from this folder. If you skip this step, Codex
   border-radius:9px; padding:1rem 1.2rem;
   margin:0.5rem 0 0.9rem; border:1px solid #1a2f4a;
   white-space:pre;
+  max-width:100%; overflow-x:auto;
 }
 .qs-cmd .qs-prompt { color:#3bc9db; user-select:none; }
 .qs-note { font-size:0.83rem; color:var(--md-default-fg-color--light); margin-top:0.2rem; }
+@media (max-width:600px) {
+  .qs-compare { grid-template-columns:1fr !important; }
+}
 </style>
 
 <div>
@@ -114,7 +118,7 @@ When you launch Codex it starts in **Default mode** — it proposes changes and 
 
 Codex isn't a chatbot you prompt casually. It's a workflow executor — it runs structured prompt patterns (called **skills**) that enforce analysis gates and produce artifact outputs. Here's the difference:
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0 1.6rem;">
+<div class="qs-compare" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0 1.6rem;">
   <div>
     <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--md-default-fg-color--light);margin-bottom:0.5rem;">Without structure</div>
     <pre style="margin:0;font-size:0.82rem;color:var(--md-default-fg-color--light);background:color-mix(in srgb,var(--md-default-bg-color) 96%,#888 4%);padding:0.85rem 1rem;border-radius:8px;border:1px solid var(--md-default-fg-color--lightest);white-space:pre-wrap;font-family:'JetBrains Mono','Courier New',monospace;">"Run a regression on this dataset."</pre>

@@ -49,7 +49,7 @@ Before sign-off, it's worth running a structured challenge on the analysis — n
 These three critics run in parallel — they don't debate each other, they each produce a punch list. The data scientist synthesizes the findings into model card updates before the program director signs off.
 
 <div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.82rem;line-height:1.6;background:#0d1b2e;border-radius:10px;padding:1.2rem 1.4rem;margin:1.5rem 0;border:1px solid #1a2f4a;">
-<div style="color:#6c7a8d;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.8rem;">Copyable prompt — council of critics</div>
+<div style="color:#7d90a8;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.8rem;">Copyable prompt — council of critics</div>
 <div style="color:#f4a261;white-space:pre-wrap;">Review the model card and analysis plan for this regression model.
 Run three parallel critics. Each works independently — no cross-debate.
 
@@ -71,7 +71,7 @@ Then synthesize: what are the top 2 fixes before sign-off?</div>
 ## Example synthesis output
 
 <div style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.82rem;line-height:1.6;background:#0d1b2e;border-radius:10px;padding:1.2rem 1.4rem;margin:1.5rem 0;border:1px solid #1a2f4a;">
-<div style="color:#6c7a8d;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.8rem;">Codex synthesis</div>
+<div style="color:#7d90a8;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.8rem;">Codex synthesis</div>
 <div style="color:#a6e3a1;white-space:pre-wrap;">Top 2 fixes before sign-off:
 
 1. Add temporal validity statement to problem_frame.md and model card
