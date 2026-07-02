@@ -4,8 +4,8 @@ This section takes you from zero to a working Codex setup for this repository.
 
 If you only do one thing after setup, start one concrete path instead of browsing:
 
-- students: [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md)
-- practitioners: [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md)
+- students: [Basic Classification — Learning Lens](../examples/basic-classification/learning.md)
+- practitioners: [Linear Regression — Execution Lens](../examples/analytics-repo/execution.md)
 - managers: [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)
 
 ## What This Setup Path Covers
@@ -49,9 +49,9 @@ Read [How Codex Modes Work](modes.md) for the basic interaction model.
 
 ### Step 5: Start One Concrete Path
 
-- If you are learning, start with [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md). This is the primary student starting point.
+- If you are learning, start with [Basic Classification — Learning Lens](../examples/basic-classification/learning.md). This is the primary student starting point.
 - If you want a shorter warm-up before the repo example, open [First Session - Predict Housing Prices with Tutor Mode](../students/first-session.md) first.
-- If you are executing a real project, start with [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md).
+- If you are executing a real project, start with [Linear Regression — Execution Lens](../examples/analytics-repo/execution.md).
 
 ## Learn and Browse
 

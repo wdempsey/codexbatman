@@ -53,7 +53,7 @@ The point is that another analyst can see what has already been tried and what s
 
 ## If You Want A Real Repo Example
 
-Open [Analytics Repo Example - Practitioner Path](../examples/analytics-repo/practitioner.md).
+Open [Linear Regression — Execution Lens](../examples/analytics-repo/execution.md).
 
 That page shows the intended shorter practitioner sequence for the same housing-price project backbone used in the student path.
 

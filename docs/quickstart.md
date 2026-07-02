@@ -79,7 +79,7 @@ function qsOs(id, btn) {
 }
 </script>
 
-<p style="font-size:0.83rem;color:var(--md-default-fg-color--light);margin-top:0.75rem;">New to Terminal or never used npm? See the step-by-step guides: <a href="toolkit/install-mac.md">macOS install guide</a> · <a href="toolkit/install-windows.md">Windows install guide</a></p>
+<p style="font-size:0.83rem;color:var(--md-default-fg-color--light);margin-top:0.75rem;">New to Terminal or never used npm? See the step-by-step guides: <a href="../toolkit/install-mac/">macOS install guide</a> · <a href="../toolkit/install-windows/">Windows install guide</a></p>
 
 ---
 
@@ -183,17 +183,17 @@ The exchange continues the same way through data audit, split strategy, baseline
 Pick the path that matches your role.
 
 <div class="decision-grid" style="margin-top:1rem;">
-  <a href="examples/analytics-repo/student.md" class="decision-card">
+  <a href="../examples/basic-classification/learning/" class="decision-card">
     <span class="decision-label">Student</span>
     <span class="decision-action">Attempt before answer</span>
-    <span class="decision-desc">Tutor mode — Codex asks for your reasoning before revealing the output. Best for building intuition alongside the artifact. Includes an interactive 8-step demo.</span>
+    <span class="decision-desc">Tutor mode — Codex asks for your reasoning before revealing the output. Best for building intuition alongside the artifact. Includes an interactive demo at every gate.</span>
   </a>
-  <a href="examples/analytics-repo/practitioner.md" class="decision-card">
+  <a href="../examples/analytics-repo/execution/" class="decision-card">
     <span class="decision-label">Researcher / Data Scientist</span>
     <span class="decision-action">Direct execution</span>
-    <span class="decision-desc">Practitioner mode — same eight gates, Codex executes directly and expects artifact-quality output. Faster, less hand-holding.</span>
+    <span class="decision-desc">Practitioner mode — same gates, Codex executes directly and expects artifact-quality output. Faster, less hand-holding.</span>
   </a>
-  <a href="workflows/manager/lab-manager-agent.md" class="decision-card">
+  <a href="../workflows/manager/lab-manager-agent/" class="decision-card">
     <span class="decision-label">Manager</span>
     <span class="decision-action">Coordinate and oversee</span>
     <span class="decision-desc">Lab manager mode — use Codex to track project state across a team, review gate artifacts, and flag when a project needs attention.</span>

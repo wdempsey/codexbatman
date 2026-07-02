@@ -198,8 +198,8 @@ Start with problem-framing. Ask for my reasoning before each gate output.
 
 **Interaction terms.** MedInc × HouseAge might capture neighborhoods where old housing stock is in high-income areas (a different market from old housing in low-income areas). Not covered here — the analysis plan flags it as a next-step hypothesis.
 
-**The causal question.** This model predicts house values, it doesn't explain them. If the housing agency wants to know whether investing in neighborhood amenities *causes* higher property values, that's a causal inference question — see the [causal inference example](../causal-inference/index.md) when it's available.
+**The causal question.** This model predicts house values, it doesn't explain them. If the housing agency wants to know whether investing in neighborhood amenities *causes* higher property values, that's a causal inference question. A worked causal example for this site is planned — until it ships, start with [*Causal Inference: The Mixtape*](https://mixtape.scunning.com/) (Scott Cunningham, Yale University Press — free online): chapters 1–4 cover the potential-outcomes framing this question needs.
 
 ---
 
-*Previous example: [Basic Classification](../basic-classification/index.md) · Next: [Causal Inference](../causal-inference/index.md) (coming soon)*
+*Previous example: [Basic Classification](../basic-classification/index.md) · Next: causal inference (coming soon — meanwhile, [The Mixtape](https://mixtape.scunning.com/) is free online)*

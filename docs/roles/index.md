@@ -33,27 +33,27 @@ If you are overwhelmed, do not read the whole site. Pick one role page and follo
 ## Quick Decision Guide
 
 <div class="decision-grid">
-  <a class="decision-card" href="../examples/analytics-repo/student.md">
+  <a class="decision-card" href="../examples/basic-classification/learning/">
     <span class="decision-label">Learning</span>
-    <span class="decision-action">Analytics Repo — Student Path</span>
+    <span class="decision-action">Basic Classification — Learning Lens</span>
     <span class="decision-desc">Start here if you want a guided, attempt-before-answer walkthrough</span>
   </a>
-  <a class="decision-card" href="../workflows/data-science/index.md">
+  <a class="decision-card" href="../workflows/data-science/">
     <span class="decision-label">Executing</span>
     <span class="decision-action">Core Data Science Workflow</span>
     <span class="decision-desc">Start here if you're running a real analysis and want workflow gates</span>
   </a>
-  <a class="decision-card" href="../workflows/manager/lab-manager-agent.md">
+  <a class="decision-card" href="../workflows/manager/lab-manager-agent/">
     <span class="decision-label">Coordinating</span>
     <span class="decision-action">Lab Manager Agent</span>
     <span class="decision-desc">Start here if you're tracking a lab or project portfolio</span>
   </a>
-  <a class="decision-card" href="../examples/index.md">
+  <a class="decision-card" href="../examples/">
     <span class="decision-label">Exploring</span>
     <span class="decision-action">Examples</span>
     <span class="decision-desc">See the system in practice before committing to a path</span>
   </a>
-  <a class="decision-card" href="../setup/skill-reference.md">
+  <a class="decision-card" href="../setup/skill-reference/">
     <span class="decision-label">Skills</span>
     <span class="decision-action">Skill Library</span>
     <span class="decision-desc">Find reusable workflow skills and overlays</span>
@@ -64,7 +64,7 @@ If you are overwhelmed, do not read the whole site. Pick one role page and follo
 
 ### Students
 
-1. [Analytics Repo Example - Student Path](../examples/analytics-repo/student.md)
+1. [Basic Classification — Learning Lens](../examples/basic-classification/learning.md)
 2. [Student First Session](../students/first-session.md)
 3. [Core Data Science Workflow](../workflows/data-science/index.md)
 

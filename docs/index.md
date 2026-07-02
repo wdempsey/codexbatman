@@ -135,7 +135,7 @@ social:
           <div>
             <h3>Student Workflow Artifact</h3>
             <p>This file proves the learner framed the problem before touching the model — and gives them something real to resume from next session.</p>
-            <p><a href="examples/analytics-repo/student/">Open the student repo example</a></p>
+            <p><a href="examples/analytics-repo/learning/">Open the student repo example</a></p>
           </div>
         </article>
 
@@ -153,7 +153,7 @@ social:
           <div>
             <h3>Practitioner Workflow Artifact</h3>
             <p>What was tried, what's winning so far, and what happens next — in a file another analyst can read without reopening the chat.</p>
-            <p><a href="examples/analytics-repo/practitioner/">Open the practitioner repo example</a></p>
+            <p><a href="examples/analytics-repo/execution/">Open the practitioner repo example</a></p>
           </div>
         </article>
 
