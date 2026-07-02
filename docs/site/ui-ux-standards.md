@@ -145,9 +145,18 @@ The site voice is second-person, direct, and warm. See `skills/site-voice/SKILL.
 - "Where to go next" sections: one or two links with a sentence of context, not a link dump
 - Avoid these headers: "Role Summary", "This path is for you if...", "Overview", "What Each Page Is For"
 
+## Design Decisions (July 2026 Warm Editorial Pass)
+
+The site's soft direction is guided by two references: the maintainer's digital garden ([wdempsey/digitalrandomforest](https://github.com/wdempsey/digitalrandomforest), see its `QUARTZ_DESIGN_TARGET.md` — warm paper palette, quiet chrome, reading comfort first) and [pi.dev](https://pi.dev/) (calm, copy-first, terminals as the single dark flourish). Decisions in effect:
+
+- **Warm paper light scheme**: light mode uses the garden palette — background `#f8f4ec`, ink `#2f2b27`, borders `#e6dfd3`, links `#776657`, accent `#6f5b46`, warm dark-brown header `#3d362e` — defined as variable overrides in the "Warm Editorial Restyle" block of `extra.css`. This supersedes "light sections keep indigo" from the June 2026 pass. The slate (dark) scheme is unchanged.
+- **Terminals stay dark**: demo widgets keep the navy terminal palette deliberately — on a soft page the terminal is the one dark flourish, per pi.dev. Light-mode shadow and border are softened so widgets sit calmly on paper.
+- **Serif headings, sans body**: Fraunces now extends through h3. Body stays DM Sans; code stays JetBrains Mono.
+- **What "soft" means here**: prefer warmth in color, calm in motion, and generosity in whitespace over new decorative elements. When in doubt, consult the garden's avoid-list: nothing that reads as dashboard, SaaS UI, or heavy developer styling on light surfaces.
+
 ## Design Decisions (June 2026 Pass)
 
-These decisions are in effect and should not be reversed without cause:
+These decisions are in effect and should not be reversed without cause (the July 2026 pass above supersedes the light-section indigo rule only):
 
 - **Amber CTAs on dark sections**: `#f4a261` fill, `#1a0a00` text, `#e8914f` hover — applies to `.hf-hero`, `.hf-section--dark`, `.hf-section--connect` only. Light sections keep indigo.
 - **Bubble hover**: `180ms cubic-bezier(0.2, 0, 0, 1)` — snappier than the default `220ms ease`
