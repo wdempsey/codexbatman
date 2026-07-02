@@ -172,7 +172,7 @@ function mdPlayAll(){
 
 ## In the basic-classification example
 
-The full modeling run for the cardiac risk project is in [Basic Classification — Practitioner Lens](../../examples/basic-classification/practitioner.md): baseline logistic regression, random forest comparison, the preprocessing-inside-the-fold pipeline, and the experiment log entry documenting the model selection rationale.
+The modeling walkthrough for the cardiac risk project is in [Basic Classification — Execution Lens](../../examples/basic-classification/execution.md): baseline logistic regression, random forest comparison, the preprocessing-inside-the-fold pipeline, and the experiment log entry documenting the model selection rationale.
 
 ---
 

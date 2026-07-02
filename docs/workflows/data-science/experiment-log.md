@@ -198,7 +198,7 @@ function elPlayAll(){
 
 ## In the basic-classification example
 
-The experiment log for the cardiac risk project is in [Basic Classification — Practitioner Lens](../../examples/basic-classification/practitioner.md). It shows the full run sequence: baseline logistic regression, random forest comparison, chol-exclusion test, and the final evaluation entry with the held-out performance and the decision note pointing to `decision_log.md`.
+The experiment log for the cardiac risk project is in [Basic Classification — Execution Lens](../../examples/basic-classification/execution.md). It shows the run sequence: baseline logistic regression, random forest comparison, chol-exclusion test, and the final evaluation entry with the held-out performance and the decision note pointing to `decision_log.md`.
 
 ---
 

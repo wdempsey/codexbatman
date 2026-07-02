@@ -79,5 +79,5 @@ The repo is review-ready when a manager can open `PROJECT_STATE.md` and answer: 
 
 - [Learning lens →](learning.md) — same project with attempt-before-answer coaching
 - [Manager lens →](manager.md) — how a clinical stakeholder reviews these artifacts
-- [Analytics Repo Example — Practitioner Path](../analytics-repo/practitioner.md) — the regression counterpart
+- [Linear Regression — Execution Lens](../analytics-repo/execution.md) — the regression counterpart
 - [Core Data Science Workflow](../../workflows/data-science/index.md)

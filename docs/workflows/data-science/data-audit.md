@@ -164,7 +164,7 @@ function daPlayAll(){
 
 ## In the basic-classification example
 
-The data card for the cardiac risk project is produced at this gate. See [Basic Classification — Practitioner Lens](../../examples/basic-classification/practitioner.md) for the full data audit session, including the missingness decision for `ca` and `thal`, the leakage review against the post-stress-test prediction time anchor, and the resulting `data_card.md`.
+The data card for the cardiac risk project is produced at this gate. See [Basic Classification — Execution Lens](../../examples/basic-classification/execution.md) for the practitioner-paced data audit session, including the missingness decision for `ca` and `thal`, the leakage review against the post-stress-test prediction time anchor, and the resulting `data_card.md`.
 
 ---
 

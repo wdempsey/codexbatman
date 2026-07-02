@@ -153,7 +153,7 @@ function evPlayAll(){
 
 ## In the basic-classification example
 
-The full evaluation for the cardiac risk project is in [Basic Classification — Practitioner Lens](../../examples/basic-classification/practitioner.md), including the confusion matrix at threshold 0.5, the sex-stratified performance check, and the limitations section of the model card.
+The evaluation walkthrough for the cardiac risk project is in [Basic Classification — Execution Lens](../../examples/basic-classification/execution.md), including the confusion matrix at threshold 0.5, the sex-stratified performance check, and the limitations section of the model card.
 
 ---
 
