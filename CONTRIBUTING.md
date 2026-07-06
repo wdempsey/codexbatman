@@ -79,16 +79,22 @@ Update the "current as of" date when you make substantive changes.
 
 ## Adding a New Skill to the Library
 
-1. **Sanitize the skill** (see Sanitization Checklist below)
-2. Save the generic version to `skills/[skill-name].md`
-3. Add a section to `docs/toolkit/skill-library.md` following the existing format:
-   - What it does
-   - MCP dependencies
-   - Installation instructions
-   - Full skill file in a code block
-   - Customization points
-4. Update `mkdocs.yml` if adding a new page (not needed if just adding to skill-library.md)
-5. Commit and push
+Folder-based `SKILL.md` directories are the canonical format for new
+repository-native skills. Command-style markdown skills remain only for legacy
+compatibility.
+
+1. Normalize the proposal to [`SKILL-STYLE.md`](SKILL-STYLE.md).
+2. Place it in exactly one default cell in
+   [`CAPABILITY-MATRIX.md`](CAPABILITY-MATRIX.md).
+3. If that cell is occupied, evaluate the proposal and incumbent skill(s)
+   against shared tasks before admitting a duplicate capability.
+4. Keep the winner, merge the useful parts, or reject the proposal.
+5. Update `skills/METADATA.md` only when the metadata schema or allowed values
+   need to change.
+6. Run the sanitization checklist below before pushing.
+
+Use `docs/setup/skill-reference.md` for the public catalog. Do not create a
+second catalog page for the same skill family.
 
 ---
 

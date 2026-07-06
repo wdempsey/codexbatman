@@ -1,6 +1,16 @@
 # Planning
 
-Last updated: 2026-06-17
+Last updated: 2026-07-06
+
+## Active: Skill Intake And Capability Matrix
+
+- [x] Add `SKILL-STYLE.md` as the authoring and verification guide for folder-based skills.
+- [x] Add `CAPABILITY-MATRIX.md` as the role x task-type intake map for current `SKILL.md` files.
+- [x] Update skill metadata guidance to point to the new intake sources.
+- [ ] Run PR-1 flow audit for trigger collisions, progressive disclosure gaps, and identity-loader enforcement.
+- [ ] Normalize legacy role aliases such as `practitioner` to `data scientist` in skill frontmatter.
+- [ ] Decide which command-style markdown skills should migrate, archive, or remain as compatibility files.
+- [ ] Add eval-task scaffolding before admitting new skill imports.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
