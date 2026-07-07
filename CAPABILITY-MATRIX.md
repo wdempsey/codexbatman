@@ -33,7 +33,9 @@ The repository's product roles remain:
 
 This matrix adds one repository-maintainer lane for skills whose default user is
 the person maintaining the operating system itself rather than one of the three
-product roles.
+product roles. This lane is intentional: some skills are foundation capabilities
+that support all three product lanes by keeping the repository, site, and skill
+system coherent.
 
 ## Task-Type Vocabulary
 
@@ -106,8 +108,9 @@ future intake PR should run comparative evals before admitting another skill.
 
 The matrix covers folder-based `SKILL.md` files only. The repository still
 contains command-style markdown skills and support files. They remain for
-compatibility until a later cleanup PR decides whether each should be migrated,
-archived, or left as a support file.
+compatibility while migration happens gradually. Each migration, archive, or
+keep decision should be tracked in `planning.md` or the relevant PR summary so
+legacy surface area does not become invisible.
 
 Legacy review candidates:
 
@@ -132,7 +135,7 @@ The current inventory predates this matrix. Future cleanup PRs should normalize:
 
 - `skills/resources/islr/SKILL.md` uses `category: resources`; this category
   should remain explicit in `skills/METADATA.md`.
-- `skills/site-voice/SKILL.md` has frontmatter but lacks `category`, `status`,
-  `stage`, and `role_compatibility`.
+- PR-1 should normalize `skills/site-voice/SKILL.md`; it has frontmatter but
+  lacks `category`, `status`, `stage`, and `role_compatibility`.
 - Some software-team skills list `practitioner` as a role alias. New skills
   should use `data scientist`; cleanup can normalize aliases later.

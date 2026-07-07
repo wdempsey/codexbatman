@@ -17,7 +17,7 @@ The repository has completed the first major architecture and docs wave:
 
 The site is now coherent enough to audit seriously, but it still needs a stronger newcomer path, clearer proof artifacts, and a tighter UI pass.
 
-As of 2026-07-06, skill-system work is moving through the intake sequence
+As of 2026-07-07, skill-system work is moving through the intake sequence
 defined by `SKILL-STYLE.md` and `CAPABILITY-MATRIX.md`. Use those files before
 adding, importing, or deduplicating folder-based skills.
 
@@ -29,9 +29,10 @@ Focus:
 
 - trigger collisions across roles
 - progressive-disclosure gaps in existing `SKILL.md` files
+- `site-voice` frontmatter normalization
 - `/ask-codexbatman` routing skill design
 - student identity-loader enforcement
-- legacy command-style skill cleanup decisions
+- gradual command-style skill migration tracking
 
 ## Highest-Priority Next PRs
 
