@@ -5,7 +5,6 @@ category: data-science
 status: active
 role_compatibility:
   - data scientist
-  - practitioner
 ---
 
 # Skill: Zoom Out

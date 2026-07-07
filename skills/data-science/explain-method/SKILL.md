@@ -1,6 +1,6 @@
 ---
 name: explain-method
-description: Zoom out and explain why a modeling method fits the current problem — assumptions, when it breaks, what the alternatives are, and why this one was chosen over them. Use in tutor mode when a student asks why a method is being used, when a practitioner needs to justify a choice in a model card, or when a method has been applied without documenting its rationale. Adapted from Matt Pocock's zoom-out pattern for data science method selection.
+description: Zoom out and explain why a modeling method fits the current problem — assumptions, when it breaks, what the alternatives are, and why this one was chosen over them. Use in tutor mode when a student asks why a method is being used, when a data scientist needs to justify a choice in a model card, or when a method has been applied without documenting its rationale. Adapted from Matt Pocock's zoom-out pattern for data science method selection.
 category: data-science
 status: active
 stage: modeling

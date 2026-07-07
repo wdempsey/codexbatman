@@ -22,6 +22,7 @@ See [Core Data Science Workflow](../workflows/data-science/index.md) for the nar
 
 These overlays change delivery style without replacing canonical workflow logic.
 
+- Router: [`ask-codexbatman`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/ask-codexbatman) chooses the role, overlay, and workflow when the next step is ambiguous
 - Student overlays: [`tutor-mode`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/student/tutor-mode), [`hint-ladder`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/student/hint-ladder), [`misconception-diagnosis`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/student/misconception-diagnosis), [`exercise-generator`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/student/exercise-generator)
 - Practitioner overlays: [`execution-mode`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/practitioner/execution-mode), [`artifact-enforcer`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/practitioner/artifact-enforcer)
 - Manager overlays: [`executive-summary`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/manager/executive-summary), [`project-tracker`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/manager/project-tracker), [`communication-workflows`](https://github.com/wdempsey/codexbatman/tree/main/skills/overlays/manager/communication-workflows)
@@ -49,7 +50,6 @@ See [Project Management](../workflows/project-management.md), [Managing Data Sci
 
 The repository also contains additional reusable data science skills that can plug into specific projects:
 
-- [`causal-design-check`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
 - [`causal-design-check`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
 - [`debug-analysis-notebook`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-analysis-notebook): diagnose notebook execution errors without destructive rewrites
 - [`debug-model-failure`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-model-failure): systematic loop for semantic model failures — code runs but results are wrong; reproduce → minimise → hypothesise → fix
@@ -101,6 +101,7 @@ See [Core ML Pack](core-ml-pack.md) for the repository-facing overview.
 
 These skills help future Codex sessions improve the documentation site without overbuilding it.
 
+- [`site-voice`](https://github.com/wdempsey/codexbatman/tree/main/skills/site-voice): apply the repository's direct, warm, technically precise site voice to docs pages and navigation copy
 - [`ui-ux-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/site/ui-ux-review): review one page at a time for page purpose, audience, hierarchy, copy density, and next-action clarity
 - [`navigation-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/site/navigation-review): review `mkdocs.yml`, section naming, orphan pages, and cross-links among major site sections
 - [`visual-polish-pass`](https://github.com/wdempsey/codexbatman/tree/main/skills/site/visual-polish-pass): apply restrained Material-native polish after structure and content are already in place

@@ -110,8 +110,8 @@ Use only these role strings:
 - `data scientist`
 - `data science manager`
 
-Legacy note: a few existing skills still use `practitioner` as an alias for
-`data scientist`. New or normalized skills should use `data scientist`.
+Legacy note: older docs may still use `practitioner` as audience language.
+Folder-based skill frontmatter should use `data scientist`.
 
 ### Method metadata conventions
 

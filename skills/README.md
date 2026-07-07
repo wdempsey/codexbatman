@@ -29,7 +29,7 @@ New or adapted folder-based skills must follow the root-level intake process:
 - `manager/` = project management, communication, and coordination workflows
 - `methods/` = tutoring-oriented method explainers used by the tutor overlay to teach algorithms and statistical or ML concepts when a student has a knowledge gap
 - `packs/` = reusable skill bundles that support a workflow family with checks, sub-workflows, and templates
-- `overlays/` = role-aware wrappers for delivery style
+- `overlays/` = role-aware wrappers for delivery style and cross-lane routing
 
 ## Recommended Usage
 
@@ -38,6 +38,8 @@ Normal use is repo-native.
 Users clone the repository and open it in Codex. Folder-based skills are intended to be read and executed in local repository context, where adjacent docs, workflow pages, and project state are available.
 
 Overlays modify delivery style without replacing canonical workflow logic. The shared workflow backbone remains the source of truth for analytical sequencing, gates, and artifacts.
+
+Use `overlays/ask-codexbatman` when the problem is choosing the right role, overlay, or workflow rather than executing the workflow itself.
 
 Method skills are not workflow skills. They are lightweight teaching references that the tutor overlay can invoke when a student needs help understanding a model or algorithm before continuing with a workflow.
 

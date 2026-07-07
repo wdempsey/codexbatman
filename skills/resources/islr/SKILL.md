@@ -1,6 +1,6 @@
 ---
 name: islr-resource
-description: Chapter-level index for An Introduction to Statistical Learning (ISLR). Use when a student or practitioner needs a canonical reference for a method being introduced in the workflow. When a method skill (random-forest, cross-validation, lasso, etc.) is invoked in tutor mode, route to the relevant ISLR chapter here for deeper reading. Also use when a student asks "where can I learn more about X?" and X corresponds to an ISLR chapter.
+description: Chapter-level index for An Introduction to Statistical Learning (ISLR). Use when a student or data scientist needs a canonical reference for a method being introduced in the workflow. When a method skill (random-forest, cross-validation, lasso, etc.) is invoked in tutor mode, route to the relevant ISLR chapter here for deeper reading. Also use when a student asks "where can I learn more about X?" and X corresponds to an ISLR chapter.
 category: resources
 status: active
 role_compatibility:

@@ -1,6 +1,6 @@
 ---
 name: socratic-tutor
-description: Default interaction style for all student-role sessions. Replaces formulaic step-guidance with a three-layer Socratic teaching system — turn-level question ladder, session arc, and a teaching quality self-check. Activates automatically when tutor-mode is in use; no prompt required. Role scope — student only. Does not affect practitioner or manager overlays.
+description: Default interaction style for all student-role sessions. Replaces formulaic step-guidance with a three-layer Socratic teaching system — turn-level question ladder, session arc, and a teaching quality self-check. Activates automatically when tutor-mode is in use; no prompt required. Role scope — student only. Does not affect data scientist or manager overlays.
 category: overlays
 status: active
 stage: overlay

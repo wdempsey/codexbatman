@@ -9,15 +9,44 @@ description: >
   making pages less robotic, warming up documentation language, fixing "too formal"
   or "too bullet-heavy" feedback, or any content pass on site markdown files.
   Also use for homepage sections, navigation labels, and admonition text.
+category: site
+status: active
+stage: site-review
+role_compatibility:
+  - student
+  - data scientist
+  - data science manager
+inputs:
+  - docs page draft
+  - surrounding page context
+  - relevant site standards
+outputs:
+  - voice-aligned copy
+  - minimal editorial recommendations
+artifacts:
+  - edited markdown
+recommended_next:
+  - ui-ux-review
+  - navigation-review
+source_attribution:
+  - "Repo-native voice guide from the 2026 site rewrite."
 ---
 
-# Codex Batman — Site Voice Guide
+# Codex Batman Site Voice Guide
 
 This skill captures the voice decisions made during the 2026 site rewrite. Apply it whenever you're writing or editing any page in `docs/`.
 
+## Quick Start
+
+Use this skill for site copy, not general skill prose. Preserve page structure unless the user asks for a structural pass.
+
+Inputs are the page draft, nearby navigation context, and any relevant rule from `docs/site/ui-ux-standards.md`. Output edited markdown or a short editorial review.
+
+Ask before continuing if the edit would change navigation, rewrite a full page, alter a July 2026 design decision, or move content between sections.
+
 ## Why This Matters
 
-The site's first-pass content was technically accurate but robotically structured — heavy on bullet lists, third-person role summaries, and "This section is for users who..." openers. The goal of the rewrite was to make the site feel like a colleague explaining a real system, not a spec sheet describing a product.
+The site's first-pass content was technically accurate but robotically structured: heavy on bullet lists, third-person role summaries, and "This section is for users who..." openers. The goal of the rewrite was to make the site feel like a colleague explaining a real system, not a spec sheet describing a product.
 
 The voice is: direct, warm, second-person, technically precise. It respects the reader's intelligence while acknowledging that learning a new workflow is genuinely confusing at first.
 
@@ -136,7 +165,7 @@ Do NOT include:
 
 The site explains a real technical system. It shouldn't be so warm it feels like a startup pitch, but it also shouldn't feel like reading API documentation.
 
-Aim for: **the tone a thoughtful senior colleague uses in a Notion doc explaining their workflow to a new teammate.** Technically precise. Direct. Assumes the reader is smart. Doesn't apologize for complexity, but also doesn't bury the lede.
+Aim for: **the tone a thoughtful senior colleague uses in a Notion doc explaining their workflow to a new teammate.** Technically precise. Direct. Assumes the reader is smart. Does not apologize for complexity, but also does not bury the lede.
 
 If a sentence sounds like it belongs in a product brochure, cut it.
 If a section is all bullets, ask whether it would read better as prose.
