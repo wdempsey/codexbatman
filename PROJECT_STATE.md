@@ -67,4 +67,4 @@ The methods skill library is intentionally incremental. Its initial methods cove
 
 ## 6. Immediate Priority
 
-stabilization and synchronization before major expansion. The next skill-system step is the PR-1 flow audit: trigger collisions, progressive-disclosure gaps, `site-voice` frontmatter normalization, identity-loader enforcement, and gradual command-style skill migration tracking.
+stabilization and synchronization before major expansion. PR-1 adds the flow audit, `/ask-codexbatman` router, `site-voice` normalization, role-alias cleanup, and a lightweight eval scaffold. The next skill-system step is PR-2: define which behaviors are suggested skill guidance versus deterministic hook or config-read enforcement.

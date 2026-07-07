@@ -8,7 +8,7 @@ The matrix classifies the current folder-based `SKILL.md` inventory. Each skill
 occupies exactly one default cell, even when its frontmatter lists multiple
 compatible roles. That default cell is the dedupe and evaluation owner.
 
-Current coverage: 53 folder-based `SKILL.md` files.
+Current coverage: 54 folder-based `SKILL.md` files.
 
 ## Intake Rule
 
@@ -52,6 +52,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 | `diagnostics` | Debugging, prototypes, or failure localization |
 | `manager-ops` | Project operations and recurring coordination |
 | `manager-communication` | Manager-facing summaries, updates, and project communication |
+| `router` | Cross-lane orientation that chooses the role, overlay, and workflow without doing the downstream work |
 | `site-maintenance` | Repository documentation, navigation, style, and visual review |
 | `skill-pack` | Bundled checks, templates, or sub-workflows |
 
@@ -86,6 +87,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 
 | Task type | Default skills |
 | --- | --- |
+| `router` | `ask-codexbatman` |
 | `site-maintenance` | `site-voice`, `ui-ux-review`, `navigation-review`, `visual-polish-pass` |
 
 ## Overlap Watchlist
@@ -102,6 +104,7 @@ future intake PR should run comparative evals before admitting another skill.
 | Student help | `tutor-mode`, `socratic-tutor`, `hint-ladder`, `misconception-diagnosis`, `exercise-generator` | Is the student asking for guided workflow help, a hint, diagnosis, or practice? |
 | Manager operations | `project-setup`, `project-manager-agent`, `lab-manager-agent`, `weekly-review`, `project-tracker` | Is the scope one project, a portfolio, a recurring review, or a manager-facing overlay? |
 | Manager communication | `stakeholder-update`, `communication-workflows`, `executive-summary` | Is the output an external update, a communication workflow, or a summary wrapper? |
+| Routing | `ask-codexbatman`, role overlays, workflow gates | Is the proposed skill only choosing a route, or is it executing a workflow step? |
 | Site work | `site-voice`, `ui-ux-review`, `navigation-review`, `visual-polish-pass` | Is the change about copy voice, page hierarchy, navigation, or visual finishing? |
 
 ## Legacy And Duplicate Surfaces
@@ -135,7 +138,6 @@ The current inventory predates this matrix. Future cleanup PRs should normalize:
 
 - `skills/resources/islr/SKILL.md` uses `category: resources`; this category
   should remain explicit in `skills/METADATA.md`.
-- PR-1 should normalize `skills/site-voice/SKILL.md`; it has frontmatter but
-  lacks `category`, `status`, `stage`, and `role_compatibility`.
-- Some software-team skills list `practitioner` as a role alias. New skills
-  should use `data scientist`; cleanup can normalize aliases later.
+- `skills/site-voice/SKILL.md` was normalized in PR-1.
+- Software-team skills were normalized from the legacy `practitioner` role alias
+  to `data scientist` in PR-1.

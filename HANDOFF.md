@@ -23,16 +23,15 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-Next skill PR: PR-1 flow audit.
+Next skill PR: PR-2 determinism boundary.
 
 Focus:
 
-- trigger collisions across roles
-- progressive-disclosure gaps in existing `SKILL.md` files
-- `site-voice` frontmatter normalization
-- `/ask-codexbatman` routing skill design
-- student identity-loader enforcement
-- gradual command-style skill migration tracking
+- classify suggested skill behavior versus deterministic enforcement
+- decide how student identity/session-start config reads should be enforced
+- move human-review gates that cannot be skipped out of prose-only skill instructions
+- add any appropriate git guardrails for student-facing sessions
+- keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs
 

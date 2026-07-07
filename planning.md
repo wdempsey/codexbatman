@@ -7,11 +7,14 @@ Last updated: 2026-07-07
 - [x] Add `SKILL-STYLE.md` as the authoring and verification guide for folder-based skills.
 - [x] Add `CAPABILITY-MATRIX.md` as the role x task-type intake map for current `SKILL.md` files.
 - [x] Update skill metadata guidance to point to the new intake sources.
-- [ ] Run PR-1 flow audit for trigger collisions, progressive disclosure gaps, and identity-loader enforcement.
-- [ ] Normalize `site-voice` frontmatter in PR-1.
-- [ ] Normalize legacy role aliases such as `practitioner` to `data scientist` in skill frontmatter.
+- [x] Run PR-1 flow audit for trigger collisions, progressive disclosure gaps, and identity-loader enforcement boundary.
+- [x] Add `ask-codexbatman` as the cross-lane router skill.
+- [x] Normalize `site-voice` frontmatter in PR-1.
+- [x] Normalize legacy role aliases such as `practitioner` to `data scientist` in skill frontmatter.
 - [ ] Track gradual command-style skill migration, archive, and keep decisions as cleanup proceeds.
-- [ ] Add eval-task scaffolding before admitting new skill imports.
+- [x] Add eval-task scaffolding before admitting new skill imports.
+- [ ] PR-2: decide deterministic enforcement for student identity/session-start config reads.
+- [ ] PR-3: convert `evals/` scaffold into a runnable eval harness.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 

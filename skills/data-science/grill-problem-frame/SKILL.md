@@ -1,6 +1,6 @@
 ---
 name: grill-problem-frame
-description: Interrogate a problem definition before any data is touched. Challenge the decision context, metric, prediction time, population scope, leakage risks, and failure modes. Use this before running problem-framing whenever a problem statement feels underspecified, when a student or practitioner has jumped to a model before clarifying the question, or when a manager wants to pressure-test a framing before approving the project. Adapted from Matt Pocock's grill-me pattern for data science.
+description: Interrogate a problem definition before any data is touched. Challenge the decision context, metric, prediction time, population scope, leakage risks, and failure modes. Use this before running problem-framing whenever a problem statement feels underspecified, when a student or data scientist has jumped to a model before clarifying the question, or when a manager wants to pressure-test a framing before approving the project. Adapted from Matt Pocock's grill-me pattern for data science.
 category: data-science
 status: active
 stage: problem-framing

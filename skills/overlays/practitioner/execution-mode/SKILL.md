@@ -1,6 +1,6 @@
 ---
 name: execution-mode
-description: Wrap a canonical workflow skill for practitioner execution. Use when a data scientist needs direct progress, artifact production, and minimal pedagogical or managerial framing.
+description: Wrap a canonical workflow skill for data scientist execution. Use when a data scientist needs direct progress, artifact production, and minimal pedagogical or managerial framing.
 category: overlays
 status: active
 stage: overlay
@@ -96,4 +96,3 @@ Escalate when:
 - required inputs are materially missing
 - a workflow gate requires human approval
 - the canonical skill would return halt conditions
-
