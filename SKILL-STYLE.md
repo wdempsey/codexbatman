@@ -135,6 +135,10 @@ Use deterministic hooks or scripts for behavior that must always happen:
 If the proposed behavior would be unsafe or invalid when skipped, do not rely on
 skill prose alone. Route it to a hook-oriented PR.
 
+See `DETERMINISM_BOUNDARY.md` for the current suggested-vs-enforced inventory
+and `scripts/hooks/codexbatman_lifecycle_gate.py` for the PR-2 student-memory
+and skill-promotion gate.
+
 ## Verification
 
 Every skill PR should include verification appropriate to its blast radius.

@@ -1,0 +1,32 @@
+name: Skill Promotion Gate
+
+on:
+  pull_request:
+    paths:
+      - "memory/students/**"
+      - "skills/**"
+      - "evals/**"
+      - "SKILL-STYLE.md"
+      - "CAPABILITY-MATRIX.md"
+      - "skills/METADATA.md"
+      - "scripts/hooks/**"
+      - ".github/workflows/skill-promotion-gate.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  lifecycle-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Run lifecycle gate
+        run: |
+          python scripts/hooks/codexbatman_lifecycle_gate.py \
+            --base "${{ github.event.pull_request.base.sha }}" \
+            --head "${{ github.event.pull_request.head.sha }}"

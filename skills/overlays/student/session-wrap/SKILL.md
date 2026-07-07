@@ -158,6 +158,8 @@ Confirm with the student before writing:
 
 > "To get this reviewed, open a PR that includes your updated flagged-skills.md. The skill-auditor will run automatically and post a verdict comment — RECOMMEND, NOT READY, or NEEDS CLARIFICATION. If it recommends promotion, a maintainer can open a draft skill PR."
 
+Keep the flag PR separate from any shared skill changes. The lifecycle gate blocks PRs that edit `memory/students/**/flagged-skills.md` and `skills/**` together.
+
 ---
 
 ## Limits
