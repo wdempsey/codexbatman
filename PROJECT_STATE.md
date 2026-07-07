@@ -27,6 +27,15 @@ The system is:
 - `PROJECT_STATE.md` is the durable architecture snapshot
 - `devlog/` is deferred unless explicitly implemented
 
+## 3.5 Skill Intake Status
+
+The skill library now has two intake-level sources of truth:
+
+- `SKILL-STYLE.md` defines authoring style, trigger phrasing, progressive disclosure, verification, and deviation-log expectations.
+- `CAPABILITY-MATRIX.md` assigns each current folder-based `SKILL.md` file to one default role x task-type cell and records overlap risks for future audits.
+
+`skills/METADATA.md` remains the schema source of truth for frontmatter fields and allowed values.
+
 ## 4. Current Backbone Status
 
 The canonical data-science backbone currently includes:
@@ -58,4 +67,4 @@ The methods skill library is intentionally incremental. Its initial methods cove
 
 ## 6. Immediate Priority
 
-stabilization and synchronization before major expansion
+stabilization and synchronization before major expansion. The next skill-system step is the PR-1 flow audit: trigger collisions, progressive-disclosure gaps, `site-voice` frontmatter normalization, identity-loader enforcement, and gradual command-style skill migration tracking.

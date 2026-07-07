@@ -1,5 +1,15 @@
 # Skill Metadata Schema
 
+This file is the source of truth for folder-based skill metadata fields and
+allowed values.
+
+Related intake documents:
+
+- `../SKILL-STYLE.md` defines authoring style, trigger phrasing, progressive
+  disclosure, verification, and deviation-log expectations.
+- `../CAPABILITY-MATRIX.md` defines default role x task-type placement,
+  collision checks, and dedupe-by-eval rules.
+
 ## Schema
 
 All folder-based `SKILL.md` files should begin with YAML front matter.
@@ -33,6 +43,12 @@ Use when clearly supported by the skill:
 - `halts_if_missing`
 - `produces_gate`
 
+### Intake and attribution fields
+
+Use when a skill is adapted from an external pattern or needs review context:
+
+- `source_attribution`
+
 ### Method handoff fields for workflow skills
 
 Use when a workflow step may need to pause and teach a method before continuing:
@@ -58,6 +74,8 @@ Use for `category: methods` skills:
 - `manager`
 - `methods`
 - `overlays`
+- `packs`
+- `resources`
 - `site`
 
 ### `status`
@@ -73,6 +91,7 @@ Use concise stable names such as:
 
 - `bootstrap`
 - `framing`
+- `problem-framing`
 - `audit`
 - `eda`
 - `modeling`
@@ -90,6 +109,9 @@ Use only these role strings:
 - `student`
 - `data scientist`
 - `data science manager`
+
+Legacy note: a few existing skills still use `practitioner` as an alias for
+`data scientist`. New or normalized skills should use `data scientist`.
 
 ### Method metadata conventions
 

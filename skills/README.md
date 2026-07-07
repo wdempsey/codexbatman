@@ -17,6 +17,12 @@ Folder-based skills are now the canonical format for this repo. They are the pri
 
 Command-style markdown skills remain only for compatibility and transition. They are not the primary authoring target for new repository-native workflow logic.
 
+New or adapted folder-based skills must follow the root-level intake process:
+
+- `../SKILL-STYLE.md` for authoring style, trigger phrasing, progressive disclosure, verification, and deviation logs
+- `../CAPABILITY-MATRIX.md` for default role x task-type placement and dedupe-by-eval review
+- `METADATA.md` for frontmatter fields and allowed values
+
 ## Categories
 
 - `data-science/` = canonical analytical workflow backbone
