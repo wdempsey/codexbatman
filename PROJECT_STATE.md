@@ -67,4 +67,4 @@ The methods skill library is intentionally incremental. Its initial methods cove
 
 ## 6. Immediate Priority
 
-stabilization and synchronization before major expansion. PR-1 adds the flow audit, `/ask-codexbatman` router, `site-voice` normalization, role-alias cleanup, and a lightweight eval scaffold. The next skill-system step is PR-2: define which behaviors are suggested skill guidance versus deterministic hook or config-read enforcement.
+stabilization and synchronization before major expansion. PR-1 adds the flow audit, `/ask-codexbatman` router, `site-voice` normalization, role-alias cleanup, and a lightweight eval scaffold. PR-2 defines the determinism boundary, adds the student skill-promotion lifecycle gate, and adds the project `.claude/CLAUDE.md` student-session config shim. The next skill-system step is PR-3: telemetry, runnable evals, and the `/improve-skill` meta-skill.

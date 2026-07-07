@@ -70,6 +70,7 @@ Rules:
 - Maintainer approval is required before any student-flagged entry becomes a shared skill.
 - Entries that fail the audit stay in `flagged-skills.md` — they are not deleted. The student can revise and re-submit.
 - See `memory/students/README.md` → Skill promotion pipeline for the student-facing view of this process.
+- The deterministic file-level gate lives in `scripts/hooks/codexbatman_lifecycle_gate.py` and `.github/workflows/skill-promotion-gate.yml`. It blocks PRs that mix student flagged-skill updates with shared skill changes, and blocks accidental deletions under `memory/students/`.
 
 Scope for Codex collaborators:
 - Make focused, reversible changes that improve correctness, clarity, and maintainability.
@@ -180,4 +181,3 @@ Distillation standard:
 - Prefer principles over narrative.
 - Keep each learning atomic and testable.
 - If a learning implies a process change, propose a minimal docs update in a future PR.
-

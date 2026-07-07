@@ -13,7 +13,8 @@ Last updated: 2026-07-07
 - [x] Normalize legacy role aliases such as `practitioner` to `data scientist` in skill frontmatter.
 - [ ] Track gradual command-style skill migration, archive, and keep decisions as cleanup proceeds.
 - [x] Add eval-task scaffolding before admitting new skill imports.
-- [ ] PR-2: decide deterministic enforcement for student identity/session-start config reads.
+- [x] PR-2: decide deterministic enforcement for student identity/session-start config reads.
+- [x] PR-2: add deterministic file-level gate for student flagged-skill PRs and shared skill promotion.
 - [ ] PR-3: convert `evals/` scaffold into a runnable eval harness.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture

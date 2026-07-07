@@ -23,14 +23,14 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-Next skill PR: PR-2 determinism boundary.
+Next skill PR: PR-3 telemetry, eval harness, and `/improve-skill`.
 
 Focus:
 
-- classify suggested skill behavior versus deterministic enforcement
-- decide how student identity/session-start config reads should be enforced
-- move human-review gates that cannot be skipped out of prose-only skill instructions
-- add any appropriate git guardrails for student-facing sessions
+- turn `evals/` into a runnable harness
+- define telemetry conventions for skill invocations, trigger misses, user corrections, and deviation logs
+- add `/improve-skill` as a reflection pass that proposes diffs but never edits skills in place
+- route proposed improvements through the PR-2 lifecycle gate and human review process
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs
