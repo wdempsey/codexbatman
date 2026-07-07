@@ -163,6 +163,12 @@ Failure modes:
 When a frozen held-out eval set exists, do not modify it during improvement PRs.
 Add improvement examples separately.
 
+Run the eval harness for skill PRs:
+
+```bash
+./.venv/bin/python scripts/evals/run_skill_evals.py
+```
+
 ## Deviation Log
 
 Plans are guidance, not rails. If implementation departs from the plan, record

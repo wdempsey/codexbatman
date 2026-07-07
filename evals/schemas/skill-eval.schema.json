@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "description": "Documentation schema for Codex Batman skill eval JSON files. The runner validates this shape with Python stdlib checks.",
+  "required_top_level": [
+    "schema_version",
+    "skill",
+    "split",
+    "cases"
+  ],
+  "allowed_splits": [
+    "improvement",
+    "heldout"
+  ],
+  "required_case_fields": [
+    "id",
+    "input",
+    "expected_route",
+    "must_include",
+    "must_not_include",
+    "notes"
+  ],
+  "case_field_types": {
+    "id": "string",
+    "input": "string",
+    "expected_route": "array[string]",
+    "must_include": "array[string]",
+    "must_not_include": "array[string]",
+    "notes": "string"
+  }
+}

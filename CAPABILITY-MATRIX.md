@@ -8,7 +8,7 @@ The matrix classifies the current folder-based `SKILL.md` inventory. Each skill
 occupies exactly one default cell, even when its frontmatter lists multiple
 compatible roles. That default cell is the dedupe and evaluation owner.
 
-Current coverage: 54 folder-based `SKILL.md` files.
+Current coverage: 55 folder-based `SKILL.md` files.
 
 ## Intake Rule
 
@@ -53,6 +53,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 | `manager-ops` | Project operations and recurring coordination |
 | `manager-communication` | Manager-facing summaries, updates, and project communication |
 | `router` | Cross-lane orientation that chooses the role, overlay, and workflow without doing the downstream work |
+| `skill-maintenance` | Skill telemetry, evals, improvement proposals, and intake-system upkeep |
 | `site-maintenance` | Repository documentation, navigation, style, and visual review |
 | `skill-pack` | Bundled checks, templates, or sub-workflows |
 
@@ -88,6 +89,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 | Task type | Default skills |
 | --- | --- |
 | `router` | `ask-codexbatman` |
+| `skill-maintenance` | `improve-skill` |
 | `site-maintenance` | `site-voice`, `ui-ux-review`, `navigation-review`, `visual-polish-pass` |
 
 ## Overlap Watchlist
@@ -105,6 +107,7 @@ future intake PR should run comparative evals before admitting another skill.
 | Manager operations | `project-setup`, `project-manager-agent`, `lab-manager-agent`, `weekly-review`, `project-tracker` | Is the scope one project, a portfolio, a recurring review, or a manager-facing overlay? |
 | Manager communication | `stakeholder-update`, `communication-workflows`, `executive-summary` | Is the output an external update, a communication workflow, or a summary wrapper? |
 | Routing | `ask-codexbatman`, role overlays, workflow gates | Is the proposed skill only choosing a route, or is it executing a workflow step? |
+| Skill improvement | `improve-skill`, `SKILL-STYLE.md`, eval runner | Is the work diagnosing an existing skill, proposing a patch, or implementing an approved skill change? |
 | Site work | `site-voice`, `ui-ux-review`, `navigation-review`, `visual-polish-pass` | Is the change about copy voice, page hierarchy, navigation, or visual finishing? |
 
 ## Legacy And Duplicate Surfaces

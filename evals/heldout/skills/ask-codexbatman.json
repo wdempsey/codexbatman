@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "skill": "ask-codexbatman",
+  "split": "heldout",
+  "cases": [
+    {
+      "id": "ask-codexbatman-heldout-student-method-gap",
+      "input": "My professor assigned lasso, but I only understand ordinary linear regression. I want help without being handed the answer.",
+      "expected_route": [
+        "student",
+        "identity-loader",
+        "tutor-mode",
+        "lasso or explain-method"
+      ],
+      "must_include": [
+        "student",
+        "identity-loader",
+        "lasso",
+        "tutor-mode"
+      ],
+      "must_not_include": [
+        "direct answer"
+      ],
+      "notes": "Frozen regression check for student method handoff."
+    },
+    {
+      "id": "ask-codexbatman-heldout-skill-maintenance",
+      "input": "Users keep correcting the routing for site copy edits. Figure out how the skill should improve.",
+      "expected_route": [
+        "repository maintainer",
+        "improve-skill",
+        "site-voice",
+        "evals/improvement"
+      ],
+      "must_include": [
+        "improve-skill",
+        "site-voice",
+        "proposal"
+      ],
+      "must_not_include": [
+        "edit SKILL.md directly"
+      ],
+      "notes": "Frozen regression check for the PR-3 meta-skill route."
+    }
+  ]
+}
