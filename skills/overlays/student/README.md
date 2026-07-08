@@ -12,9 +12,10 @@ This directory contains tutoring overlays for student-facing work.
 Student sessions follow a consistent lifecycle:
 
 1. **Identity resolution** (`identity-loader`) — runs before anything else. Loads the student's profile and mastery, surfaces a context header, calibrates session depth. Offers registration if the student is new.
-2. **Pre-answer alignment** (`grill-the-student`) — optional. Use only when notation, course coverage, assignment constraints, or the confusion boundary is unclear.
-3. **Workflow + interaction** (`tutor-mode` + `socratic-tutor`) — the session itself. Workflow skill decomposes the task; socratic-tutor governs the question pattern.
-4. **Session wrap** (`session-wrap`) — triggered by `/wrap`. Writes the session summary and confirmed mastery updates to `memory/students/{name}/`.
+2. **Class-note ingestion** (`class-notes-ingestion`) — optional. Use when uploaded notes should persist as `NOTATION.md` and `COURSE-CONTEXT.md` for future tutoring.
+3. **Pre-answer alignment** (`grill-the-student`) — optional. Use only when notation, course coverage, assignment constraints, or the confusion boundary is unclear.
+4. **Workflow + interaction** (`tutor-mode` + `socratic-tutor`) — the session itself. Workflow skill decomposes the task; socratic-tutor governs the question pattern.
+5. **Session wrap** (`session-wrap`) — triggered by `/wrap`. Writes the session summary and confirmed mastery updates to `memory/students/{name}/`.
 
 ## Default interaction style
 
@@ -23,6 +24,7 @@ Student sessions follow a consistent lifecycle:
 ## Available overlays
 
 - `identity-loader` — **pre-session** — loads student profile and mastery; registers new students; surfaces context header
+- `class-notes-ingestion` — **persistent course context** — turns uploaded notes into `NOTATION.md` and `COURSE-CONTEXT.md` after student confirmation
 - `grill-the-student` — **pre-answer alignment** — extracts notation, course coverage, assignment constraints, and the student's confusion boundary before tutoring begins
 - `socratic-tutor` — **default interaction style** — three-layer Socratic system (turn-level question ladder, RHRS session arc, self-check)
 - `tutor-mode` — structural decomposition of workflow skills into student-paced steps

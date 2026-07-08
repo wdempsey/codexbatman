@@ -345,4 +345,4 @@ Codex should use metadata as the first routing layer for folder-based skills.
 5. For student flows, route to the relevant method skill when the learner is unfamiliar with a proposed method, then return to the workflow skill.
 6. Read prose after metadata to confirm fit, execution details, and stop conditions.
 7. Treat overlays as delivery-style wrappers, not canonical workflow steps.
-8. For student sessions, `socratic-tutor` is the default interaction style. It activates automatically — do not wait for explicit invocation. The other student overlays (`tutor-mode`, `hint-ladder`, `misconception-diagnosis`) handle structure and escalation; `socratic-tutor` governs the question pattern within each response.
+8. For student sessions, `socratic-tutor` is the default interaction style. It activates automatically — do not wait for explicit invocation. The other student overlays (`class-notes-ingestion`, `tutor-mode`, `hint-ladder`, `misconception-diagnosis`) handle persistent context, structure, and escalation; `socratic-tutor` governs the question pattern within each response.

@@ -114,6 +114,26 @@
         "start solving"
       ],
       "notes": "Score routing to pre-answer alignment when student context is too vague for ordinary tutor-mode."
+    },
+    {
+      "id": "ask-codexbatman-student-uploaded-notes",
+      "input": "I'm a student and I uploaded my professor's notes. Please remember the notation and what we've covered for future tutoring.",
+      "expected_route": [
+        "student",
+        "identity-loader",
+        "class-notes-ingestion",
+        "tutor-mode after confirmed ingestion if help is requested"
+      ],
+      "must_include": [
+        "identity-loader",
+        "class-notes-ingestion",
+        "NOTATION.md"
+      ],
+      "must_not_include": [
+        "start solving",
+        "skip memory confirmation"
+      ],
+      "notes": "Score routing to persistent class-note context rather than one-off pre-answer alignment."
     }
   ]
 }

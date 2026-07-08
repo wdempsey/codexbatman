@@ -24,7 +24,7 @@ Use this skill when:
 
 - the user does not know which Codex Batman skill or workflow should start
 - the request could fit more than one role lane
-- a student request might need identity loading, method teaching, or tutoring overlays before workflow execution
+- a student request might need identity loading, class-note ingestion, method teaching, or tutoring overlays before workflow execution
 - a data scientist request might violate the problem-framing, data-audit, modeling, or experiment-log gates
 - a manager request might be project operations, project tracking, or stakeholder communication
 - a repository-maintenance request needs the skill intake, site voice, navigation, or UI/UX review layer
@@ -70,7 +70,8 @@ Stop and ask before continuing when:
    - Repository maintainer: the user is changing this repo, the docs site, skills, metadata, or intake process.
 
 2. Pick the role overlay.
-   - Student: `identity-loader` first, then `tutor-mode` with `socratic-tutor`; add `hint-ladder`, `exercise-generator`, or `misconception-diagnosis` only when their trigger is explicit.
+   - Student: `identity-loader` first, then `tutor-mode` with `socratic-tutor`; add `class-notes-ingestion`, `hint-ladder`, `exercise-generator`, or `misconception-diagnosis` only when their trigger is explicit.
+   - If a student uploads notes or asks future tutoring to remember professor notation, course vocabulary, covered methods, or assignment constraints, route to `class-notes-ingestion` before ordinary tutoring.
    - If a student asks for help but notation, course coverage, assignment constraints, or the exact confusion boundary is unclear, run `grill-the-student` before `tutor-mode`.
    - Data scientist: `execution-mode` and `artifact-enforcer` wrap canonical workflow skills.
    - Data science manager: manager overlays such as `project-tracker`, `executive-summary`, or `communication-workflows` wrap manager workflow skills.
@@ -98,6 +99,7 @@ Stop and ask before continuing when:
 ## Nearby Routes
 
 - If the user asks "teach me" but already has approved workflow artifacts, route through student overlays first and then the same canonical workflow gate a data scientist would use.
+- If the user asks to persist class notes for future tutoring, route to `class-notes-ingestion`; if they only want help with the notes right now, route to `grill-the-student` or `tutor-mode`.
 - If the user asks "review this project" as a manager, start with `project-tracker` or `weekly-review`; do not route to `model-evaluation` unless the task is technical model review.
 - If the user asks for a site copy pass, use `site-voice`; if they ask whether the page works structurally, use `ui-ux-review`; if they ask whether users can find it, use `navigation-review`.
 - If the user asks to add a new skill, use `SKILL-STYLE.md` and `CAPABILITY-MATRIX.md` before drafting the skill.
