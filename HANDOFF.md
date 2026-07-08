@@ -23,19 +23,18 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-PR-6 refines the existing `misconception-diagnosis` student overlay around the
-reproduce, localize, counterexample, repair-check loop and evidence records for
-`mastery.json`.
+PR-7 adds worked case studies for students bringing class notes, including
+Survival RAG, problem-set alignment, seeded note errors, and simulation-design
+notes.
 
-Next skill PR: PR-7 worked case studies for students bringing class notes.
+Next skill PR: PR-8 curated Osmani import.
 
 Focus:
 
-- add 3-4 end-to-end examples, not new core skills
-- include a survival-analysis notes case reconciled with the RAG demo
-- include a problem set routed through `/grill-the-student`
-- include a notes-containing-error case surfaced Socratically
-- include PR-3 eval tasks and keep the skill-pruning rule in mind
+- run every imported skill through `SKILL-STYLE.md` and `CAPABILITY-MATRIX.md`
+- evaluate overlap before admitting anything new
+- prefer one-at-a-time adaptation and propose a split if seven imports are too much for one reviewable PR
+- distinguish data-scientist software-team skills from student overlays and manager operations
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs

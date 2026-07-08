@@ -65,11 +65,14 @@ The skills that matter most when you're starting out:
 
 - `socratic-tutor` — default interaction style; three-layer system (question ladder, RHRS session arc, self-check every 3 turns)
 - `identity-loader` — pre-session; loads your profile and mastery, registers new students, surfaces open questions from last time
+- `class-notes-ingestion` — turns confirmed course notes into `NOTATION.md` and `COURSE-CONTEXT.md`
+- `grill-the-student` — asks focused alignment questions before Codex starts tutoring
 - `tutor-mode` — structural decomposition of workflow skills into student-paced steps
 - `hint-ladder` — progressive hints when you're stuck, escalating from nudge to reveal
+- `misconception-diagnosis` — repairs repeated conceptual errors after your reasoning is visible
 - `session-wrap` — triggered by `/wrap`; writes the session summary and confirmed mastery updates to your student folder
 
-The full skill catalog (`misconception-diagnosis`, `exercise-generator`, `data-audit`, `eda-plan`, `experiment-log`) is in the [Skill Library](../setup/skill-reference.md) when you're ready.
+The full skill catalog (`exercise-generator`, `data-audit`, `eda-plan`, `experiment-log`, and more) is in the [Skill Library](../setup/skill-reference.md) when you're ready.
 
 ## Where To Go Next
 
@@ -78,6 +81,7 @@ If you haven't started yet, go to [Basic Classification — Learning Lens](../ex
 After your first full project, work through the other examples in order of complexity:
 
 - [Linear Regression — Learning Lens](../examples/analytics-repo/learning.md) — California Housing, 20K census tracts, continuous prediction
+- [Student Class Notes Case Studies](../examples/student-class-notes.md) — class notes, RAG, alignment, and misconception repair in one flow
 - [Survival RAG](../examples/survival-rag/index.md) — bring your own textbook, local vector search, Socratic responses grounded in retrieved passages
 
 Then read [Core Data Science Workflow](../workflows/data-science/index.md) to see the full shared sequence, and browse [Examples](../examples/index.md) to see how the same backbone looks through learning, execution, and manager lenses.

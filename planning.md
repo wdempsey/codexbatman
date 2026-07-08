@@ -21,7 +21,8 @@ Last updated: 2026-07-07
 - [x] PR-4: design `/grill-the-student` against the new eval and telemetry conventions.
 - [x] PR-5: class-notes ingestion skill should reuse `/grill-the-student` notation and course-coverage conventions.
 - [x] PR-6: refine the existing `misconception-diagnosis` skill rather than creating a duplicate; emit evidence records compatible with the skill-auditor mastery schema.
-- [ ] PR-7: add worked case studies that combine class notes, pre-answer alignment, misconception diagnosis, and student-safe tutoring.
+- [x] PR-7: add worked case studies that combine class notes, pre-answer alignment, misconception diagnosis, and student-safe tutoring.
+- [ ] PR-8: evaluate curated Osmani imports one at a time and propose a split if seven skills make the PR too broad.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
