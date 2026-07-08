@@ -151,6 +151,7 @@ The PDF is never committed to the repo. The `README.md` explains where to obtain
 
 ## Related
 
+- [Student Class Notes Case Studies](../student-class-notes.md) — how Survival RAG combines with `NOTATION.md`, `COURSE-CONTEXT.md`, and tutor overlays
 - [Basic Classification Example](../basic-classification/index.md) — the introductory worked example; start here before the RAG pipeline
 - [Linear Regression Example](../analytics-repo/index.md) — California Housing, continuous prediction
 - [Data Science Workflow](../../workflows/data-science/index.md) — the seven workflow gates underlying all examples

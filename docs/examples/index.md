@@ -25,6 +25,7 @@ If you're a student starting out, begin with [Basic Classification](basic-classi
 | Example | Purpose |
 |---------|---------|
 | [Basic Classification](basic-classification/index.md) | Binary classification with Cleveland Heart Disease data — the student entry point. 303 patients, cardiac referral triage, ROC-AUC metric. |
+| [Student Class Notes Case Studies](student-class-notes.md) | End-to-end student examples combining class-note ingestion, `/grill-the-student`, Survival RAG, misconception diagnosis, and session wrap. |
 | [Linear Regression](analytics-repo/index.md) | California Housing census-tract regression. 20,640 rows, $500K ceiling artifact, multicollinearity between AveRooms and AveBedrms. |
 | [Grant Project](grant-project/index.md) | Show how the Research OS layer coordinates deadlines, meetings, handoffs, and weekly review |
 | [Methods / Code Project](methods-code-project/index.md) | Show how project state, repo memory, and handoffs support technical research and code work |
@@ -36,6 +37,7 @@ A good operating system should be understandable from examples, not only from ab
 
 - [Backbone Protocol](../backbone/index.md)
 - [Tooling Stack](../tooling/index.md)
+- [For Students](../students/index.md)
 - [Research OS Template](../workflows/manager/research-os-template.md)
 - [Lab Manager Agent](../workflows/manager/lab-manager-agent.md)
 
