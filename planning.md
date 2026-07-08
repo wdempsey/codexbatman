@@ -17,7 +17,9 @@ Last updated: 2026-07-07
 - [x] PR-2: add deterministic file-level gate for student flagged-skill PRs and shared skill promotion.
 - [x] PR-3: convert `evals/` scaffold into a runnable eval harness.
 - [x] PR-3: add skill telemetry conventions and `/improve-skill` proposal workflow.
-- [ ] PR-4: design `/grill-the-student` against the new eval and telemetry conventions.
+- [x] PR-4: record skill admission/pruning policy in `SKILL-STYLE.md` and `CAPABILITY-MATRIX.md`.
+- [x] PR-4: design `/grill-the-student` against the new eval and telemetry conventions.
+- [ ] PR-5: class-notes ingestion skill should reuse `/grill-the-student` notation and course-coverage conventions.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 

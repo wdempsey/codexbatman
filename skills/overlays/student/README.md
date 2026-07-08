@@ -12,8 +12,9 @@ This directory contains tutoring overlays for student-facing work.
 Student sessions follow a consistent lifecycle:
 
 1. **Identity resolution** (`identity-loader`) — runs before anything else. Loads the student's profile and mastery, surfaces a context header, calibrates session depth. Offers registration if the student is new.
-2. **Workflow + interaction** (`tutor-mode` + `socratic-tutor`) — the session itself. Workflow skill decomposes the task; socratic-tutor governs the question pattern.
-3. **Session wrap** (`session-wrap`) — triggered by `/wrap`. Writes the session summary and confirmed mastery updates to `memory/students/{name}/`.
+2. **Pre-answer alignment** (`grill-the-student`) — optional. Use only when notation, course coverage, assignment constraints, or the confusion boundary is unclear.
+3. **Workflow + interaction** (`tutor-mode` + `socratic-tutor`) — the session itself. Workflow skill decomposes the task; socratic-tutor governs the question pattern.
+4. **Session wrap** (`session-wrap`) — triggered by `/wrap`. Writes the session summary and confirmed mastery updates to `memory/students/{name}/`.
 
 ## Default interaction style
 
@@ -22,6 +23,7 @@ Student sessions follow a consistent lifecycle:
 ## Available overlays
 
 - `identity-loader` — **pre-session** — loads student profile and mastery; registers new students; surfaces context header
+- `grill-the-student` — **pre-answer alignment** — extracts notation, course coverage, assignment constraints, and the student's confusion boundary before tutoring begins
 - `socratic-tutor` — **default interaction style** — three-layer Socratic system (turn-level question ladder, RHRS session arc, self-check)
 - `tutor-mode` — structural decomposition of workflow skills into student-paced steps
 - `hint-ladder` — progressive hint escalation when the student is stuck

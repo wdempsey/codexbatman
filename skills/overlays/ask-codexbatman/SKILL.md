@@ -71,6 +71,7 @@ Stop and ask before continuing when:
 
 2. Pick the role overlay.
    - Student: `identity-loader` first, then `tutor-mode` with `socratic-tutor`; add `hint-ladder`, `exercise-generator`, or `misconception-diagnosis` only when their trigger is explicit.
+   - If a student asks for help but notation, course coverage, assignment constraints, or the exact confusion boundary is unclear, run `grill-the-student` before `tutor-mode`.
    - Data scientist: `execution-mode` and `artifact-enforcer` wrap canonical workflow skills.
    - Data science manager: manager overlays such as `project-tracker`, `executive-summary`, or `communication-workflows` wrap manager workflow skills.
    - Repository maintainer: use the matrix and style guides first; use site skills for docs/site work.
