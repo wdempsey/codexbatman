@@ -10,4 +10,6 @@ credentials/
 .claude/*
 !.claude/
 !.claude/CLAUDE.md
+logs/skill-telemetry*.ndjson
+evals/responses/
 HANDOFF.md

@@ -100,6 +100,7 @@ Use concise stable names such as:
 - `manager-ops`
 - `methods`
 - `overlay`
+- `skill-maintenance`
 - `site-review`
 
 ### `role_compatibility`

@@ -20,7 +20,7 @@ Do not claim a behavior "must always happen" unless it has a deterministic enfor
 | Skill promotion pipeline: student flags first, auditor verdict next, maintainer opens draft skill PR only after recommendation | `AGENTS.md`, `session-wrap`, `memory/students/README.md` | Enforced for file-level promotion shape | PR-2 adds `scripts/hooks/codexbatman_lifecycle_gate.py` and a GitHub Actions workflow. |
 | Student flag PR must not also promote shared skills | lifecycle gate script | Enforced | The script fails if `memory/students/**/flagged-skills.md` changes in the same PR as `skills/**`, `evals/**`, `SKILL-STYLE.md`, `CAPABILITY-MATRIX.md`, or `skills/METADATA.md`. |
 | Student memory files must not be deleted accidentally | lifecycle gate script | Enforced | The script fails on deletes under `memory/students/**`. |
-| Skill intake metadata, matrix placement, and eval examples | `SKILL-STYLE.md`, `CAPABILITY-MATRIX.md` | Suggested | PR-3 should add a runnable eval/metadata harness before treating this as enforced. |
+| Skill intake metadata, matrix placement, and eval examples | `SKILL-STYLE.md`, `CAPABILITY-MATRIX.md`, eval runner | Enforced for eval file shape | PR-3 adds `scripts/evals/run_skill_evals.py`; metadata/matrix checks are still review responsibility. |
 | Git safety for general repo edits | `AGENTS.md` | Suggested | No broad git hook yet; PR-2 only adds student-facing memory and promotion guardrails. |
 | MkDocs site build | local command and deploy workflow | Enforced in deploy path only | `mkdocs build --strict` remains the local verification command for PRs. |
 
@@ -48,6 +48,6 @@ PR-2 also does not enforce every data science workflow gate. That would require 
 
 ## Follow-Ups
 
-- PR-3 should turn `evals/` into a runnable harness and decide what metadata checks become deterministic.
+- PR-3 adds the runnable eval harness. Future PRs can decide whether metadata and matrix checks should become deterministic.
 - A future student-session hook could record an identity-loaded marker, but only after the session runtime has a stable place to write that state.
 - A future project-artifact hook could enforce data science gates when a project template has stable artifact paths.

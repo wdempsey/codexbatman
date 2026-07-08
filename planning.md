@@ -15,7 +15,9 @@ Last updated: 2026-07-07
 - [x] Add eval-task scaffolding before admitting new skill imports.
 - [x] PR-2: decide deterministic enforcement for student identity/session-start config reads.
 - [x] PR-2: add deterministic file-level gate for student flagged-skill PRs and shared skill promotion.
-- [ ] PR-3: convert `evals/` scaffold into a runnable eval harness.
+- [x] PR-3: convert `evals/` scaffold into a runnable eval harness.
+- [x] PR-3: add skill telemetry conventions and `/improve-skill` proposal workflow.
+- [ ] PR-4: design `/grill-the-student` against the new eval and telemetry conventions.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 

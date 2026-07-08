@@ -23,14 +23,14 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-Next skill PR: PR-3 telemetry, eval harness, and `/improve-skill`.
+Next skill PR: PR-4 `/grill-the-student`.
 
 Focus:
 
-- turn `evals/` into a runnable harness
-- define telemetry conventions for skill invocations, trigger misses, user corrections, and deviation logs
-- add `/improve-skill` as a reflection pass that proposes diffs but never edits skills in place
-- route proposed improvements through the PR-2 lifecycle gate and human review process
+- use the PR-3 eval format for `/grill-the-student` cases
+- keep the skill student-facing and one-question-at-a-time
+- extract notation, course coverage, and confusion boundary before answering
+- exit only when Codex can restate the student's mental model and the student confirms
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs

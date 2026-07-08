@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "skill": "ask-codexbatman",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "ask-codexbatman-student-start",
+      "input": "I am a student and I want help starting my first classification project.",
+      "expected_route": [
+        "identity-loader",
+        "tutor-mode",
+        "socratic-tutor",
+        "project-bootstrap or problem-framing"
+      ],
+      "must_include": [
+        "student",
+        "identity-loader",
+        "tutor-mode",
+        "problem-framing"
+      ],
+      "must_not_include": [
+        "skip directly to modeling"
+      ],
+      "notes": "Score whether identity loading is treated as a stop-before-work step."
+    },
+    {
+      "id": "ask-codexbatman-premature-modeling",
+      "input": "Train a gradient boosting model and compare it to random forest. We have not written the data audit yet.",
+      "expected_route": [
+        "data scientist",
+        "data-audit",
+        "modeling",
+        "experiment-log"
+      ],
+      "must_include": [
+        "data-audit",
+        "before modeling",
+        "experiment-log"
+      ],
+      "must_not_include": [
+        "start with modeling"
+      ],
+      "notes": "Score gate safety before model comparison."
+    },
+    {
+      "id": "ask-codexbatman-manager-blocker-review",
+      "input": "I need a manager-facing summary of blockers and decisions for this week's lab meeting.",
+      "expected_route": [
+        "data science manager",
+        "weekly-review",
+        "project-tracker"
+      ],
+      "must_include": [
+        "data science manager",
+        "weekly-review",
+        "blockers"
+      ],
+      "must_not_include": [
+        "model-evaluation"
+      ],
+      "notes": "Score distinction between management synthesis and technical workflow execution."
+    },
+    {
+      "id": "ask-codexbatman-site-voice",
+      "input": "Rewrite the homepage intro so it sounds less robotic but keep the structure.",
+      "expected_route": [
+        "repository maintainer",
+        "site-voice"
+      ],
+      "must_include": [
+        "site-voice",
+        "keep the structure"
+      ],
+      "must_not_include": [
+        "navigation-review",
+        "visual-polish-pass"
+      ],
+      "notes": "Score site-maintenance subrouting."
+    },
+    {
+      "id": "ask-codexbatman-new-skill-proposal",
+      "input": "Add a skill that teaches students how to debug misconceptions in logistic regression.",
+      "expected_route": [
+        "repository maintainer",
+        "SKILL-STYLE.md",
+        "CAPABILITY-MATRIX.md",
+        "misconception-diagnosis"
+      ],
+      "must_include": [
+        "CAPABILITY-MATRIX.md",
+        "misconception-diagnosis",
+        "duplicate"
+      ],
+      "must_not_include": [
+        "create a new skill immediately"
+      ],
+      "notes": "Score intake discipline and overlap handling."
+    }
+  ]
+}

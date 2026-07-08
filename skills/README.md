@@ -41,6 +41,8 @@ Overlays modify delivery style without replacing canonical workflow logic. The s
 
 Use `overlays/ask-codexbatman` when the problem is choosing the right role, overlay, or workflow rather than executing the workflow itself.
 
+Use `overlays/improve-skill` when telemetry, trigger misses, user corrections, or evals suggest that an existing skill needs a human-reviewable improvement proposal.
+
 Method skills are not workflow skills. They are lightweight teaching references that the tutor overlay can invoke when a student needs help understanding a model or algorithm before continuing with a workflow.
 
 ## Legacy Compatibility
