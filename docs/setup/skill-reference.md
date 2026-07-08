@@ -66,12 +66,15 @@ The repository also contains additional reusable data science skills that can pl
 
 ## Software Team Skills
 
-These skills are for data scientists working as part of a software engineering team — writing production code, collaborating with engineers, and shipping ML features through a standard development workflow. Adapted from [Matt Pocock's engineering skills](https://github.com/mattpocock/skills).
+These skills are for data scientists working as part of a software engineering team — writing production code, collaborating with engineers, and shipping ML features through a standard development workflow. Some are adapted from [Matt Pocock's engineering skills](https://github.com/mattpocock/skills); the PR-8 additions are adapted from [Addy Osmani's agent-skills](https://github.com/addyosmani/agent-skills).
 
+- [`interview-me`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/interview-me): clarify an underspecified user intent before problem framing, specification, or implementation begins
 - [`tdd-data-pipeline`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/tdd-data-pipeline): test-driven development for data pipelines, feature transforms, and model inference wrappers — red-green-refactor loop, behavioral contracts not implementation details
 - [`zoom-out`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/zoom-out): map an unfamiliar section of code — callers, data flow, downstream dependencies, backbone artifact references — before modifying anything
 - [`grill-with-codebase`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/grill-with-codebase): build a shared domain language with the engineering team before writing production data science code — resolves naming conflicts, documents conventions, creates `DATA_CONTEXT.md` and ADRs
 - [`ml-feature-spec`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/ml-feature-spec): write a machine learning feature spec (PRD) and break it into vertical-slice GitHub issues — input/output contracts, validation criteria, user stories, monitoring requirements
+- [`incremental-implementation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/incremental-implementation): implement multi-file data-science software changes in small verified slices without mixing unrelated cleanup
+- [`code-review-and-quality`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/code-review-and-quality): review data-science software changes before merge for spec fit, tests, workflow gates, data risk, and maintainability
 
 ## Methods Skills
 

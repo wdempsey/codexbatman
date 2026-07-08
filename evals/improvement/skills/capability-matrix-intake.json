@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "skill": "capability-matrix-intake",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "osmani-idea-refine-fold",
+      "input": "Help me turn this raw analytics product idea into a few possible directions before we commit.",
+      "expected_route": [
+        "interview-me if intent is unclear",
+        "problem-framing or grill-problem-frame",
+        "do not add idea-refine as a standalone skill"
+      ],
+      "must_include": [
+        "problem-framing",
+        "grill-problem-frame"
+      ],
+      "must_not_include": [
+        "route to idea-refine"
+      ],
+      "notes": "Documents PR-8 fold decision: ideation belongs in existing framing surfaces unless a future eval proves a distinct job."
+    },
+    {
+      "id": "osmani-debugging-fold",
+      "input": "The notebook runs but the model AUC looks impossibly high after my preprocessing change.",
+      "expected_route": [
+        "debug-model-failure",
+        "code-review-and-quality if reviewing a fix",
+        "do not add debugging-and-error-recovery as a standalone skill"
+      ],
+      "must_include": [
+        "debug-model-failure",
+        "leakage"
+      ],
+      "must_not_include": [
+        "route to debugging-and-error-recovery"
+      ],
+      "notes": "Documents PR-8 fold decision: broad debugging is already covered by data-science-specific debug skills."
+    },
+    {
+      "id": "osmani-spec-driven-fold",
+      "input": "Write a spec for a production ML feature that engineering can review.",
+      "expected_route": [
+        "ml-feature-spec",
+        "do not add generic spec-driven-development as a standalone skill"
+      ],
+      "must_include": [
+        "ml-feature-spec",
+        "input/output contract"
+      ],
+      "must_not_include": [
+        "route to spec-driven-development"
+      ],
+      "notes": "Documents PR-8 fold decision: ML feature specification already has a repo-native owner."
+    },
+    {
+      "id": "osmani-doubt-driven-fold",
+      "input": "Before we merge, find what is wrong with this high-risk data pipeline change.",
+      "expected_route": [
+        "code-review-and-quality",
+        "debug-analysis-notebook or debug-model-failure if a failure is found",
+        "do not add doubt-driven-development as a standalone skill"
+      ],
+      "must_include": [
+        "code-review-and-quality",
+        "Required"
+      ],
+      "must_not_include": [
+        "route to doubt-driven-development"
+      ],
+      "notes": "Documents PR-8 fold decision: adversarial review should sharpen existing review/debug surfaces before becoming another skill."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Planning
 
-Last updated: 2026-07-07
+Last updated: 2026-07-08
 
 ## Active: Skill Intake And Capability Matrix
 
@@ -22,7 +22,8 @@ Last updated: 2026-07-07
 - [x] PR-5: class-notes ingestion skill should reuse `/grill-the-student` notation and course-coverage conventions.
 - [x] PR-6: refine the existing `misconception-diagnosis` skill rather than creating a duplicate; emit evidence records compatible with the skill-auditor mastery schema.
 - [x] PR-7: add worked case studies that combine class notes, pre-answer alignment, misconception diagnosis, and student-safe tutoring.
-- [ ] PR-8: evaluate curated Osmani imports one at a time and propose a split if seven skills make the PR too broad.
+- [x] PR-8: evaluate curated Osmani imports one at a time and admit only distinct software-team adapters.
+- [ ] Track folded Osmani candidates as incumbent-improvement opportunities only: `idea-refine` -> `problem-framing` or `grill-problem-frame`; `spec-driven-development` -> `ml-feature-spec`; `debugging-and-error-recovery` -> debug skills; `doubt-driven-development` -> review or framing skills.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
