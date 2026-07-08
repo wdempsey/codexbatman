@@ -10,6 +10,8 @@ The `memory/students/` directory persists learner identity and progress across s
 memory/students/{name}/
 ├── profile.md          — who you are, your goals, your preferred explanation style
 ├── mastery.json        — topic-by-topic mastery levels, open questions, resolved misconceptions
+├── NOTATION.md         — confirmed professor/course notation for future tutoring
+├── COURSE-CONTEXT.md   — confirmed course coverage, constraints, and note issues
 ├── session-log.md      — append-only log of every session summary
 └── flagged-skills.md   — techniques worth promoting to the shared skill library
 ```
@@ -32,6 +34,7 @@ The tutor reads `profile.md` and `mastery.json` at the start of every student se
 - Your last session topic and date
 - Any open questions you left unresolved
 - Your current mastery levels for the topic you're about to work on
+- Any confirmed `NOTATION.md` / `COURSE-CONTEXT.md` details that should shape tutoring
 
 If no subfolder exists for your name, the tutor will offer to register you on the spot.
 
@@ -53,12 +56,15 @@ Each student has their own subfolder. There is no collision. Mastery files are s
 
 **The tutor can:**
 - Read `profile.md` and `mastery.json` at session start
+- Read `NOTATION.md` and `COURSE-CONTEXT.md` at session start when present
+- Suggest updates to `NOTATION.md` and `COURSE-CONTEXT.md` after you confirm class-note ingestion
 - Suggest mastery level updates at the end of a session (via `/wrap`)
 - Append a session summary to `session-log.md` after the student confirms
 - Add a flagged technique to `flagged-skills.md` when the student says `/flag-skill`
 
 **The tutor cannot:**
 - Write to `mastery.json` without explicit student confirmation
+- Silently rewrite your professor's notation or silently correct possible note errors
 - Merge, delete, or restructure the student folder
 - Promote a flagged skill to the shared library — that requires human review via the skill-auditor agent
 

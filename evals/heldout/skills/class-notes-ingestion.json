@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "skill": "class-notes-ingestion",
+  "split": "heldout",
+  "cases": [
+    {
+      "id": "class-notes-ingestion-heldout-assignment-constraints",
+      "input": "Please ingest my class notes. The instructor says for this unit we can use logistic regression and likelihood ratio tests, but not random forests or cross-validation.",
+      "expected_route": [
+        "class-notes-ingestion",
+        "COURSE-CONTEXT.md",
+        "covered and off-limits methods"
+      ],
+      "must_include": [
+        "COURSE-CONTEXT.md",
+        "off limits",
+        "confirmation"
+      ],
+      "must_not_include": [
+        "recommend random forests",
+        "recommend cross-validation"
+      ],
+      "notes": "Frozen regression check for persisting assignment constraints without giving method advice."
+    },
+    {
+      "id": "class-notes-ingestion-heldout-one-off-help",
+      "input": "Can you help me understand this page of notes right now? I don't need you to remember it for later.",
+      "expected_route": [
+        "grill-the-student or tutor-mode",
+        "do not write persistent files"
+      ],
+      "must_include": [
+        "grill-the-student",
+        "tutor-mode",
+        "not write"
+      ],
+      "must_not_include": [
+        "write NOTATION.md",
+        "create memory entries"
+      ],
+      "notes": "Frozen regression check for the boundary between persistent ingestion and one-off tutoring."
+    }
+  ]
+}

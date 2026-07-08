@@ -23,13 +23,16 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-Next skill PR: PR-5 class-notes ingestion.
+PR-5 adds class-notes ingestion for persistent student `NOTATION.md` and
+`COURSE-CONTEXT.md` context.
+
+Next skill PR: PR-6 misconception diagnosis refinements.
 
 Focus:
 
-- reuse `/grill-the-student` conventions for notation, course coverage, and confusion boundaries
-- define the `NOTATION.md` / `COURSE-CONTEXT.md` shape without writing to `memory/students/` outside the brief
-- handle messy notes, OCR artifacts, idiosyncratic notation, and seeded errors by flagging rather than silently correcting
+- refine the existing `misconception-diagnosis` skill rather than creating a duplicate
+- implement the diagnosis loop: reproduce student reasoning, localize the broken step, offer a minimal counterexample, and verify repair Socratically
+- emit evidence records compatible with the skill-auditor mastery schema
 - include PR-3 eval tasks and keep the skill-pruning rule in mind
 - keep command-style skill migration gradual and tracked in `planning.md`
 

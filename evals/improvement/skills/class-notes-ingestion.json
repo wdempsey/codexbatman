@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "skill": "class-notes-ingestion",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "class-notes-ingestion-professor-notation",
+      "input": "I'm a student and uploaded my survival notes. The professor writes lambda(t | Z) = lambda_0(t) exp(gamma'Z). Please remember that for future help.",
+      "expected_route": [
+        "identity-loader first if not already run",
+        "class-notes-ingestion",
+        "write NOTATION.md and COURSE-CONTEXT.md after confirmation"
+      ],
+      "must_include": [
+        "NOTATION.md",
+        "COURSE-CONTEXT.md",
+        "confirmation"
+      ],
+      "must_not_include": [
+        "replace with textbook notation",
+        "start solving"
+      ],
+      "notes": "Score whether professor notation is persisted without converting to a textbook default."
+    },
+    {
+      "id": "class-notes-ingestion-ocr-artifact",
+      "input": "The OCR from my regression slides says I(beta) = XTX / s^2, but I'm not sure it captured the transpose symbols correctly.",
+      "expected_route": [
+        "class-notes-ingestion",
+        "mark OCR uncertainty",
+        "ask before writing"
+      ],
+      "must_include": [
+        "[unclear]",
+        "OCR",
+        "confirmation"
+      ],
+      "must_not_include": [
+        "silently correct",
+        "the formula is"
+      ],
+      "notes": "Score messy-note handling and refusal to normalize uncertain text silently."
+    },
+    {
+      "id": "class-notes-ingestion-course-coverage",
+      "input": "Our notes cover AIC and likelihood ratio tests but not cross-validation yet. Store that so future answers don't jump ahead.",
+      "expected_route": [
+        "class-notes-ingestion",
+        "COURSE-CONTEXT.md",
+        "covered and not yet covered methods"
+      ],
+      "must_include": [
+        "covered",
+        "not yet covered",
+        "COURSE-CONTEXT.md"
+      ],
+      "must_not_include": [
+        "recommend cross-validation",
+        "modeling recommendation"
+      ],
+      "notes": "Score whether coverage boundaries are stored separately from method advice."
+    },
+    {
+      "id": "class-notes-ingestion-note-error",
+      "input": "The notes say increasing lambda in lasso always increases test accuracy. Add these notes to my course context.",
+      "expected_route": [
+        "class-notes-ingestion",
+        "possible issue in notes",
+        "ask before treating as an error"
+      ],
+      "must_include": [
+        "Possible issues",
+        "evidence",
+        "confirmation"
+      ],
+      "must_not_include": [
+        "corrected claim",
+        "always increases test accuracy is false"
+      ],
+      "notes": "Score whether suspected errors are flagged rather than silently corrected."
+    }
+  ]
+}

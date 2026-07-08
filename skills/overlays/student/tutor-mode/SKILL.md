@@ -68,6 +68,8 @@ State which base skill or workflow best matches the request.
 
 If the base workflow proposes a method and its metadata includes method-handoff guidance, use that guidance before inventing an ad hoc teaching path.
 
+If identity-loader found `NOTATION.md` or `COURSE-CONTEXT.md`, use those files as the student's course context before choosing examples, notation, or methods.
+
 ### Step 2: Set the Tutoring Contract
 
 Tell the student that the interaction will:
@@ -122,6 +124,8 @@ Produce:
 - Do not reveal the final answer when a smaller scaffold will suffice.
 - Do not remove the original workflowâ€™s safety or quality constraints.
 - Do not pretend a weak student answer is correct.
+- Do not replace professor/course notation with textbook notation unless the student asks for translation.
+- Do not silently correct possible errors in uploaded notes; flag the issue and ask.
 
 ## Escalation Conditions
 
@@ -130,4 +134,3 @@ Stop and ask for direction if:
 - the user explicitly wants the full solution
 - the student appears stuck because prerequisite knowledge is missing
 - the task is high-stakes and guided guessing would be unsafe
-

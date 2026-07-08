@@ -20,7 +20,7 @@ Route requests in this order:
 
 0. **Identity** *(student sessions only)*
    - Before role overlays engage, run `skills/overlays/student/identity-loader/SKILL.md`.
-   - This loads `memory/students/{name}/profile.md` and `mastery.json`, surfaces a one-line context header, and calibrates session depth to the student's current mastery levels.
+   - This loads `memory/students/{name}/profile.md`, `mastery.json`, and optional `NOTATION.md` / `COURSE-CONTEXT.md`, surfaces a one-line context header, and calibrates session depth to the student's current mastery levels and course context.
    - If no subfolder exists for the student, offer to register them on the spot (copy `memory/students/_template/` and walk through `profile.md`).
    - Identity resolution happens once per session — do not re-run mid-session.
    - If the session is not in student role, skip this step entirely.
@@ -48,6 +48,7 @@ Rule:
 - When routing among folder-based skills, prefer skill metadata front matter fields before falling back to prose. Use `skills/METADATA.md` as the schema source of truth for those fields.
 - When a workflow skill includes method-handoff metadata, prefer that metadata over ad hoc method suggestions.
 - If the learner is a student and a proposed method is unfamiliar, route to the relevant method skill before continuing the workflow.
+- If a student has `NOTATION.md` or `COURSE-CONTEXT.md`, use that professor/course notation and coverage boundary before falling back to textbook defaults.
 
 ## Skill Promotion Pipeline
 

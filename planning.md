@@ -19,7 +19,8 @@ Last updated: 2026-07-07
 - [x] PR-3: add skill telemetry conventions and `/improve-skill` proposal workflow.
 - [x] PR-4: record skill admission/pruning policy in `SKILL-STYLE.md` and `CAPABILITY-MATRIX.md`.
 - [x] PR-4: design `/grill-the-student` against the new eval and telemetry conventions.
-- [ ] PR-5: class-notes ingestion skill should reuse `/grill-the-student` notation and course-coverage conventions.
+- [x] PR-5: class-notes ingestion skill should reuse `/grill-the-student` notation and course-coverage conventions.
+- [ ] PR-6: refine the existing `misconception-diagnosis` skill rather than creating a duplicate; emit evidence records compatible with the skill-auditor mastery schema.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture
 
