@@ -23,16 +23,18 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-PR-5 adds class-notes ingestion for persistent student `NOTATION.md` and
-`COURSE-CONTEXT.md` context.
+PR-6 refines the existing `misconception-diagnosis` student overlay around the
+reproduce, localize, counterexample, repair-check loop and evidence records for
+`mastery.json`.
 
-Next skill PR: PR-6 misconception diagnosis refinements.
+Next skill PR: PR-7 worked case studies for students bringing class notes.
 
 Focus:
 
-- refine the existing `misconception-diagnosis` skill rather than creating a duplicate
-- implement the diagnosis loop: reproduce student reasoning, localize the broken step, offer a minimal counterexample, and verify repair Socratically
-- emit evidence records compatible with the skill-auditor mastery schema
+- add 3-4 end-to-end examples, not new core skills
+- include a survival-analysis notes case reconciled with the RAG demo
+- include a problem set routed through `/grill-the-student`
+- include a notes-containing-error case surfaced Socratically
 - include PR-3 eval tasks and keep the skill-pruning rule in mind
 - keep command-style skill migration gradual and tracked in `planning.md`
 
