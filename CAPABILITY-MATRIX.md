@@ -8,7 +8,7 @@ The matrix classifies the current folder-based `SKILL.md` inventory. Each skill
 occupies exactly one default cell, even when its frontmatter lists multiple
 compatible roles. That default cell is the dedupe and evaluation owner.
 
-Current coverage: 55 folder-based `SKILL.md` files.
+Current coverage: 56 folder-based `SKILL.md` files.
 
 ## Intake Rule
 
@@ -22,6 +22,11 @@ Current coverage: 55 folder-based `SKILL.md` files.
 
 Dedupe by function through eval. Do not dedupe by reading descriptions side by
 side.
+
+Admission policy lives in `SKILL-STYLE.md`. In this matrix, every new skill must
+either own a distinct default cell/job, replace an incumbent after eval
+comparison, or be rejected/folded into an incumbent as examples, rubric, or
+reference material.
 
 ## Role Lanes
 
@@ -63,7 +68,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 
 | Task type | Default skills |
 | --- | --- |
-| `student-overlay` | `identity-loader`, `repo-bootstrap-student`, `session-wrap`, `tutor-mode`, `socratic-tutor`, `hint-ladder`, `exercise-generator`, `misconception-diagnosis` |
+| `student-overlay` | `identity-loader`, `repo-bootstrap-student`, `session-wrap`, `grill-the-student`, `tutor-mode`, `socratic-tutor`, `hint-ladder`, `exercise-generator`, `misconception-diagnosis` |
 | `method-teaching` | `linear-regression`, `ridge-regression`, `lasso`, `cross-validation`, `random-forest`, `gradient-boosting`, `islr-resource`, `explain-method` |
 
 ### Data Scientist
@@ -104,6 +109,7 @@ future intake PR should run comparative evals before admitting another skill.
 | Debugging | `debug-analysis-notebook`, `debug-model-failure`, `model-prototype` | Is the failure execution-level, semantic/model-level, or a quick learnability probe? |
 | Session closure | `workflow-trace`, `handoff`, `trace-distillation`, `session-wrap` | Is the output a session record, a handoff, a reusable lesson, or student memory? |
 | Student help | `tutor-mode`, `socratic-tutor`, `hint-ladder`, `misconception-diagnosis`, `exercise-generator` | Is the student asking for guided workflow help, a hint, diagnosis, or practice? |
+| Pre-answer student alignment | `grill-the-student`, `identity-loader`, `tutor-mode`, `misconception-diagnosis` | Is the missing piece student identity, pre-answer context alignment, ordinary tutoring, or misconception repair? |
 | Manager operations | `project-setup`, `project-manager-agent`, `lab-manager-agent`, `weekly-review`, `project-tracker` | Is the scope one project, a portfolio, a recurring review, or a manager-facing overlay? |
 | Manager communication | `stakeholder-update`, `communication-workflows`, `executive-summary` | Is the output an external update, a communication workflow, or a summary wrapper? |
 | Routing | `ask-codexbatman`, role overlays, workflow gates | Is the proposed skill only choosing a route, or is it executing a workflow step? |

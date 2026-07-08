@@ -33,6 +33,25 @@ Every skill proposal goes through the same sequence:
 Dedupe by function through evaluation. Do not dedupe by reading descriptions
 side by side and guessing.
 
+## Admission And Pruning Rule
+
+New skills must reduce routing uncertainty, not add to it.
+
+Admit a new skill only when it satisfies at least one condition:
+
+- owns a distinct job that no incumbent skill should own
+- replaces an incumbent after eval comparison
+- exposes a reusable workflow that would be too large or fragile as a section of an existing skill
+
+Do not admit a new skill when the idea is better represented as:
+
+- an example in `EXAMPLES.md`
+- a rubric item
+- a short section inside an incumbent skill
+- an eval case that sharpens existing behavior
+
+If a proposal overlaps an occupied matrix cell, compare it against the incumbent skill on shared eval tasks. The PR must record the keep, merge, replace, or reject decision.
+
 ## Frontmatter
 
 Every `SKILL.md` starts with YAML frontmatter. Required fields are defined in
@@ -193,6 +212,7 @@ Before approving a new or adapted skill, check:
 - The skill has one default matrix cell.
 - Any cell collision was evaluated through shared tasks.
 - The skill adds a capability or improves an incumbent.
+- The skill passes the admission and pruning rule: distinct job, replacement, or necessary reusable workflow.
 - The first screen is short enough to load before the full guide.
 - Enforcement requirements are not buried in prose.
 - Source inspiration is attributed without copying.

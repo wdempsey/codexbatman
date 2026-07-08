@@ -23,14 +23,14 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-Next skill PR: PR-4 `/grill-the-student`.
+Next skill PR: PR-5 class-notes ingestion.
 
 Focus:
 
-- use the PR-3 eval format for `/grill-the-student` cases
-- keep the skill student-facing and one-question-at-a-time
-- extract notation, course coverage, and confusion boundary before answering
-- exit only when Codex can restate the student's mental model and the student confirms
+- reuse `/grill-the-student` conventions for notation, course coverage, and confusion boundaries
+- define the `NOTATION.md` / `COURSE-CONTEXT.md` shape without writing to `memory/students/` outside the brief
+- handle messy notes, OCR artifacts, idiosyncratic notation, and seeded errors by flagging rather than silently correcting
+- include PR-3 eval tasks and keep the skill-pruning rule in mind
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs

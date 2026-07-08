@@ -95,6 +95,25 @@
         "create a new skill immediately"
       ],
       "notes": "Score intake discipline and overlap handling."
+    },
+    {
+      "id": "ask-codexbatman-student-unclear-context",
+      "input": "I'm a student and I need help with my stats homework, but I don't know exactly where I'm stuck.",
+      "expected_route": [
+        "student",
+        "identity-loader",
+        "grill-the-student",
+        "tutor-mode after confirmed alignment"
+      ],
+      "must_include": [
+        "identity-loader",
+        "grill-the-student",
+        "confusion boundary"
+      ],
+      "must_not_include": [
+        "start solving"
+      ],
+      "notes": "Score routing to pre-answer alignment when student context is too vague for ordinary tutor-mode."
     }
   ]
 }

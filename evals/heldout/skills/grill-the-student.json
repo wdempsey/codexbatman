@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "skill": "grill-the-student",
+  "split": "heldout",
+  "cases": [
+    {
+      "id": "grill-student-heldout-survival-notation",
+      "input": "My survival notes use h0(t) exp(beta x), but I don't know what part of the Cox model I am confused about.",
+      "expected_route": [
+        "identity-loader if student session has not started",
+        "grill-the-student",
+        "notation and confusion boundary before tutor-mode"
+      ],
+      "must_include": [
+        "notation",
+        "confusion boundary",
+        "one question"
+      ],
+      "must_not_include": [
+        "Cox model assumes"
+      ],
+      "notes": "Frozen regression check for notation-heavy student alignment."
+    },
+    {
+      "id": "grill-student-heldout-assignment-constraint",
+      "input": "Can you help with this stats homework? The prompt says use only methods from Chapter 3, but I found a random forest example online.",
+      "expected_route": [
+        "grill-the-student",
+        "course coverage and assignment constraints",
+        "tutor-mode after alignment"
+      ],
+      "must_include": [
+        "Chapter 3",
+        "allowed",
+        "one question"
+      ],
+      "must_not_include": [
+        "random forest"
+      ],
+      "notes": "Frozen regression check for assignment-constraint alignment before method advice."
+    }
+  ]
+}

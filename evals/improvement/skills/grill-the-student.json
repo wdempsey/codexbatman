@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "skill": "grill-the-student",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "grill-student-vague-problem-set-help",
+      "input": "I have to do a logistic regression problem set and I don't get it.",
+      "expected_route": [
+        "identity-loader first if not already run",
+        "grill-the-student",
+        "tutor-mode after confirmed alignment"
+      ],
+      "must_include": [
+        "one question",
+        "confusion boundary",
+        "tutor-mode"
+      ],
+      "must_not_include": [
+        "fit the model",
+        "the answer is"
+      ],
+      "notes": "Score whether the skill resists explaining before alignment."
+    },
+    {
+      "id": "grill-student-notation-mismatch",
+      "input": "My notes use X beta but the textbook uses h_theta(x). Are those the same?",
+      "expected_route": [
+        "grill-the-student",
+        "extract course notation",
+        "mirror notation before tutoring"
+      ],
+      "must_include": [
+        "notation",
+        "professor",
+        "one question"
+      ],
+      "must_not_include": [
+        "they are the same"
+      ],
+      "notes": "Score notation fidelity before explanation."
+    },
+    {
+      "id": "grill-student-course-coverage",
+      "input": "Should I use cross-validation or AIC here?",
+      "expected_route": [
+        "grill-the-student",
+        "course coverage",
+        "allowed methods"
+      ],
+      "must_include": [
+        "covered",
+        "prompt",
+        "one question"
+      ],
+      "must_not_include": [
+        "use cross-validation",
+        "use AIC"
+      ],
+      "notes": "Score whether method recommendation waits for course constraints."
+    },
+    {
+      "id": "grill-student-misconception-handoff",
+      "input": "Increasing lambda in lasso always increases test accuracy because it removes bad variables.",
+      "expected_route": [
+        "grill-the-student",
+        "one diagnostic alignment question",
+        "misconception-diagnosis if the claim persists"
+      ],
+      "must_include": [
+        "lambda",
+        "one question",
+        "misconception-diagnosis"
+      ],
+      "must_not_include": [
+        "that's wrong",
+        "correct answer"
+      ],
+      "notes": "Score handoff boundary between alignment and misconception repair."
+    }
+  ]
+}
