@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "skill": "misconception-diagnosis",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "misconception-diagnosis-lasso-lambda",
+      "input": "I keep saying increasing lambda in lasso always improves test accuracy because it removes bad variables, even after the hint about regularization.",
+      "expected_route": [
+        "misconception-diagnosis",
+        "reproduce student reasoning",
+        "localize broken step",
+        "minimal counterexample",
+        "repair check",
+        "evidence record"
+      ],
+      "must_include": [
+        "Student Reasoning Reproduced",
+        "Broken Step",
+        "Minimal Counterexample",
+        "Repair Check",
+        "Evidence Record"
+      ],
+      "must_not_include": [
+        "that's wrong",
+        "final answer"
+      ],
+      "notes": "Score the required PR-6 diagnosis loop on a common regularization misconception."
+    },
+    {
+      "id": "misconception-diagnosis-descriptive-predictive",
+      "input": "I keep turning descriptive problem-framing questions into prediction tasks. I wrote 'predict who will churn' when the prompt asks 'describe churn patterns last quarter.'",
+      "expected_route": [
+        "misconception-diagnosis",
+        "problem-framing",
+        "objective-type broken step",
+        "minimal contrast",
+        "revision prompt"
+      ],
+      "must_include": [
+        "problem-framing",
+        "Broken Step",
+        "counterexample",
+        "revise"
+      ],
+      "must_not_include": [
+        "build a classifier",
+        "start modeling"
+      ],
+      "notes": "Score whether the skill localizes the objective switch instead of solving a modeling task."
+    },
+    {
+      "id": "misconception-diagnosis-course-notation",
+      "input": "My course notes use lambda(t | Z) for the hazard. I keep interpreting lambda(t | Z) like survival probability S(t | Z).",
+      "expected_route": [
+        "misconception-diagnosis",
+        "use course notation",
+        "minimal counterexample",
+        "repair check"
+      ],
+      "must_include": [
+        "lambda(t | Z)",
+        "S(t | Z)",
+        "Broken Step",
+        "Repair Check"
+      ],
+      "must_not_include": [
+        "replace the notation",
+        "ignore the notes"
+      ],
+      "notes": "Score fidelity to PR-5 course notation while repairing a survival-analysis misconception."
+    },
+    {
+      "id": "misconception-diagnosis-no-attempt-boundary",
+      "input": "I don't understand lasso at all. Diagnose my misconception.",
+      "expected_route": [
+        "do not diagnose yet",
+        "tutor-mode or method skill",
+        "ask for an attempt before evidence record"
+      ],
+      "must_include": [
+        "attempt",
+        "tutor-mode",
+        "method skill"
+      ],
+      "must_not_include": [
+        "### Evidence Record For Session Wrap",
+        "\"status\": \"resolved\""
+      ],
+      "notes": "Score the boundary between missing prerequisite knowledge and a diagnosable misconception."
+    }
+  ]
+}

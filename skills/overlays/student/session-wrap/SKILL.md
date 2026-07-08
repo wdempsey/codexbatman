@@ -75,6 +75,8 @@ Present the draft to the student: "Here's my summary of today's session — does
 
 Based on the session, propose specific mastery level changes. Err conservative — do not promote to `mastered` without a Feynman check.
 
+If `misconception-diagnosis` emitted an evidence record, show it to the student with the mastery updates. Confirm whether it should be appended to `mastery.json` → `misconceptions_resolved`, and keep the record shape from `memory/students/_template/mastery.json`.
+
 Feynman check prompt (use when considering `practiced → mastered`):
 
 > "Before I mark {topic} as mastered — can you explain {topic} to me as if you were teaching it to a colleague who hasn't seen it? I'll listen and ask one or two follow-up questions."
@@ -98,7 +100,7 @@ Wait for explicit confirmation before writing. The student can decline any updat
 Only after the student confirms:
 
 1. **Append to `session-log.md`** — add the confirmed session entry with mastery updates filled in
-2. **Update `mastery.json`** — apply confirmed mastery level changes; append to `open_questions`, `misconceptions_resolved`, and `feynman_checks_passed` arrays as appropriate
+2. **Update `mastery.json`** — apply confirmed mastery level changes; append to `open_questions`, `misconceptions_resolved`, and `feynman_checks_passed` arrays as appropriate. Use any confirmed `misconception-diagnosis` evidence record as the `misconceptions_resolved` entry.
 3. **Update `profile.md` → Last session line** — format: `YYYY-MM-DD | {primary topic} | {one-line summary}`
 
 Tell the student what was written:

@@ -60,6 +60,7 @@ Each student has their own subfolder. There is no collision. Mastery files are s
 - Suggest updates to `NOTATION.md` and `COURSE-CONTEXT.md` after you confirm class-note ingestion
 - Suggest mastery level updates at the end of a session (via `/wrap`)
 - Append a session summary to `session-log.md` after the student confirms
+- Append confirmed misconception-diagnosis evidence records to `mastery.json` via `/wrap`
 - Add a flagged technique to `flagged-skills.md` when the student says `/flag-skill`
 
 **The tutor cannot:**

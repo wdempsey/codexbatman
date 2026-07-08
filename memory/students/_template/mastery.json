@@ -9,7 +9,19 @@
     ],
     "update_policy": "Tutor may SUGGEST updates at session end. Student must CONFIRM before mastery.json is written. Never update without a corresponding session-log.md entry dated the same day.",
     "adding_topics": "Add new topic keys under the appropriate domain object. Use snake_case. Do not remove existing keys — set to 'unknown' if not yet relevant to this student.",
-    "source_tracking": "Each topic entry can optionally include a 'last_session' date and 'notes' string for maintainer context. These are written by the tutor at session wrap."
+    "source_tracking": "Each topic entry can optionally include a 'last_session' date and 'notes' string for maintainer context. These are written by the tutor at session wrap.",
+    "misconceptions_resolved_schema": {
+      "date": "YYYY-MM-DD",
+      "domain": "domain key from domains, if known",
+      "topic": "topic key from the domain, if known",
+      "misconception": "plain-language misconception",
+      "student_reasoning_evidence": "short evidence from the student's attempt",
+      "broken_step": "earliest invalid step in the reasoning",
+      "counterexample": "minimal counterexample or contrast used",
+      "repair_check": "student's repair result or pending prompt",
+      "status": "resolved | needs_practice",
+      "recommended_mastery_update": "none | introduced | practiced"
+    }
   },
   "student": {
     "name": "",

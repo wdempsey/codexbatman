@@ -134,6 +134,26 @@
         "skip memory confirmation"
       ],
       "notes": "Score routing to persistent class-note context rather than one-off pre-answer alignment."
+    },
+    {
+      "id": "ask-codexbatman-student-repeated-misconception",
+      "input": "I'm a student. I keep saying that larger lasso lambda always improves test accuracy, even after hints. Can you diagnose the misconception?",
+      "expected_route": [
+        "student",
+        "identity-loader",
+        "misconception-diagnosis",
+        "session-wrap evidence record after repair"
+      ],
+      "must_include": [
+        "identity-loader",
+        "misconception-diagnosis",
+        "evidence record"
+      ],
+      "must_not_include": [
+        "grill-the-student first",
+        "start solving"
+      ],
+      "notes": "Score routing to misconception diagnosis when repeated wrong reasoning is explicit."
     }
   ]
 }

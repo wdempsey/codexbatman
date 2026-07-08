@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "skill": "misconception-diagnosis",
+  "split": "heldout",
+  "cases": [
+    {
+      "id": "misconception-diagnosis-heldout-leakage-timing",
+      "input": "I keep including variables measured after the prediction time because they make validation accuracy higher. The hints about leakage have not stuck.",
+      "expected_route": [
+        "misconception-diagnosis",
+        "data-audit or modeling",
+        "prediction-time broken step",
+        "minimal counterexample",
+        "repair check"
+      ],
+      "must_include": [
+        "prediction time",
+        "Broken Step",
+        "Minimal Counterexample",
+        "Repair Check"
+      ],
+      "must_not_include": [
+        "recommended action: keep",
+        "optimize accuracy only"
+      ],
+      "notes": "Frozen regression check for leakage reasoning as a diagnosable misconception."
+    },
+    {
+      "id": "misconception-diagnosis-heldout-one-off-slip",
+      "input": "I made one arithmetic mistake copying a coefficient sign. Diagnose my misconception.",
+      "expected_route": [
+        "do not diagnose a misconception",
+        "one-off slip",
+        "hint-ladder or small correction"
+      ],
+      "must_include": [
+        "one-off",
+        "not a misconception",
+        "hint-ladder"
+      ],
+      "must_not_include": [
+        "### Evidence Record For Session Wrap",
+        "\"status\": \"resolved\""
+      ],
+      "notes": "Frozen regression check that one-off slips do not create durable evidence records."
+    }
+  ]
+}
