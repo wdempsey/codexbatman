@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "skill": "plan-as-guidance",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "plan-guidance-exploratory-eda",
+      "input": "Plan EDA for a messy customer dataset before we decide whether churn prediction is viable. We expect to discover data quality issues.",
+      "expected_route": [
+        "plan-as-guidance",
+        "data-audit and eda-plan boundaries",
+        "revision triggers for data quality and target definition discoveries"
+      ],
+      "must_include": [
+        "Loop Contract",
+        "Acceptance evidence",
+        "Allowed revisions",
+        "Stop conditions"
+      ],
+      "must_not_include": [
+        "fixed sequence",
+        "train production model"
+      ],
+      "notes": "Score whether exploratory work is bounded by outcomes while preserving mid-flight revision."
+    },
+    {
+      "id": "plan-guidance-midflight-leakage",
+      "input": "The original plan says to build the baseline next, but feature review found a column that leaks the outcome.",
+      "expected_route": [
+        "plan-as-guidance",
+        "deviation log",
+        "return to data-audit or leakage review before modeling"
+      ],
+      "must_include": [
+        "Deviation Log",
+        "Evidence",
+        "Reason",
+        "data-audit"
+      ],
+      "must_not_include": [
+        "continue modeling",
+        "ignore the leak"
+      ],
+      "notes": "Score whether revision is treated as a required safety move rather than plan failure."
+    },
+    {
+      "id": "plan-guidance-implementation-handoff",
+      "input": "The ML feature spec is approved. Turn it into a flexible work plan, but do not implement yet.",
+      "expected_route": [
+        "plan-as-guidance",
+        "incremental-implementation after plan approval"
+      ],
+      "must_include": [
+        "Intent",
+        "Acceptance criteria",
+        "Verification",
+        "incremental-implementation"
+      ],
+      "must_not_include": [
+        "implemented",
+        "write code now"
+      ],
+      "notes": "Score whether the plan bridges spec to execution without starting implementation."
+    },
+    {
+      "id": "plan-guidance-skip-mechanical-edit",
+      "input": "Fix a typo in one Markdown heading.",
+      "expected_route": [
+        "do not invoke plan-as-guidance",
+        "perform mechanical edit"
+      ],
+      "must_include": [
+        "skip",
+        "mechanical"
+      ],
+      "must_not_include": [
+        "Loop Contract",
+        "Deviation Log"
+      ],
+      "notes": "Score whether tiny unambiguous edits avoid planning overhead."
+    },
+    {
+      "id": "plan-guidance-ml-spec-boundary",
+      "input": "Write the engineering-facing spec for a production ML feature.",
+      "expected_route": [
+        "ml-feature-spec",
+        "plan-as-guidance only after the spec is approved"
+      ],
+      "must_include": [
+        "ml-feature-spec",
+        "approved spec"
+      ],
+      "must_not_include": [
+        "plan first"
+      ],
+      "notes": "Score the boundary between specification and outcome-oriented planning."
+    }
+  ]
+}

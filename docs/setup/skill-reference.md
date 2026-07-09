@@ -59,6 +59,7 @@ The repository also contains additional reusable data science skills that can pl
 - [`handoff`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/handoff): produce a short structured session handoff so the next person or agent can continue without rebuilding context
 - [`model-prototype`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/model-prototype): quick throwaway model to test a specific hypothesis before committing to the full workflow
 - [`paper-to-replication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/paper-to-replication)
+- [`plan-as-guidance`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/plan-as-guidance): draft a flexible outcome-oriented plan with acceptance evidence, revision triggers, and a deviation log
 - [`repo-bootstrap-student`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/repo-bootstrap-student): teach a student how to create a GitHub-backed data science repository with a minimal artifact-first structure and first commit
 - [`result-communication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/result-communication)
 - [`trace-distillation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/trace-distillation)

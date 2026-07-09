@@ -23,18 +23,18 @@ adding, importing, or deduplicating folder-based skills.
 
 ## Current Skill-System Priority
 
-PR-7 adds worked case studies for students bringing class notes, including
-Survival RAG, problem-set alignment, seeded note errors, and simulation-design
-notes.
+PR-8 curated the Osmani import and admitted only distinct data-scientist
+software-team adapters. PR-9 adds `plan-as-guidance` as the loop-contract
+planning skill for flexible outcome-oriented plans.
 
-Next skill PR: PR-8 curated Osmani import.
+Next skill PR: PR-10 data-science-native skills.
 
 Focus:
 
-- run every imported skill through `SKILL-STYLE.md` and `CAPABILITY-MATRIX.md`
-- evaluate overlap before admitting anything new
-- prefer one-at-a-time adaptation and propose a split if seven imports are too much for one reviewable PR
-- distinguish data-scientist software-team skills from student overlays and manager operations
+- add an EDA skill that uses a hypothesis journal, sanity checks, and leakage audit
+- add a reproducibility skill for seed, version, and environment capture
+- keep `plan-as-guidance` responsible for flexible plans, not EDA or reproducibility logic
+- keep data-science workflow gates authoritative: no modeling before problem framing and data audit
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs
