@@ -27,6 +27,7 @@ This category contains the canonical and near-canonical workflows for discipline
 - `debug-analysis-notebook`
 - `result-communication`
 - `interview-me`
+- `plan-as-guidance`
 - `incremental-implementation`
 - `code-review-and-quality`
 

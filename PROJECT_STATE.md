@@ -53,6 +53,7 @@ The next layer of advanced AI-native skills is also present or emerging:
 - `causal-design-check`
 - `paper-to-replication`
 - `debug-analysis-notebook`
+- `plan-as-guidance`
 - `result-communication`
 
 ## 5. Remaining Structural Tasks
@@ -67,4 +68,4 @@ The methods skill library is intentionally incremental. Its initial methods cove
 
 ## 6. Immediate Priority
 
-stabilization and synchronization before major expansion. PR-1 adds the flow audit, `/ask-codexbatman` router, `site-voice` normalization, role-alias cleanup, and a lightweight eval scaffold. PR-2 defines the determinism boundary, adds the student skill-promotion lifecycle gate, and adds the project `.claude/CLAUDE.md` student-session config shim. PR-3 adds skill telemetry conventions, a runnable eval harness, held-out versus improvement eval splits, and the `/improve-skill` meta-skill. PR-4 records the skill admission/pruning policy and adds `/grill-the-student` as a narrow pre-answer alignment overlay. PR-5 adds class-notes ingestion for persistent `NOTATION.md` and `COURSE-CONTEXT.md` student context. PR-6 refines the existing `misconception-diagnosis` skill around the reproduce, localize, counterexample, repair-check loop and mastery evidence records. PR-7 adds worked case studies for students bringing class notes, including Survival RAG, problem-set alignment, seeded note errors, and simulation-design notes. The next skill-system step is PR-8: curated Osmani imports through the intake process.
+stabilization and synchronization before major expansion. PR-1 adds the flow audit, `/ask-codexbatman` router, `site-voice` normalization, role-alias cleanup, and a lightweight eval scaffold. PR-2 defines the determinism boundary, adds the student skill-promotion lifecycle gate, and adds the project `.claude/CLAUDE.md` student-session config shim. PR-3 adds skill telemetry conventions, a runnable eval harness, held-out versus improvement eval splits, and the `/improve-skill` meta-skill. PR-4 records the skill admission/pruning policy and adds `/grill-the-student` as a narrow pre-answer alignment overlay. PR-5 adds class-notes ingestion for persistent `NOTATION.md` and `COURSE-CONTEXT.md` student context. PR-6 refines the existing `misconception-diagnosis` skill around the reproduce, localize, counterexample, repair-check loop and mastery evidence records. PR-7 adds worked case studies for students bringing class notes, including Survival RAG, problem-set alignment, seeded note errors, and simulation-design notes. PR-8 curates the Osmani import through the intake process. PR-9 adds `plan-as-guidance` for loop-contract planning. The next skill-system step is PR-10: data-science-native EDA and reproducibility skills.
