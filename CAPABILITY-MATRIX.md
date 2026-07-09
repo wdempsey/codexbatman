@@ -8,7 +8,7 @@ The matrix classifies the current folder-based `SKILL.md` inventory. Each skill
 occupies exactly one default cell, even when its frontmatter lists multiple
 compatible roles. That default cell is the dedupe and evaluation owner.
 
-Current coverage: 57 folder-based `SKILL.md` files.
+Current coverage: 60 folder-based `SKILL.md` files.
 
 ## Intake Rule
 
@@ -78,7 +78,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 | `workflow-gate` | `project-bootstrap`, `problem-framing`, `data-audit`, `eda-plan`, `modeling`, `model-evaluation`, `experiment-log` |
 | `workflow-support` | `causal-design-check`, `grill-problem-frame`, `paper-to-replication`, `result-communication`, `workflow-trace`, `handoff`, `trace-distillation` |
 | `diagnostics` | `debug-analysis-notebook`, `debug-model-failure`, `model-prototype` |
-| `software-team` | `grill-with-codebase`, `zoom-out`, `tdd-data-pipeline`, `ml-feature-spec` |
+| `software-team` | `interview-me`, `grill-with-codebase`, `zoom-out`, `ml-feature-spec`, `incremental-implementation`, `tdd-data-pipeline`, `code-review-and-quality` |
 | `practitioner-overlay` | `execution-mode`, `artifact-enforcer` |
 | `skill-pack` | `core-ml` |
 
@@ -107,6 +107,7 @@ future intake PR should run comparative evals before admitting another skill.
 | Problem definition | `problem-framing`, `grill-problem-frame`, `causal-design-check` | Is the new skill framing the project, pressure-testing the frame, or validating causal claims? |
 | Modeling and method rationale | `modeling`, `model-prototype`, `core-ml`, `explain-method`, method skills | Is the new skill executing a gate, running a throwaway probe, bundling checks, or teaching a method? |
 | Debugging | `debug-analysis-notebook`, `debug-model-failure`, `model-prototype` | Is the failure execution-level, semantic/model-level, or a quick learnability probe? |
+| Software-team delivery | `interview-me`, `ml-feature-spec`, `incremental-implementation`, `tdd-data-pipeline`, `code-review-and-quality` | Is the new skill clarifying intent, writing the spec, slicing implementation, writing tests first, or reviewing the finished change? |
 | Session closure | `workflow-trace`, `handoff`, `trace-distillation`, `session-wrap` | Is the output a session record, a handoff, a reusable lesson, or student memory? |
 | Student help | `tutor-mode`, `socratic-tutor`, `hint-ladder`, `misconception-diagnosis`, `exercise-generator` | Is the student asking for guided workflow help, a hint, diagnosis, or practice? |
 | Student context intake | `identity-loader`, `class-notes-ingestion`, `grill-the-student`, `tutor-mode`, `misconception-diagnosis` | Is the missing piece student identity, persistent class-note context, pre-answer context alignment, ordinary tutoring, or misconception repair? |

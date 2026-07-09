@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "skill": "incremental-implementation",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "incremental-ml-feature-slices",
+      "input": "Implement the approved ML feature. It touches feature generation, model serialization, inference wrapper, and monitoring docs.",
+      "expected_route": [
+        "incremental-implementation",
+        "verified slices",
+        "code-review-and-quality after implementation"
+      ],
+      "must_include": [
+        "Slice",
+        "Verify",
+        "out of scope"
+      ],
+      "must_not_include": [
+        "all at once",
+        "unrelated cleanup"
+      ],
+      "notes": "Score whether implementation is split into independently verifiable pieces."
+    },
+    {
+      "id": "incremental-boundary-with-tdd",
+      "input": "Write tests first for a feature transform that must preserve schema and reject missing columns.",
+      "expected_route": [
+        "tdd-data-pipeline",
+        "incremental-implementation only for broader slicing"
+      ],
+      "must_include": [
+        "tdd-data-pipeline",
+        "contract"
+      ],
+      "must_not_include": [
+        "skip tests"
+      ],
+      "notes": "Score the boundary between test-first pipeline work and implementation slicing."
+    }
+  ]
+}

@@ -26,6 +26,9 @@ This category contains the canonical and near-canonical workflows for discipline
 - `paper-to-replication`
 - `debug-analysis-notebook`
 - `result-communication`
+- `interview-me`
+- `incremental-implementation`
+- `code-review-and-quality`
 
 These skills extend the backbone without replacing the canonical gates.
 

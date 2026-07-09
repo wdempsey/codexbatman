@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "skill": "code-review-and-quality",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "code-review-inference-wrapper",
+      "input": "Review this PR adding a model inference wrapper. The brief says the wrapper must enforce the model-card input schema. Tests only cover the happy path.",
+      "expected_route": [
+        "code-review-and-quality",
+        "review tests first",
+        "request changes if schema failure path is missing"
+      ],
+      "must_include": [
+        "Required",
+        "model-card",
+        "schema",
+        "verification"
+      ],
+      "must_not_include": [
+        "LGTM"
+      ],
+      "notes": "Score whether the review catches missing data-science contract coverage."
+    },
+    {
+      "id": "code-review-leakage-fix",
+      "input": "Review a notebook fix for implausibly high AUC. The diff moves imputation after the split but leaves target encoding before the split.",
+      "expected_route": [
+        "code-review-and-quality",
+        "flag leakage",
+        "request changes"
+      ],
+      "must_include": [
+        "leakage",
+        "split",
+        "Required"
+      ],
+      "must_not_include": [
+        "approve"
+      ],
+      "notes": "Score whether the review prioritizes data leakage over superficial style."
+    }
+  ]
+}

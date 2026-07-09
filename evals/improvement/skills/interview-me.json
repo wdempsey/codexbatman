@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "skill": "interview-me",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "interview-me-dashboard-intent",
+      "input": "Build me a dashboard for experiment metrics.",
+      "expected_route": [
+        "interview-me",
+        "one question at a time",
+        "problem-framing or ml-feature-spec after confirmed intent"
+      ],
+      "must_include": [
+        "Hypothesis",
+        "Confidence",
+        "Question",
+        "Guess"
+      ],
+      "must_not_include": [
+        "chart library",
+        "implementation plan"
+      ],
+      "notes": "Score whether the skill clarifies intent before planning a conventional artifact."
+    },
+    {
+      "id": "interview-me-skip-mechanical-edit",
+      "input": "Rename `tmp_df` to `features_df` in this one function.",
+      "expected_route": [
+        "do not invoke interview-me",
+        "perform mechanical edit"
+      ],
+      "must_include": [
+        "skip",
+        "mechanical"
+      ],
+      "must_not_include": [
+        "Confidence",
+        "Out of scope"
+      ],
+      "notes": "Score the boundary that small unambiguous edits should not trigger an interview."
+    }
+  ]
+}
