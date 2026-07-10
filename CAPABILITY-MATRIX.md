@@ -8,7 +8,7 @@ The matrix classifies the current folder-based `SKILL.md` inventory. Each skill
 occupies exactly one default cell, even when its frontmatter lists multiple
 compatible roles. That default cell is the dedupe and evaluation owner.
 
-Current coverage: 61 folder-based `SKILL.md` files.
+Current coverage: 63 folder-based `SKILL.md` files.
 
 ## Intake Rule
 
@@ -76,7 +76,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 | Task type | Default skills |
 | --- | --- |
 | `workflow-gate` | `project-bootstrap`, `problem-framing`, `data-audit`, `eda-plan`, `modeling`, `model-evaluation`, `experiment-log` |
-| `workflow-support` | `causal-design-check`, `grill-problem-frame`, `plan-as-guidance`, `paper-to-replication`, `result-communication`, `workflow-trace`, `handoff`, `trace-distillation` |
+| `workflow-support` | `causal-design-check`, `grill-problem-frame`, `eda-hypothesis-journal`, `plan-as-guidance`, `paper-to-replication`, `reproducibility-capture`, `result-communication`, `workflow-trace`, `handoff`, `trace-distillation` |
 | `diagnostics` | `debug-analysis-notebook`, `debug-model-failure`, `model-prototype` |
 | `software-team` | `interview-me`, `grill-with-codebase`, `zoom-out`, `ml-feature-spec`, `incremental-implementation`, `tdd-data-pipeline`, `code-review-and-quality` |
 | `practitioner-overlay` | `execution-mode`, `artifact-enforcer` |
@@ -106,6 +106,7 @@ future intake PR should run comparative evals before admitting another skill.
 | --- | --- | --- |
 | Problem definition | `problem-framing`, `grill-problem-frame`, `causal-design-check` | Is the new skill framing the project, pressure-testing the frame, or validating causal claims? |
 | Planning and revision | `plan-as-guidance`, `ml-feature-spec`, `incremental-implementation`, `workflow-trace` | Is the new skill writing the spec, guiding a flexible plan, executing a slice, or recording what changed? |
+| EDA execution and reproducibility | `eda-plan`, `eda-hypothesis-journal`, `data-audit`, `reproducibility-capture`, `experiment-log` | Is the new skill planning EDA, executing logged EDA checks, gating data readiness, capturing rerun metadata, or recording a modeling run? |
 | Modeling and method rationale | `modeling`, `model-prototype`, `core-ml`, `explain-method`, method skills | Is the new skill executing a gate, running a throwaway probe, bundling checks, or teaching a method? |
 | Debugging | `debug-analysis-notebook`, `debug-model-failure`, `model-prototype` | Is the failure execution-level, semantic/model-level, or a quick learnability probe? |
 | Software-team delivery | `interview-me`, `ml-feature-spec`, `incremental-implementation`, `tdd-data-pipeline`, `code-review-and-quality` | Is the new skill clarifying intent, writing the spec, slicing implementation, writing tests first, or reviewing the finished change? |
