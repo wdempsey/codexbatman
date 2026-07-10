@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "skill": "reproducibility-capture",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "repro-capture-modeling-run",
+      "input": "Before we report this logistic regression ROC-AUC, capture what someone needs to rerun it.",
+      "expected_route": [
+        "reproducibility-capture",
+        "experiment-log handoff"
+      ],
+      "must_include": [
+        "Data version",
+        "Code version",
+        "Environment",
+        "Seed strategy",
+        "experiment-log"
+      ],
+      "must_not_include": [
+        "interpret the AUC"
+      ],
+      "notes": "Score whether the skill captures metadata and routes interpretation to experiment-log."
+    },
+    {
+      "id": "repro-capture-missing-seed",
+      "input": "This notebook result looks good, but I do not know the data extract date and no seed was set.",
+      "expected_route": [
+        "reproducibility-capture",
+        "record gaps",
+        "do not present as reproducible"
+      ],
+      "must_include": [
+        "Known gaps",
+        "seed",
+        "data extract",
+        "not reproducible"
+      ],
+      "must_not_include": [
+        "ready to report"
+      ],
+      "notes": "Score whether missing reproducibility fields are surfaced rather than smoothed over."
+    },
+    {
+      "id": "repro-capture-dirty-worktree",
+      "input": "Capture reproducibility for an exploratory EDA finding produced from a dirty worktree.",
+      "expected_route": [
+        "reproducibility-capture",
+        "workflow-trace handoff"
+      ],
+      "must_include": [
+        "dirty worktree",
+        "changed files",
+        "workflow-trace"
+      ],
+      "must_not_include": [
+        "must clean worktree"
+      ],
+      "notes": "Score whether exploratory reproducibility records dirty state honestly without blocking all exploration."
+    }
+  ]
+}

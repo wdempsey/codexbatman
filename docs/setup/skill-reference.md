@@ -54,6 +54,7 @@ The repository also contains additional reusable data science skills that can pl
 - [`causal-design-check`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/causal-design-check)
 - [`debug-analysis-notebook`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-analysis-notebook): diagnose notebook execution errors without destructive rewrites
 - [`debug-model-failure`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/debug-model-failure): systematic loop for semantic model failures — code runs but results are wrong; reproduce → minimise → hypothesise → fix
+- [`eda-hypothesis-journal`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/eda-hypothesis-journal): execute bounded EDA with hypothesis journal entries, sanity checks, leakage audit, and a modeling handoff
 - [`grill-problem-frame`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/grill-problem-frame): challenge a problem statement before any data is touched — decision context, metric, prediction time, leakage risks, population scope
 - [`explain-method`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/explain-method): zoom out and explain why a method fits the current problem — assumptions, alternatives, model card justification
 - [`handoff`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/handoff): produce a short structured session handoff so the next person or agent can continue without rebuilding context
@@ -61,6 +62,7 @@ The repository also contains additional reusable data science skills that can pl
 - [`paper-to-replication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/paper-to-replication)
 - [`plan-as-guidance`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/plan-as-guidance): draft a flexible outcome-oriented plan with acceptance evidence, revision triggers, and a deviation log
 - [`repo-bootstrap-student`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/repo-bootstrap-student): teach a student how to create a GitHub-backed data science repository with a minimal artifact-first structure and first commit
+- [`reproducibility-capture`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/reproducibility-capture): capture data, code, environment, seed, and command metadata needed to rerun a result
 - [`result-communication`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/result-communication)
 - [`trace-distillation`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/trace-distillation)
 - [`workflow-trace`](https://github.com/wdempsey/codexbatman/tree/main/skills/data-science/workflow-trace)

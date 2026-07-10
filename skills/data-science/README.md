@@ -26,8 +26,10 @@ This category contains the canonical and near-canonical workflows for discipline
 - `paper-to-replication`
 - `debug-analysis-notebook`
 - `result-communication`
+- `eda-hypothesis-journal`
 - `interview-me`
 - `plan-as-guidance`
+- `reproducibility-capture`
 - `incremental-implementation`
 - `code-review-and-quality`
 

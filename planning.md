@@ -24,6 +24,7 @@ Last updated: 2026-07-09
 - [x] PR-7: add worked case studies that combine class notes, pre-answer alignment, misconception diagnosis, and student-safe tutoring.
 - [x] PR-8: evaluate curated Osmani imports one at a time and admit only distinct software-team adapters.
 - [x] PR-9: add `plan-as-guidance` as the loop-contract planning skill for flexible outcome-oriented data-science plans.
+- [x] PR-10: add data-science-native EDA journaling and reproducibility capture skills.
 - [ ] Track folded Osmani candidates as incumbent-improvement opportunities only: `idea-refine` -> `problem-framing` or `grill-problem-frame`; `spec-driven-development` -> `ml-feature-spec`; `debugging-and-error-recovery` -> debug skills; `doubt-driven-development` -> review or framing skills.
 
 ## Active: Repository Identity, Skills, And Workflow Architecture

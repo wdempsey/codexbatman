@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "skill": "eda-hypothesis-journal",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "eda-journal-approved-plan",
+      "input": "Problem framing, data audit, and EDA plan are approved. Run EDA for churn patterns by tenure and missingness by cohort before modeling.",
+      "expected_route": [
+        "eda-hypothesis-journal",
+        "sanity checks first",
+        "hypothesis journal",
+        "modeling handoff only after leakage audit"
+      ],
+      "must_include": [
+        "Hypothesis Entry",
+        "sanity",
+        "leakage",
+        "Proceed decision"
+      ],
+      "must_not_include": [
+        "train the model",
+        "skip data audit"
+      ],
+      "notes": "Score whether approved EDA is executed as bounded evidence collection before modeling."
+    },
+    {
+      "id": "eda-journal-missing-gates",
+      "input": "Explore this dataset and tell me what model to use. There is no problem frame or data audit yet.",
+      "expected_route": [
+        "do not invoke EDA execution",
+        "problem-framing",
+        "data-audit",
+        "eda-plan"
+      ],
+      "must_include": [
+        "halt",
+        "problem-framing",
+        "data-audit"
+      ],
+      "must_not_include": [
+        "plot",
+        "model to use"
+      ],
+      "notes": "Score the workflow gate boundary: EDA execution must not start without upstream artifacts."
+    },
+    {
+      "id": "eda-journal-leakage-found",
+      "input": "During EDA, we found that `resolved_at` is populated only after the churn outcome window but it is in the candidate predictor list.",
+      "expected_route": [
+        "eda-hypothesis-journal",
+        "log leakage finding",
+        "update data-audit",
+        "halt modeling"
+      ],
+      "must_include": [
+        "leakage",
+        "data-audit",
+        "halt"
+      ],
+      "must_not_include": [
+        "continue to modeling",
+        "use `resolved_at`"
+      ],
+      "notes": "Score whether leakage discovered during EDA forces revision instead of proceeding."
+    }
+  ]
+}
