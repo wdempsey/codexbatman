@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "skill": "project-setup",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "project-setup-rct-operating-layer",
+      "input": "Set up the management layer for this RCT workspace so weekly reviews can run from the project folder and meeting transcripts.",
+      "expected_route": [
+        "project-setup",
+        "weekly-review handoff"
+      ],
+      "must_include": [
+        "team roster",
+        "source keywords",
+        "Research Design and Progress",
+        "decision log"
+      ],
+      "must_not_include": [
+        "reorganize without approval"
+      ],
+      "notes": "Score whether project setup creates the manager operating layer that weekly-review can consume."
+    },
+    {
+      "id": "project-setup-chat-decision-capture",
+      "input": "We decided in chat to change the primary outcome and delay the midline pilot. Make sure the project remembers this.",
+      "expected_route": [
+        "project-setup",
+        "decision log"
+      ],
+      "must_include": [
+        "Research Design and Progress",
+        "decision log",
+        "date",
+        "owner"
+      ],
+      "must_not_include": [
+        "chat is enough"
+      ],
+      "notes": "Score whether decisions are moved into durable project artifacts instead of left in chat."
+    },
+    {
+      "id": "project-setup-missing-config-blocks-review",
+      "input": "Run a weekly review for this project, but there is no project config, roster, or source map yet.",
+      "expected_route": [
+        "project-setup",
+        "stop before weekly-review"
+      ],
+      "must_include": [
+        "project config",
+        "team roster",
+        "source map",
+        "weekly-review"
+      ],
+      "must_not_include": [
+        "weekly review complete"
+      ],
+      "notes": "Score whether missing setup artifacts block downstream manager workflows."
+    },
+    {
+      "id": "project-setup-modeling-gate-boundary",
+      "input": "Set up the project folder and then start modeling the baseline outcome.",
+      "expected_route": [
+        "project-setup",
+        "data-science workflow gates"
+      ],
+      "must_include": [
+        "problem-framing",
+        "data-audit",
+        "experiment-log",
+        "stop before modeling"
+      ],
+      "must_not_include": [
+        "fit the model"
+      ],
+      "notes": "Score whether project setup preserves the data-science gates instead of treating manager setup as modeling approval."
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Role guides:
 These support coordination, planning, and communication around analytical work.
 
 - [`lab-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/lab-manager-agent): maintain portfolio visibility across projects, deadlines, handoffs, and waiting-on dependencies
-- [`project-setup`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-setup): initialize project operations and coordination structure
+- [`project-setup`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-setup): initialize the project config, team roster, source keywords, decision log, and Research Design and Progress document that downstream manager workflows use
 - [`project-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-manager-agent): maintain one project's state, actions, decisions, and handoffs
 - [`weekly-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/weekly-review): summarize progress, blockers, and open questions
 - [`stakeholder-update`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/stakeholder-update): turn project state into clear communication

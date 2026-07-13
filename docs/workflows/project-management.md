@@ -49,8 +49,8 @@ The foundation. Before Codex can help manage a project, it needs a structured pl
 - Walks through an interactive discovery process for your project
 - Pulls core materials from scattered locations into one project folder
 - Creates a folder structure that Codex understands
-- Sets up a Google Doc hub: first tab for the project overview and meeting history, additional tabs for core documents
-- Creates a project-specific instruction file with team roster, keywords, and configuration
+- Sets up a living Research Design and Progress document as the project hub for design context, progress, decisions, and open questions
+- Creates a project-specific instruction file with team roster, source keywords, system map, and decision-log rules
 
 ---
 
