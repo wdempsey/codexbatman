@@ -25,16 +25,20 @@ adding, importing, or deduplicating folder-based skills.
 
 PR-8 curated the Osmani import and admitted only distinct data-scientist
 software-team adapters. PR-9 added `plan-as-guidance` as the loop-contract
-planning skill for flexible outcome-oriented plans. PR-10 adds data-science
-native EDA journaling and reproducibility capture skills.
+planning skill for flexible outcome-oriented plans. PR-10 added data-science
+native EDA journaling and reproducibility capture skills. PR-11 adapts the
+incumbent `project-setup` manager skill around project-specific config, team
+roster, source keywords, decision logging, and the Research Design and Progress
+artifact.
 
-Next skill PR: PR-11 project-setup skill (Blattman adaptation).
+Next skill PR: PR-12 weekly-review skill.
 
 Focus:
 
-- add project-specific manager config: team roster, keywords, and decision log
-- define the living Research Design and Progress doc as the core manager artifact
-- keep decisions recorded in project artifacts rather than chat-only summaries
+- consume the PR-11 project config and Research Design and Progress artifact
+- synthesize project docs and meeting transcripts into a concise strategic overview
+- append the weekly summary to the project history rather than leaving it in chat
+- include near-term imperatives and per-person priorities
 - keep data-science workflow gates authoritative when manager skills summarize or coordinate analysis
 - keep command-style skill migration gradual and tracked in `planning.md`
 
