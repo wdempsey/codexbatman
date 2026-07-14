@@ -66,7 +66,13 @@ Once the project folder exists, the next step is to stop losing information. Mee
 
 **Skill:** [`/weekly-review`](../setup/skill-reference.md#weekly-review-weekly-project-review) `[PM]`
 
-This is where the system comes alive. The weekly review pulls from every source and produces two outputs: a high-level dashboard and a detailed weekly log.
+This is where the system comes alive. The weekly review starts file-and-transcript based: it pulls from the project docs, the Research Design and Progress document, and meeting transcripts, then produces a manager-ready overview and a weekly history update.
+
+**What this produces:**
+
+- A concise project overview with strategic reminder, near-term imperatives, and per-person priorities
+- A weekly summary appended to the project history tab or section
+- Confidence notes for missing sources, unverified claims, and items needing human review
 
 ---
 

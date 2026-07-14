@@ -29,17 +29,19 @@ planning skill for flexible outcome-oriented plans. PR-10 added data-science
 native EDA journaling and reproducibility capture skills. PR-11 adapts the
 incumbent `project-setup` manager skill around project-specific config, team
 roster, source keywords, decision logging, and the Research Design and Progress
-artifact.
+artifact. PR-12 adapts `weekly-review` to consume project docs and meeting
+transcripts into a three-page overview, weekly history update, and per-person
+priorities.
 
-Next skill PR: PR-12 weekly-review skill.
+Next skill PR: PR-13 n8n integration layer and meeting loop.
 
 Focus:
 
-- consume the PR-11 project config and Research Design and Progress artifact
-- synthesize project docs and meeting transcripts into a concise strategic overview
-- append the weekly summary to the project history rather than leaving it in chat
-- include near-term imperatives and per-person priorities
-- keep data-science workflow gates authoritative when manager skills summarize or coordinate analysis
+- document the boundary: n8n owns scheduled, audited, credentialed filing and live-data actions
+- keep Codex skills responsible for reasoning, synthesis, meeting pre-briefs, and post-meeting summaries
+- add the meeting pre-brief / post-meeting skill pair or integration notes without live automation
+- preserve human-in-the-loop gates on outbound actions
+- keep sensitive-meeting exclusions explicit
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs

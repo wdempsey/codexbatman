@@ -1,6 +1,6 @@
 # Planning
 
-Last updated: 2026-07-13
+Last updated: 2026-07-14
 
 ## Active: Skill Intake And Capability Matrix
 
@@ -26,7 +26,7 @@ Last updated: 2026-07-13
 - [x] PR-9: add `plan-as-guidance` as the loop-contract planning skill for flexible outcome-oriented data-science plans.
 - [x] PR-10: add data-science-native EDA journaling and reproducibility capture skills.
 - [x] PR-11: adapt the incumbent `project-setup` manager skill around project-specific config, team roster, source keywords, decision logging, and the Research Design and Progress artifact.
-- [ ] PR-12: adapt `weekly-review` to consume project docs and meeting transcripts into overview, weekly history, and per-person priorities.
+- [x] PR-12: adapt `weekly-review` to consume project docs and meeting transcripts into overview, weekly history, and per-person priorities.
 - [ ] PR-13: document the n8n integration boundary and meeting loop after project setup and weekly review are stable.
 - [ ] Track folded Osmani candidates as incumbent-improvement opportunities only: `idea-refine` -> `problem-framing` or `grill-problem-frame`; `spec-driven-development` -> `ml-feature-spec`; `debugging-and-error-recovery` -> debug skills; `doubt-driven-development` -> review or framing skills.
 
