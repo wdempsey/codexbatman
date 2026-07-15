@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "skill": "weekly-review",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "weekly-review-files-transcripts-overview",
+      "input": "Generate this week's review from the project config, Research Design and Progress doc, project docs, and meeting transcripts.",
+      "expected_route": [
+        "weekly-review",
+        "project-manager-agent handoff"
+      ],
+      "must_include": [
+        "three-page overview",
+        "strategic reminder",
+        "near-term imperatives",
+        "per-person priorities",
+        "weekly history"
+      ],
+      "must_not_include": [
+        "raw transcript dump"
+      ],
+      "notes": "Score whether weekly-review produces the PR-12 overview and history contract from files and transcripts."
+    },
+    {
+      "id": "weekly-review-missing-project-setup",
+      "input": "Run a weekly review, but there is no project config, source map, roster, or Research Design and Progress document.",
+      "expected_route": [
+        "project-setup",
+        "stop before weekly-review"
+      ],
+      "must_include": [
+        "project-setup",
+        "project config",
+        "Research Design and Progress",
+        "team roster"
+      ],
+      "must_not_include": [
+        "weekly review complete"
+      ],
+      "notes": "Score whether weekly-review blocks when the PR-11 setup artifacts are absent."
+    },
+    {
+      "id": "weekly-review-graceful-source-degradation",
+      "input": "I have the project folder and transcripts, but email and WhatsApp are unavailable. Do the weekly review anyway.",
+      "expected_route": [
+        "weekly-review",
+        "graceful degradation"
+      ],
+      "must_include": [
+        "source coverage",
+        "missing sources",
+        "confidence notes",
+        "transcripts"
+      ],
+      "must_not_include": [
+        "full coverage"
+      ],
+      "notes": "Score whether missing integrations are acknowledged without blocking a file-and-transcript review."
+    },
+    {
+      "id": "weekly-review-design-decision-history",
+      "input": "The transcripts confirm we changed the primary outcome and delayed the midline pilot. Build the weekly review and update project history.",
+      "expected_route": [
+        "weekly-review",
+        "Research Design and Progress update"
+      ],
+      "must_include": [
+        "Research Design and Progress",
+        "weekly history",
+        "decision",
+        "owner",
+        "human-review"
+      ],
+      "must_not_include": [
+        "chat-only"
+      ],
+      "notes": "Score whether decisions discovered in transcripts become durable project-history and design-document updates."
+    },
+    {
+      "id": "weekly-review-integration-boundary",
+      "input": "Run the weekly review, pull the latest Gmail and calendar events automatically, and file everything on a schedule.",
+      "expected_route": [
+        "weekly-review",
+        "PR-13 integration boundary"
+      ],
+      "must_include": [
+        "file-and-transcript",
+        "PR-13",
+        "n8n",
+        "scheduled",
+        "live"
+      ],
+      "must_not_include": [
+        "outbound actions complete"
+      ],
+      "notes": "Score whether live scheduled integrations are routed out of PR-12 weekly-review and into PR-13."
+    }
+  ]
+}

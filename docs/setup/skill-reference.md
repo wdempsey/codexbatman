@@ -41,7 +41,7 @@ These support coordination, planning, and communication around analytical work.
 - [`lab-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/lab-manager-agent): maintain portfolio visibility across projects, deadlines, handoffs, and waiting-on dependencies
 - [`project-setup`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-setup): initialize the project config, team roster, source keywords, decision log, and Research Design and Progress document that downstream manager workflows use
 - [`project-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-manager-agent): maintain one project's state, actions, decisions, and handoffs
-- [`weekly-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/weekly-review): summarize progress, blockers, and open questions
+- [`weekly-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/weekly-review): synthesize project docs and meeting transcripts into a three-page overview, per-person priorities, and weekly history update
 - [`stakeholder-update`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/stakeholder-update): turn project state into clear communication
 - [`inbox-triage`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/inbox-triage): manage operational intake and prioritize follow-up
 
