@@ -34,6 +34,7 @@ That page explains the coordination model. Open the template page second if you 
 ## Typical Manager Outputs
 
 - weekly reviews
+- meeting pre-briefs and post-meeting captures
 - waiting-on lists
 - next-actions lists
 - meeting prep notes
@@ -81,6 +82,8 @@ See [Project Overview Example](../workflows/examples/project-overview-example.md
 - `communication-workflows`
 - `project-setup`
 - `weekly-review`
+- `meeting-pre-brief`
+- `meeting-post-brief`
 - `inbox-triage`
 - `stakeholder-update`
 
@@ -89,6 +92,7 @@ See [Project Overview Example](../workflows/examples/project-overview-example.md
 - Use [Choose Your Role](../roles/index.md) if you want to compare this path with the student or researcher/data scientist paths.
 - Use the [Skill Library](../setup/skill-reference.md) for the shared catalog of manager skills, overlays, and workflow skills.
 - Use [Project Management](../workflows/project-management.md) when you want a build story for dashboards and reviews.
+- Use [Integration Boundary and Meeting Loop](../workflows/manager/integration-boundary.md) when you need to separate n8n automation from Codex reasoning.
 - Use [Managing Data Science](../workflows/managing-data-science/index.md) when you want the manager workflow organized around daily execution.
 - Use [Lab Manager Agent](../workflows/manager/lab-manager-agent.md) when you want the portfolio-level coordination model first.
 - Use [Backbone Protocol](../backbone/index.md) when you need to verify which project artifacts should exist before a team advances.

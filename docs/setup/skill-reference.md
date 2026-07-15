@@ -42,6 +42,8 @@ These support coordination, planning, and communication around analytical work.
 - [`project-setup`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-setup): initialize the project config, team roster, source keywords, decision log, and Research Design and Progress document that downstream manager workflows use
 - [`project-manager-agent`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/project-manager-agent): maintain one project's state, actions, decisions, and handoffs
 - [`weekly-review`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/weekly-review): synthesize project docs and meeting transcripts into a three-page overview, per-person priorities, and weekly history update
+- [`meeting-pre-brief`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/meeting-pre-brief): prepare agenda context, decision prompts, risks, and post-meeting capture plans from project artifacts
+- [`meeting-post-brief`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/meeting-post-brief): convert meeting notes or transcripts into decisions, actions, project-memory updates, and human-reviewed follow-up drafts
 - [`stakeholder-update`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/stakeholder-update): turn project state into clear communication
 - [`inbox-triage`](https://github.com/wdempsey/codexbatman/tree/main/skills/manager/inbox-triage): manage operational intake and prioritize follow-up
 

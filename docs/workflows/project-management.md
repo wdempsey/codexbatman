@@ -60,6 +60,10 @@ The foundation. Before Codex can help manage a project, it needs a structured pl
 
 Once the project folder exists, the next step is to stop losing information. Meetings are where most decisions happen and most context gets lost.
 
+Use `meeting-pre-brief` before important project meetings to turn current project artifacts into agenda context, decision prompts, and owner-specific questions. Use `meeting-post-brief` afterward to convert notes or transcripts into decisions, actions, Research Design and Progress updates, and human-reviewed follow-up drafts.
+
+Scheduled filing, live Gmail or calendar pulls, and outbound actions belong in the integration layer, not in the Codex skills themselves. See [Integration Boundary and Meeting Loop](manager/integration-boundary.md).
+
 ---
 
 ## Layer 3: The Weekly Review
@@ -103,7 +107,9 @@ All skills referenced above are available for download:
 | Skill | What it does | Install |
 |-------|-------------|---------|
 | `/setup-project-management` | Interactive project folder setup | [Details](../setup/skill-reference.md#setup-project-management-project-setup) |
-| `/weekly-review` | Multi-source weekly synthesis | [Details](../setup/skill-reference.md#weekly-review-weekly-project-review) |
+| `/weekly-review` | File-and-transcript weekly synthesis | [Details](../setup/skill-reference.md#weekly-review-weekly-project-review) |
+| `meeting-pre-brief` | Artifact-grounded meeting preparation | [Details](../setup/skill-reference.md) |
+| `meeting-post-brief` | Meeting transcript to project-memory updates | [Details](../setup/skill-reference.md) |
 | `/proposal-write` | Draft proposals from project context | [Details](../setup/skill-reference.md#proposal-write-proposal-drafting) |
 | `/proposal-revise` | Apply feedback to drafts | [Details](../setup/skill-reference.md#proposal-revise-proposal-revision) |
 | Writing Reviewer | Academic prose QA (agent) | [Details](../setup/skill-reference.md#review-writing) |

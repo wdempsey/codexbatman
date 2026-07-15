@@ -82,7 +82,7 @@ Stop and ask before continuing when:
    - Core data science gate: `project-bootstrap`, `problem-framing`, `data-audit`, `eda-plan`, `modeling`, `model-evaluation`, `experiment-log`.
    - Method teaching: route to the method skill when the learner is unfamiliar with the method, then return to the workflow gate.
    - Manager operations: `project-setup`, `project-manager-agent`, `lab-manager-agent`, `weekly-review`, or `inbox-triage`.
-   - Manager communication: `stakeholder-update`, `communication-workflows`, or `executive-summary`.
+   - Manager communication: `meeting-pre-brief`, `meeting-post-brief`, `stakeholder-update`, `communication-workflows`, or `executive-summary`.
    - Site and skill maintenance: `site-voice`, `ui-ux-review`, `navigation-review`, `visual-polish-pass`, `SKILL-STYLE.md`, and `CAPABILITY-MATRIX.md`.
 
 4. Check gates and handoffs.
