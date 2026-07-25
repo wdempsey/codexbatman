@@ -8,7 +8,7 @@ The matrix classifies the current folder-based `SKILL.md` inventory. Each skill
 occupies exactly one default cell, even when its frontmatter lists multiple
 compatible roles. That default cell is the dedupe and evaluation owner.
 
-Current coverage: 63 folder-based `SKILL.md` files.
+Current coverage: 65 folder-based `SKILL.md` files.
 
 ## Intake Rule
 
@@ -87,7 +87,7 @@ The matrix deliberately mixes stage-based and role-based task types.
 | Task type | Default skills |
 | --- | --- |
 | `manager-ops` | `project-setup`, `project-manager-agent`, `lab-manager-agent`, `weekly-review`, `inbox-triage` |
-| `manager-communication` | `stakeholder-update`, `communication-workflows`, `executive-summary`, `project-tracker` |
+| `manager-communication` | `meeting-pre-brief`, `meeting-post-brief`, `stakeholder-update`, `communication-workflows`, `executive-summary`, `project-tracker` |
 
 ### Repository Maintainer
 
@@ -114,7 +114,7 @@ future intake PR should run comparative evals before admitting another skill.
 | Student help | `tutor-mode`, `socratic-tutor`, `hint-ladder`, `misconception-diagnosis`, `exercise-generator` | Is the student asking for guided workflow help, a hint, diagnosis, or practice? |
 | Student context intake | `identity-loader`, `class-notes-ingestion`, `grill-the-student`, `tutor-mode`, `misconception-diagnosis` | Is the missing piece student identity, persistent class-note context, pre-answer context alignment, ordinary tutoring, or misconception repair? |
 | Manager operations | `project-setup`, `project-manager-agent`, `lab-manager-agent`, `weekly-review`, `project-tracker` | Is the scope one project, a portfolio, a recurring review, or a manager-facing overlay? |
-| Manager communication | `stakeholder-update`, `communication-workflows`, `executive-summary` | Is the output an external update, a communication workflow, or a summary wrapper? |
+| Manager communication | `meeting-pre-brief`, `meeting-post-brief`, `stakeholder-update`, `communication-workflows`, `executive-summary` | Is the output meeting prep, post-meeting capture, an external update, a communication workflow, or a summary wrapper? |
 | Routing | `ask-codexbatman`, role overlays, workflow gates | Is the proposed skill only choosing a route, or is it executing a workflow step? |
 | Skill improvement | `improve-skill`, `SKILL-STYLE.md`, eval runner | Is the work diagnosing an existing skill, proposing a patch, or implementing an approved skill change? |
 | Site work | `site-voice`, `ui-ux-review`, `navigation-review`, `visual-polish-pass` | Is the change about copy voice, page hierarchy, navigation, or visual finishing? |

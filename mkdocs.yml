@@ -67,6 +67,7 @@ nav:
       - Managing Data Science: workflows/managing-data-science/index.md
       - Lab Manager Agent: workflows/manager/lab-manager-agent.md
       - Research OS Template: workflows/manager/research-os-template.md
+      - Integration Boundary: workflows/manager/integration-boundary.md
       - "Example: Project Dashboard": workflows/examples/project-overview-example.md
   - Workflow:
     - Overview: workflows/data-science/index.md

@@ -31,17 +31,17 @@ incumbent `project-setup` manager skill around project-specific config, team
 roster, source keywords, decision logging, and the Research Design and Progress
 artifact. PR-12 adapts `weekly-review` to consume project docs and meeting
 transcripts into a three-page overview, weekly history update, and per-person
-priorities.
+priorities. PR-13 adds the manager meeting loop and n8n integration boundary:
+n8n owns scheduled, audited, credentialed execution; Codex skills own reasoning,
+meeting pre-briefs, post-meeting capture, and drafting with human approval.
 
-Next skill PR: PR-13 n8n integration layer and meeting loop.
+The PR-0 through PR-13 skill-system sequence is complete.
 
 Focus:
 
-- document the boundary: n8n owns scheduled, audited, credentialed filing and live-data actions
-- keep Codex skills responsible for reasoning, synthesis, meeting pre-briefs, and post-meeting summaries
-- add the meeting pre-brief / post-meeting skill pair or integration notes without live automation
-- preserve human-in-the-loop gates on outbound actions
-- keep sensitive-meeting exclusions explicit
+- keep `meeting-pre-brief` and `meeting-post-brief` artifact-first and human-reviewed
+- keep n8n integration guidance descriptive until an explicit implementation PR is opened
+- keep sensitive-meeting exclusions explicit in future manager workflow changes
 - keep command-style skill migration gradual and tracked in `planning.md`
 
 ## Highest-Priority Next PRs

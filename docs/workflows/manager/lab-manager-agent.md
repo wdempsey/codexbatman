@@ -198,5 +198,6 @@ Use [Project Overview Example](../examples/project-overview-example.md) as a con
 - [Project Management](../project-management.md)
 - [Managing Data Science](../managing-data-science/index.md)
 - [Research OS Template](research-os-template.md)
+- [Integration Boundary and Meeting Loop](integration-boundary.md)
 - [Examples](../../examples/index.md)
 - [Backbone Protocol](../../backbone/index.md)

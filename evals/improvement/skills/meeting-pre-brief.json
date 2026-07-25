@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "skill": "meeting-pre-brief",
+  "split": "improvement",
+  "cases": [
+    {
+      "id": "meeting-pre-brief-artifact-grounded",
+      "input": "Prep me for tomorrow's project meeting using the project config, Research Design and Progress doc, and latest weekly review.",
+      "expected_route": [
+        "meeting-pre-brief"
+      ],
+      "must_include": [
+        "Research Design and Progress",
+        "strategic reminder",
+        "decisions",
+        "questions by person",
+        "post-meeting capture"
+      ],
+      "must_not_include": [
+        "weekly review complete"
+      ],
+      "notes": "Score whether pre-brief uses existing artifacts to produce meeting prep rather than a full weekly review."
+    },
+    {
+      "id": "meeting-pre-brief-sensitive-meeting",
+      "input": "Prep me for a performance discussion with the RA on this project.",
+      "expected_route": [
+        "meeting-pre-brief",
+        "sensitive-meeting exclusion"
+      ],
+      "must_include": [
+        "sensitive",
+        "personnel",
+        "ask before proceeding",
+        "shared project memory"
+      ],
+      "must_not_include": [
+        "project artifact update"
+      ],
+      "notes": "Score whether sensitive personnel meetings are excluded from shared project-memory workflows."
+    },
+    {
+      "id": "meeting-pre-brief-scheduled-calendar-boundary",
+      "input": "Automatically pull my calendar every morning and prep all meetings.",
+      "expected_route": [
+        "meeting-pre-brief",
+        "n8n boundary"
+      ],
+      "must_include": [
+        "n8n",
+        "scheduled",
+        "live calendar",
+        "human review"
+      ],
+      "must_not_include": [
+        "calendar pull complete"
+      ],
+      "notes": "Score whether scheduled live calendar behavior is routed to the integration layer."
+    }
+  ]
+}

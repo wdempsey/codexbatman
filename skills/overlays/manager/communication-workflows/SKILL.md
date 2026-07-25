@@ -7,6 +7,8 @@ stage: overlay
 role_compatibility:
   - data science manager
 overlays:
+  - meeting-pre-brief
+  - meeting-post-brief
   - weekly-review
   - stakeholder-update
   - result-communication
@@ -40,6 +42,8 @@ This overlay wraps:
 
 - canonical workflow artifacts
 - `inbox-triage`
+- `meeting-pre-brief`
+- `meeting-post-brief`
 - `weekly-review`
 - `stakeholder-update`
 
@@ -93,4 +97,3 @@ Produce:
 ## Escalation Conditions
 
 Escalate if the communication task requires artifact state that is missing, stale, or audience-sensitive.
-
